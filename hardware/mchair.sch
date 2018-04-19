@@ -14478,7 +14478,7 @@ VSSDSI connected to gnd</text>
 <wire x1="99.06" y1="83.82" x2="99.06" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="PA0" class="0">
+<net name="OUT-Z1" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="PA0/WKUP"/>
 <wire x1="81.28" y1="261.62" x2="78.74" y2="261.62" width="0.1524" layer="91"/>
@@ -14506,7 +14506,7 @@ VSSDSI connected to gnd</text>
 <label x="78.74" y="254" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="PA4" class="0">
+<net name="OUT-E4" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="PA4"/>
 <wire x1="81.28" y1="251.46" x2="78.74" y2="251.46" width="0.1524" layer="91"/>
@@ -14520,7 +14520,7 @@ VSSDSI connected to gnd</text>
 <label x="78.74" y="248.92" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="PA6" class="0">
+<net name="OUT-Z2" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="PA6"/>
 <wire x1="81.28" y1="246.38" x2="78.74" y2="246.38" width="0.1524" layer="91"/>
@@ -14534,21 +14534,21 @@ VSSDSI connected to gnd</text>
 <label x="78.74" y="243.84" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="PA8" class="0">
+<net name="OUT-B5" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="PA8"/>
 <wire x1="81.28" y1="241.3" x2="78.74" y2="241.3" width="0.1524" layer="91"/>
 <label x="78.74" y="241.3" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="PA11" class="0">
+<net name="OUT-B1" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="PA11"/>
 <wire x1="81.28" y1="233.68" x2="78.74" y2="233.68" width="0.1524" layer="91"/>
 <label x="78.74" y="233.68" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="PA12" class="0">
+<net name="OUT-B2" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="PA12"/>
 <wire x1="81.28" y1="231.14" x2="78.74" y2="231.14" width="0.1524" layer="91"/>
@@ -14604,7 +14604,7 @@ VSSDSI connected to gnd</text>
 <label x="78.74" y="210.82" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="PB4" class="0">
+<net name="OUT-E2" class="0">
 <segment>
 <wire x1="81.28" y1="208.28" x2="78.74" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="PB4/NJTRST"/>
@@ -14618,28 +14618,28 @@ VSSDSI connected to gnd</text>
 <label x="78.74" y="205.74" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="PB6" class="0">
+<net name="OUT-C1" class="0">
 <segment>
 <wire x1="81.28" y1="203.2" x2="78.74" y2="203.2" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="PB6"/>
 <label x="78.74" y="203.2" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="PB7" class="0">
+<net name="OUT-C2" class="0">
 <segment>
 <wire x1="81.28" y1="200.66" x2="78.74" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="PB7"/>
 <label x="78.74" y="200.66" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="PB8" class="0">
+<net name="OUT-D1" class="0">
 <segment>
 <wire x1="81.28" y1="198.12" x2="78.74" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="PB8"/>
 <label x="78.74" y="198.12" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="PB9" class="0">
+<net name="OUT-D2" class="0">
 <segment>
 <wire x1="81.28" y1="195.58" x2="78.74" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="PB9"/>
@@ -14674,14 +14674,14 @@ VSSDSI connected to gnd</text>
 <label x="78.74" y="185.42" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="PB14" class="0">
+<net name="OUT-B3" class="0">
 <segment>
 <wire x1="81.28" y1="182.88" x2="78.74" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="PB14"/>
 <label x="78.74" y="182.88" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="PB15" class="0">
+<net name="OUT-B4" class="0">
 <segment>
 <wire x1="81.28" y1="180.34" x2="78.74" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="PB15"/>
@@ -14730,42 +14730,42 @@ VSSDSI connected to gnd</text>
 <label x="78.74" y="162.56" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="PC6" class="0">
+<net name="OUT-F1" class="0">
 <segment>
 <wire x1="81.28" y1="160.02" x2="78.74" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="PC6"/>
 <label x="78.74" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="PC7" class="0">
+<net name="OUT-F2" class="0">
 <segment>
 <wire x1="81.28" y1="157.48" x2="78.74" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="PC7"/>
 <label x="78.74" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="PC8" class="0">
+<net name="OUT-F3" class="0">
 <segment>
 <wire x1="81.28" y1="154.94" x2="78.74" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="PC8"/>
 <label x="78.74" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="PC9" class="0">
+<net name="OUT-F4" class="0">
 <segment>
 <wire x1="81.28" y1="152.4" x2="78.74" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="PC9"/>
 <label x="78.74" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="PC10" class="0">
+<net name="OUT-E3" class="0">
 <segment>
 <wire x1="81.28" y1="149.86" x2="78.74" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="PC10"/>
 <label x="78.74" y="149.86" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="PC12" class="0">
+<net name="OUT-E1" class="0">
 <segment>
 <wire x1="81.28" y1="144.78" x2="78.74" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="PC12"/>
@@ -14966,28 +14966,28 @@ VSSDSI connected to gnd</text>
 <label x="149.86" y="162.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="PF6" class="0">
+<net name="OUT-A1" class="0">
 <segment>
 <wire x1="149.86" y1="160.02" x2="147.32" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="PF6"/>
 <label x="149.86" y="160.02" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="PF7" class="0">
+<net name="OUT-A2" class="0">
 <segment>
 <wire x1="149.86" y1="157.48" x2="147.32" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="PF7"/>
 <label x="149.86" y="157.48" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="PF8" class="0">
+<net name="OUT-A3" class="0">
 <segment>
 <wire x1="149.86" y1="154.94" x2="147.32" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="PF8"/>
 <label x="149.86" y="154.94" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="PF9" class="0">
+<net name="OUT-A4" class="0">
 <segment>
 <wire x1="149.86" y1="152.4" x2="147.32" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="PF9"/>
@@ -15220,199 +15220,53 @@ VSSDSI connected to gnd</text>
 <label x="518.16" y="96.52" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="LCD-HSYNC" class="0">
+<net name="OUT-G3" class="0">
 <segment>
-<pinref part="U1" gate="B" pin="PI12"/>
-<wire x1="355.6" y1="218.44" x2="358.14" y2="218.44" width="0.1524" layer="91" style="longdash"/>
-<label x="358.14" y="218.44" size="1.27" layer="95" xref="yes"/>
+<pinref part="U1" gate="B" pin="PH12"/>
+<wire x1="289.56" y1="175.26" x2="287.02" y2="175.26" width="0.1524" layer="91"/>
+<label x="287.02" y="175.26" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="LCD-VSYNC" class="0">
+<net name="OUT-G2" class="0">
 <segment>
-<pinref part="U1" gate="B" pin="PI13"/>
-<wire x1="355.6" y1="215.9" x2="358.14" y2="215.9" width="0.1524" layer="91" style="longdash"/>
-<label x="358.14" y="215.9" size="1.27" layer="95" xref="yes"/>
+<pinref part="U1" gate="B" pin="PH11"/>
+<wire x1="289.56" y1="177.8" x2="287.02" y2="177.8" width="0.1524" layer="91"/>
+<label x="287.02" y="177.8" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="LCD-CLK" class="0">
+<net name="OUT-G1" class="0">
 <segment>
-<pinref part="U1" gate="B" pin="PI14"/>
-<wire x1="355.6" y1="213.36" x2="358.14" y2="213.36" width="0.1524" layer="91" style="longdash"/>
-<label x="358.14" y="213.36" size="1.27" layer="95" xref="yes"/>
+<pinref part="U1" gate="B" pin="PH10"/>
+<wire x1="289.56" y1="180.34" x2="287.02" y2="180.34" width="0.1524" layer="91"/>
+<label x="287.02" y="180.34" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="LCD-R0" class="0">
-<segment>
-<pinref part="U1" gate="B" pin="PI15"/>
-<wire x1="355.6" y1="210.82" x2="358.14" y2="210.82" width="0.1524" layer="91" style="longdash"/>
-<label x="358.14" y="210.82" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="LCD-R1" class="0">
-<segment>
-<pinref part="U1" gate="B" pin="PJ0"/>
-<wire x1="355.6" y1="205.74" x2="358.14" y2="205.74" width="0.1524" layer="91" style="longdash"/>
-<label x="358.14" y="205.74" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="LCD-R2" class="0">
-<segment>
-<pinref part="U1" gate="B" pin="PJ1"/>
-<wire x1="355.6" y1="203.2" x2="358.14" y2="203.2" width="0.1524" layer="91" style="longdash"/>
-<label x="358.14" y="203.2" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="LCD-R3" class="0">
-<segment>
-<pinref part="U1" gate="B" pin="PJ2"/>
-<wire x1="355.6" y1="200.66" x2="358.14" y2="200.66" width="0.1524" layer="91" style="longdash"/>
-<label x="358.14" y="200.66" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="LCD-R4" class="0">
-<segment>
-<pinref part="U1" gate="B" pin="PJ3"/>
-<wire x1="355.6" y1="198.12" x2="358.14" y2="198.12" width="0.1524" layer="91" style="longdash"/>
-<label x="358.14" y="198.12" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="LCD-R5" class="0">
-<segment>
-<pinref part="U1" gate="B" pin="PJ4"/>
-<wire x1="355.6" y1="195.58" x2="358.14" y2="195.58" width="0.1524" layer="91" style="longdash"/>
-<label x="358.14" y="195.58" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="LCD-R6" class="0">
-<segment>
-<pinref part="U1" gate="B" pin="PJ5"/>
-<wire x1="355.6" y1="193.04" x2="358.14" y2="193.04" width="0.1524" layer="91" style="longdash"/>
-<label x="358.14" y="193.04" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="LCD-B2" class="0">
-<segment>
-<pinref part="U1" gate="B" pin="PJ14"/>
-<wire x1="355.6" y1="185.42" x2="358.14" y2="185.42" width="0.1524" layer="91" style="longdash"/>
-<label x="358.14" y="185.42" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="LCD-B3" class="0">
-<segment>
-<pinref part="U1" gate="B" pin="PJ15"/>
-<wire x1="355.6" y1="182.88" x2="358.14" y2="182.88" width="0.1524" layer="91" style="longdash"/>
-<label x="358.14" y="182.88" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="LCD-B4" class="0">
-<segment>
-<pinref part="U1" gate="B" pin="PK3"/>
-<wire x1="355.6" y1="177.8" x2="358.14" y2="177.8" width="0.1524" layer="91" style="longdash"/>
-<label x="358.14" y="177.8" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="LCD-B5" class="0">
-<segment>
-<pinref part="U1" gate="B" pin="PK4"/>
-<wire x1="355.6" y1="175.26" x2="358.14" y2="175.26" width="0.1524" layer="91" style="longdash"/>
-<label x="358.14" y="175.26" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="LCD-B6" class="0">
-<segment>
-<pinref part="U1" gate="B" pin="PK5"/>
-<wire x1="355.6" y1="172.72" x2="358.14" y2="172.72" width="0.1524" layer="91" style="longdash"/>
-<label x="358.14" y="172.72" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="LCD-B7" class="0">
-<segment>
-<pinref part="U1" gate="B" pin="PK6"/>
-<wire x1="355.6" y1="170.18" x2="358.14" y2="170.18" width="0.1524" layer="91" style="longdash"/>
-<label x="358.14" y="170.18" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="LCD-DE" class="0">
-<segment>
-<pinref part="U1" gate="B" pin="PK7"/>
-<wire x1="355.6" y1="167.64" x2="358.14" y2="167.64" width="0.1524" layer="91" style="longdash"/>
-<label x="358.14" y="167.64" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="LCD-R7" class="0">
-<segment>
-<pinref part="U1" gate="B" pin="PG6"/>
-<wire x1="289.56" y1="233.68" x2="287.02" y2="233.68" width="0.1524" layer="91" style="longdash"/>
-<label x="287.02" y="233.68" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="LCD-B0" class="0">
-<segment>
-<pinref part="U1" gate="B" pin="PJ12"/>
-<wire x1="355.6" y1="190.5" x2="358.14" y2="190.5" width="0.1524" layer="91" style="longdash"/>
-<label x="358.14" y="190.5" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="LCD-B1" class="0">
-<segment>
-<pinref part="U1" gate="B" pin="PJ13"/>
-<wire x1="355.6" y1="187.96" x2="358.14" y2="187.96" width="0.1524" layer="91" style="longdash"/>
-<label x="358.14" y="187.96" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="LCD-G2" class="0">
-<segment>
-<pinref part="U1" gate="B" pin="PH13"/>
-<wire x1="289.56" y1="172.72" x2="287.02" y2="172.72" width="0.1524" layer="91" style="longdash"/>
-<label x="287.02" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="LCD-G3" class="0">
-<segment>
-<pinref part="U1" gate="B" pin="PH14"/>
-<wire x1="289.56" y1="170.18" x2="287.02" y2="170.18" width="0.1524" layer="91" style="longdash"/>
-<label x="287.02" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="LCD-G4" class="0">
-<segment>
-<pinref part="U1" gate="B" pin="PH15"/>
-<wire x1="289.56" y1="167.64" x2="287.02" y2="167.64" width="0.1524" layer="91" style="longdash"/>
-<label x="287.02" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="LCD-G5" class="0">
+<net name="OUT-G4" class="0">
 <segment>
 <pinref part="U1" gate="B" pin="PI0"/>
-<wire x1="355.6" y1="248.92" x2="358.14" y2="248.92" width="0.1524" layer="91" style="longdash"/>
+<wire x1="355.6" y1="248.92" x2="358.14" y2="248.92" width="0.1524" layer="91"/>
 <label x="358.14" y="248.92" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="LCD-G6" class="0">
+<net name="OUT-H1" class="0">
 <segment>
-<pinref part="U1" gate="B" pin="PI1"/>
-<wire x1="355.6" y1="246.38" x2="358.14" y2="246.38" width="0.1524" layer="91" style="longdash"/>
-<label x="358.14" y="246.38" size="1.27" layer="95" xref="yes"/>
+<pinref part="U1" gate="A" pin="PD5"/>
+<wire x1="147.32" y1="248.92" x2="149.86" y2="248.92" width="0.1524" layer="91"/>
+<label x="149.86" y="248.92" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="LCD-G7" class="0">
+<net name="OUT-H2" class="0">
 <segment>
-<pinref part="U1" gate="B" pin="PI2"/>
-<wire x1="355.6" y1="243.84" x2="358.14" y2="243.84" width="0.1524" layer="91" style="longdash"/>
-<label x="358.14" y="243.84" size="1.27" layer="95" xref="yes"/>
+<pinref part="U1" gate="A" pin="PD6"/>
+<wire x1="147.32" y1="246.38" x2="149.86" y2="246.38" width="0.1524" layer="91"/>
+<label x="149.86" y="246.38" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="LCD-G0" class="0">
+<net name="OUT-H3" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="PE5"/>
-<wire x1="147.32" y1="205.74" x2="149.86" y2="205.74" width="0.1524" layer="91" style="longdash"/>
-<label x="149.86" y="205.74" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="LCD-G1" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="PE6"/>
-<wire x1="147.32" y1="203.2" x2="149.86" y2="203.2" width="0.1524" layer="91" style="longdash"/>
+<pinref part="U1" gate="A" pin="PD7"/>
+<wire x1="147.32" y1="243.84" x2="149.86" y2="243.84" width="0.1524" layer="91"/>
+<label x="149.86" y="243.84" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
