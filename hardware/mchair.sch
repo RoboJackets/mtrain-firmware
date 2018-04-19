@@ -14085,7 +14085,7 @@ VSSDSI connected to gnd</text>
 <busses>
 </busses>
 <nets>
-<net name="VDD" class="0">
+<net name="VDD" class="1">
 <segment>
 <pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="185.42" y1="83.82" x2="185.42" y2="86.36" width="0.1524" layer="91"/>
@@ -14847,14 +14847,14 @@ VSSDSI connected to gnd</text>
 <label x="149.86" y="223.52" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="FMC-NBL0" class="0">
+<net name="FMC-LDQM" class="0">
 <segment>
 <wire x1="149.86" y1="218.44" x2="147.32" y2="218.44" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="PE0"/>
 <label x="149.86" y="218.44" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="FMC-NBL1" class="0">
+<net name="FMC-UDQM" class="0">
 <segment>
 <wire x1="149.86" y1="215.9" x2="147.32" y2="215.9" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="PE1"/>
@@ -16418,14 +16418,14 @@ I dunno 3.8v?</text>
 <junction x="157.48" y="106.68"/>
 </segment>
 </net>
-<net name="FMC-NBL0" class="0">
+<net name="FMC-LDQM" class="0">
 <segment>
 <pinref part="U7" gate="G$1" pin="LDQM"/>
 <wire x1="307.34" y1="147.32" x2="304.8" y2="147.32" width="0.1524" layer="91" style="longdash"/>
 <label x="304.8" y="147.32" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="FMC-NBL1" class="0">
+<net name="FMC-UDQM" class="0">
 <segment>
 <pinref part="U7" gate="G$1" pin="UDQM"/>
 <wire x1="307.34" y1="144.78" x2="304.8" y2="144.78" width="0.1524" layer="91" style="longdash"/>
@@ -16593,7 +16593,7 @@ I dunno 3.8v?</text>
 <junction x="241.3" y="43.18"/>
 </segment>
 </net>
-<net name="VDD" class="0">
+<net name="VDD" class="1">
 <segment>
 <pinref part="U5" gate="G$1" pin="VDDIO"/>
 <pinref part="C43" gate="G$1" pin="1"/>
