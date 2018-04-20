@@ -15113,20 +15113,6 @@ VSSDSI connected to gnd</text>
 <label x="287.02" y="193.04" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="FMC-SDNE1" class="0">
-<segment>
-<wire x1="289.56" y1="190.5" x2="287.02" y2="190.5" width="0.1524" layer="91"/>
-<pinref part="U1" gate="B" pin="PH6"/>
-<label x="287.02" y="190.5" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="FMC-SDCKE1" class="0">
-<segment>
-<wire x1="289.56" y1="187.96" x2="287.02" y2="187.96" width="0.1524" layer="91"/>
-<pinref part="U1" gate="B" pin="PH7"/>
-<label x="287.02" y="187.96" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="!RST" class="0">
 <segment>
 <pinref part="U1" gate="B" pin="NRST"/>
@@ -15192,7 +15178,7 @@ VSSDSI connected to gnd</text>
 <label x="287.02" y="210.82" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="MCU-OSC" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="U1" gate="B" pin="PH0/OSC_IN"/>
