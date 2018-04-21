@@ -13808,7 +13808,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SUPPLY23" library="mchair" deviceset="VDDA" device=""/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="1uF"/>
 <part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="0.1uF"/>
-<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="0"/>
 <part name="L1" library="mchair" deviceset="BLM15" device="" package3d_urn="urn:adsk.eagle:package:15132/1" technology="AG601SN1D" value="BLM15AG601SN1D"/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="2.2uF"/>
 <part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="2.2uF"/>
@@ -13983,7 +13982,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <sheet>
 <plain>
 <text x="187.96" y="88.9" size="1.27" layer="97">Place as close as possible to VDD/VSS pair</text>
-<text x="88.9" y="90.424" size="1.27" layer="97">TODO: Should this be 47?</text>
 <text x="99.06" y="15.24" size="1.27" layer="97">Ceramic capacitors
 (low ESR &lt; 2 ohm)</text>
 <wire x1="103.632" y1="19.812" x2="102.616" y2="27.94" width="0.1524" layer="97"/>
@@ -14013,7 +14011,6 @@ VSSDSI connected to gnd</text>
 <instance part="SUPPLY23" gate="G$1" x="256.54" y="58.42"/>
 <instance part="C3" gate="G$1" x="99.06" y="78.74"/>
 <instance part="C5" gate="G$1" x="106.68" y="78.74"/>
-<instance part="R1" gate="G$1" x="111.76" y="88.9" rot="R180"/>
 <instance part="L1" gate="G$1" x="109.22" y="96.52" rot="MR0"/>
 <instance part="C4" gate="G$1" x="99.06" y="33.02"/>
 <instance part="C6" gate="G$1" x="109.22" y="33.02"/>
@@ -14076,8 +14073,8 @@ VSSDSI connected to gnd</text>
 <instance part="R2" gate="G$1" x="119.38" y="20.32" rot="R90"/>
 <instance part="SUPPLY7" gate="G$1" x="119.38" y="12.7" rot="R180"/>
 <instance part="R4" gate="G$1" x="276.86" y="205.74"/>
-<instance part="JP1" gate="A" x="495.3" y="76.2"/>
-<instance part="JP2" gate="A" x="510.54" y="76.2" rot="MR0"/>
+<instance part="JP1" gate="A" x="330.2" y="88.9"/>
+<instance part="JP2" gate="A" x="345.44" y="88.9" rot="MR0"/>
 <instance part="C23" gate="G$1" x="246.38" y="81.28"/>
 <instance part="C24" gate="G$1" x="246.38" y="50.8"/>
 <instance part="SUPPLY11" gate="GND" x="121.92" y="48.26" rot="R270"/>
@@ -14386,8 +14383,8 @@ VSSDSI connected to gnd</text>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="1"/>
-<wire x1="492.76" y1="99.06" x2="487.68" y2="99.06" width="0.1524" layer="91"/>
-<label x="487.68" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="327.66" y1="111.76" x2="322.58" y2="111.76" width="0.1524" layer="91"/>
+<label x="322.58" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="SUPPLY11" gate="GND" pin="GND"/>
@@ -14415,9 +14412,18 @@ VSSDSI connected to gnd</text>
 <pinref part="L1" gate="G$1" pin="1"/>
 <wire x1="114.3" y1="96.52" x2="116.84" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="96.52" x2="116.84" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="116.84" y1="88.9" x2="116.84" y2="91.44" width="0.1524" layer="91"/>
 <junction x="116.84" y="91.44"/>
+<pinref part="U1" gate="C" pin="VREF+"/>
+<wire x1="127" y1="83.82" x2="106.68" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="83.82" x2="106.68" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="106.68" y1="83.82" x2="106.68" y2="81.28" width="0.1524" layer="91"/>
+<junction x="106.68" y="83.82"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="106.68" y1="83.82" x2="99.06" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="83.82" x2="99.06" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="88.9" x2="116.84" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="QSPI-!CS" class="0">
@@ -14462,20 +14468,6 @@ VSSDSI connected to gnd</text>
 <pinref part="U1" gate="C" pin="VCAP_1"/>
 <wire x1="99.06" y1="35.56" x2="99.06" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="40.64" x2="127" y2="40.64" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="VREF+" class="0">
-<segment>
-<pinref part="U1" gate="C" pin="VREF+"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="127" y1="83.82" x2="106.68" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="83.82" x2="106.68" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="106.68" y1="83.82" x2="106.68" y2="81.28" width="0.1524" layer="91"/>
-<junction x="106.68" y="83.82"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="106.68" y1="83.82" x2="99.06" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="83.82" x2="99.06" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="OUT-Z1" class="0">
@@ -14616,34 +14608,6 @@ VSSDSI connected to gnd</text>
 <wire x1="81.28" y1="205.74" x2="78.74" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="PB5"/>
 <label x="78.74" y="205.74" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="OUT-C1" class="0">
-<segment>
-<wire x1="81.28" y1="203.2" x2="78.74" y2="203.2" width="0.1524" layer="91"/>
-<pinref part="U1" gate="A" pin="PB6"/>
-<label x="78.74" y="203.2" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="OUT-C2" class="0">
-<segment>
-<wire x1="81.28" y1="200.66" x2="78.74" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="U1" gate="A" pin="PB7"/>
-<label x="78.74" y="200.66" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="OUT-D1" class="0">
-<segment>
-<wire x1="81.28" y1="198.12" x2="78.74" y2="198.12" width="0.1524" layer="91"/>
-<pinref part="U1" gate="A" pin="PB8"/>
-<label x="78.74" y="198.12" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="OUT-D2" class="0">
-<segment>
-<wire x1="81.28" y1="195.58" x2="78.74" y2="195.58" width="0.1524" layer="91"/>
-<pinref part="U1" gate="A" pin="PB9"/>
-<label x="78.74" y="195.58" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="OTG_HS-D3" class="0">
@@ -14972,12 +14936,22 @@ VSSDSI connected to gnd</text>
 <pinref part="U1" gate="A" pin="PF6"/>
 <label x="149.86" y="160.02" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="JP2" gate="A" pin="11"/>
+<wire x1="347.98" y1="86.36" x2="353.06" y2="86.36" width="0.1524" layer="91"/>
+<label x="353.06" y="86.36" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="OUT-A2" class="0">
 <segment>
 <wire x1="149.86" y1="157.48" x2="147.32" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="PF7"/>
 <label x="149.86" y="157.48" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="A" pin="12"/>
+<wire x1="347.98" y1="83.82" x2="353.06" y2="83.82" width="0.1524" layer="91"/>
+<label x="353.06" y="83.82" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="OUT-A3" class="0">
@@ -14986,12 +14960,22 @@ VSSDSI connected to gnd</text>
 <pinref part="U1" gate="A" pin="PF8"/>
 <label x="149.86" y="154.94" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="JP2" gate="A" pin="13"/>
+<wire x1="347.98" y1="81.28" x2="353.06" y2="81.28" width="0.1524" layer="91"/>
+<label x="353.06" y="81.28" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="OUT-A4" class="0">
 <segment>
 <wire x1="149.86" y1="152.4" x2="147.32" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="PF9"/>
 <label x="149.86" y="152.4" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="A" pin="14"/>
+<wire x1="347.98" y1="78.74" x2="353.06" y2="78.74" width="0.1524" layer="91"/>
+<label x="353.06" y="78.74" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="FMC-SDNRAS" class="0">
@@ -15188,22 +15172,22 @@ VSSDSI connected to gnd</text>
 <net name="VIN" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="2"/>
-<wire x1="492.76" y1="96.52" x2="487.68" y2="96.52" width="0.1524" layer="91"/>
-<label x="487.68" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="327.66" y1="109.22" x2="322.58" y2="109.22" width="0.1524" layer="91"/>
+<label x="322.58" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="VOUT" class="0">
 <segment>
 <pinref part="JP2" gate="A" pin="1"/>
-<wire x1="513.08" y1="99.06" x2="518.16" y2="99.06" width="0.1524" layer="91"/>
-<label x="518.16" y="99.06" size="1.27" layer="95" xref="yes"/>
+<wire x1="347.98" y1="111.76" x2="353.06" y2="111.76" width="0.1524" layer="91"/>
+<label x="353.06" y="111.76" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="VUSB" class="0">
 <segment>
 <pinref part="JP2" gate="A" pin="2"/>
-<wire x1="513.08" y1="96.52" x2="518.16" y2="96.52" width="0.1524" layer="91"/>
-<label x="518.16" y="96.52" size="1.27" layer="95" xref="yes"/>
+<wire x1="347.98" y1="109.22" x2="353.06" y2="109.22" width="0.1524" layer="91"/>
+<label x="353.06" y="109.22" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="OUT-G3" class="0">
@@ -15255,6 +15239,121 @@ VSSDSI connected to gnd</text>
 <label x="149.86" y="243.84" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
+<net name="ETH-TX_P" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="20"/>
+<wire x1="347.98" y1="63.5" x2="353.06" y2="63.5" width="0.1524" layer="91"/>
+<label x="353.06" y="63.5" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="ETH-TX_N" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="19"/>
+<wire x1="347.98" y1="66.04" x2="353.06" y2="66.04" width="0.1524" layer="91"/>
+<label x="353.06" y="66.04" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="ETH-RX_P" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="18"/>
+<wire x1="347.98" y1="68.58" x2="353.06" y2="68.58" width="0.1524" layer="91"/>
+<label x="353.06" y="68.58" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="ETH-RX_N" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="17"/>
+<wire x1="347.98" y1="71.12" x2="353.06" y2="71.12" width="0.1524" layer="91"/>
+<label x="353.06" y="71.12" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="ETH-RXER" class="0">
+<segment>
+<pinref part="U1" gate="B" pin="PI10"/>
+<wire x1="355.6" y1="223.52" x2="358.14" y2="223.52" width="0.1524" layer="91"/>
+<label x="358.14" y="223.52" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="DSI-D0_P" class="0">
+<segment>
+<pinref part="U1" gate="B" pin="DSI_D0P"/>
+<wire x1="289.56" y1="162.56" x2="287.02" y2="162.56" width="0.1524" layer="91"/>
+<label x="287.02" y="162.56" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="DSI-D0_N" class="0">
+<segment>
+<pinref part="U1" gate="B" pin="DSI_D0N"/>
+<wire x1="289.56" y1="160.02" x2="287.02" y2="160.02" width="0.1524" layer="91"/>
+<label x="287.02" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="DSI-CK_P" class="0">
+<segment>
+<pinref part="U1" gate="B" pin="DSI_CKP"/>
+<wire x1="289.56" y1="157.48" x2="287.02" y2="157.48" width="0.1524" layer="91"/>
+<label x="287.02" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="DSI-CK_N" class="0">
+<segment>
+<pinref part="U1" gate="B" pin="DSI_CKN"/>
+<wire x1="289.56" y1="154.94" x2="287.02" y2="154.94" width="0.1524" layer="91"/>
+<label x="287.02" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="DSI-D1_P" class="0">
+<segment>
+<pinref part="U1" gate="B" pin="DSI_D1P"/>
+<wire x1="289.56" y1="152.4" x2="287.02" y2="152.4" width="0.1524" layer="91"/>
+<label x="287.02" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="DSI-D1_N" class="0">
+<segment>
+<pinref part="U1" gate="B" pin="DSI_D1N"/>
+<wire x1="289.56" y1="149.86" x2="287.02" y2="149.86" width="0.1524" layer="91"/>
+<label x="287.02" y="149.86" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="OUT-D1" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="PB6"/>
+<wire x1="81.28" y1="203.2" x2="78.74" y2="203.2" width="0.1524" layer="91"/>
+<label x="78.74" y="203.2" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="A" pin="16"/>
+<wire x1="347.98" y1="73.66" x2="353.06" y2="73.66" width="0.1524" layer="91"/>
+<label x="353.06" y="73.66" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="OUT-D2" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="PB7"/>
+<wire x1="81.28" y1="200.66" x2="78.74" y2="200.66" width="0.1524" layer="91"/>
+<label x="78.74" y="200.66" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="A" pin="15"/>
+<wire x1="347.98" y1="76.2" x2="353.06" y2="76.2" width="0.1524" layer="91"/>
+<label x="353.06" y="76.2" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="OUT-C1" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="PB8"/>
+<wire x1="81.28" y1="198.12" x2="78.74" y2="198.12" width="0.1524" layer="91"/>
+<label x="78.74" y="198.12" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="OUT-C2" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="PB9"/>
+<wire x1="81.28" y1="195.58" x2="78.74" y2="195.58" width="0.1524" layer="91"/>
+<label x="78.74" y="195.58" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -15294,6 +15393,9 @@ I dunno 3.8v?</text>
 <wire x1="294.64" y1="10.16" x2="294.64" y2="66.04" width="0.1524" layer="97" style="longdash"/>
 <wire x1="294.64" y1="66.04" x2="124.46" y2="66.04" width="0.1524" layer="97" style="longdash"/>
 <text x="127" y="68.58" size="2.54" layer="97">Power</text>
+<text x="381" y="205.74" size="2.54" layer="97">Reset Button</text>
+<text x="381" y="226.06" size="2.54" layer="97">USB mass storage
+mode button</text>
 </plain>
 <instances>
 <instance part="U2" gate="G$1" x="71.12" y="218.44"/>
