@@ -14476,6 +14476,11 @@ VSSDSI connected to gnd</text>
 <wire x1="81.28" y1="261.62" x2="78.74" y2="261.62" width="0.1524" layer="91"/>
 <label x="78.74" y="261.62" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="JP2" gate="A" pin="10"/>
+<wire x1="347.98" y1="88.9" x2="353.06" y2="88.9" width="0.1524" layer="91"/>
+<label x="353.06" y="88.9" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="ETH-REF_CLK" class="0">
 <segment>
@@ -14517,6 +14522,11 @@ VSSDSI connected to gnd</text>
 <pinref part="U1" gate="A" pin="PA6"/>
 <wire x1="81.28" y1="246.38" x2="78.74" y2="246.38" width="0.1524" layer="91"/>
 <label x="78.74" y="246.38" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="A" pin="9"/>
+<wire x1="347.98" y1="91.44" x2="353.06" y2="91.44" width="0.1524" layer="91"/>
+<label x="353.06" y="91.44" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="ETH-DV" class="0">
