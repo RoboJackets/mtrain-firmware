@@ -32,7 +32,7 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -3138,16 +3138,16 @@ Your Eurocircuits Team
 <element name="R26" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="100k" x="3" y="52.125" rot="R270">
 <attribute name="SPICEPREFIX" value="R" x="3" y="52.125" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R23" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="42.2k" x="4.25" y="50.375" rot="MR0">
+<element name="R23" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="56k" x="4.25" y="50.375" rot="MR0">
 <attribute name="SPICEPREFIX" value="R" x="4.25" y="50.375" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="C40" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="22uF 10V" x="7.75" y="46.5" rot="R90">
 <attribute name="SPICEPREFIX" value="C" x="7.75" y="46.5" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R27" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="160k" x="2.875" y="49.375" rot="R90">
+<element name="R27" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="160k 1%" x="2.875" y="49.375" rot="R90">
 <attribute name="SPICEPREFIX" value="R" x="2.875" y="49.375" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="75k" x="2.875" y="47.25" rot="R90">
+<element name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="47k 1%" x="2.875" y="47.25" rot="R90">
 <attribute name="SPICEPREFIX" value="R" x="2.875" y="47.25" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="D1" library="mchair" package="SOT1061" value="PMEG3020CPA,115" x="4" y="52.125" rot="MR180"/>
