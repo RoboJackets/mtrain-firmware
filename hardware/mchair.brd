@@ -172,8 +172,6 @@ MODE</text>
 <circle x="56" y="-15" radius="0" width="0" layer="51"/>
 <circle x="-30" y="70" radius="0" width="0" layer="51"/>
 <circle x="56" y="70" radius="0" width="0" layer="51"/>
-<text x="-6.25" y="56.75" size="1" layer="51">DON'T FORGET ADD 
-CUSTOM SOLDERMASKS</text>
 </plain>
 <libraries>
 <library name="mchair">
@@ -1052,7 +1050,7 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 <wire x1="1.5" y1="-2.5" x2="1.5" y2="2.5" width="0.2" layer="51"/>
 <text x="-1.5" y="3.25" size="1" layer="25">&gt;NAME</text>
 <text x="-1.5" y="-2.75" size="1" layer="27" align="top-left">&gt;VALUE</text>
-<smd name="456" x="-1" y="-1.25" dx="1.95" dy="0.6" layer="1" rot="R90"/>
+<smd name="456" x="-1" y="-1.25" dx="1.95" dy="0.6" layer="1" rot="R90" stop="no" cream="no"/>
 <polygon width="0" layer="1">
 <vertex x="-1.8" y="-2.225"/>
 <vertex x="-0.7" y="-2.225"/>
@@ -1081,7 +1079,63 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 <vertex x="1.3" y="-0.525"/>
 <vertex x="1.8" y="-0.525"/>
 </polygon>
-<smd name="789" x="1" y="-1.25" dx="1.95" dy="0.6" layer="1" rot="R90"/>
+<smd name="789" x="1" y="-1.25" dx="1.95" dy="0.6" layer="1" rot="R90" stop="no" cream="no"/>
+<polygon width="0.2" layer="29">
+<vertex x="-1.8" y="-2.225"/>
+<vertex x="-0.7" y="-2.225"/>
+<vertex x="-0.7" y="-0.275"/>
+<vertex x="-1.8" y="-0.275"/>
+<vertex x="-1.8" y="-0.525"/>
+<vertex x="-1.3" y="-0.525"/>
+<vertex x="-1.3" y="-1.125"/>
+<vertex x="-1.8" y="-1.125"/>
+<vertex x="-1.8" y="-1.375"/>
+<vertex x="-1.3" y="-1.365"/>
+<vertex x="-1.3" y="-1.975"/>
+<vertex x="-1.8" y="-1.975"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="-1.8" y="-2.225"/>
+<vertex x="-0.7" y="-2.225"/>
+<vertex x="-0.7" y="-0.275"/>
+<vertex x="-1.8" y="-0.275"/>
+<vertex x="-1.8" y="-0.525"/>
+<vertex x="-1.3" y="-0.525"/>
+<vertex x="-1.3" y="-1.125"/>
+<vertex x="-1.8" y="-1.125"/>
+<vertex x="-1.8" y="-1.375"/>
+<vertex x="-1.3" y="-1.365"/>
+<vertex x="-1.3" y="-1.975"/>
+<vertex x="-1.8" y="-1.975"/>
+</polygon>
+<polygon width="0.2" layer="29">
+<vertex x="1.8" y="-0.275"/>
+<vertex x="0.7" y="-0.275"/>
+<vertex x="0.7" y="-2.225"/>
+<vertex x="1.8" y="-2.225"/>
+<vertex x="1.8" y="-1.975"/>
+<vertex x="1.3" y="-1.975"/>
+<vertex x="1.3" y="-1.375"/>
+<vertex x="1.8" y="-1.375"/>
+<vertex x="1.8" y="-1.125"/>
+<vertex x="1.3" y="-1.135"/>
+<vertex x="1.3" y="-0.525"/>
+<vertex x="1.8" y="-0.525"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="1.8" y="-0.275"/>
+<vertex x="0.7" y="-0.275"/>
+<vertex x="0.7" y="-2.225"/>
+<vertex x="1.8" y="-2.225"/>
+<vertex x="1.8" y="-1.975"/>
+<vertex x="1.3" y="-1.975"/>
+<vertex x="1.3" y="-1.375"/>
+<vertex x="1.8" y="-1.375"/>
+<vertex x="1.8" y="-1.125"/>
+<vertex x="1.3" y="-1.135"/>
+<vertex x="1.3" y="-0.525"/>
+<vertex x="1.8" y="-0.525"/>
+</polygon>
 </package>
 <package name="SOT1061">
 <smd name="2" x="-0.65" y="0.8" dx="0.5" dy="0.4" layer="1" rot="R90"/>
