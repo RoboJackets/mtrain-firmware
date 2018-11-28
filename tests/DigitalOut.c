@@ -1,5 +1,3 @@
 #include "DigitalOut.h"
 
-int main(void)
-{
-}
+int main(void) {}

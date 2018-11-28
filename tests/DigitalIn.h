@@ -44,8 +44,7 @@ typedef enum { PUSH_PULL = GPIO_MODE_OUTPUT_PP, OPEN_DRAIN = GPIO_MODE_OUTPUT_OD
 // https://www.st.com/resource/en/datasheet/stm32f765bg.pdf Page 162-163
 typedef enum { LOW = GPIO_SPEED_FREQ_LOW, MEDIUM = GPIO_SPEED_FREQ_MEDIUM, HIGH = GPIO_SPEED_FREQ_HIGH, VERY_HIGH = GPIO_SPEED_FREQ_VERY_HIGH } speed;
 
-// Inspired by https://os.mbed.com/docs/v5.10/apis/digitalout.html
-void digitalout_init_config(pin_name p, pull_type t, output_mode o, speed s);
-void digitalout_init(pin_name p);
-void digitalout_write(pin_name p, GPIO_PinState s);
-GPIO_PinState digitalout_read(pin_name p);
+// Inspired by https://os.mbed.com/docs/v5.10/apis/digitalin.html
+void digitalin_init_config(pin_name p, pull_type t, output_mode o, speed s);
+void digitalin_init(pin_name p);
+GPIO_PinState digitalin_read(pin_name p);
