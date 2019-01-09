@@ -47,5 +47,6 @@ typedef enum { LOW = GPIO_SPEED_FREQ_LOW, MEDIUM = GPIO_SPEED_FREQ_MEDIUM, HIGH 
 // Inspired by https://os.mbed.com/docs/v5.10/apis/digitalout.html
 void digitalout_init_config(pin_name p, pull_type t, output_mode o, speed s);
 void digitalout_init(pin_name p);
+void digitalout_deinit(pin_name p);
 void digitalout_write(pin_name p, GPIO_PinState s);
 GPIO_PinState digitalout_read(pin_name p);
