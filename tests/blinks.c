@@ -22,7 +22,7 @@ int main(void)
   while (1) {
     HAL_Delay(100);
     HAL_GPIO_WritePin(LED_PORT, leds[id], GPIO_PIN_RESET);
-    if (id == 4) {
+    if (id == 1) {
       forward = 0;
     } else if (id == 0) {
       forward = 1;
