@@ -7,7 +7,7 @@ endef
 all:
 	$(call cmake_build_target, all)
 
-FIRMWARE_TESTS = blink flash usb_serial digital_out digital_in
+FIRMWARE_TESTS = blink flash usb_serial digital_out digital_in blink2
 $(FIRMWARE_TESTS:%=test-%):
 	$(call cmake_build_target, $(@F))
 $(FIRMWARE_TESTS:%=test-%-prog):
