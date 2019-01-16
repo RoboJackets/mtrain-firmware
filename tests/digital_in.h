@@ -45,7 +45,6 @@ typedef enum { PUSH_PULL = GPIO_MODE_OUTPUT_PP, OPEN_DRAIN = GPIO_MODE_OUTPUT_OD
 typedef enum { LOW = GPIO_SPEED_FREQ_LOW, MEDIUM = GPIO_SPEED_FREQ_MEDIUM, HIGH = GPIO_SPEED_FREQ_HIGH, VERY_HIGH = GPIO_SPEED_FREQ_VERY_HIGH } speed;
 
 // Inspired by https://os.mbed.com/docs/v5.10/apis/digitalin.html
-void digitalin_init_config(pin_name p, pull_type t, speed s);
 void digitalin_init(pin_name p);
 void digitalin_deinit(pin_name p);
 GPIO_PinState digitalin_read(pin_name p);

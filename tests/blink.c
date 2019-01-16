@@ -1,12 +1,7 @@
 #include "mtrain.h"
-#include "digital_out.h"
-//#include "digital_in.h"
 
 int main(void)
 {
-  digitalout_init(Pin3);
-  //digitalin_init(Pin4);
-  
   GPIO_InitTypeDef GPIO_InitStruct;
   
   uint32_t leds[4] = {LED1_PIN, LED2_PIN, LED3_PIN, LED4_PIN};
