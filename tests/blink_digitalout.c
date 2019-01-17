@@ -3,6 +3,12 @@
 
 int main(void)
 {
+  //Basic setup
+  digitalout_init(PIN36);
+  digitalout_init(PIN35);
+  digitalout_init(PIN34);
+  digitalout_init(PIN33);
+    
   // Basic Init Testing
   digitalout_init(LED1);
   digitalout_init(LED2);
@@ -41,10 +47,6 @@ int main(void)
     HAL_Delay(250);
     
     // Read Testing
-    digitalout_init(PIN36);
-    digitalout_init(PIN35);
-    digitalout_init(PIN34);
-    digitalout_init(PIN33);
     digitalout_write(LED1, digitalout_read(PIN36));
     digitalout_write(LED2, digitalout_read(PIN35));
     digitalout_write(LED3, digitalout_read(PIN34));
