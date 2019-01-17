@@ -5,6 +5,8 @@ function(add_test test_file)
 
     add_executable(${test_name}.elf EXCLUDE_FROM_ALL
         ${test_file}
+        digital_out.c
+        digital_in.c
         # ${CMAKE_SOURCE_DIR}/BSP/Src/stm32f7xx_it.c #TODO: Fix
     )
 
