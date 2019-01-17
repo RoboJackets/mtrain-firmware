@@ -5,8 +5,6 @@ function(add_test test_file)
 
     add_executable(${test_name}.elf EXCLUDE_FROM_ALL
         ${test_file}
-        digital_out.c
-        digital_in.c
         # ${CMAKE_SOURCE_DIR}/BSP/Src/stm32f7xx_it.c #TODO: Fix
     )
 
@@ -25,6 +23,7 @@ endfunction()
 
 # TODO: better way to do this without redefining every test
 add_test("blink.c")
-add_test("blinks.c")
+add_test("blink_digitalout.c")
+add_test("blink_digitalin.c")
 add_test("flash.c")
 add_test("usb_serial.c")

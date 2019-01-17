@@ -16,10 +16,10 @@ int main(void)
   digitalout_deinit(LED4);
   
   // Complex Init Testing
-  digitalout_init_config(LED1, PULL_DOWN, PUSH_PULL, LOW);
-  digitalout_init_config(LED2, PULL_DOWN, PUSH_PULL, LOW);
-  digitalout_init_config(LED3, PULL_DOWN, PUSH_PULL, LOW);
-  digitalout_init_config(LED4, PULL_DOWN, PUSH_PULL, LOW);
+  digitalout_init_ex(LED1, PULL_DOWN, PUSH_PULL, LOW);
+  digitalout_init_ex(LED2, PULL_DOWN, PUSH_PULL, LOW);
+  digitalout_init_ex(LED3, PULL_DOWN, PUSH_PULL, LOW);
+  digitalout_init_ex(LED4, PULL_DOWN, PUSH_PULL, LOW);
   while (1) {
     // Normal Write Testing
     // digitalout_write(LED1, GPIO_PIN_RESET);

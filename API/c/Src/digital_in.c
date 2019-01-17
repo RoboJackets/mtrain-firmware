@@ -4,7 +4,7 @@ void digitalin_init(pin_name pin)  {
     GPIO_InitTypeDef pin_structure;
     pin_structure.Pin = pin.number;
     pin_structure.Mode = GPIO_MODE_INPUT;
-    pin_structure.Pull = GPIO_NOPULL;
+    pin_structure.Pull = PULL_DOWN;
     pin_structure.Speed = GPIO_SPEED_FREQ_LOW;
     
     HAL_GPIO_Init(pin.bank, &pin_structure);
