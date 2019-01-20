@@ -3,12 +3,6 @@
 
 int main(void)
 {
-  //Basic setup
-  digitalout_init(PIN36);
-  digitalout_init(PIN35);
-  digitalout_init(PIN34);
-  digitalout_init(PIN33);
-    
   // Basic Init Testing
   digitalout_init(LED1);
   digitalout_init(LED2);
@@ -22,10 +16,10 @@ int main(void)
   // digitalout_deinit(LED4);
   
   // Complex Init Testing
-  // digitalout_init_ex(LED1, PULL_DOWN, PUSH_PULL, LOW);
-  // digitalout_init_ex(LED2, PULL_DOWN, PUSH_PULL, LOW);
-  // digitalout_init_ex(LED3, PULL_DOWN, PUSH_PULL, LOW);
-  // digitalout_init_ex(LED4, PULL_DOWN, PUSH_PULL, LOW);
+  digitalout_init_ex(LED1, PULL_DOWN, PUSH_PULL, LOW);
+  digitalout_init_ex(LED2, PULL_DOWN, PUSH_PULL, LOW);
+  digitalout_init_ex(LED3, PULL_DOWN, PUSH_PULL, LOW);
+  digitalout_init_ex(LED4, PULL_DOWN, PUSH_PULL, LOW);
   while (1) {
     // Normal Write Testing
     // digitalout_write(LED1, GPIO_PIN_RESET);
@@ -44,13 +38,6 @@ int main(void)
     // digitalout_toggle(LED2);
     // digitalout_toggle(LED3);
     // digitalout_toggle(LED4);
-    // HAL_Delay(250);
-
-    // Read Testing
-    // digitalout_write(LED1, digitalout_read(PIN36));
-    // digitalout_write(LED2, digitalout_read(PIN35));
-    // digitalout_write(LED3, digitalout_read(PIN34));
-    // digitalout_write(LED4, digitalout_read(PIN33));
     // HAL_Delay(250);
   }
 }

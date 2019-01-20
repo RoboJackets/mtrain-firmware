@@ -3,8 +3,8 @@
 void digitalout_init(pin_name pin) {
     GPIO_InitTypeDef pin_structure;
     pin_structure.Pin = pin.number;
-    pin_structure.Mode = OPEN_DRAIN;
-    pin_structure.Pull = PULL_UP;
+    pin_structure.Mode = GPIO_MODE_OUTPUT_PP;
+    pin_structure.Pull = GPIO_NOPULL;
     pin_structure.Speed = GPIO_SPEED_FREQ_LOW;
     
     HAL_GPIO_Init(pin.bank, &pin_structure);
@@ -30,8 +30,4 @@ void digitalout_write(pin_name pin, GPIO_PinState state) {
 
 void digitalout_toggle(pin_name pin) {
     return HAL_GPIO_TogglePin(pin.bank, pin.number);
-}
-
-GPIO_PinState digitalout_read(pin_name pin) {
-    return HAL_GPIO_ReadPin(pin.bank, pin.number);
 }

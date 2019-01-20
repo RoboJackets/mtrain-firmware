@@ -10,4 +10,3 @@ void digitalout_deinit(pin_name pin);
 
 void digitalout_write(pin_name pin, GPIO_PinState state);
 void digitalout_toggle(pin_name pin);
-GPIO_PinState digitalout_read(pin_name pin);

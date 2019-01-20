@@ -23,7 +23,6 @@ endfunction()
 
 # TODO: better way to do this without redefining every test
 add_test("blink.c")
-add_test("digitalout.c")
-add_test("digitalin.c")
+add_test("gpio.c")
 add_test("flash.c")
 add_test("usb_serial.c")
