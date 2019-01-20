@@ -8,5 +8,5 @@ void digitalout_init(pin_name pin);
 void digitalout_init_ex(pin_name pin, pull_type type, pin_mode mode, pin_speed speed);
 void digitalout_deinit(pin_name pin);
 
-void digitalout_write(pin_name pin, GPIO_PinState state);
+void digitalout_write(pin_name pin, int state);
 void digitalout_toggle(pin_name pin);

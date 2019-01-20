@@ -24,8 +24,8 @@ void digitalout_deinit(pin_name pin) {
     HAL_GPIO_DeInit(pin.bank, pin.number);
 }
 
-void digitalout_write(pin_name pin, GPIO_PinState state) {
-    HAL_GPIO_WritePin(pin.bank, pin.number, state);
+void digitalout_write(pin_name pin, int state) {
+    HAL_GPIO_WritePin(pin.bank, pin.number, state != 0);
 }
 
 void digitalout_toggle(pin_name pin) {
