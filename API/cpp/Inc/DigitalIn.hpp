@@ -2,7 +2,9 @@
 
 class DigitalIn {
 public:
-    DigitalIn(PinName pin, PullType pull = PullType::PullNone);
+    DigitalIn(PinName pin, PullType pull = GPIO_NOPULL);
+    
+    ~DigitalIn();
 
     bool read();
 

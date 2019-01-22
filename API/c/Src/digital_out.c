@@ -29,5 +29,5 @@ void digitalout_write(pin_name pin, int state) {
 }
 
 void digitalout_toggle(pin_name pin) {
-    return HAL_GPIO_TogglePin(pin.bank, pin.number);
+    HAL_GPIO_TogglePin(pin.bank, pin.number);
 }
