@@ -1,4 +1,7 @@
-#include "mtrain.h"
+#ifndef __DIGITAL_OUT_H
+#define __DIGITAL_OUT_H
+
+#include "pin_defs.h"
 
 typedef enum { PUSH_PULL = GPIO_MODE_OUTPUT_PP, OPEN_DRAIN = GPIO_MODE_OUTPUT_OD } pin_mode;
 
@@ -10,3 +13,5 @@ void digitalout_deinit(pin_name pin);
 
 void digitalout_write(pin_name pin, int state);
 void digitalout_toggle(pin_name pin);
+
+#endif

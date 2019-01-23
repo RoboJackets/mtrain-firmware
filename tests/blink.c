@@ -1,5 +1,4 @@
 #include "mtrain.h"
-#include "digital_out.h"
 
 // Tests digital out using onboard LEDs in a looping pattern
 int main(void)

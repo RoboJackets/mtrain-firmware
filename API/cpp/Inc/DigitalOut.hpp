@@ -1,4 +1,6 @@
-#include "mtrain.hpp"
+#pragma once
+
+#include "PinDefs.hpp"
 
 typedef enum { PUSH_PULL = GPIO_MODE_OUTPUT_PP, OPEN_DRAIN = GPIO_MODE_OUTPUT_OD } PinMode;
 

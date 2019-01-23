@@ -1,6 +1,4 @@
 #include "mtrain.h"
-#include "digital_out.h"
-#include "digital_in.h"
 
 // Tests digital in using input on pins 33-36 and digital out using onboard LEDs
 int main(void)
