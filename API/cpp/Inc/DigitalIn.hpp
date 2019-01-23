@@ -4,7 +4,7 @@
 
 class DigitalIn {
 public:
-    DigitalIn(PinName pin, PullType pull = GPIO_NOPULL);
+    DigitalIn(PinName pin, PullType pull = PullType::PullNone);
     
     ~DigitalIn();
 
