@@ -31,3 +31,7 @@ void digitalout_write(pin_name pin, int state) {
 void digitalout_toggle(pin_name pin) {
     HAL_GPIO_TogglePin(pin.port, pin.pin);
 }
+
+int digitalout_read(pin_name pin) {
+    return HAL_GPIO_ReadPin(pin.port, pin.pin);
+}

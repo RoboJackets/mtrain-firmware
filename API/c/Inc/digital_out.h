@@ -14,4 +14,6 @@ void digitalout_deinit(pin_name pin);
 void digitalout_write(pin_name pin, int state);
 void digitalout_toggle(pin_name pin);
 
+int digitalout_read(pin_name p);
+
 #endif

@@ -8,18 +8,24 @@ typedef enum { LOW = GPIO_SPEED_FREQ_LOW, MEDIUM = GPIO_SPEED_FREQ_MEDIUM, HIGH 
 
 class DigitalOut {
 public:
-    DigitalOut(PinName pin, PullType pull = PullType::PullNone, PinMode mode = PinMode::PUSH_PULL, PinSpeed speed = PinSpeed::LOW);
+    DigitalOut(PinName pin, PullType pull = PullType::PullNone, PinMode mode = PinMode::PUSH_PULL, PinSpeed speed = PinSpeed::LOW, bool inverted = false);
     
     ~DigitalOut();
 
-    void write(int state);
+    void write(bool state);
     void toggle();
+    
+    bool read();
+    
+    void operator =(bool rhs) {
+        this->write(rhs);
+    }
 
     operator bool() {
-        return PinState != 0;
+        return read();
     }
 
 protected:
     PinName pin;
-    int PinState;
+    bool inverted;
 };
