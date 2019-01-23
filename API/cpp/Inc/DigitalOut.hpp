@@ -2,9 +2,17 @@
 
 #include "PinDefs.hpp"
 
-typedef enum { PUSH_PULL = GPIO_MODE_OUTPUT_PP, OPEN_DRAIN = GPIO_MODE_OUTPUT_OD } PinMode;
+typedef enum {
+    PUSH_PULL = GPIO_MODE_OUTPUT_PP,
+    OPEN_DRAIN = GPIO_MODE_OUTPUT_OD
+} PinMode;
 
-typedef enum { LOW = GPIO_SPEED_FREQ_LOW, MEDIUM = GPIO_SPEED_FREQ_MEDIUM, HIGH = GPIO_SPEED_FREQ_HIGH, VERY_HIGH = GPIO_SPEED_FREQ_VERY_HIGH } PinSpeed;
+typedef enum {
+    LOW = GPIO_SPEED_FREQ_LOW,
+    MEDIUM = GPIO_SPEED_FREQ_MEDIUM,
+    HIGH = GPIO_SPEED_FREQ_HIGH,
+    VERY_HIGH = GPIO_SPEED_FREQ_VERY_HIGH
+} PinSpeed;
 
 class DigitalOut {
 public:
@@ -27,7 +35,7 @@ public:
     
     // Overloads assignment operation, writes pin state to true (high) or false (low), opposite if inverted
     void operator =(bool rhs) {
-        this->write(rhs);
+        write(rhs);
     }
 
     // Overloads bool operation, returns pin state as true (high) or false (low)
