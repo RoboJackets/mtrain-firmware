@@ -22,5 +22,5 @@ function(add_test test_file)
 endfunction()
 
 # TODO: better way to do this without redefining every test
-add_test("blink2.cpp")
-add_test("gpio2.cpp")
+add_test("blink.cpp")
+add_test("gpio.cpp")
