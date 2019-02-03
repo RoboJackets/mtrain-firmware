@@ -31,4 +31,11 @@ void interruptin_init_ex(pin_name pin, pull_type pull, interrupt_mode mode);
  */
 void interruptin_deinit(pin_name pin);
 
+/** Read current value of pin
+ *
+ * @param pin Pin def external to board
+ * @return 1 (high) or 0 (low)
+ */
+int digitalin_read(pin_name pin);
+
 #endif
