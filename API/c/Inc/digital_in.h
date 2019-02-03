@@ -14,7 +14,7 @@ void digitalin_init(pin_name pin);
 /** Configures GPIO pin for digital in
  *
  * @param pin Pin def external to board
- * @param pull Pin pull type
+ * @param pull Pin pull type (pull up, pull down, or no pull)
  */
 void digitalin_init_ex(pin_name pin, pull_type pull);
 

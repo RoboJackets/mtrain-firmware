@@ -1,6 +1,6 @@
 #include "digital_in.h"
 
-void digitalin_init(pin_name pin)  {
+void digitalin_init(pin_name pin) {
     GPIO_InitTypeDef pin_structure;
     pin_structure.Pin = pin.pin;
     pin_structure.Mode = GPIO_MODE_INPUT;
@@ -9,7 +9,7 @@ void digitalin_init(pin_name pin)  {
     HAL_GPIO_Init(pin.port, &pin_structure);
 }
 
-void digitalin_init_ex(pin_name pin, pull_type pull)  {
+void digitalin_init_ex(pin_name pin, pull_type pull) {
     GPIO_InitTypeDef pin_structure;
     pin_structure.Pin = pin.pin;
     pin_structure.Mode = GPIO_MODE_INPUT;

@@ -15,9 +15,9 @@ typedef enum {
     VERY_HIGH = GPIO_SPEED_FREQ_VERY_HIGH
 } pin_speed;
 
-/** Configures GPIO pin for digital out, push pull
+/** Configures GPIO pin for digital out
  *
- * Defaults to push-pull mode, no pull type, low gpio frequency
+ * Defaults to push-pull mode, no pull type, and low gpio frequency
  *
  * @param pin Pin def external to board
  */
@@ -26,9 +26,9 @@ void digitalout_init(pin_name pin);
 /** Configures GPIO pin for digital out
  *
  * @param pin Pin def external to board
- * @param pull Pin pull type
+ * @param pull Pin pull type (pull up, pull down, or no pull)
  * @param mode Output mode (push-pull or open-drain)
- * @param speed GPIO frequency
+ * @param speed GPIO frequency (low, medium, high, or very high)
  */
 void digitalout_init_ex(pin_name pin, pull_type pull,
     pin_mode mode, pin_speed speed);
@@ -42,8 +42,9 @@ void digitalout_deinit(pin_name pin);
 /** Change output state of pin
  *
  * @param pin Pin def external to board
- * @param state Set output value of pin (0 or 1)
- *              In open-drain 0 is high-z, 1 is drive low
+ * @param state Output value of pin
+ *              push-pull:  0 (low) or 1 (high),
+ *              open-drain: 0 (high-z) or 1 (drive low)
  */
 void digitalout_write(pin_name pin, int state);
 
