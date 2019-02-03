@@ -18,7 +18,7 @@ typedef enum {
 /** Configures GPIO pin for digital out, push pull
  *
  * Defaults to push-pull mode, no pull type, low gpio frequency
- * 
+ *
  * @param pin Pin def external to board
  */
 void digitalout_init(pin_name pin);
@@ -43,7 +43,7 @@ void digitalout_deinit(pin_name pin);
  *
  * @param pin Pin def external to board
  * @param state Set output value of pin (0 or 1)
- *     In open-drain 0 is high-z, 1 is drive low
+ *              In open-drain 0 is high-z, 1 is drive low
  */
 void digitalout_write(pin_name pin, int state);
 
@@ -54,8 +54,8 @@ void digitalout_write(pin_name pin, int state);
 void digitalout_toggle(pin_name pin);
 
 /** Read current value of pin
- * 
- * @param pin  Pin def external to board
+ *
+ * @param pin Pin def external to board
  * @return 1 (high) or 0 (low)
  */
 int digitalout_read(pin_name p);
