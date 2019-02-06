@@ -17,7 +17,7 @@ public:
      * @param mode Interrupt mode (rising edge, falling edge, or both edges)
      */
     InterruptIn(PinName pin, PullType pull = PullType::PullNone,
-        InterruptMode mode = InterruptMode::InterruptRisingFalling);
+        InterruptMode mode = InterruptMode::InterruptRising);
     
     ~InterruptIn();
     
