@@ -14,16 +14,19 @@ typedef enum {
  * Defaults to no pull type and both edge detection
  *
  * @param pin Pin def external to board
+ * @param function Function linked to interrupt
  */
-void interruptin_init(pin_name pin);
+void interruptin_init(pin_name pin, void (*function)(pin_name));
 
 /** Configures GPIO pin for interrupt in
  *
  * @param pin Pin def external to board
  * @param pull Pin pull type (pull up, pull down, or no pull)
  * @param mode Interrupt mode (rising edge, falling edge, or both edges)
+ * @param function Function linked to interrupt
  */
-void interruptin_init_ex(pin_name pin, pull_type pull, interrupt_mode mode);
+void interruptin_init_ex(pin_name pin, pull_type pull, interrupt_mode mode,
+    void (*function)(pin_name));
 
 /** Deinit GPIO pin
  *
