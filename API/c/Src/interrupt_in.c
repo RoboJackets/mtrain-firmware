@@ -21,8 +21,9 @@ void interruptin_init(pin_name pin, void (*function)()) {
     pin_structure.Pull = GPIO_NOPULL;
     
     HAL_GPIO_Init(pin.port, &pin_structure);
+    
     interrupt0 = function;
-    HAL_NVIC_SetPriority(EXTI0_IRQn, 15, 15);
+    HAL_NVIC_SetPriority(EXTI0_IRQn, 10, 10);
     HAL_NVIC_EnableIRQ(EXTI0_IRQn);
 }
 
@@ -34,8 +35,9 @@ void interruptin_init_ex(pin_name pin, pull_type pull, interrupt_mode mode,
     pin_structure.Pull = pull;
     
     HAL_GPIO_Init(pin.port, &pin_structure);
+    
     interrupt0 = function;
-    HAL_NVIC_SetPriority(EXTI0_IRQn, 15, 15);
+    HAL_NVIC_SetPriority(EXTI0_IRQn, 10, 10);
     HAL_NVIC_EnableIRQ(EXTI0_IRQn);
 }
 
