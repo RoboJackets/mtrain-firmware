@@ -11,4 +11,4 @@ target_include_directories(STM32F7_API_C PUBLIC
     ./
 )
 
-target_link_libraries(STM32F7_API_C PUBLIC STM32F7xx_HAL)
+target_link_libraries(STM32F7_API_C PUBLIC STM32F7xx_HAL STM32F7xx)

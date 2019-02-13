@@ -16,7 +16,7 @@ typedef enum {
  * @param pin Pin def external to board
  * @param function Function linked to interrupt
  */
-void interruptin_init(pin_name pin, void (*function)(pin_name));
+void interruptin_init(pin_name pin, void (*function)());
 
 /** Configures GPIO pin for interrupt in
  *
@@ -26,7 +26,7 @@ void interruptin_init(pin_name pin, void (*function)(pin_name));
  * @param function Function linked to interrupt
  */
 void interruptin_init_ex(pin_name pin, pull_type pull, interrupt_mode mode,
-    void (*function)(pin_name));
+    void (*function)());
 
 /** Deinit GPIO pin
  *
