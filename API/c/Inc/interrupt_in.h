@@ -41,4 +41,14 @@ void interruptin_deinit(pin_name pin);
  */
 int digitalin_read(pin_name pin);
 
+void interrupt_config(uint16_t pin, void (*function)());
+
+void EXTI0_IRQHandler(void);
+
+void EXTI4_IRQHandler(void);
+
+void EXTI9_5_IRQHandler(void);
+
+void EXTI15_10_IRQHandler(void);
+
 #endif
