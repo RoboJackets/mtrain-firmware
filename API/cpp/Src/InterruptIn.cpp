@@ -1,6 +1,7 @@
 #include "InterruptIn.hpp"
 
-InterruptIn::InterruptIn(PinName pin, void (*function)(), PullType pull, InterruptMode mode) : pin(pin) {
+InterruptIn::InterruptIn(PinName pin, InterruptFunction function, PullType pull,
+    InterruptMode mode) : pin(pin), function(function) {
     GPIO_InitTypeDef pin_structure;
     pin_structure.Pin = pin.pin;
     pin_structure.Mode = mode;

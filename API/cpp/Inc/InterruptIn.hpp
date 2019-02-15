@@ -8,6 +8,8 @@ typedef enum {
     InterruptRisingFalling = GPIO_MODE_IT_RISING_FALLING
 } InterruptMode;
 
+typedef void (*InterruptFunction)();
+
 class InterruptIn {
 public:
     /** Configures GPIO pin for interrupt in
@@ -17,7 +19,7 @@ public:
      * @param mode Interrupt mode (rising edge, falling edge, or both edges)
      * @param function Function linked to interrupt
      */
-    InterruptIn(PinName pin, void (*function)(), PullType pull = PullType::PullNone,
+    InterruptIn(PinName pin, InterruptFunction function, PullType pull = PullType::PullNone,
         InterruptMode mode = InterruptMode::InterruptRising);
     
     ~InterruptIn();
@@ -34,4 +36,5 @@ public:
 
 protected:
     PinName pin;
+    InterruptFunction function;
 };
