@@ -9,6 +9,22 @@ typedef enum {
     INTERRUPT_RISING_FALLING = GPIO_MODE_IT_RISING_FALLING
 } interrupt_mode;
 
+/** Handles interrupts for interrupt line 0
+ */
+void EXTI0_IRQHandler(void);
+
+/** Handles interrupts for interrupt line 4
+ */
+void EXTI4_IRQHandler(void);
+
+/** Handles interrupts for interrupt lines 5 to 9
+ */
+void EXTI9_5_IRQHandler(void);
+
+/** Handles interrupts for interrupt lines 10 to 15
+ */
+void EXTI15_10_IRQHandler(void);
+
 /** Configures GPIO pin for interrupt in
  *
  * Defaults to no pull type and both edge detection
@@ -40,21 +56,5 @@ void interruptin_deinit(pin_name pin);
  * @return 1 (high) or 0 (low)
  */
 int digitalin_read(pin_name pin);
-
-/** Handles interrupts for interrupt line 0
- */
-void EXTI0_IRQHandler(void);
-
-/** Handles interrupts for interrupt line 4
- */
-void EXTI4_IRQHandler(void);
-
-/** Handles interrupts for interrupt lines 5 to 9
- */
-void EXTI9_5_IRQHandler(void);
-
-/** Handles interrupts for interrupt lines 10 to 15
- */
-void EXTI15_10_IRQHandler(void);
 
 #endif
