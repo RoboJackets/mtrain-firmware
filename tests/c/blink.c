@@ -1,6 +1,7 @@
 #include "mtrain.h"
 
-/**
+/** digitalout test
+ *
  * Blink LEDs back and forth
  */
 int main(void)

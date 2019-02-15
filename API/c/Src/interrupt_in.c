@@ -52,6 +52,50 @@ void interrupt_config(uint16_t pin, void (*function)()) {
         interrupt4 = function;
         HAL_NVIC_SetPriority(EXTI4_IRQn, 10, 10);
         HAL_NVIC_EnableIRQ(EXTI4_IRQn);
+    } else if (pin == GPIO_PIN_5) {
+        interrupt5 = function;
+        HAL_NVIC_SetPriority(EXTI9_5_IRQn, 10, 10);
+        HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
+    } else if (pin == GPIO_PIN_6) {
+        interrupt6 = function;
+        HAL_NVIC_SetPriority(EXTI9_5_IRQn, 10, 10);
+        HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
+    } else if (pin == GPIO_PIN_7) {
+        interrupt7 = function;
+        HAL_NVIC_SetPriority(EXTI9_5_IRQn, 10, 10);
+        HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
+    } else if (pin == GPIO_PIN_8) {
+        interrupt8 = function;
+        HAL_NVIC_SetPriority(EXTI9_5_IRQn, 10, 10);
+        HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
+    } else if (pin == GPIO_PIN_9) {
+        interrupt9 = function;
+        HAL_NVIC_SetPriority(EXTI9_5_IRQn, 10, 10);
+        HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
+    } else if (pin == GPIO_PIN_10) {
+        interrupt10 = function;
+        HAL_NVIC_SetPriority(EXTI15_10_IRQn, 10, 10);
+        HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
+    } else if (pin == GPIO_PIN_11) {
+        interrupt11 = function;
+        HAL_NVIC_SetPriority(EXTI15_10_IRQn, 10, 10);
+        HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
+    } else if (pin == GPIO_PIN_12) {
+        interrupt12 = function;
+        HAL_NVIC_SetPriority(EXTI15_10_IRQn, 10, 10);
+        HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
+    } else if (pin == GPIO_PIN_13) {
+        interrupt13 = function;
+        HAL_NVIC_SetPriority(EXTI15_10_IRQn, 10, 10);
+        HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
+    } else if (pin == GPIO_PIN_14) {
+        interrupt14 = function;
+        HAL_NVIC_SetPriority(EXTI15_10_IRQn, 10, 10);
+        HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
+    } else if (pin == GPIO_PIN_15) {
+        interrupt15 = function;
+        HAL_NVIC_SetPriority(EXTI15_10_IRQn, 10, 10);
+        HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
     }
 }
 
@@ -93,9 +137,20 @@ void EXTI9_5_IRQHandler(void)
 
 void EXTI15_10_IRQHandler(void)
 {
-    //Handle C10 (34)
-    //Handle H11 (13)
-    //Handle C12 (36)
-    //Handle B14 (5)
-    //Handle B15 (4)
+    if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_10) != RESET) { // Handle C10 (34)
+      __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_10);
+      (interrupt10)();
+    } else if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_11) != RESET) { // Handle H11 (13)
+        __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_11);
+        (interrupt11)();
+    } else if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_12) != RESET) { // Handle C12 (36)
+      __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_12);
+      (interrupt12)();
+    } else if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_14) != RESET) { // Handle B14 (5)
+      __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_14);
+      (interrupt14)();
+    } else if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_15) != RESET) { // Handle B15 (4)
+      __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_15);
+      (interrupt15)();
+    }
 }

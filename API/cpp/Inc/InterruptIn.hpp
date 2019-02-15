@@ -15,8 +15,9 @@ public:
      * @param pin Pin def external to board
      * @param pull Pin pull type (pull up, pull down, or no pull)
      * @param mode Interrupt mode (rising edge, falling edge, or both edges)
+     * @param function Function linked to interrupt
      */
-    InterruptIn(PinName pin, PullType pull = PullType::PullNone,
+    InterruptIn(PinName pin, void (*function)(), PullType pull = PullType::PullNone,
         InterruptMode mode = InterruptMode::InterruptRising);
     
     ~InterruptIn();

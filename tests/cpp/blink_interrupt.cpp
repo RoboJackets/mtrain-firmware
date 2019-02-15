@@ -1,8 +1,8 @@
 #include "mtrain.hpp"
 
-/** DigitalOut test
+/** InterruptIn and DigitalOut test
  *
- * Blink LEDs back and forth
+ * Blink LEDs back and forth, changing 4th LED as interrupt flag
  */
 int main(void)
 {
@@ -16,7 +16,7 @@ int main(void)
     HAL_Delay(100);
     leds[id].toggle();
 
-    if (id == 3) {
+    if (id == 2) {
         forward = false;
     } else if (id == 0) {
         forward = true;

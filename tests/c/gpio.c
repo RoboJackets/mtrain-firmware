@@ -1,8 +1,8 @@
 #include "mtrain.h"
 
 /** digitalout and digitalin test
- * 
- * Read pins 35 & 36 and output value to LEDs
+ *
+ * Read pins 35 and 36 and output value to LED1 and LED2
  */
 int main(void)
 {
