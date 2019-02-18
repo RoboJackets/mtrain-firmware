@@ -7,7 +7,7 @@ DigitalOut::DigitalOut(PinName pin, PullType pull, PinMode mode, PinSpeed speed,
     pin_structure.Mode = mode;
     pin_structure.Pull = pull;
     pin_structure.Speed = speed;
-    
+
     HAL_GPIO_Init(pin.port, &pin_structure);
 }
 DigitalOut::~DigitalOut() {

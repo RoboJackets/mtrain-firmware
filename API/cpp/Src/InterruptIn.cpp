@@ -127,7 +127,7 @@ InterruptIn::InterruptIn(PinName pin, InterruptFunction function, PullType pull,
     pin_structure.Pin = pin.pin;
     pin_structure.Mode = mode;
     pin_structure.Pull = pull;
-    
+
     HAL_GPIO_Init(pin.port, &pin_structure);
     interrupt_config(pin.pin, function);
 }

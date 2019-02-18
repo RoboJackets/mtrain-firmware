@@ -9,7 +9,7 @@ int main(void)
   // Configure pins for digital out
   digitalout_init(LED1);
   digitalout_init(LED2);
-    
+
   // Configure pins for digital in
   digitalin_init_ex(PIN35, PULL_DOWN);
   digitalin_init_ex(PIN36, PULL_DOWN);

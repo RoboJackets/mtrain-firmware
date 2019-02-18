@@ -5,15 +5,16 @@
  * Blink LEDs back and forth, changing 4th LED as interrupt flag for all
  * interruptible pins
  */
+
+DigitalOut led (LED4);
 void blink() {
-    DigitalOut led (LED4);
     led.toggle();
 }
 
 int main(void)
 {
   DigitalOut leds[] = {(LED1), (LED2), (LED3)};
-  
+
   InterruptIn(p31, blink);
   InterruptIn(p35, blink);
   InterruptIn(p16, blink);

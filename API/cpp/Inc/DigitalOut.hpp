@@ -27,7 +27,7 @@ public:
     DigitalOut(PinName pin, PullType pull = PullType::PullNone,
         PinMode mode = PinMode::PushPull, PinSpeed speed = PinSpeed::Low,
         bool inverted = false);
-    
+
     ~DigitalOut();
 
     /** Change output state of pin
@@ -42,13 +42,13 @@ public:
      *
      */
     void toggle();
-    
+
     /** Read current value of pin
      *
      * @return true (high) or false (low)
      */
     bool read();
-    
+
     void operator =(bool rhs) {
         write(rhs);
     }

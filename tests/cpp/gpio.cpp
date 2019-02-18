@@ -9,7 +9,7 @@ int main(void)
   // Configure pins for digital out
   DigitalOut led1 (LED1);
   DigitalOut led2 (LED2);
-    
+
   // Configure pins for digital in
   DigitalIn pin35 (p35, PullType::PullDown);
   DigitalIn pin36 (p36, PullType::PullDown);

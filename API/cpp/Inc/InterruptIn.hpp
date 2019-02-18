@@ -37,15 +37,15 @@ public:
      */
     InterruptIn(PinName pin, InterruptFunction function, PullType pull = PullType::PullNone,
         InterruptMode mode = InterruptMode::InterruptRising);
-    
+
     ~InterruptIn();
-    
+
     /** Read current value of pin
      *
      * @return true (high) or false (low)
      */
     bool read();
-    
+
     operator bool() {
         return read();
     }

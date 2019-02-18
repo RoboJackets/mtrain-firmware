@@ -10,7 +10,7 @@ USBD_HandleTypeDef USBD_Device;
 int main(void)
 {
     GPIO_InitTypeDef  GPIO_InitStruct;
-    
+
     USBD_Init(&USBD_Device, &VCP_Desc, 0);
     USBD_RegisterClass(&USBD_Device, USBD_CDC_CLASS);
     USBD_CDC_RegisterInterface(&USBD_Device, &USBD_CDC_fops);

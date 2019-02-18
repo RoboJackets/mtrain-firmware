@@ -10,15 +10,15 @@ public:
      * @param pull Pin pull type (pull up, pull down, or no pull)
      */
     DigitalIn(PinName pin, PullType pull = PullType::PullNone);
-    
+
     ~DigitalIn();
-    
+
     /** Read current value of pin
      *
      * @return true (high) or false (low)
      */
     bool read();
-    
+
     operator bool() {
         return read();
     }

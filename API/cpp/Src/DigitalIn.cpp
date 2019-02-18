@@ -5,7 +5,7 @@ DigitalIn::DigitalIn(PinName pin, PullType pull) : pin(pin) {
     pin_structure.Pin = pin.pin;
     pin_structure.Mode = GPIO_MODE_INPUT;
     pin_structure.Pull = pull;
-    
+
     HAL_GPIO_Init(pin.port, &pin_structure);
 }
 DigitalIn::~DigitalIn() {
