@@ -13,8 +13,8 @@ InterruptFunction interrupt0 = NULL,
                   interrupt14 = NULL,
                   interrupt15 = NULL;
 
+int interruptPriority = 10;
 void NVICConfig(IRQn_Type IRQn) {
-    int interruptPriority = 10;
     HAL_NVIC_SetPriority(IRQn, interruptPriority, interruptPriority);
     HAL_NVIC_EnableIRQ(IRQn);
 }
@@ -117,12 +117,12 @@ void EXTI15_10_IRQHandler(void)
 
 InterruptIn::InterruptIn(PinName pin, InterruptFunction function, PullType pull,
     InterruptMode mode) : pin(pin), function(function) {
-    GPIO_InitTypeDef pin_structure;
-    pin_structure.Pin = pin.pin;
-    pin_structure.Mode = mode;
-    pin_structure.Pull = pull;
+    GPIO_InitTypeDef pinStructure;
+    pinStructure.Pin = pin.pin;
+    pinStructure.Mode = mode;
+    pinStructure.Pull = pull;
 
-    HAL_GPIO_Init(pin.port, &pin_structure);
+    HAL_GPIO_Init(pin.port, &pinStructure);
     InterruptConfig(pin.pin, function);
 }
 InterruptIn::~InterruptIn() {
