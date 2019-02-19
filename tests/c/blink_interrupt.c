@@ -1,8 +1,8 @@
 #include "mtrain.h"
 
-/** interrupt_in and digital_out test
+/** interruptin and digitalout test
  *
- * Blink LEDs back and forth, changing 4th LED as interrupt flag for all
+ * Blinks LEDs back and forth, changing 4th LED as interrupt flag for all
  * interruptible pins
  */
  void blink() {

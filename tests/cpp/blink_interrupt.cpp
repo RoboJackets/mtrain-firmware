@@ -15,18 +15,18 @@ int main(void)
 {
   DigitalOut leds[] = {(LED1), (LED2), (LED3)};
 
-  InterruptIn(p31, blink);
-  InterruptIn(p35, blink);
-  InterruptIn(p16, blink);
-  InterruptIn(p30, blink);
-  InterruptIn(p18, blink);
-  InterruptIn(p20, blink);
-  InterruptIn(p11, blink);
-  InterruptIn(p34, blink);
-  InterruptIn(p13, blink);
-  InterruptIn(p36, blink);
-  InterruptIn(p5, blink);
-  InterruptIn(p6, blink);
+  InterruptIn interrupt31 (p31, blink),
+              interrupt35 (p35, blink),
+              interrupt16 (p16, blink),
+              interrupt30 (p30, blink),
+              interrupt18 (p18, blink),
+              interrupt20 (p20, blink),
+              interrupt11 (p11, blink),
+              interrupt34 (p34, blink),
+              interrupt13 (p13, blink),
+              interrupt36 (p36, blink),
+              interrupt5 (p5, blink),
+              interrupt6 (p6, blink);
 
   int id = 0;
   bool forward = true;

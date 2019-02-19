@@ -1,12 +1,12 @@
 #include "DigitalIn.hpp"
 
 DigitalIn::DigitalIn(PinName pin, PullType pull) : pin(pin) {
-    GPIO_InitTypeDef pin_structure;
-    pin_structure.Pin = pin.pin;
-    pin_structure.Mode = GPIO_MODE_INPUT;
-    pin_structure.Pull = pull;
+    GPIO_InitTypeDef pinStructure;
+    pinStructure.Pin = pin.pin;
+    pinStructure.Mode = GPIO_MODE_INPUT;
+    pinStructure.Pull = pull;
 
-    HAL_GPIO_Init(pin.port, &pin_structure);
+    HAL_GPIO_Init(pin.port, &pinStructure);
 }
 DigitalIn::~DigitalIn() {
     HAL_GPIO_DeInit(pin.port, pin.pin);

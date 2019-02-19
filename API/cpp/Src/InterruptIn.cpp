@@ -1,67 +1,61 @@
 #include "InterruptIn.hpp"
 
-InterruptFunction interrupt0 = NULL;
-InterruptFunction interrupt4 = NULL;
-InterruptFunction interrupt5 = NULL;
-InterruptFunction interrupt6 = NULL;
-InterruptFunction interrupt7 = NULL;
-InterruptFunction interrupt8 = NULL;
-InterruptFunction interrupt9 = NULL;
-InterruptFunction interrupt10 = NULL;
-InterruptFunction interrupt11 = NULL;
-InterruptFunction interrupt12 = NULL;
-InterruptFunction interrupt14 = NULL;
-InterruptFunction interrupt15 = NULL;
+InterruptFunction interrupt0 = NULL,
+                  interrupt4 = NULL,
+                  interrupt5 = NULL,
+                  interrupt6 = NULL,
+                  interrupt7 = NULL,
+                  interrupt8 = NULL,
+                  interrupt9 = NULL,
+                  interrupt10 = NULL,
+                  interrupt11 = NULL,
+                  interrupt12 = NULL,
+                  interrupt14 = NULL,
+                  interrupt15 = NULL;
 
-void interrupt_config(uint16_t pin, InterruptFunction function) {
+void NVICConfig(IRQn_Type IRQn) {
+    int interruptPriority = 10;
+    HAL_NVIC_SetPriority(IRQn, interruptPriority, interruptPriority);
+    HAL_NVIC_EnableIRQ(IRQn);
+}
+
+void InterruptConfig(uint16_t pin, InterruptFunction function) {
     if (pin == GPIO_PIN_0) {
         interrupt0 = function;
-        HAL_NVIC_SetPriority(EXTI0_IRQn, 10, 10);
-        HAL_NVIC_EnableIRQ(EXTI0_IRQn);
+        NVICConfig(EXTI0_IRQn);
     } else if (pin == GPIO_PIN_4) {
         interrupt4 = function;
-        HAL_NVIC_SetPriority(EXTI4_IRQn, 10, 10);
-        HAL_NVIC_EnableIRQ(EXTI4_IRQn);
+        NVICConfig(EXTI4_IRQn);
     } else if (pin == GPIO_PIN_5) {
         interrupt5 = function;
-        HAL_NVIC_SetPriority(EXTI9_5_IRQn, 10, 10);
-        HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
+        NVICConfig(EXTI9_5_IRQn);
     } else if (pin == GPIO_PIN_6) {
         interrupt6 = function;
-        HAL_NVIC_SetPriority(EXTI9_5_IRQn, 10, 10);
-        HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
+        NVICConfig(EXTI9_5_IRQn);
     } else if (pin == GPIO_PIN_7) {
         interrupt7 = function;
-        HAL_NVIC_SetPriority(EXTI9_5_IRQn, 10, 10);
-        HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
+        NVICConfig(EXTI9_5_IRQn);
     } else if (pin == GPIO_PIN_8) {
         interrupt8 = function;
-        HAL_NVIC_SetPriority(EXTI9_5_IRQn, 10, 10);
-        HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
+        NVICConfig(EXTI9_5_IRQn);
     } else if (pin == GPIO_PIN_9) {
         interrupt9 = function;
-        HAL_NVIC_SetPriority(EXTI9_5_IRQn, 10, 10);
-        HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
+        NVICConfig(EXTI9_5_IRQn);
     } else if (pin == GPIO_PIN_10) {
         interrupt10 = function;
-        HAL_NVIC_SetPriority(EXTI15_10_IRQn, 10, 10);
-        HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
+        NVICConfig(EXTI15_10_IRQn);
     } else if (pin == GPIO_PIN_11) {
         interrupt11 = function;
-        HAL_NVIC_SetPriority(EXTI15_10_IRQn, 10, 10);
-        HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
+        NVICConfig(EXTI15_10_IRQn);
     } else if (pin == GPIO_PIN_12) {
         interrupt12 = function;
-        HAL_NVIC_SetPriority(EXTI15_10_IRQn, 10, 10);
-        HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
+        NVICConfig(EXTI15_10_IRQn);
     } else if (pin == GPIO_PIN_14) {
         interrupt14 = function;
-        HAL_NVIC_SetPriority(EXTI15_10_IRQn, 10, 10);
-        HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
+        NVICConfig(EXTI15_10_IRQn);
     } else if (pin == GPIO_PIN_15) {
         interrupt15 = function;
-        HAL_NVIC_SetPriority(EXTI15_10_IRQn, 10, 10);
-        HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
+        NVICConfig(EXTI15_10_IRQn);
     }
 }
 
@@ -129,7 +123,7 @@ InterruptIn::InterruptIn(PinName pin, InterruptFunction function, PullType pull,
     pin_structure.Pull = pull;
 
     HAL_GPIO_Init(pin.port, &pin_structure);
-    interrupt_config(pin.pin, function);
+    InterruptConfig(pin.pin, function);
 }
 InterruptIn::~InterruptIn() {
     HAL_GPIO_DeInit(pin.port, pin.pin);

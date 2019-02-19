@@ -4,7 +4,7 @@
 
 class DigitalIn {
 public:
-    /** Configures GPIO pin for digital in
+    /** Configures GPIO pin for DigitalIn
      *
      * @param pin Pin def external to board
      * @param pull Pin pull type (pull up, pull down, or no pull)
@@ -13,7 +13,7 @@ public:
 
     ~DigitalIn();
 
-    /** Read current value of pin
+    /** Reads current value of pin
      *
      * @return true (high) or false (low)
      */

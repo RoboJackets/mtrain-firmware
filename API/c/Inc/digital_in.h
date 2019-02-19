@@ -3,7 +3,7 @@
 
 #include "pin_defs.h"
 
-/** Configures GPIO pin for digital in
+/** Configures GPIO pin for digitalin
  *
  * Defaults to no pull type
  *
@@ -11,20 +11,20 @@
  */
 void digitalin_init(pin_name pin);
 
-/** Configures GPIO pin for digital in
+/** Configures GPIO pin for digitalin
  *
  * @param pin Pin def external to board
  * @param pull Pin pull type (pull up, pull down, or no pull)
  */
 void digitalin_init_ex(pin_name pin, pull_type pull);
 
-/** Deinit GPIO pin
+/** Deinits GPIO pin
  *
  * @param pin Pin def external to board
  */
 void digitalin_deinit(pin_name pin);
 
-/** Read current value of pin
+/** Reads current value of pin
  *
  * @param pin Pin def external to board
  * @return 1 (high) or 0 (low)

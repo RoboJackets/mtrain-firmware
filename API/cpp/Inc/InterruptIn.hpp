@@ -28,7 +28,7 @@ void EXTI15_10_IRQHandler(void);
 
 class InterruptIn {
 public:
-    /** Configures GPIO pin for interrupt in
+    /** Configures GPIO pin for InterruptIn
      *
      * @param pin Pin def external to board
      * @param pull Pin pull type (pull up, pull down, or no pull)
@@ -40,7 +40,7 @@ public:
 
     ~InterruptIn();
 
-    /** Read current value of pin
+    /** Reads current value of pin
      *
      * @return true (high) or false (low)
      */

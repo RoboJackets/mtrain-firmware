@@ -2,7 +2,7 @@
 
 /** digitalout test
  *
- * Blink LEDs back and forth
+ * Blinks LEDs back and forth
  */
 int main(void)
 {

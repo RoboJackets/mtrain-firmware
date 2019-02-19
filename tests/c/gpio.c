@@ -6,11 +6,11 @@
  */
 int main(void)
 {
-  // Configure pins for digital out
+  // Configure pins for digitalout
   digitalout_init(LED1);
   digitalout_init(LED2);
 
-  // Configure pins for digital in
+  // Configure pins for digitalin
   digitalin_init_ex(PIN35, PULL_DOWN);
   digitalin_init_ex(PIN36, PULL_DOWN);
 

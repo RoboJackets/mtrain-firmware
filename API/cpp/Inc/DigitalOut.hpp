@@ -16,7 +16,7 @@ typedef enum {
 
 class DigitalOut {
 public:
-    /** Configures GPIO pin for digital in
+    /** Configures GPIO pin for DigitalOut
      *
      * @param pin Pin def external to board
      * @param pull Pin pull type (pull up, pull down, or no pull)
@@ -30,7 +30,7 @@ public:
 
     ~DigitalOut();
 
-    /** Change output state of pin
+    /** Changes output state of pin
      *
      * @param state Output value of pin
      *              push-pull:  0 (low) or 1 (high),
@@ -38,12 +38,12 @@ public:
      */
     void write(bool state);
 
-    /** Toggle pin output
+    /** Toggles pin output
      *
      */
     void toggle();
 
-    /** Read current value of pin
+    /** Reads current value of pin
      *
      * @return true (high) or false (low)
      */

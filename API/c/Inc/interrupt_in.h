@@ -25,7 +25,7 @@ void EXTI9_5_IRQHandler(void);
  */
 void EXTI15_10_IRQHandler(void);
 
-/** Configures GPIO pin for interrupt in
+/** Configures GPIO pin for interruptin
  *
  * Defaults to no pull type and both edge detection
  *
@@ -34,7 +34,7 @@ void EXTI15_10_IRQHandler(void);
  */
 void interruptin_init(pin_name pin, void (*function)());
 
-/** Configures GPIO pin for interrupt in
+/** Configures GPIO pin for interruptin
  *
  * @param pin Pin def external to board
  * @param pull Pin pull type (pull up, pull down, or no pull)
@@ -44,13 +44,13 @@ void interruptin_init(pin_name pin, void (*function)());
 void interruptin_init_ex(pin_name pin, pull_type pull, interrupt_mode mode,
     void (*function)());
 
-/** Deinit GPIO pin
+/** Deinits GPIO pin
  *
  * @param pin Pin def external to board
  */
 void interruptin_deinit(pin_name pin);
 
-/** Read current value of pin
+/** Reads current value of pin
  *
  * @param pin Pin def external to board
  * @return 1 (high) or 0 (low)
