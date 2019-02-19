@@ -49,7 +49,7 @@ public:
      */
     bool read();
 
-    void operator =(bool rhs) {
+    void operator = (bool rhs) {
         write(rhs);
     }
 

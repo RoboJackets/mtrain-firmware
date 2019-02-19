@@ -16,7 +16,7 @@ static int8_t CDC_Itf_DeInit(void);
 static int8_t CDC_Itf_Control(uint8_t cmd, uint8_t* pbuf, uint16_t length);
 static int8_t CDC_Itf_Receive(uint8_t* pbuf, uint32_t *Len);
 
-USBD_CDC_ItfTypeDef USBD_CDC_fops = 
+USBD_CDC_ItfTypeDef USBD_CDC_fops =
 {
   CDC_Itf_Init,
   CDC_Itf_DeInit,
@@ -25,7 +25,7 @@ USBD_CDC_ItfTypeDef USBD_CDC_fops =
 };
 
 static int8_t CDC_Itf_Init(void)
-{ 
+{
   return (USBD_OK);
 }
 
@@ -35,7 +35,7 @@ static int8_t CDC_Itf_DeInit(void)
 }
 
 static int8_t CDC_Itf_Control (uint8_t cmd, uint8_t* pbuf, uint16_t length)
-{ 
+{
   switch (cmd)
   {
   case CDC_SEND_ENCAPSULATED_COMMAND:
@@ -64,7 +64,7 @@ static int8_t CDC_Itf_Control (uint8_t cmd, uint8_t* pbuf, uint16_t length)
     LineCoding.format     = pbuf[4];
     LineCoding.paritytype = pbuf[5];
     LineCoding.datatype   = pbuf[6];
-    
+
     /* Set the new configuration */
     // ComPort_Config();
     break;
@@ -76,7 +76,7 @@ static int8_t CDC_Itf_Control (uint8_t cmd, uint8_t* pbuf, uint16_t length)
     pbuf[3] = (uint8_t)(LineCoding.bitrate >> 24);
     pbuf[4] = LineCoding.format;
     pbuf[5] = LineCoding.paritytype;
-    pbuf[6] = LineCoding.datatype;     
+    pbuf[6] = LineCoding.datatype;
     break;
 
   case CDC_SET_CONTROL_LINE_STATE:
@@ -85,12 +85,12 @@ static int8_t CDC_Itf_Control (uint8_t cmd, uint8_t* pbuf, uint16_t length)
 
   case CDC_SEND_BREAK:
      /* Add your code here */
-    break;    
-    
+    break;
+
   default:
     break;
   }
-  
+
   return (USBD_OK);
 }
 

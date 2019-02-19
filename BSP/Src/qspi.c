@@ -81,7 +81,7 @@ static uint8_t QSPI_Set4KSector();
 
 
 uint8_t BSP_QSPI_Init(void)
-{ 
+{
     QSPIHandle.Instance = QUADSPI;
 
     if (HAL_QSPI_DeInit(&QSPIHandle) != HAL_OK) {
@@ -120,13 +120,13 @@ uint8_t BSP_QSPI_Init(void)
 }
 
 uint8_t BSP_QSPI_DeInit(void)
-{ 
+{
     QSPIHandle.Instance = QUADSPI;
 
     if (HAL_QSPI_DeInit(&QSPIHandle) != HAL_OK) {
         return QSPI_ERROR;
     }
-    
+
     return QSPI_OK;
 }
 
@@ -147,22 +147,22 @@ uint8_t BSP_QSPI_Read(uint8_t* pData, uint32_t ReadAddr, uint32_t Size)
   s_command.DdrMode           = QSPI_DDR_MODE_DISABLE;
   s_command.DdrHoldHalfCycle  = QSPI_DDR_HHC_ANALOG_DELAY;
   s_command.SIOOMode          = QSPI_SIOO_INST_EVERY_CMD;
-  
+
   /* Configure the command */
   if (HAL_QSPI_Command(&QSPIHandle, &s_command, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK)
   {
     return QSPI_ERROR;
   }
-  
+
   /* Set S# timing for Read command */
   MODIFY_REG(QSPIHandle.Instance->DCR, QUADSPI_DCR_CSHT, QSPI_CS_HIGH_TIME_3_CYCLE);
-  
+
   /* Reception of the data */
   if (HAL_QSPI_Receive(&QSPIHandle, pData, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK)
   {
     return QSPI_ERROR;
   }
-  
+
   /* Restore S# timing for nonRead commands */
   MODIFY_REG(QSPIHandle.Instance->DCR, QUADSPI_DCR_CSHT, QSPI_CS_HIGH_TIME_6_CYCLE);
 
@@ -198,7 +198,7 @@ uint8_t BSP_QSPI_Write(uint8_t* pData, uint32_t WriteAddr, uint32_t Size)
   s_command.DdrMode           = QSPI_DDR_MODE_DISABLE;
   s_command.DdrHoldHalfCycle  = QSPI_DDR_HHC_ANALOG_DELAY;
   s_command.SIOOMode          = QSPI_SIOO_INST_EVERY_CMD;
-  
+
   /* Perform the write page by page */
   do
   {
@@ -210,31 +210,31 @@ uint8_t BSP_QSPI_Write(uint8_t* pData, uint32_t WriteAddr, uint32_t Size)
     {
       return QSPI_ERROR;
     }
-    
+
     /* Configure the command */
     if (HAL_QSPI_Command(&QSPIHandle, &s_command, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK)
     {
       return QSPI_ERROR;
     }
-    
+
     /* Transmission of the data */
     if (HAL_QSPI_Transmit(&QSPIHandle, pData, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK)
     {
       return QSPI_ERROR;
     }
-    
-    /* Configure automatic polling mode to wait for end of program */  
+
+    /* Configure automatic polling mode to wait for end of program */
     if (QSPI_AutoPollingMemReady(&QSPIHandle, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != QSPI_OK)
     {
       return QSPI_ERROR;
     }
-    
+
     /* Update the address and size variables for next page programming */
     current_addr += current_size;
     pData += current_size;
     current_size = ((current_addr + FLASH_PAGE_SIZE) > end_addr) ? (end_addr - current_addr) : FLASH_PAGE_SIZE;
   } while (current_addr < end_addr);
-  
+
   return QSPI_OK;
 }
 
@@ -269,8 +269,8 @@ uint8_t BSP_QSPI_Erase_Sector(uint32_t BlockAddress)
     if (HAL_QSPI_Command(&QSPIHandle, &s_command, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK) {
         return QSPI_ERROR;
     }
-    
-    /* Configure automatic polling mode to wait for end of erase */  
+
+    /* Configure automatic polling mode to wait for end of erase */
     if (QSPI_AutoPollingMemReady(&QSPIHandle, SUBSECTOR_ERASE_MAX_TIME) != QSPI_OK) {
         return QSPI_ERROR;
     }
@@ -304,8 +304,8 @@ uint8_t BSP_QSPI_Erase_Chip(void)
   {
     return QSPI_ERROR;
   }
-  
-  /* Configure automatic polling mode to wait for end of erase */  
+
+  /* Configure automatic polling mode to wait for end of erase */
   if (QSPI_AutoPollingMemReady(&QSPIHandle, BULK_ERASE_MAX_TIME) != QSPI_OK)
   {
     return QSPI_ERROR;
@@ -330,20 +330,20 @@ uint8_t BSP_print_regs(void)
     s_command.DdrMode           = QSPI_DDR_MODE_DISABLE;
     s_command.DdrHoldHalfCycle  = QSPI_DDR_HHC_ANALOG_DELAY;
     s_command.SIOOMode          = QSPI_SIOO_INST_EVERY_CMD;
-    
+
     s_command.Address = 0x00800000;
     if (HAL_QSPI_Command(&QSPIHandle, &s_command, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK) {
         return QSPI_ERROR;
     }
-    
+
     MODIFY_REG(QSPIHandle.Instance->DCR, QUADSPI_DCR_CSHT, QSPI_CS_HIGH_TIME_3_CYCLE);
-    
+
     uint8_t data = 0;
     if (HAL_QSPI_Receive(&QSPIHandle, &data, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK) {
         return QSPI_ERROR;
     }
     printf("SR1NV: %x\r\n", data);
-    
+
     MODIFY_REG(QSPIHandle.Instance->DCR, QUADSPI_DCR_CSHT, QSPI_CS_HIGH_TIME_6_CYCLE);
 
 
@@ -351,15 +351,15 @@ uint8_t BSP_print_regs(void)
     if (HAL_QSPI_Command(&QSPIHandle, &s_command, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK) {
         return QSPI_ERROR;
     }
-    
+
     MODIFY_REG(QSPIHandle.Instance->DCR, QUADSPI_DCR_CSHT, QSPI_CS_HIGH_TIME_3_CYCLE);
-    
+
     data = 0xFF;
     if (HAL_QSPI_Receive(&QSPIHandle, &data, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK) {
         return QSPI_ERROR;
     }
     printf("SR2NV: %x\r\n", data);
-    
+
     MODIFY_REG(QSPIHandle.Instance->DCR, QUADSPI_DCR_CSHT, QSPI_CS_HIGH_TIME_6_CYCLE);
 
 
@@ -368,15 +368,15 @@ uint8_t BSP_print_regs(void)
     if (HAL_QSPI_Command(&QSPIHandle, &s_command, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK) {
         return QSPI_ERROR;
     }
-    
+
     MODIFY_REG(QSPIHandle.Instance->DCR, QUADSPI_DCR_CSHT, QSPI_CS_HIGH_TIME_3_CYCLE);
-    
+
     data = 0xFF;
     if (HAL_QSPI_Receive(&QSPIHandle, &data, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK) {
         return QSPI_ERROR;
     }
     printf("CR1NV: %x\r\n", data);
-    
+
     MODIFY_REG(QSPIHandle.Instance->DCR, QUADSPI_DCR_CSHT, QSPI_CS_HIGH_TIME_6_CYCLE);
 
 
@@ -384,15 +384,15 @@ uint8_t BSP_print_regs(void)
     if (HAL_QSPI_Command(&QSPIHandle, &s_command, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK) {
         return QSPI_ERROR;
     }
-    
+
     MODIFY_REG(QSPIHandle.Instance->DCR, QUADSPI_DCR_CSHT, QSPI_CS_HIGH_TIME_3_CYCLE);
-    
+
     data = 0xFF;
     if (HAL_QSPI_Receive(&QSPIHandle, &data, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK) {
         return QSPI_ERROR;
     }
     printf("CR2NV: %x\r\n", data);
-    
+
     MODIFY_REG(QSPIHandle.Instance->DCR, QUADSPI_DCR_CSHT, QSPI_CS_HIGH_TIME_6_CYCLE);
 
 
@@ -400,15 +400,15 @@ uint8_t BSP_print_regs(void)
     if (HAL_QSPI_Command(&QSPIHandle, &s_command, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK) {
         return QSPI_ERROR;
     }
-    
+
     MODIFY_REG(QSPIHandle.Instance->DCR, QUADSPI_DCR_CSHT, QSPI_CS_HIGH_TIME_3_CYCLE);
-    
+
     data = 0xFF;
     if (HAL_QSPI_Receive(&QSPIHandle, &data, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK) {
         return QSPI_ERROR;
     }
     printf("CR3NV: %x\r\n", data);
-    
+
     MODIFY_REG(QSPIHandle.Instance->DCR, QUADSPI_DCR_CSHT, QSPI_CS_HIGH_TIME_6_CYCLE);
 
     return QSPI_OK;
@@ -527,7 +527,7 @@ static uint8_t QSPI_WriteEnable(QSPI_HandleTypeDef *hqspi)
     if (HAL_QSPI_Command(hqspi, &s_command, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK) {
         return QSPI_ERROR;
     }
-    
+
     s_config.Match           = FLASH_SR1_WEL;
     s_config.Mask            = FLASH_SR1_WEL;
     s_config.MatchMode       = QSPI_MATCH_MODE_AND;
@@ -560,7 +560,7 @@ static uint8_t QSPI_Set4KSector()
     s_command.DdrMode           = QSPI_DDR_MODE_DISABLE;
     s_command.DdrHoldHalfCycle  = QSPI_DDR_HHC_ANALOG_DELAY;
     s_command.SIOOMode          = QSPI_SIOO_INST_EVERY_CMD;
-  
+
     s_command.Address = 0x00000000;
     s_command.NbData  = 1;
 
@@ -571,25 +571,25 @@ static uint8_t QSPI_Set4KSector()
     }
 
     BSP_print_regs();
-    
+
     /* Configure the command */
     if (HAL_QSPI_Command(&QSPIHandle, &s_command, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK)
     {
       return QSPI_ERROR;
     }
-    
+
     uint8_t data = 0x0;
     if (HAL_QSPI_Transmit(&QSPIHandle, &data, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK)
     {
       return QSPI_ERROR;
     }
-    
-    /* Configure automatic polling mode to wait for end of program */  
+
+    /* Configure automatic polling mode to wait for end of program */
     if (QSPI_AutoPollingMemReady(&QSPIHandle, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != QSPI_OK)
     {
       return QSPI_ERROR;
     }
-  
+
   return QSPI_OK;
 }
 
@@ -628,7 +628,7 @@ static uint8_t QSPI_Set4KSector()
 
 //   s_command.Instruction = WRITE_VOL_CFG_REG_CMD;
 //   MODIFY_REG(reg, VCR_NB_DUMMY, (DUMMY_CYCLES_READ_QUAD << POSITION_VAL(VCR_NB_DUMMY)));
-      
+
 //   if (HAL_QSPI_Command(hqspi, &s_command, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK)
 //   {
 //     return QSPI_ERROR;
@@ -638,7 +638,7 @@ static uint8_t QSPI_Set4KSector()
 //   {
 //     return QSPI_ERROR;
 //   }
-  
+
 //   return QSPI_OK;
 // }
 
