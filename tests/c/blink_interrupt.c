@@ -16,18 +16,18 @@ int main(void)
   digitalout_init(LED3);
   digitalout_init(LED4);
 
-  interruptin_init(PIN31, &blink);
-  interruptin_init(PIN35, &blink);
-  interruptin_init(PIN16, &blink);
-  interruptin_init(PIN30, &blink);
-  interruptin_init(PIN18, &blink);
-  interruptin_init(PIN20, &blink);
-  interruptin_init(PIN11, &blink);
-  interruptin_init(PIN34, &blink);
-  interruptin_init(PIN13, &blink);
-  interruptin_init(PIN36, &blink);
-  interruptin_init(PIN5, &blink);
-  interruptin_init(PIN4, &blink);
+  interruptin_init_ex(PIN31, PULL_DOWN, INTERRUPT_RISING, &blink);
+  interruptin_init_ex(PIN35, PULL_DOWN, INTERRUPT_RISING, &blink);
+  interruptin_init_ex(PIN16, PULL_DOWN, INTERRUPT_RISING, &blink);
+  interruptin_init_ex(PIN30, PULL_DOWN, INTERRUPT_RISING, &blink);
+  interruptin_init_ex(PIN18, PULL_DOWN, INTERRUPT_RISING, &blink);
+  interruptin_init_ex(PIN20, PULL_DOWN, INTERRUPT_RISING, &blink);
+  interruptin_init_ex(PIN11, PULL_DOWN, INTERRUPT_RISING, &blink);
+  interruptin_init_ex(PIN34, PULL_DOWN, INTERRUPT_RISING, &blink);
+  interruptin_init_ex(PIN13, PULL_DOWN, INTERRUPT_RISING, &blink);
+  interruptin_init_ex(PIN36, PULL_DOWN, INTERRUPT_RISING, &blink);
+  interruptin_init_ex(PIN5, PULL_DOWN, INTERRUPT_RISING, &blink);
+  interruptin_init_ex(PIN4, PULL_DOWN, INTERRUPT_RISING, &blink);
 
   pin_name leds[] = {LED1, LED2, LED3, LED4};
 
