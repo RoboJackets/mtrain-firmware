@@ -3,5 +3,6 @@
 
 #include "digital_in.h"
 #include "digital_out.h"
+#include "analogout.h"
 
 #endif
