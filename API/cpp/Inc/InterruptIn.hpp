@@ -10,22 +10,6 @@ typedef enum {
 
 typedef void (*InterruptFunction)();
 
-/** Handles interrupts for interrupt line 0
- */
-void EXTI0_IRQHandler(void);
-
-/** Handles interrupts for interrupt line 4
- */
-void EXTI4_IRQHandler(void);
-
-/** Handles interrupts for interrupt lines 5 to 9
- */
-void EXTI9_5_IRQHandler(void);
-
-/** Handles interrupts for interrupt lines 10 to 15
- */
-void EXTI15_10_IRQHandler(void);
-
 class InterruptIn {
 public:
     /** Configures GPIO pin for InterruptIn

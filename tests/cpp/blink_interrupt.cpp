@@ -7,7 +7,7 @@
  */
 DigitalOut led (LED4);
 void blink() {
-    //led.toggle();
+    led.toggle();
 }
 
 int main(void)

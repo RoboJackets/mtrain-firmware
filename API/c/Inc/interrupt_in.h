@@ -9,22 +9,6 @@ typedef enum {
     INTERRUPT_RISING_FALLING = GPIO_MODE_IT_RISING_FALLING
 } interrupt_mode;
 
-/** Handles interrupts for interrupt line 0
- */
-void EXTI0_IRQHandler(void);
-
-/** Handles interrupts for interrupt line 4
- */
-void EXTI4_IRQHandler(void);
-
-/** Handles interrupts for interrupt lines 5 to 9
- */
-void EXTI9_5_IRQHandler(void);
-
-/** Handles interrupts for interrupt lines 10 to 15
- */
-void EXTI15_10_IRQHandler(void);
-
 /** Configures GPIO pin for interruptin
  *
  * Defaults to no pull type and both edge detection

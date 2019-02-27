@@ -58,60 +58,61 @@ void InterruptConfig(uint16_t pin, InterruptFunction function) {
         NVICConfig(EXTI15_10_IRQn);
     }
 }
-
-void EXTI0_IRQHandler(void)
-{
-    if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_0) != RESET) { // Handles A0 (31)
-      __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_0);
-      interrupt0();
+extern "C" {
+    void EXTI0_IRQHandler(void)
+    {
+        if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_0) != RESET) { // Handles A0 (31)
+          __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_0);
+          interrupt0();
+        }
     }
-}
 
-void EXTI4_IRQHandler(void)
-{
-    if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_4) != RESET) { // Handles B4 (35)
-      __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_4);
-      interrupt4();
+    void EXTI4_IRQHandler(void)
+    {
+        if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_4) != RESET) { // Handles B4 (35)
+          __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_4);
+          interrupt4();
+        }
     }
-}
 
-void EXTI9_5_IRQHandler(void)
-{
-    if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_5) != RESET) { // Handles D5 (16)
-      __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_5);
-      interrupt5();
-    } else if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_6) != RESET) { // Handles F6 (30)
-      __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_6);
-      interrupt6();
-    } else if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_7) != RESET) { // Handles D7 (18)
-      __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_7);
-      interrupt7();
-    } else if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_8) != RESET) { // Handles D8 (20)
-      __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_8);
-      interrupt8();
-    } else if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_9) != RESET) { // Handles C9 (11)
-      __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_9);
-      interrupt9();
+    void EXTI9_5_IRQHandler(void)
+    {
+        if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_5) != RESET) { // Handles D5 (16)
+          __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_5);
+          interrupt5();
+        } else if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_6) != RESET) { // Handles F6 (30)
+          __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_6);
+          interrupt6();
+        } else if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_7) != RESET) { // Handles D7 (18)
+          __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_7);
+          interrupt7();
+        } else if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_8) != RESET) { // Handles D8 (20)
+          __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_8);
+          interrupt8();
+        } else if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_9) != RESET) { // Handles C9 (11)
+          __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_9);
+          interrupt9();
+        }
     }
-}
 
-void EXTI15_10_IRQHandler(void)
-{
-    if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_10) != RESET) { // Handle C10 (34)
-      __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_10);
-      interrupt10();
-    } else if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_11) != RESET) { // Handle H11 (13)
-      __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_11);
-      interrupt11();
-    } else if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_12) != RESET) { // Handle C12 (36)
-      __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_12);
-      interrupt12();
-    } else if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_14) != RESET) { // Handle B14 (5)
-      __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_14);
-      interrupt14();
-    } else if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_15) != RESET) { // Handle B15 (4)
-      __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_15);
-      interrupt15();
+    void EXTI15_10_IRQHandler(void)
+    {
+        if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_10) != RESET) { // Handle C10 (34)
+          __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_10);
+          interrupt10();
+        } else if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_11) != RESET) { // Handle H11 (13)
+          __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_11);
+          interrupt11();
+        } else if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_12) != RESET) { // Handle C12 (36)
+          __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_12);
+          interrupt12();
+        } else if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_14) != RESET) { // Handle B14 (5)
+          __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_14);
+          interrupt14();
+        } else if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_15) != RESET) { // Handle B15 (4)
+          __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_15);
+          interrupt15();
+        }
     }
 }
 
