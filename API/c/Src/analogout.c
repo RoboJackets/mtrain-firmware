@@ -82,7 +82,7 @@ void analog_out_deinit(pin_name pin) {
     DACx_FORCE_RESET();
     DACx_RELEASE_RESET();
 
-    HAL_GPIO_DeInit(DACX_)
+    HAL_GPIO_DeInit(DACX_); 
 
     HAL_GPIO_DeInit(DACx_CHANNEL_GPIO_PORT, DACx_CHANNEL_PIN);
 
