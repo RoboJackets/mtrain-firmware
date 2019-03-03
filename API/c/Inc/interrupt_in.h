@@ -21,12 +21,12 @@ void interruptin_init(pin_name pin, void (*function)());
 /** Configures GPIO pin for interruptin
  *
  * @param pin Pin def external to board
+ * @param function Function linked to interrupt
  * @param pull Pin pull type (pull up, pull down, or no pull)
  * @param mode Interrupt mode (rising edge, falling edge, or both edges)
- * @param function Function linked to interrupt
  */
-void interruptin_init_ex(pin_name pin, pull_type pull, interrupt_mode mode,
-    void (*function)());
+void interruptin_init_ex(pin_name pin, void (*function)(), pull_type pull,
+    interrupt_mode mode);
 
 /** Deinits GPIO pin
  *

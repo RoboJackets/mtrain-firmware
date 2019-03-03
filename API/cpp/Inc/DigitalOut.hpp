@@ -22,11 +22,11 @@ public:
      * @param pull Pin pull type (pull up, pull down, or no pull)
      * @param mode Output mode (push-pull or open-drain)
      * @param speed GPIO frequency (low, medium, high, or very high)
-     * @param inverted Inverts output value of pin
+     * @param invert Inverts output value of pin
      */
     DigitalOut(PinName pin, PullType pull = PullType::PullNone,
         PinMode mode = PinMode::PushPull, PinSpeed speed = PinSpeed::Low,
-        bool inverted = false);
+        bool invert = false);
 
     ~DigitalOut();
 
@@ -59,5 +59,5 @@ public:
 
 protected:
     PinName pin;
-    bool inverted;
+    bool invert;
 };

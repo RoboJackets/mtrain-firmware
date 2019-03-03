@@ -125,14 +125,15 @@ void interruptin_init(pin_name pin, void (*function)()) {
     interrupt_config(pin.pin, function);
 }
 
-void interruptin_init_ex(pin_name pin, pull_type pull, interrupt_mode mode,
-    void (*function)()) {
+void interruptin_init_ex(pin_name pin, void (*function)(), pull_type pull,
+    interrupt_mode mode) {
     GPIO_InitTypeDef pin_structure;
     pin_structure.Pin = pin.pin;
-    pin_structure.Mode = mode;
     pin_structure.Pull = pull;
+    pin_structure.Mode = mode;
 
     HAL_GPIO_Init(pin.port, &pin_structure);
+
     interrupt_config(pin.pin, function);
 }
 

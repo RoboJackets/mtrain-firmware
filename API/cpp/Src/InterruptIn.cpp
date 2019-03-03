@@ -120,10 +120,11 @@ InterruptIn::InterruptIn(PinName pin, InterruptFunction function, PullType pull,
     InterruptMode mode) : pin(pin), function(function) {
     GPIO_InitTypeDef pinStructure;
     pinStructure.Pin = pin.pin;
-    pinStructure.Mode = mode;
     pinStructure.Pull = pull;
+    pinStructure.Mode = mode;
 
     HAL_GPIO_Init(pin.port, &pinStructure);
+
     InterruptConfig(pin.pin, function);
 }
 InterruptIn::~InterruptIn() {

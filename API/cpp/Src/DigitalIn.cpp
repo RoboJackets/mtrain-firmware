@@ -3,8 +3,8 @@
 DigitalIn::DigitalIn(PinName pin, PullType pull) : pin(pin) {
     GPIO_InitTypeDef pinStructure;
     pinStructure.Pin = pin.pin;
-    pinStructure.Mode = GPIO_MODE_INPUT;
     pinStructure.Pull = pull;
+    pinStructure.Mode = GPIO_MODE_INPUT;
 
     HAL_GPIO_Init(pin.port, &pinStructure);
 }
