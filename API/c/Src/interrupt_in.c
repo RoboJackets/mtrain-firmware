@@ -141,6 +141,6 @@ void interruptin_deinit(pin_name pin) {
     HAL_GPIO_DeInit(pin.port, pin.pin);
 }
 
-int digitalin_read(pin_name pin) {
+int interruptin_read(pin_name pin) {
     return HAL_GPIO_ReadPin(pin.port, pin.pin);
 }
