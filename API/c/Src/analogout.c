@@ -1,11 +1,16 @@
-#include <mtrain.h>
+#include "pin_defs.h"
+
 
 
 DAC_HandleTypeDef    DacHandle;
-static DAC_ChannelConfTypeDef sConfig;
-const uint8_t aEscalator8bit[6] = {0x0, 0x33, 0x66, 0x99, 0xCC, 0xFF};
-__IO uint8_t ubSelectedWavesForm = 1;
-__IO uint8_t ubKeyPressed = SET;
+
+
+
+DAC_HandleTypeDef    DacHandle;
+
+
+DAC_HandleTypeDef    DacHandle;
+
 
 
 //static DAC_HandleTypeDef DAC_Handle[2];
@@ -24,7 +29,7 @@ void analog_out_init(pin_name pin) {
     GPIO_InitTypeDef GPIO_InitStruct;
 
     GPIO_InitStruct.Pin = pin.pin;
-    GPIO_InitStruct.Mode = GPIO_MOODE_ANALOG;
+    GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     
     
@@ -35,7 +40,7 @@ void analog_out_init(pin_name pin) {
     //put _start here
 
     // todo: is this right?
-    __HAL_RCC_DAC_CLK_ENABLE();\
+    __HAL_RCC_DAC_CLK_ENABLE();
 
     DacHandle.instance = DAC1;
 
@@ -54,16 +59,16 @@ void analog_out_init(pin_name pin) {
 
 }
 
-void analogout_Write(pin_name pin, float value) {
+void analogout_write(pin_name pin, float value) {
         //check value
         //need a dac variable 
         uinit32_t analog_value;
-        if (analog_value < 0 ) {
+        if (value < 0 ) {
             analag_value = 0;
-        } else if(analog_value > 1) {
+        } else if(value > 1) {
             analog_value == 1;
         } else {
-            analog_value = vlaue * 0xFFF;
+            analog_value = value * 0xFFF;
         }
         //set 12 bit value right aligned
        
@@ -73,20 +78,20 @@ void analogout_Write(pin_name pin, float value) {
 }
 
 
-void analog_read() {
+void analog_read(pin_name pin ) {
+    return HAL_GPIO_ReadPin(pin.port, pin.pin);
 
 }
 
 
 void analog_out_deinit(pin_name pin) {
-    DACx_FORCE_RESET();
-    DACx_RELEASE_RESET();
+    __HAL_RCC_DAC_RELEASE_RESET()
+    __HAL_RCC_DAC_FORCE_RESET()
 
-    HAL_GPIO_DeInit(DACX_); 
+    
 
-    HAL_GPIO_DeInit(DACx_CHANNEL_GPIO_PORT, DACx_CHANNEL_PIN);
+    HAL_GPIO_DeInit(pin.port, pin.pin);
 
-  
 
   /*##-4- Disable the NVIC for DMA ###########################################*/
   //HAL_NVIC_DisableIRQ(DACx_DMA_IRQn);
