@@ -2,10 +2,13 @@
 
 void bsp_config(void) {
   MPU_Config();
-  CPU_CACHE_Enable();
-  HAL_Init();
+  // CPU_CACHE_Enable();
+  // SCB_DisableICache();
+  // SCB_DisableDCache();
+  // __HAL_FLASH_ART_DISABLE();
   SystemClock_Config();
-
+  HAL_Init();
+  
   // Enable all needed system clocks
   __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();

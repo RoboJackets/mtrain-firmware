@@ -3,6 +3,7 @@
 #include "PinDefs.hpp"
 
 #include <vector>
+#include <optional>
 
 typedef enum SpiBus {
     SpiBus2,
@@ -25,15 +26,25 @@ constexpr int fPCLK = 108'000'000; // Hz
 
 class SPI {
 public:
-    SPI(SpiBus spiBus, int hz = 1'000'000);
+    SPI(SpiBus spiBus, std::optional<PinName> cs = std::nullopt, int hz = 1'000'000);
+    ~SPI();
 
     void format(int bits, int mode = 0);
     // TODO: make more clear is is set in steps
     void frequency(int hz);
 
-    uint8_t transmit(uint8_t data);
-    std::vector<uint8_t> transmit(std::vector<uint8_t>& data);
+    void transmit(uint8_t data);
+    void transmit(std::vector<uint8_t>& data);
+
+    void transmitDMA(std::vector<uint8_t>& data);
+
+    uint8_t transmitReceive(uint8_t data);
+    std::vector<uint8_t> transmitReceive(std::vector<uint8_t>& data);
 
 private:
     SPI_HandleTypeDef spiHandle;
+    std::optional<PinName> chipSelect;
 };
+
+void SPI_Init(SpiBus spiBus, PinName chipSelect, int hz);
+uint8_t transmitReceive(uint8_t data, PinName chipSelect, SPI_TypeDef* spiInstance);

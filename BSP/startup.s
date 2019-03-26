@@ -107,8 +107,8 @@ LoopFillZerobss:
     cmp  r2, r3
     bcc  FillZerobss
     bl  SystemInit  /* Call the clock system intitialization function.*/
-    bl  bsp_config
     bl __libc_init_array /* Call static constructors */
+    bl  bsp_config
     bl  main  /* Call the application's entry point.*/
     bx  lr
 
@@ -122,13 +122,13 @@ LoopFillZerobss:
  * @param  None
  * @retval None
 */
-.section  .text.Default_Handler,"ax",%progbits
+@ .section  .text.Default_Handler,"ax",%progbits
 
-Default_Handler:
-Infinite_Loop:
-    b  Infinite_Loop
+@ Default_Handler:
+@ Infinite_Loop:
+@     b  Infinite_Loop
 
-.size  Default_Handler, .-Default_Handler
+@ .size  Default_Handler, .-Default_Handler
 
 
 /******************************************************************************
