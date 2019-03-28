@@ -126,6 +126,18 @@ SPI::~SPI() {
 
         HAL_NVIC_DisableIRQ(SPI2_IRQn);
     } else if (spiHandle.Instance == SPI3) {
+        __HAL_RCC_SPI3_CLK_DISABLE();
+
+        // DeInit SPI3 SCK
+        HAL_GPIO_DeInit(GPIOC, GPIO_PIN_10);
+
+        // DeInit SPI3 MISO
+        HAL_GPIO_DeInit(GPIOB, GPIO_PIN_4);
+
+        // DeInit SPI3 MOSI
+        HAL_GPIO_DeInit(GPIOC, GPIO_PIN_12);
+
+        HAL_NVIC_DisableIRQ(SPI3_IRQn);
     } else if (spiHandle.Instance == SPI5) {
         __HAL_RCC_SPI5_CLK_DISABLE();
 
@@ -271,22 +283,5 @@ void SPI::transmit(std::vector<uint8_t>& data) {
 
     if (chipSelect) {
         HAL_GPIO_WritePin(chipSelect->port, chipSelect->pin, (GPIO_PinState)1);
-    }
-}
-
-// TODO: don't think this links correctly
-void HAL_SPI_MspDeInit(SPI_HandleTypeDef *hspi)
-{
-    if(hspi->Instance == SPI2) {
-        // TODO: needed?
-        __HAL_RCC_SPI2_FORCE_RESET();
-        __HAL_RCC_SPI2_RELEASE_RESET();
-
-        // Deconfigure SPI2 SCK
-        HAL_GPIO_DeInit(GPIOA, GPIO_PIN_12);
-        // Deconfigure SPI2 MISO
-        HAL_GPIO_DeInit(GPIOB, GPIO_PIN_14);
-        // Deconfigure SPI2 MOSI
-        HAL_GPIO_DeInit(GPIOB, GPIO_PIN_15);
     }
 }
