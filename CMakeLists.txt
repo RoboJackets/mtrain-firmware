@@ -23,11 +23,6 @@ set (CMAKE_C_FLAGS "${C_MACHINE_OPTIONS} -std=gnu99" CACHE INTERNAL "c compiler 
 set (CMAKE_CXX_FLAGS "${C_MACHINE_OPTIONS} -Wno-register" CACHE INTERNAL "c compiler flags")
 set (CMAKE_ASM_FLAGS "${C_MACHINE_OPTIONS} -x assembler-with-cpp" CACHE INTERNAL "asm compiler flags")
 
-# set (CMAKE_C_FLAGS "-g -mthumb -fno-builtin -mcpu=cortex-m7 -mfpu=fpv5-sp-d16 -mfloat-abi=softfp -Wall -std=gnu99 -ffunction-sections -fdata-sections -fomit-frame-pointer -mabi=aapcs -fno-unroll-loops -ffast-math -ftree-vectorize" CACHE INTERNAL "c compiler flags")
-# set (CMAKE_CXX_FLAGS "-g -mthumb -fno-builtin -mcpu=cortex-m7 -mfpu=fpv5-sp-d16 -mfloat-abi=softfp -Wall -std=c++17 -ffunction-sections -fdata-sections -fomit-frame-pointer -mabi=aapcs -fno-unroll-loops -ffast-math -ftree-vectorize" CACHE INTERNAL "cxx compiler flags")
-# set (CMAKE_ASM_FLAGS "-g -mthumb -mcpu=cortex-m7 -mfpu=fpv5-sp-d16 -mfloat-abi=softfp -x assembler-with-cpp" CACHE INTERNAL "asm compiler flags")
-# set (CMAKE_EXE_LINKER_FLAGS "-g -Wl,--gc-sections --specs=nosys.specs -mthumb -mcpu=cortex-m7 -mfpu=fpv5-sp-d16 -mfloat-abi=softfp -mabi=aapcs" CACHE INTERNAL "executable linker flags")
-
 set (CMAKE_EXE_LINKER_FLAGS "-Wl,--gc-sections ${C_MACHINE_OPTIONS} --specs=nosys.specs"
     CACHE INTERNAL "executable linker flags")
 
