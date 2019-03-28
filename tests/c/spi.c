@@ -17,7 +17,7 @@ int main() {
 
 
     GPIO_InitTypeDef  GPIO_InitStruct;
-    // SPI_HandleTypeDef spiHandle;
+    SPI_HandleTypeDef spiHandle;
     // SpiBus spiBus = SpiBus5;
     pin_name chipSelect = PIN26;
 
@@ -30,7 +30,7 @@ int main() {
     HAL_GPIO_Init(chipSelect.port, &GPIO_InitStruct);
     HAL_GPIO_WritePin(chipSelect.port, chipSelect.pin, (GPIO_PinState)1);
     
-    // spiHandle.Instance = SPI5;
+    spiHandle.Instance = SPI5;
 
     __HAL_RCC_SPI5_CLK_ENABLE();
 
@@ -53,29 +53,29 @@ int main() {
     // HAL_NVIC_SetPriority(SPI5_IRQn, 1, 0);
     // HAL_NVIC_EnableIRQ(SPI5_IRQn);
 
-    // spiHandle.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_128;
+    spiHandle.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_128;
 
-    // spiHandle.Init.Mode              = SPI_MODE_MASTER; // Be able to specify
-    // spiHandle.Init.Direction         = SPI_DIRECTION_2LINES;
-    // spiHandle.Init.DataSize          = SPI_DATASIZE_8BIT;
-    // spiHandle.Init.CLKPolarity       = SPI_POLARITY_LOW;
-    // spiHandle.Init.CLKPhase          = SPI_PHASE_1EDGE;
-    // spiHandle.Init.NSS               = SPI_NSS_SOFT;
-    // spiHandle.Init.FirstBit          = SPI_FIRSTBIT_MSB; // Be able to specify?
-    // spiHandle.Init.TIMode            = SPI_TIMODE_DISABLE;
-    // spiHandle.Init.CRCCalculation    = SPI_CRCCALCULATION_DISABLE;
-    // spiHandle.Init.CRCPolynomial     = 7;
+    spiHandle.Init.Mode              = SPI_MODE_MASTER; // Be able to specify
+    spiHandle.Init.Direction         = SPI_DIRECTION_2LINES;
+    spiHandle.Init.DataSize          = SPI_DATASIZE_8BIT;
+    spiHandle.Init.CLKPolarity       = SPI_POLARITY_LOW;
+    spiHandle.Init.CLKPhase          = SPI_PHASE_1EDGE;
+    spiHandle.Init.NSS               = SPI_NSS_SOFT;
+    spiHandle.Init.FirstBit          = SPI_FIRSTBIT_MSB; // Be able to specify?
+    spiHandle.Init.TIMode            = SPI_TIMODE_DISABLE;
+    spiHandle.Init.CRCCalculation    = SPI_CRCCALCULATION_DISABLE;
+    spiHandle.Init.CRCPolynomial     = 7;
 
-    // HAL_SPI_Init(&spiHandle);
+    HAL_SPI_Init(&spiHandle);
 
     // Disable SPI
-    SPI5->CR1 &= (~SPI_CR1_SPE);
-    SPI5->CR1 = (SPI_MODE_MASTER | SPI_DIRECTION_2LINES | SPI_POLARITY_LOW |
-                 SPI_PHASE_1EDGE | SPI_BAUDRATEPRESCALER_128 | SPI_FIRSTBIT_MSB |
-                 SPI_CRCCALCULATION_DISABLE);
-    // SPI5->CR1 |= SPI_CR1_CRCL;
-    SPI5->CR2 = (((SPI_NSS_SOFT >> 16) & SPI_CR2_SSOE) | SPI_TIMODE_DISABLE | SPI_DATASIZE_8BIT | SPI_RXFIFO_THRESHOLD_QF);
-    CLEAR_BIT(SPI5->I2SCFGR, SPI_I2SCFGR_I2SMOD);
+    // SPI5->CR1 &= (~SPI_CR1_SPE);
+    // SPI5->CR1 = (SPI_MODE_MASTER | SPI_DIRECTION_2LINES | SPI_POLARITY_LOW |
+    //              SPI_PHASE_1EDGE | SPI_BAUDRATEPRESCALER_128 | SPI_FIRSTBIT_MSB |
+    //              SPI_CRCCALCULATION_DISABLE);
+    // // SPI5->CR1 |= SPI_CR1_CRCL;
+    // SPI5->CR2 = (((SPI_NSS_SOFT >> 16) & SPI_CR2_SSOE) | SPI_TIMODE_DISABLE | SPI_DATASIZE_8BIT | SPI_RXFIFO_THRESHOLD_QF);
+    // CLEAR_BIT(SPI5->I2SCFGR, SPI_I2SCFGR_I2SMOD);
     
 
     uint8_t data = 10;
@@ -85,7 +85,7 @@ int main() {
         HAL_GPIO_WritePin(chipSelect.port, chipSelect.pin, (GPIO_PinState)0);
     // // }
 
-    // // HAL_SPI_Transmit(&spiHandle, &data, 1, 10);
+    // HAL_SPI_Transmit(&spiHandle, &data, 1, 10);
     // // while(HAL_SPI_GetState(&spiHandle) != HAL_SPI_STATE_READY);
 
     SPI5->CR1 |= SPI_CR1_SPE;
@@ -109,13 +109,18 @@ int main() {
     uint64_t iiii = 0;
     uint64_t iiiii = 0;
     uint64_t iiiiii = 0;
-    // uint64_t iiiiiii = 0;
-    // uint64_t iiiiiiii = 0;
-    // uint64_t iiiiiiiii = 0;
-    // uint64_t iiiiiiiiii = 0;
+    uint64_t iiiiiii = 0;
+    uint64_t iiiiiiii = 0;
+    uint64_t iiiiiiiii = 0;
+    uint64_t iiiiiiiiii = 0;
 
     while(1) {
 
     }
 
 }
+
+// int main()
+// {
+//     HAL_SPI_TransmitReceive_DMA(&SpiHandle, (uint8_t*)aTxBuffer, (uint8_t *)aRxBuffer, BUFFERSIZE)
+// }

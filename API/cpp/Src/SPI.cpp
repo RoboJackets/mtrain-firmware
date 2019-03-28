@@ -42,100 +42,27 @@ SPI::SPI(SpiBus spiBus, std::optional<PinName> cs, int hz): chipSelect(cs) {
             break;
         case SpiBus::SpiBus3:
             spiHandle.Instance = SPI3;
-            break;
-        case SpiBus::SpiBus5:
-            spiHandle.Instance = SPI5;
 
-            __HAL_RCC_SPI5_CLK_ENABLE();
-
-            // Configure SPI5 SCK
-            GPIO_InitStruct.Pin       = GPIO_PIN_7;
-            GPIO_InitStruct.Mode      = GPIO_MODE_AF_PP;
-            GPIO_InitStruct.Pull      = GPIO_PULLDOWN;
-            GPIO_InitStruct.Speed     = GPIO_SPEED_FREQ_HIGH;
-            GPIO_InitStruct.Alternate = GPIO_AF5_SPI5;
-            HAL_GPIO_Init(GPIOF, &GPIO_InitStruct);
-
-            // Configure SPI5 MISO
-            GPIO_InitStruct.Pin = GPIO_PIN_8;
-            HAL_GPIO_Init(GPIOF, &GPIO_InitStruct);
-
-            // Configure SPI5 MOSI
-            GPIO_InitStruct.Pin = GPIO_PIN_9;
-            HAL_GPIO_Init(GPIOF, &GPIO_InitStruct);
-
-            HAL_NVIC_SetPriority(SPI5_IRQn, 1, 0);
-            HAL_NVIC_EnableIRQ(SPI5_IRQn);
-            break;
-        default:
-            break;
-    }
-
-    spiHandle.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_256;
-    // TODO: repeated code
-    int prescale = fPCLK/hz;
-    for (int i = 1; i <= 8; i++) {
-        if (prescale <= 1 << i) {
-            spiHandle.Init.BaudRatePrescaler = (i-1) << 3;
-            break;
-        }
-    }
-
-    spiHandle.Init.Mode              = SPI_MODE_MASTER; // Be able to specify
-    spiHandle.Init.Direction         = SPI_DIRECTION_2LINES;
-    spiHandle.Init.DataSize          = SPI_DATASIZE_8BIT;
-    spiHandle.Init.CLKPolarity       = SPI_POLARITY_LOW;
-    spiHandle.Init.CLKPhase          = SPI_PHASE_1EDGE;
-    spiHandle.Init.NSS               = SPI_NSS_SOFT;
-    spiHandle.Init.FirstBit          = SPI_FIRSTBIT_MSB; // Be able to specify?
-    spiHandle.Init.TIMode            = SPI_TIMODE_DISABLE;
-    spiHandle.Init.CRCCalculation    = SPI_CRCCALCULATION_DISABLE;
-    spiHandle.Init.CRCPolynomial     = 7;
-
-    HAL_SPI_Init(&spiHandle);
-}
-
-void SPI_Init(SpiBus spiBus, PinName chipSelect, int hz) {
-    GPIO_InitTypeDef  GPIO_InitStruct;
-    SPI_HandleTypeDef spiHandle;
-
-    // if (chipSelect) {
-        GPIO_InitStruct.Pin = chipSelect.pin;
-        GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-        GPIO_InitStruct.Pull = GPIO_NOPULL;
-        GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
-        
-        HAL_GPIO_Init(chipSelect.port, &GPIO_InitStruct);
-        HAL_GPIO_WritePin(chipSelect.port, chipSelect.pin, (GPIO_PinState)1);
-    // }
-    
-    switch (spiBus) {
-        case SpiBus::SpiBus2:
-            spiHandle.Instance = SPI2;
-
-            __HAL_RCC_SPI2_CLK_ENABLE();
+            __HAL_RCC_SPI3_CLK_ENABLE();
 
             // Configure SPI2 SCK
-            GPIO_InitStruct.Pin       = GPIO_PIN_12;
+            GPIO_InitStruct.Pin       = GPIO_PIN_10;
             GPIO_InitStruct.Mode      = GPIO_MODE_AF_PP;
             GPIO_InitStruct.Pull      = GPIO_PULLDOWN;
             GPIO_InitStruct.Speed     = GPIO_SPEED_FREQ_HIGH;
-            GPIO_InitStruct.Alternate = GPIO_AF5_SPI2;
-            HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+            GPIO_InitStruct.Alternate = GPIO_AF6_SPI3;
+            HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
             // Configure SPI2 MISO
-            GPIO_InitStruct.Pin = GPIO_PIN_14;
+            GPIO_InitStruct.Pin = GPIO_PIN_4;
             HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
             // Configure SPI2 MOSI
-            GPIO_InitStruct.Pin = GPIO_PIN_15;
-            HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+            GPIO_InitStruct.Pin = GPIO_PIN_12;
+            HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
-            HAL_NVIC_SetPriority(SPI2_IRQn, 1, 0);
-            HAL_NVIC_EnableIRQ(SPI2_IRQn);
-            break;
-        case SpiBus::SpiBus3:
-            spiHandle.Instance = SPI3;
+            HAL_NVIC_SetPriority(SPI3_IRQn, 1, 0);
+            HAL_NVIC_EnableIRQ(SPI3_IRQn);
             break;
         case SpiBus::SpiBus5:
             spiHandle.Instance = SPI5;
@@ -165,16 +92,7 @@ void SPI_Init(SpiBus spiBus, PinName chipSelect, int hz) {
             break;
     }
 
-    spiHandle.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_256;
-    // TODO: repeated code
-    int prescale = fPCLK/hz;
-    for (int i = 1; i <= 8; i++) {
-        if (prescale <= 1 << i) {
-            spiHandle.Init.BaudRatePrescaler = (i-1) << 3;
-            break;
-        }
-    }
-
+    spiHandle.Init.BaudRatePrescaler = freqToPrescaler(hz);
     spiHandle.Init.Mode              = SPI_MODE_MASTER; // Be able to specify
     spiHandle.Init.Direction         = SPI_DIRECTION_2LINES;
     spiHandle.Init.DataSize          = SPI_DATASIZE_8BIT;
@@ -224,17 +142,21 @@ SPI::~SPI() {
     }
 }
 
-void SPI::frequency(int hz) {
-    // TODO: different for different spi devices
+uint32_t SPI::freqToPrescaler(int hz) {
     int prescale = fPCLK/hz;
+    if (spiHandle.Instance == SPI5) {
+        prescale = fPCLK/hz * 2;
+    }
     for (int i = 1; i <= 8; i++) {
         if (prescale <= 1 << i) {
-            // TODO: is this correct?
-            LL_SPI_SetBaudRatePrescaler(spiHandle.Instance, (i-1) << 3);
-            return;
+            return (i-2) << 3;
         }
     }
-    LL_SPI_SetBaudRatePrescaler(spiHandle.Instance, LL_SPI_BAUDRATEPRESCALER_DIV256);
+    return LL_SPI_BAUDRATEPRESCALER_DIV256;
+}
+
+void SPI::frequency(int hz) {
+    LL_SPI_SetBaudRatePrescaler(spiHandle.Instance, freqToPrescaler(hz));
 }
 
 uint8_t SPI::transmitReceive(uint8_t data) {
@@ -254,26 +176,6 @@ uint8_t SPI::transmitReceive(uint8_t data) {
     if (chipSelect) {
         HAL_GPIO_WritePin(chipSelect->port, chipSelect->pin, (GPIO_PinState)1);
     }
-    return recievedData;
-}
-
-uint8_t transmitReceive(uint8_t data, PinName chipSelect, SPI_TypeDef* spiInstance) {
-    // if (chipSelect) {
-        HAL_GPIO_WritePin(chipSelect.port, chipSelect.pin, (GPIO_PinState)0);
-    // }
-
-    SPI5->CR1 |= SPI_CR1_SPE;
-
-    /* Wait for TX queue to empty */
-    while (READ_BIT(spiInstance->SR, SPI_SR_TXE) == 0) {}
-    *(__IO uint8_t *)&spiInstance->DR = data;
-    /* Wait for RX queue to fill */
-    while (!LL_SPI_IsActiveFlag_RXNE(spiInstance)) { }
-    uint8_t recievedData = spiInstance->DR;
-
-    // if (chipSelect) {
-        HAL_GPIO_WritePin(chipSelect.port, chipSelect.pin, (GPIO_PinState)1);
-    // }
     return recievedData;
 }
 
@@ -364,15 +266,12 @@ void SPI::transmit(std::vector<uint8_t>& data) {
     while (READ_BIT(spiHandle.Instance->SR, SPI_SR_BSY) != 0) { }
     while (LL_SPI_IsActiveFlag_RXNE(spiHandle.Instance)) {
         uint8_t none = *(__IO uint8_t *)spiHandle.Instance->DR;
+        (void)none;
     }
 
     if (chipSelect) {
         HAL_GPIO_WritePin(chipSelect->port, chipSelect->pin, (GPIO_PinState)1);
     }
-}
-
-void SPI::transmitDMA(std::vector<uint8_t>& data) {
-
 }
 
 // TODO: don't think this links correctly
