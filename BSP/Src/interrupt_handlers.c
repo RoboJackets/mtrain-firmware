@@ -14,7 +14,7 @@ void OTG_FS_IRQHandler(void)
 void OTG_HS_IRQHandler(void)
 #endif
 {
-    // HAL_PCD_IRQHandler(&hpcd);
+    HAL_PCD_IRQHandler(&hpcd);
 }
 
 extern QSPI_HandleTypeDef QSPIHandle;

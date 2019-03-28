@@ -45,7 +45,7 @@ SPI::SPI(SpiBus spiBus, std::optional<PinName> cs, int hz): chipSelect(cs) {
 
             __HAL_RCC_SPI3_CLK_ENABLE();
 
-            // Configure SPI2 SCK
+            // Configure SPI3 SCK
             GPIO_InitStruct.Pin       = GPIO_PIN_10;
             GPIO_InitStruct.Mode      = GPIO_MODE_AF_PP;
             GPIO_InitStruct.Pull      = GPIO_PULLDOWN;
@@ -53,11 +53,11 @@ SPI::SPI(SpiBus spiBus, std::optional<PinName> cs, int hz): chipSelect(cs) {
             GPIO_InitStruct.Alternate = GPIO_AF6_SPI3;
             HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
-            // Configure SPI2 MISO
+            // Configure SPI3 MISO
             GPIO_InitStruct.Pin = GPIO_PIN_4;
             HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-            // Configure SPI2 MOSI
+            // Configure SPI3 MOSI
             GPIO_InitStruct.Pin = GPIO_PIN_12;
             HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
@@ -93,13 +93,13 @@ SPI::SPI(SpiBus spiBus, std::optional<PinName> cs, int hz): chipSelect(cs) {
     }
 
     spiHandle.Init.BaudRatePrescaler = freqToPrescaler(hz);
-    spiHandle.Init.Mode              = SPI_MODE_MASTER; // Be able to specify
+    spiHandle.Init.Mode              = SPI_MODE_MASTER; // TODO: Be able to specify
     spiHandle.Init.Direction         = SPI_DIRECTION_2LINES;
     spiHandle.Init.DataSize          = SPI_DATASIZE_8BIT;
     spiHandle.Init.CLKPolarity       = SPI_POLARITY_LOW;
     spiHandle.Init.CLKPhase          = SPI_PHASE_1EDGE;
     spiHandle.Init.NSS               = SPI_NSS_SOFT;
-    spiHandle.Init.FirstBit          = SPI_FIRSTBIT_MSB; // Be able to specify?
+    spiHandle.Init.FirstBit          = SPI_FIRSTBIT_MSB; // TODO: Be able to specify?
     spiHandle.Init.TIMode            = SPI_TIMODE_DISABLE;
     spiHandle.Init.CRCCalculation    = SPI_CRCCALCULATION_DISABLE;
     spiHandle.Init.CRCPolynomial     = 7;
