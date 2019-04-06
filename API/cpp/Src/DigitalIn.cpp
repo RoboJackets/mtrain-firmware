@@ -1,7 +1,7 @@
 #include "DigitalIn.hpp"
 
 DigitalIn::DigitalIn(PinName pin, PullType pull) : pin(pin) {
-    GPIO_InitTypeDef pinStructure;
+    GPIO_InitTypeDef pinStructure = {};
     pinStructure.Pin = pin.pin;
     pinStructure.Pull = pull;
     pinStructure.Mode = GPIO_MODE_INPUT;

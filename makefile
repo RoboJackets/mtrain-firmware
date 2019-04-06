@@ -7,8 +7,8 @@ endef
 all:
 	$(call cmake_build_target, all)
 
-C_FIRMWARE_TESTS = blink gpio blink_interrupt flash usb_serial
-CPP_FIRMWARE_TESTS = blink gpio blink_interrupt
+C_FIRMWARE_TESTS = blink gpio blink_interrupt flash usb_serial spi
+CPP_FIRMWARE_TESTS = blink gpio blink_interrupt spi
 
 $(C_FIRMWARE_TESTS:%=test-%-c):
 	$(call cmake_build_target, $(@F))

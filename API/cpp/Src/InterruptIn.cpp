@@ -118,7 +118,7 @@ extern "C" {
 
 InterruptIn::InterruptIn(PinName pin, InterruptFunction function, PullType pull,
     InterruptMode mode) : pin(pin), function(function) {
-    GPIO_InitTypeDef pinStructure;
+    GPIO_InitTypeDef pinStructure = {};
     pinStructure.Pin = pin.pin;
     pinStructure.Pull = pull;
     pinStructure.Mode = mode;

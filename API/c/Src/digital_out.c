@@ -1,7 +1,7 @@
 #include "digital_out.h"
 
 void digitalout_init(pin_name pin) {
-    GPIO_InitTypeDef pin_structure;
+    GPIO_InitTypeDef pin_structure = {};
     pin_structure.Pin = pin.pin;
     pin_structure.Pull = GPIO_NOPULL;
     pin_structure.Mode = GPIO_MODE_OUTPUT_PP;
@@ -12,7 +12,7 @@ void digitalout_init(pin_name pin) {
 
 void digitalout_init_ex(pin_name pin, pull_type pull, pin_mode mode,
     pin_speed speed) {
-    GPIO_InitTypeDef pin_structure;
+    GPIO_InitTypeDef pin_structure = {};
     pin_structure.Pin = pin.pin;
     pin_structure.Pull = pull;
     pin_structure.Mode = mode;

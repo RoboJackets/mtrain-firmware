@@ -116,7 +116,7 @@ void EXTI15_10_IRQHandler(void)
 }
 
 void interruptin_init(pin_name pin, void (*function)()) {
-    GPIO_InitTypeDef pin_structure;
+    GPIO_InitTypeDef pin_structure = {};
     pin_structure.Pin = pin.pin;
     pin_structure.Mode = GPIO_MODE_IT_RISING;
     pin_structure.Pull = GPIO_NOPULL;
@@ -127,7 +127,7 @@ void interruptin_init(pin_name pin, void (*function)()) {
 
 void interruptin_init_ex(pin_name pin, void (*function)(), pull_type pull,
     interrupt_mode mode) {
-    GPIO_InitTypeDef pin_structure;
+    GPIO_InitTypeDef pin_structure = {};
     pin_structure.Pin = pin.pin;
     pin_structure.Pull = pull;
     pin_structure.Mode = mode;
