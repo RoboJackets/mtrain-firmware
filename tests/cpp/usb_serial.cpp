@@ -7,9 +7,6 @@
 
 USBD_HandleTypeDef USBD_Device;
 
-// Doesn't crash
-// DigitalOut l1 = DigitalOut(LED2);
-
 int main() {
     USBD_Init(&USBD_Device, &VCP_Desc, 0);
     USBD_RegisterClass(&USBD_Device, USBD_CDC_CLASS);
@@ -17,27 +14,24 @@ int main() {
     USBD_Start(&USBD_Device);
 
     // Crashes
-    //DigitalOut l1 = DigitalOut(LED2);
-
-    // Doesn't crash
-    //GPIO_InitTypeDef pin_structure = {};
-    //pin_structure.Pin = LED2.pin;
-    //pin_structure.Mode = PinMode::PushPull;
-    //pin_structure.Pull = PullType::PullNone;
-    //pin_structure.Speed = PinSpeed::Low;
-    
-    //HAL_GPIO_Init(LED2.port, &pin_structure);
+    DigitalOut l1 = DigitalOut(LED2);
 
     fflush(stdout);
 
-    for (;;) {
-        HAL_Delay(5);
+    uint8_t i = 0;
 
-        printf("t\r\n");
+    for (;;) {
+        l1 = 0;
+        
+        HAL_Delay(50);
+        
+        l1 = 1;
+
+        HAL_Delay(50);
+
+        printf("%u\r\n", i++);
         fflush(stdout);
     }
-
-  while (true) { }
 }
 
 extern "C" {

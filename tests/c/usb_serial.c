@@ -20,7 +20,6 @@ int main(void) {
     USBD_CDC_RegisterInterface(&USBD_Device, &USBD_CDC_fops);
     USBD_Start(&USBD_Device);
 
-    fflush(stdin);
     fflush(stdout);
 
     for (;;) {
@@ -38,8 +37,8 @@ int main(void) {
         digitalout_toggle(leds[2]);
         HAL_Delay(5);
 
-        fflush(stdin);
         printf("t\r\n");
+        printf("a\r\n");
         fflush(stdout);
     }
 }
