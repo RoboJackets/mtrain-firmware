@@ -13,7 +13,6 @@ int main() {
     USBD_CDC_RegisterInterface(&USBD_Device, &USBD_CDC_fops);
     USBD_Start(&USBD_Device);
 
-    // Crashes
     DigitalOut l1 = DigitalOut(LED2);
 
     fflush(stdout);
