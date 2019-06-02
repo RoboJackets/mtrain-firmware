@@ -45,7 +45,7 @@ int main(void) {
 
 int _write(int file, char *data, int len)
 {
-    if (file == STDOUT_FILENO && USBD_Device.dev_state == USBD_STATE_CONFIGURED ) {
+    if (file == STDOUT_FILENO) {
         USBD_CDC_SetTxBuffer(&USBD_Device, (uint8_t*)data, len);
         USBD_CDC_TransmitPacket(&USBD_Device);
     }
