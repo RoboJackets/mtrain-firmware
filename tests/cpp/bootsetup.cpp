@@ -3,11 +3,8 @@
 #include "stm32f7xx_hal.h"
 #include "stm32f7xx_hal_flash_ex.h"
 
-#define SYSTEM_MEMORY_ADDRESS          0x1FF00000
-// #define SYSTEM_MEMORY_ADDRESS       0x1FF0EDBE
-// #define SYSTEM_MEMORY_ADDRESS       0xFFBF0040
-
-
+// #define SYSTEM_MEMORY_ADDRESS          0x1FF00000
+#define SYSTEM_MEMORY_ADDRESS          0x00100000
 
 HAL_StatusTypeDef SB_SystemBootloaderJump()
 {
@@ -46,7 +43,7 @@ HAL_StatusTypeDef SB_SystemBootloaderJump()
     __ISB();
 
 
-    // nDBANK(bit) = 1, Boot(pin) = 0 and BOOT_ADD0(optionbyte) = 0x0040
+    // // nDBANK(bit) = 1, Boot(pin) = 0 and BOOT_ADD0(optionbyte) = 0x0040
     // FLASH_OBProgramInitTypeDef pOBInit;
     // /* Get the Option byte configuration */
     // HAL_FLASHEx_OBGetConfig(&pOBInit);
@@ -67,12 +64,6 @@ HAL_StatusTypeDef SB_SystemBootloaderJump()
     // {
     //     return HAL_ERROR;
     // }
-
-    // /*We need to erase option bytes before write. */
-    // // if(HAL_FLASHEx_OBErase() != HAL_OK)
-    // // {
-    // //     return HAL_ERROR;
-    // // }
 
     // /* Write changed option bytes */
     // if(HAL_FLASHEx_OBProgram(&pOBInit))
