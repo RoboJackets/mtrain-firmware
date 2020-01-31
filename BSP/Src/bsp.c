@@ -1,8 +1,71 @@
 #include "bsp.h"
 #include  <unistd.h>
+#include "usbd_main.h"
+#include "debug_usart.h"
 
 // TODO: make this better
 USBD_HandleTypeDef USBD_Device;
+
+#define GOTO_BOOT_ADDRESS  0x20006666
+#define GOTO_BOOT_MAGICNUM 0x66666666
+#define EXEC_ADDRESS       0x08020000
+
+
+void USB_DFU_Init(void)
+{
+  // Init Device Library
+  USBD_Init( &USBD_Device, &VCP_Desc, 0 );
+
+  // Add Supported Class
+  USBD_RegisterClass( &USBD_Device, USBD_DFU_CLASS );
+
+  // Add Interface callbacks for DFU Class
+  USBD_DFU_RegisterMedia( &USBD_Device, &USBD_DFU_Flash_fops );
+
+  // Start Device Process
+  USBD_Start( &USBD_Device );
+}
+
+void USB_DFU_Deinit(void)
+{
+  USBD_Stop( &USBD_Device );
+  USBD_DeInit( &USBD_Device );
+}
+
+extern volatile uint8_t usb_is_connected;
+
+uint8_t USB_DFU_ongoing(void)
+{
+  if( !usb_is_connected ){ return 0; }
+  // timeout?
+  // upload finished?
+  // upload failed? -> should retry?
+  //
+
+  return 1;
+}
+
+extern PCD_HandleTypeDef hpcd;
+
+#ifdef USE_USB_FS
+void OTG_FS_IRQHandler(void)
+#else
+  void OTG_HS_IRQHandler(void)
+#endif
+{
+  HAL_PCD_IRQHandler(&hpcd);
+}
+
+typedef void (*pFunc)(void);
+static void JumpTo(uint32_t address)
+{
+  // Reinitialize the Stack pointer
+  __set_MSP(*(__IO uint32_t*) address);
+  // jump to application address
+  ((pFunc) (*(__IO uint32_t*) (address + 4)))();
+  while(1){}
+}
+
 
 void bsp_config(void) {
   MPU_Config();
@@ -22,35 +85,41 @@ void bsp_config(void) {
   __HAL_RCC_GPIOH_CLK_ENABLE();
   __HAL_RCC_GPIOI_CLK_ENABLE();
 
-  // qspi Init
-
-  // FATfs Init
-
-
   // Check USB pin (PA10, D15)
   GPIO_InitTypeDef pin_structure;
   pin_structure.Pin = GPIO_PIN_10;
   pin_structure.Mode = GPIO_MODE_INPUT;
-  pin_structure.Pull = pull;
+  pin_structure.Pull = GPIO_PULLDOWN;
 
   HAL_GPIO_Init(GPIOA, &pin_structure);
 
-  if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_10)) {
-    Usb_Programming();
-  } else {
-    USBD_Init(&USBD_Device, &VCP_Desc, 0);
-    USBD_RegisterClass(&USBD_Device, USBD_CDC_CLASS);
-    USBD_CDC_RegisterInterface(&USBD_Device, &USBD_CDC_fops);
-    USBD_Start(&USBD_Device);
+  if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_10) && *(uint32_t*)(GOTO_BOOT_ADDRESS) != GOTO_BOOT_MAGICNUM ){ // Check if magic RAM location is set
+    JumpTo(EXEC_ADDRESS);
   }
-}
 
-void Usb_Programming(void) {
+  // If we're bootloading, first unset the bit
+  *(uint32_t*)(GOTO_BOOT_ADDRESS) = 0;
+
+  // init USB
+	USB_DFU_Init();
+
+  while( USB_DFU_ongoing() ){
+    HAL_Delay(1000);
+  }
+
+  // deinit hardware layer
+  USB_DFU_Deinit();
+	Debug_USART_DeInit();
+	/* HAL_DeInit(); */
+
   USBD_Init(&USBD_Device, &VCP_Desc, 0);
   USBD_RegisterClass(&USBD_Device, USBD_CDC_CLASS);
   USBD_CDC_RegisterInterface(&USBD_Device, &USBD_CDC_fops);
   USBD_Start(&USBD_Device);
 
+	JumpTo(EXEC_ADDRESS);
+
+  return 0;
 }
 
 

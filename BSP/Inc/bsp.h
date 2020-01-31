@@ -5,12 +5,10 @@
  extern "C" {
 #endif
 
-#include "stm32f7xx_hal.h"
 
-#include "usbd_core.h"
-#include "usbd_desc.h"
 #include "usbd_cdc.h"
 #include "usbd_cdc_interface.h"
+#include "usbd_main.h"
 #include "qspi.h"
 
 extern void bsp_config(void);
@@ -20,6 +18,10 @@ void Error_Handler(void);
 void MPU_Config(void);
 void CPU_CACHE_Enable(void);
 void DWT_Config(void);
+
+uint8_t USB_DFU_ongoing(void);
+void USB_DFU_Deinit(void);
+void USB_DFU_Init(void);
 
 #ifdef __cplusplus
 }
