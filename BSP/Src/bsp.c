@@ -22,35 +22,55 @@ void bsp_config(void) {
   __HAL_RCC_GPIOH_CLK_ENABLE();
   __HAL_RCC_GPIOI_CLK_ENABLE();
 
-  // qspi Init
+  // Qspi Init
 
   // FATfs Init
-
 
   // Check USB pin (PA10, D15)
   GPIO_InitTypeDef pin_structure;
   pin_structure.Pin = GPIO_PIN_10;
   pin_structure.Mode = GPIO_MODE_INPUT;
-  pin_structure.Pull = pull;
+  pin_structure.Pull = GPIO_PULLUP;
 
   HAL_GPIO_Init(GPIOA, &pin_structure);
 
-  if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_10)) {
-    Usb_Programming();
-  } else {
-    USBD_Init(&USBD_Device, &VCP_Desc, 0);
-    USBD_RegisterClass(&USBD_Device, USBD_CDC_CLASS);
-    USBD_CDC_RegisterInterface(&USBD_Device, &USBD_CDC_fops);
-    USBD_Start(&USBD_Device);
-  }
-}
 
-void Usb_Programming(void) {
+  /* if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_10)) { */
+  /* USBD_Init(&USBD_Device, &VCP_Desc, 0); */
+  /* USBD_RegisterClass(&USBD_Device, USBD_DFU_CLASS); */
+  /* USBD_DFU_Init(&USBD_Device, 0); */
+  /* USBD_Start(&USBD_Device); */
+
+  USBD_DFU_Init();
+
+  // Init Device Library
+  /* USBD_Init( &USBD_Device, &DFU_Desc, 0 ); */
+
+  /* // Add Supported Class */
+  /* USBD_RegisterClass( &USBD_Device, USBD_DFU_CLASS ); */
+
+  // Add Interface callbacks for DFU Class
+  /* USBD_DFU_RegisterMedia( &USBD_Device, &USBD_DFU_MEDIA_fops ); */
+
+  // Start Device Process
+  /* USBD_Start( &USBD_Device ); */
+
+
+  // This code is controlled via interrupts from USB from here on out until the usb is unplugged
+  while (1) {
+    HAL_Delay(1);
+  }
+
+  /* USBD_Stop(&USBD_Device); */
+  /* USBD_DeInit(&USBD_Device); */
+  USBD_DFU_DeInit();
+
+  /* } */
+  // Init cdc usb for printf and boot normally
   USBD_Init(&USBD_Device, &VCP_Desc, 0);
   USBD_RegisterClass(&USBD_Device, USBD_CDC_CLASS);
   USBD_CDC_RegisterInterface(&USBD_Device, &USBD_CDC_fops);
   USBD_Start(&USBD_Device);
-
 }
 
 
@@ -220,5 +240,16 @@ void assert_failed(uint8_t* file, uint32_t line)
   while (1)
   {
   }
+}
+
+extern PCD_HandleTypeDef hpcd;
+
+#ifdef USE_USB_FS
+void OTG_FS_IRQHandler(void)
+#else
+  void OTG_HS_IRQHandler(void)
+#endif
+{
+  HAL_PCD_IRQHandler(&hpcd);
 }
 #endif
