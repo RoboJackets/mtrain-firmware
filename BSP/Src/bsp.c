@@ -1,7 +1,7 @@
 #include "bsp.h"
 #include  <unistd.h>
 
-// TODO: make this better
+/* TODO: make this better */
 USBD_HandleTypeDef USBD_Device;
 
 void bsp_config(void) {
@@ -36,41 +36,33 @@ void bsp_config(void) {
 
 
   /* if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_10)) { */
-  /* USBD_Init(&USBD_Device, &VCP_Desc, 0); */
-  /* USBD_RegisterClass(&USBD_Device, USBD_DFU_CLASS); */
-  /* USBD_DFU_Init(&USBD_Device, 0); */
-  /* USBD_Start(&USBD_Device); */
-
-  USBD_DFU_Init();
-
-  // Init Device Library
-  /* USBD_Init( &USBD_Device, &DFU_Desc, 0 ); */
-
-  /* // Add Supported Class */
-  /* USBD_RegisterClass( &USBD_Device, USBD_DFU_CLASS ); */
+  USBD_Init(&USBD_Device, &VCP_Desc, 0);
+  USBD_RegisterClass(&USBD_Device, USBD_DFU_CLASS);
 
   // Add Interface callbacks for DFU Class
-  /* USBD_DFU_RegisterMedia( &USBD_Device, &USBD_DFU_MEDIA_fops ); */
+  USBD_DFU_RegisterMedia( &USBD_Device, &USBD_DFU_Flash_fops );
 
-  // Start Device Process
-  /* USBD_Start( &USBD_Device ); */
+  USBD_DFU_Init(&USBD_Device, 0);
 
+  USBD_Start(&USBD_Device);
 
-  // This code is controlled via interrupts from USB from here on out until the usb is unplugged
-  while (1) {
-    HAL_Delay(1);
-  }
+  /* // This code is controlled via interrupts from USB from here on out until the usb is unplugged */
+  /* while (1) { */
+  /*   HAL_Delay(1); */
+  /* } */
 
   /* USBD_Stop(&USBD_Device); */
   /* USBD_DeInit(&USBD_Device); */
-  USBD_DFU_DeInit();
+  /* USBD_DFU_DeInit(); */
 
   /* } */
+
+
   // Init cdc usb for printf and boot normally
-  USBD_Init(&USBD_Device, &VCP_Desc, 0);
-  USBD_RegisterClass(&USBD_Device, USBD_CDC_CLASS);
-  USBD_CDC_RegisterInterface(&USBD_Device, &USBD_CDC_fops);
-  USBD_Start(&USBD_Device);
+  /* USBD_Init(&USBD_Device, &VCP_Desc, 0); */
+  /* USBD_RegisterClass(&USBD_Device, USBD_CDC_CLASS); */
+  /* USBD_CDC_RegisterInterface(&USBD_Device, &USBD_CDC_fops); */
+  /* USBD_Start(&USBD_Device); */
 }
 
 

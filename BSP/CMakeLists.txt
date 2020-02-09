@@ -8,6 +8,7 @@ add_library(STM32F7xx
     Src/stm32f7xx_hal_msp.c
     Src/usbd_cdc_interface.c
     Src/qspi.c
+    Src/usbd_dfu_flash.c
 )
 
 target_include_directories(STM32F7xx PUBLIC

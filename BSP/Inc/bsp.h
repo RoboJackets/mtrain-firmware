@@ -12,7 +12,7 @@
 #include "usbd_cdc.h"
 #include "usbd_cdc_interface.h"
 #include "usbd_dfu.h"
-#include "usbd_dfu_interface.h"
+#include "usbd_dfu_flash.h"
 #include "qspi.h"
 
 #define USE_USB_FS
