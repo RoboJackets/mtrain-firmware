@@ -22,4 +22,6 @@ target_include_directories(STM32F7xx_HAL PUBLIC ${CMAKE_SOURCE_DIR}/BSP/config/h
 
 target_link_libraries(STM32F7xx_HAL PUBLIC DSP)
 
+# Do these definitions need to be defined down here? Do they require HAL?
 add_subdirectory(middleware/STM32_USB_Device_Library)
+add_subdirectory(middleware/FatFs)

@@ -4,12 +4,17 @@
 // TODO: make this better
 USBD_HandleTypeDef USBD_Device;
 
-void bsp_config(void) {
+// TODO: move this
+RTC_HandleTypeDef RTC_Device;
+
+void bsp_config(void)
+{
   MPU_Config();
   CPU_CACHE_Enable();
   HAL_Init();
   SystemClock_Config();
   DWT_Config();
+  RTC_Config();
 
   // Enable all needed system clocks
   __HAL_RCC_GPIOA_CLK_ENABLE();
@@ -21,6 +26,27 @@ void bsp_config(void) {
   __HAL_RCC_GPIOG_CLK_ENABLE();
   __HAL_RCC_GPIOH_CLK_ENABLE();
   __HAL_RCC_GPIOI_CLK_ENABLE();
+
+
+  // Qspi Init
+  if (BSP_QSPI_Init() != QSPI_OK) {
+    // Error handling
+  }
+
+  // FATfs Init
+
+  // Check USB pin (PA10, D15)
+  GPIO_InitTypeDef pin_structure;
+  pin_structure.Pin = GPIO_PIN_10;
+  pin_structure.Mode = GPIO_MODE_INPUT;
+  pin_structure.Pull = GPIO_PULLUP;
+
+  HAL_GPIO_Init(GPIOA, &pin_structure);
+
+  /* if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_10)) { */
+
+  /* } */
+
 
   USBD_Init(&USBD_Device, &VCP_Desc, 0);
   USBD_RegisterClass(&USBD_Device, USBD_CDC_CLASS);
@@ -41,7 +67,7 @@ int _write(int file, char *data, int len)
 
 /**
   * @brief  System Clock Configuration
-  *         The system Clock is configured as follow : 
+  *         The system Clock is configured as follow :
   *            System Clock source            = PLL (HSE)
   *            SYSCLK(Hz)                     = 216000000
   *            HCLK(Hz)                       = 216000000
@@ -65,14 +91,14 @@ void SystemClock_Config(void)
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
 
-  /**Configure LSE Drive Capability 
+  /**Configure LSE Drive Capability
   */
   // HAL_PWR_EnableBkUpAccess();
-  /**Configure the main internal regulator output voltage 
+  /**Configure the main internal regulator output voltage
   */
   __HAL_RCC_PWR_CLK_ENABLE();
   __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);
-  /**Initializes the CPU, AHB and APB busses clocks 
+  /**Initializes the CPU, AHB and APB busses clocks
   */
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
   RCC_OscInitStruct.HSEState = RCC_HSE_BYPASS;
@@ -86,13 +112,13 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-  /**Activate the Over-Drive mode 
+  /**Activate the Over-Drive mode
   */
   if (HAL_PWREx_EnableOverDrive() != HAL_OK)
   {
     Error_Handler();
   }
-  /**Initializes the CPU, AHB and APB busses clocks 
+  /**Initializes the CPU, AHB and APB busses clocks
   */
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
@@ -123,7 +149,7 @@ void Error_Handler(void)
 /**
   * @brief  Configure the MPU attributes as Write Through for Internal SRAM1/2.
   * @note   The Base Address is 0x20020000 since this memory interface is the AXI.
-  *         The Configured Region Size is 512KB because the internal SRAM1/2 
+  *         The Configured Region Size is 512KB because the internal SRAM1/2
   *         memory size is 384KB.
   * @param  None
   * @retval None
@@ -131,7 +157,7 @@ void Error_Handler(void)
 void MPU_Config(void)
 {
   MPU_Region_InitTypeDef MPU_InitStruct;
-  
+
   /* Disable the MPU */
   HAL_MPU_Disable();
 
@@ -171,9 +197,18 @@ void CPU_CACHE_Enable(void)
 void DWT_Config(void)
 {
   CoreDebug->DEMCR |= CoreDebug_DEMCR_TRCENA_Msk;
-  DWT->LAR = 0xC5ACCE55; 
+  DWT->LAR = 0xC5ACCE55;
   DWT->CYCCNT = 0;
   DWT->CTRL |= DWT_CTRL_CYCCNTENA_Msk;
+}
+
+void RTC_Config(void)
+{
+  __HAL_RCC_PWR_CLK_ENABLE();
+  HAL_PWR_EnableBkUpAccess();
+  __HAL_RCC_RTC_CONFIG(RCC_RTCCLKSOURCE_LSI);
+  __HAL_RCC_RTC_ENABLE();
+
 }
 
 #ifdef  USE_FULL_ASSERT
@@ -186,7 +221,7 @@ void DWT_Config(void)
   * @retval None
   */
 void assert_failed(uint8_t* file, uint32_t line)
-{ 
+{
   /* User can add his own implementation to report the file name and line number,
      ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
 
