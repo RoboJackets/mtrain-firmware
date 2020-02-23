@@ -1,4 +1,3 @@
-
 #include "bsp.h"
 
 USBD_CDC_LineCodingTypeDef LineCoding =
