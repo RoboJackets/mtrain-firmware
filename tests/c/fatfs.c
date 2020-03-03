@@ -1,14 +1,15 @@
 #include <stdio.h>
 #include <string.h>
-/* #include "ff.h"         /\* Declarations of sector size *\/ */
-/* #include "diskio.h"     /\* Declarations of disk functions *\/ */
+#include "ff.h"         /* Declarations of sector size */
+#include "diskio.h"     /* Declarations of disk functions */
 #include "ff_gen_drv.h"
-#include "mynewdisk_diskio.h"
 
 FATFS mynewdiskFatFs; /* File system object for User logical drive */
 FIL MyFile;
 /* File object */
 char mynewdiskPath[4]; /* User logical drive path */
+extern Diskio_drvTypeDef qspi_flash_driver;
+
 
 int main(void)
 {

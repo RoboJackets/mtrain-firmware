@@ -6,21 +6,21 @@
 #define _FFCONF 32020	/* Revision ID */
 
 /*-----------------------------------------------------------------------------/
-/ Additional user header to be used  
+/ Additional user header to be used
 /-----------------------------------------------------------------------------*/
 /* Replace 'stm32xxx' with the STM32 Serie used, ex: stm32f4xx_hal.h */
-#include "stm32xxx_hal.h" 
+#include "stm32f7xx_hal.h"
 
-/* If uSD is used, then include the uSD BSP header file. 
-   Replace 'stm32xxx' with your EVAL board name, ex: stm324x9i_eval_sd.h 
+/* If uSD is used, then include the uSD BSP header file.
+   Replace 'stm32xxx' with your EVAL board name, ex: stm324x9i_eval_sd.h
    */
-#include "stm32xxx_eval_sd.h"
+/* #include "stm32xxx_eval_sd.h" */
 
 /* If USB Host MSC is used, then need to include the USBH and UBSH MSC core header files */
-#include "usbh_core.h"
-#include "usbh_msc.h"
+/* #include "usbh_core.h" */
+/* #include "usbh_msc.h" */
 /* hUSBH to be updated with the USBH handle defined in the application code */
-#define  HOST_HANDLE   hUSBH 
+#define  HOST_HANDLE   hUSBH
 
 /*---------------------------------------------------------------------------/
 / Functions and Buffer Configurations
@@ -90,7 +90,7 @@
 /  before being processed by the DMA . Otherwise (DMA not used), this define must
 /  be set to 1 to avoid Data alignment and improve the performance.
 /  Please note that if _USE_BUFF_WO_ALIGNMENT is set to 1 and an unaligned 32bits
-/  buffer is forwarded to the FatFs Write/Read functions, an error will be returned. 
+/  buffer is forwarded to the FatFs Write/Read functions, an error will be returned.
 /  (0: default value or 1: unaligned buffer return an error). */
 
 
@@ -199,8 +199,8 @@
 /  listed in the VolToPart[]. Also f_fdisk() funciton will be available. */
 
 
-#define	_MIN_SS                 512
-#define	_MAX_SS                 512
+#define	_MIN_SS                 4096
+#define	_MAX_SS                 4096
 /* These options configure the range of sector size to be supported. (512, 1024,
 /  2048 or 4096) Always set both 512 for most systems, all type of memory cards and
 /  harddisk. But a larger value may be required for on-board flash memory and some
@@ -240,7 +240,7 @@
 /  defined by _NORTC_MON, _NORTC_MDAY and _NORTC_YEAR.
 /  When timestamp feature is enabled (_FS_NORTC	== 0), get_fattime() function need
 /  to be added to the project to read current time form RTC. _NORTC_MON,
-/  _NORTC_MDAY and _NORTC_YEAR have no effect. 
+/  _NORTC_MDAY and _NORTC_YEAR have no effect.
 /  These options have no effect at read-only configuration (_FS_READONLY == 1). */
 
 
@@ -256,7 +256,7 @@
 /      lock feature is independent of re-entrancy. */
 
 
-#define _FS_REENTRANT           1
+#define _FS_REENTRANT           0
 #define _FS_TIMEOUT             1000
 #define	_SYNC_t                 osSemaphoreId
 /* The _FS_REENTRANT option switches the re-entrancy (thread safe) of the FatFs

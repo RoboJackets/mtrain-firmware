@@ -56,6 +56,7 @@
   */
 
 /* Includes ------------------------------------------------------------------*/
+#include <string.h>
 #include "ff_gen_drv.h"
 #include "qspi.h"
 
@@ -68,27 +69,18 @@ extern Disk_drvTypeDef  disk;
 
 /* Private function prototypes -----------------------------------------------*/
 
-DSTATUS qspi_flash_initialize (BYTE);
-DSTATUS qspi_flash_status (BYTE);
-DRESULT qspi_flash_read (BYTE, BYTE*, DWORD, UINT);
-#if _USE_WRITE == 1
-DRESULT qspi_flash_write (BYTE, const BYTE*, DWORD, UINT);
-#endif /* _USE_WRITE == 1 */
-#if _USE_IOCTL == 1
-DRESULT qspi_flash_ioctl (BYTE, BYTE, void*);
-#endif  /* _USE_IOCTL == 1 */
 
 const Diskio_drvTypeDef  qspi_flash_driver =
   {
-    qspi_flash_initialize,
-    qspi_flash_status,
-    qspi_flash_read,
+    disk_initialize,
+    disk_status,
+    disk_read,
 #if  _USE_WRITE == 1
-    qspi_flash_write,
+    disk_write,
 #endif /* _USE_WRITE == 1 */
 
 #if  _USE_IOCTL == 1
-    qspi_flash_ioctl,
+    disk_ioctl,
 #endif /* _USE_IOCTL == 1 */
   };
 
@@ -105,12 +97,12 @@ const Diskio_drvTypeDef  qspi_flash_driver =
   * @param  pdrv: Physical drive number (0..)
   * @retval DSTATUS: Operation status
   */
-DSTATUS qspi_flash_status (
+DSTATUS disk_status (
 	BYTE pdrv		/* Physical drive nmuber to identify the drive */
 )
 {
 
-  if (drv){
+  if (pdrv){
     return STA_NOINIT;		/* Supports only drive 0 */
   }
 
@@ -124,11 +116,11 @@ DSTATUS qspi_flash_status (
   * @param  pdrv: Physical drive number (0..)
   * @retval DSTATUS: Operation status
   */
-DSTATUS qspi_flash_initialize (
+DSTATUS disk_initialize (
 	BYTE pdrv				/* Physical drive nmuber to identify the drive */
 )
 {
-  if (drv){
+  if (pdrv){
     return STA_NOINIT;		/* Supports only drive 0 */
   }
 
@@ -146,14 +138,14 @@ DSTATUS qspi_flash_initialize (
   * @param  count: Number of sectors to read (1..128)
   * @retval DRESULT: Operation result
   */
-DRESULT qspi_flash_read (
+DRESULT disk_read (
 	BYTE pdrv,		/* Physical drive nmuber to identify the drive */
 	BYTE *buff,		/* Data buffer to store read data */
 	DWORD sector,	        /* Sector address in LBA */
 	UINT count		/* Number of sectors to read */
 )
 {
-  if (drv) {
+  if (pdrv) {
     return RES_PARERR;
   }
 
@@ -179,14 +171,16 @@ DRESULT qspi_flash_read (
   * @retval DRESULT: Operation result
   */
 #if _USE_WRITE == 1
-DRESULT qspi_flash_write (
+DRESULT disk_write (
 	BYTE pdrv,		/* Physical drive nmuber to identify the drive */
-	const BYTE *buff,	/* Data to be written */
+  BYTE *buff,	/* Data to be written */
 	DWORD sector,		/* Sector address in LBA */
 	UINT count        	/* Number of sectors to write */
 )
 {
-  if (drv) {
+  DRESULT res;
+
+  if (pdrv) {
     return RES_PARERR;
   }
 
@@ -208,13 +202,13 @@ DRESULT qspi_flash_write (
   * @retval DRESULT: Operation result
   */
 #if _USE_IOCTL == 1
-DRESULT qspi_flash_ioctl (
+DRESULT disk_ioctl (
 	BYTE pdrv,		/* Physical drive nmuber (0..) */
 	BYTE cmd,		/* Control code */
 	void *buff		/* Buffer to send/receive control data */
 )
 {
-  if (drv) {
+  if (pdrv) {
     return RES_PARERR;
   }
 

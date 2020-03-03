@@ -8,8 +8,6 @@
 #include <string.h>
 /* #include "ff.h"         /\* Declarations of sector size *\/ */
 /* #include "diskio.h"     /\* Declarations of disk functions *\/ */
-#include "ff_gen_drv.h"
-#include "mynewdisk_diskio.h"
 
 
 /* static DWORD pn (       /\* Pseudo random number generator *\/ */

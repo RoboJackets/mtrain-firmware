@@ -44,24 +44,7 @@ void bsp_config(void)
 
   /* if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_10)) { */
 
-  USBD_Init(&USBD_Device, &VCP_Desc, 0);
-  USBD_RegisterClass(&USBD_Device, USBD_DFU_CLASS);
 
-  // Add Interface callbacks for DFU Class
-  USBD_DFU_RegisterMedia( &USBD_Device, &USBD_DFU_Flash_fops );
-
-  USBD_DFU_Init(&USBD_Device, 0);
-
-  USBD_Start(&USBD_Device);
-
-  /* // This code is controlled via interrupts from USB from here on out until the usb is unplugged */
-  /* while (1) { */
-  /*   HAL_Delay(1); */
-  /* } */
-
-  /* USBD_Stop(&USBD_Device); */
-  /* USBD_DeInit(&USBD_Device); */
-  /* USBD_DFU_DeInit(); */
 
   /* } */
 
@@ -80,7 +63,9 @@ int _write(int file, char *data, int len)
     if (file == STDOUT_FILENO) {
         USBD_CDC_SetTxBuffer(&USBD_Device, (uint8_t*)data, len);
         USBD_CDC_TransmitPacket(&USBD_Device);
-        DWT_Delay(1000); // TODO: why not blocking?
+
+        // TODO CHECK WHAT THIS IS SUPPOSED TO BE AND FIX THIS
+        HAL_Delay(1000); // TODO: why not blocking?
     }
     return 0;
 }
@@ -251,13 +236,4 @@ void assert_failed(uint8_t* file, uint32_t line)
   }
 }
 
-extern PCD_HandleTypeDef hpcd;
-
-#ifdef USE_USB_FS
-void OTG_FS_IRQHandler(void)
-#else
-  void OTG_HS_IRQHandler(void)
 #endif
-{
-  HAL_PCD_IRQHandler(&hpcd);
-}

@@ -11,8 +11,6 @@
 #include "usbd_desc.h"
 #include "usbd_cdc.h"
 #include "usbd_cdc_interface.h"
-#include "usbd_dfu.h"
-#include "usbd_dfu_flash.h"
 #include "qspi.h"
 
 #define USE_USB_FS
@@ -24,6 +22,7 @@ void Error_Handler(void);
 void MPU_Config(void);
 void CPU_CACHE_Enable(void);
 void DWT_Config(void);
+void RTC_Config(void);
 
 #ifdef __cplusplus
 }
