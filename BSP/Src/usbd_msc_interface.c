@@ -1,33 +1,5 @@
-/**
-  ******************************************************************************
-  * @file    usbd_msc_storage_template.c
-  * @author  MCD Application Team
-  * @version V2.4.2
-  * @date    11-December-2015
-  * @brief   Memory management layer
-  ******************************************************************************
-  * @attention
-  *
-  * <h2><center>&copy; COPYRIGHT 2015 STMicroelectronics</center></h2>
-  *
-  * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
-  * You may not use this file except in compliance with the License.
-  * You may obtain a copy of the License at:
-  *
-  *        http://www.st.com/software_license_agreement_liberty_v2
-  *
-  * Unless required by applicable law or agreed to in writing, software
-  * distributed under the License is distributed on an "AS IS" BASIS,
-  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  * See the License for the specific language governing permissions and
-  * limitations under the License.
-  *
-  ******************************************************************************
-  */
-
-
 /* Includes ------------------------------------------------------------------*/
-#include "usbd_msc_storage_template.h"
+#include "bsp.h"
 
 
 /* Private typedef -----------------------------------------------------------*/
@@ -39,8 +11,8 @@
 /* Private functions ---------------------------------------------------------*/
 
 #define STORAGE_LUN_NBR                  1
-#define STORAGE_BLK_NBR                  0x10000
-#define STORAGE_BLK_SIZ                  0x200
+#define STORAGE_BLK_NBR                  0x2000 // 8192 blocks for 32MB storage at blocks of size 4096 bytes
+#define STORAGE_BLK_SIZ                  0x1000 // blocks of size 4096 bytes
 
 int8_t STORAGE_Init (uint8_t lun);
 
@@ -94,6 +66,9 @@ USBD_StorageTypeDef USBD_MSC_Template_fops =
   STORAGE_Inquirydata,
 
 };
+
+
+// TODO dont think anything needs to be done here
 /*******************************************************************************
 * Function Name  : Read_Memory
 * Description    : Handle the Read operation from the microSD card.
@@ -105,6 +80,7 @@ int8_t STORAGE_Init (uint8_t lun)
 {
   return (0);
 }
+
 
 /*******************************************************************************
 * Function Name  : Read_Memory
@@ -120,6 +96,7 @@ int8_t STORAGE_GetCapacity (uint8_t lun, uint32_t *block_num, uint16_t *block_si
   return (0);
 }
 
+
 /*******************************************************************************
 * Function Name  : Read_Memory
 * Description    : Handle the Read operation from the STORAGE card.
@@ -129,9 +106,11 @@ int8_t STORAGE_GetCapacity (uint8_t lun, uint32_t *block_num, uint16_t *block_si
 *******************************************************************************/
 int8_t  STORAGE_IsReady (uint8_t lun)
 {
-  return (0);
+  return BSP_QSPI_Check_Ready();
 }
 
+
+// TODO
 /*******************************************************************************
 * Function Name  : Read_Memory
 * Description    : Handle the Read operation from the STORAGE card.
@@ -144,6 +123,8 @@ int8_t  STORAGE_IsWriteProtected (uint8_t lun)
   return  0;
 }
 
+
+// TODO
 /*******************************************************************************
 * Function Name  : Read_Memory
 * Description    : Handle the Read operation from the STORAGE card.
@@ -156,8 +137,19 @@ int8_t STORAGE_Read (uint8_t lun,
                  uint32_t blk_addr,
                  uint16_t blk_len)
 {
+  // theres only 1 lun so it doesnt matter
+  // convert block_address to byte address
+  uint32_t addr = blk_addr * FLASH_SUBSECTOR_SIZE;
+  uint32_t size = blk_len * FLASH_SUBSECTOR_SIZE;
+  if (BSP_QSPI_Read(buf, addr, size) != QSPI_OK) {
+    return 1;
+  }
+
   return 0;
 }
+
+
+// TODO
 /*******************************************************************************
 * Function Name  : Write_Memory
 * Description    : Handle the Write operation to the STORAGE card.
@@ -170,8 +162,18 @@ int8_t STORAGE_Write (uint8_t lun,
                   uint32_t blk_addr,
                   uint16_t blk_len)
 {
-  return (0);
+  // theres only 1 lun so it doesnt matter
+  // convert block_address to byte address
+  uint32_t addr = blk_addr * FLASH_SUBSECTOR_SIZE;
+  uint32_t size = blk_len * FLASH_SUBSECTOR_SIZE;
+  if (BSP_QSPI_Read(buf, addr, size) != QSPI_OK) {
+    return 1;
+  }
+
+  return 0
 }
+
+
 /*******************************************************************************
 * Function Name  : Write_Memory
 * Description    : Handle the Write operation to the STORAGE card.

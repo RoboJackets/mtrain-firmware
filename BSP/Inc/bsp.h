@@ -6,12 +6,20 @@
 #endif
 
 #include "stm32f7xx_hal.h"
+#include "qspi.h"
 
+// USB Stuff
 #include "usbd_core.h"
 #include "usbd_desc.h"
 #include "usbd_cdc.h"
 #include "usbd_cdc_interface.h"
-#include "qspi.h"
+#include "usbd_msc.h"
+#include "usbd_cdc_interface.h"
+
+// FAT Stuff
+#include "ff.h"
+#include "ff_gen_drv.h"
+#include "diskio.h"     /* Declarations of disk functions */
 
 #define USE_USB_FS
 

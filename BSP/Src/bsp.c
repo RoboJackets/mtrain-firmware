@@ -32,7 +32,8 @@ void bsp_config(void)
     // Error handling
   }
 
-  // FATfs Init
+
+
 
   // Check USB pin (PA10, D15)
   GPIO_InitTypeDef pin_structure;
@@ -42,11 +43,68 @@ void bsp_config(void)
 
   HAL_GPIO_Init(GPIOA, &pin_structure);
 
-  /* if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_10)) { */
+  if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_10)) {
+
+    // USB MSC Init
+    USBD_Init(&USBD_Device, &VCP_Desc, 0);
+    USBD_RegisterClass(&USBD_Device, USBD_MSC_CLASS);
+    USBD_CDC_RegisterInterface(&USBD_Device, &USBD_CDC_fops);
+    USBD_Start(&USBD_Device);
 
 
+    // USB MSC Deinit
 
-  /* } */
+
+  }
+
+
+  // FATfs Init
+  if(FATFS_LinkDriver(&qspi_flash_driver, diskpath) != 0) {
+    // Error handling
+
+  }
+
+  // Force initialization with 1 so we can see its working or abort
+  if(f_mount(&fs, "", 1) != FR_OK) {
+    // Error handling
+
+  }
+
+  // Search for most recent file
+  DIR rootdir;
+  FILINFO current_binary;
+  FILINFO newest_binary;
+  char path[] = "/";
+  char pattern[] = "*.bin";
+
+  f_findfirst(&rootdir, &current_binary,  path, pattern);
+  if (!current_binary) {
+    // Error handling
+
+  }
+
+  newest_binary = current_binary;
+
+  // Null string is returned if no next
+  while (current_binary.fname != "") {
+    if (current_binary.fdate > newest_binary.fdate) {
+      newest_binary = current_binary;
+    } else if (current_binary.fdate == newest_binary.fdate) {
+      if (current_binary.ftime > newest_binary.ftime) {
+        newest_binary = current_binary;
+      }
+    }
+
+    f_findnext(&rootdir, &current_binary);
+  }
+
+
+  if (!newest_binary) {
+    // Error handling
+
+  }
+
+  // Load found binary into user app location
 
 
   // Init cdc usb for printf and boot normally

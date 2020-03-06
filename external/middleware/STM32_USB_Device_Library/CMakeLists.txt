@@ -5,13 +5,13 @@ aux_source_directory(Core/Src USB_DEVICE_CORE_SRC)
 add_library(STM32_USB_Device
     ${USB_DEVICE_CORE_SRC}
     Class/CDC/Src/usbd_cdc.c
-    Class/DFU/Src/usbd_dfu.c
+    Class/MSC/Src/usbd_msc.c
 )
 
 target_include_directories(STM32_USB_Device PUBLIC
     Core/Inc
     Class/CDC/Inc
-    Class/DFU/Inc
+    Class/MSC/Inc
 )
 
 # Include HAL configuration from BSP

@@ -86,9 +86,7 @@ const Diskio_drvTypeDef  qspi_flash_driver =
 
 
 
-
 /* Private functions ---------------------------------------------------------*/
-
 
 
 
@@ -150,9 +148,10 @@ DRESULT disk_read (
   }
 
   DRESULT res;
-  // TODO Check qspi ready?
+  // TODO Modify BSP qspi to return busy if thats the error and return
+	//RES_NOTRDY,		/* 3: Not Ready */
 
-  // convert sector to address for qspi and then count to size by doing 4kb times count
+  // convert block_address to byte address
   uint32_t addr = sector * FLASH_SUBSECTOR_SIZE;
   uint32_t size = count * FLASH_SUBSECTOR_SIZE;
   if (BSP_QSPI_Read(buff, addr, size) != QSPI_OK) {
@@ -208,11 +207,13 @@ DRESULT disk_ioctl (
 	void *buff		/* Buffer to send/receive control data */
 )
 {
+
+  DSTATUS stat = RES_OK;
   if (pdrv) {
     return RES_PARERR;
   }
 
-  if (Stat & STA_NOINIT) return RES_NOTRDY;
+  if (stat & STA_NOINIT) return RES_NOTRDY;
 
   DRESULT res;
   switch(cmd) {
@@ -224,21 +225,21 @@ DRESULT disk_ioctl (
 
   case 1:
     //GET_SECTOR_COUNT
-    return FLASH_SECTOR_COUNT;
+    return FLASH_SUBSECTOR_COUNT;
     break;
 
   case 2:
     //GET_SECTOR_SIZE
-    return FLASH_SECTOR_SIZE;
-    break;
-
-  case 2:
-    //GET_BLOCK_SIZE
-    //These should be the 16k sectors as they make up the bulk of storage
-    return FLASH_SECTOR_SIZE * 4;
+    return FLASH_SUBSECTOR_SIZE;
     break;
 
   case 3:
+    //GET_BLOCK_SIZE
+    //These should be the 16k sectors as they make up the bulk of storage
+    return FLASH_SUBSECTOR_SIZE * 4;
+    break;
+
+  case 4:
     //CTRL_TRIM
     // not defining this right now but should do the following
     // Informs the device the data on the block of sectors is no longer needed and it can be erased. The sector block is specified in an LBA_t array {<Start LBA>, <End LBA>} pointed by buff. This is an identical command to Trim of ATA device. Nothing to do for this command if this funcion is not supported or not a flash memory device. FatFs does not check the result code and the file function is not affected even if the sector block was not erased well. This command is called on remove a cluster chain and in the f_mkfs function. It is required when FF_USE_TRIM == 1.
@@ -251,6 +252,8 @@ DRESULT disk_ioctl (
 }
 #endif /* _USE_IOCTL == 1 */
 
+
+// TODO finish implementation of realtime clock
 /**
   * @brief  Gets Time from RTC
   * @param  None

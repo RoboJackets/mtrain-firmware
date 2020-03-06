@@ -1,6 +1,4 @@
-#include "bsp.h"
-
-
+#include "qspi.h"
 
 QSPI_HandleTypeDef QSPIHandle;
 
@@ -98,9 +96,11 @@ uint8_t BSP_QSPI_Read(uint8_t* pData, uint32_t ReadAddr, uint32_t Size)
   /* HAL_GPIO_Init(GPIOC, &GPIO_InitStruct); */
   /* HAL_GPIO_WritePin(GPIOC, GPIO_PIN_11, (GPIO_PinState)0); */
 
+  // TODO Hal can get status status = HAL_BUSY; if the unit is locked doing a write
   /* Reception of the data */
   if (HAL_QSPI_Receive(&QSPIHandle, pData, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK)
   {
+
     return QSPI_ERROR;
   }
 
@@ -269,6 +269,22 @@ uint8_t BSP_QSPI_Erase_Chip(void)
   return QSPI_OK;
 }
 
+
+// NOTE Does not obey hal qspi lock but I thought it was fine since its just a preemptive check
+// NOTE Yes I know it returns 1 on success but thats what qspi read is too but zero is not error or even busy so...
+uint8_t BSP_QSPI_Check_Ready (void)
+{
+  if (QSPIHandle.State == HAL_QSPI_STATE_READY) {
+    return 1;
+  } else {
+    return 0;
+  }
+
+}
+
+
+
+// Read a single register
 uint8_t BSP_print_regs(void)
 {
     QSPI_CommandTypeDef s_command;
@@ -404,6 +420,7 @@ static uint8_t QSPI_ResetMemory(QSPI_HandleTypeDef *hqspi)
 
     return QSPI_OK;
 }
+
 
 static uint8_t QSPI_EnterFourBytesAddress(QSPI_HandleTypeDef *hqspi)
 {
@@ -596,6 +613,8 @@ static uint8_t QSPI_Set4KSector()
 
 //   return QSPI_OK;
 // }
+
+
 
 
 

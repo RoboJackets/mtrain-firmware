@@ -7,6 +7,7 @@ add_library(STM32F7xx
     Src/default_handlers.c
     Src/stm32f7xx_hal_msp.c
     Src/usbd_cdc_interface.c
+    Src/usbd_msc_interface.c
     Src/qspi.c
 )
 

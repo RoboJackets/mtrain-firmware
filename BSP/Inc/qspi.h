@@ -112,6 +112,7 @@ uint8_t BSP_QSPI_Read(uint8_t* pData, uint32_t ReadAddr, uint32_t Size);
 uint8_t BSP_QSPI_Write(uint8_t* pData, uint32_t WriteAddr, uint32_t Size);
 uint8_t BSP_QSPI_Erase_Sector(uint32_t BlockAddress);
 uint8_t BSP_QSPI_Erase_Chip(void);
+uint8_t BSP_QSPI_Check_Ready (void);
 
 uint8_t BSP_print_regs(void);
 
