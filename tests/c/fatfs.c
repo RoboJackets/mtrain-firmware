@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <string.h>
+#include "mtrain.h"
 #include "ff.h"         /* Declarations of sector size */
 #include "diskio.h"     /* Declarations of disk functions */
 #include "ff_gen_drv.h"

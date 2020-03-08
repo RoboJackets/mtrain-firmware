@@ -7,6 +7,11 @@ USBD_HandleTypeDef USBD_Device;
 // TODO: move this
 RTC_HandleTypeDef RTC_Device;
 
+// TODO move this its the statically allocated file system object size determined by ffconf settings
+FATFS FS_Workspace;
+extern Diskio_drvTypeDef qspi_flash_driver;
+
+
 void bsp_config(void)
 {
   MPU_Config();
@@ -14,7 +19,7 @@ void bsp_config(void)
   HAL_Init();
   SystemClock_Config();
   DWT_Config();
-  RTC_Config();
+  /* RTC_Config(); */
 
   // Enable all needed system clocks
   __HAL_RCC_GPIOA_CLK_ENABLE();
@@ -46,10 +51,10 @@ void bsp_config(void)
   if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_10)) {
 
     // USB MSC Init
-    USBD_Init(&USBD_Device, &VCP_Desc, 0);
-    USBD_RegisterClass(&USBD_Device, USBD_MSC_CLASS);
-    USBD_CDC_RegisterInterface(&USBD_Device, &USBD_CDC_fops);
-    USBD_Start(&USBD_Device);
+    /* USBD_Init(&USBD_Device, &VCP_Desc, 0); */
+    /* USBD_RegisterClass(&USBD_Device, USBD_MSC_CLASS); */
+    /* USBD_CDC_RegisterInterface(&USBD_Device, &USBD_CDC_fops); */
+    /* USBD_Start(&USBD_Device); */
 
 
     // USB MSC Deinit
@@ -59,52 +64,61 @@ void bsp_config(void)
 
 
   // FATfs Init
-  if(FATFS_LinkDriver(&qspi_flash_driver, diskpath) != 0) {
-    // Error handling
+  /* char disk_path[4]; /\* User logical drive path *\/ */
 
-  }
+  /* if(FATFS_LinkDriver(&qspi_flash_driver, disk_path) != 0) { */
+  /*   // Error handling */
 
-  // Force initialization with 1 so we can see its working or abort
-  if(f_mount(&fs, "", 1) != FR_OK) {
-    // Error handling
+  /* } */
 
-  }
+  /* // Force initialization with 1 so we can see its working or abort */
+  /* if(f_mount(&fs, "", 1) != FR_OK) { */
+  /*   // Error handling */
 
-  // Search for most recent file
-  DIR rootdir;
-  FILINFO current_binary;
-  FILINFO newest_binary;
-  char path[] = "/";
-  char pattern[] = "*.bin";
+  /* } */
 
-  f_findfirst(&rootdir, &current_binary,  path, pattern);
-  if (!current_binary) {
-    // Error handling
+  //Search for most recent file
+  /* DIR rootdir; */
+  // TODO Change naming scheme to be something like info
+  /* FILINFO current_binary; */
+  /* FILINFO newest_binary; */
+  FIL target_bin;
+  /* char path[] = "/"; */
+  /* char pattern[] = "*.bin"; */
 
-  }
+  /* f_findfirst(&rootdir, &current_binary,  path, pattern); */
+  /* if (!current_binary) { */
+  /*   // Error handling */
 
-  newest_binary = current_binary;
+  /* } */
 
-  // Null string is returned if no next
-  while (current_binary.fname != "") {
-    if (current_binary.fdate > newest_binary.fdate) {
-      newest_binary = current_binary;
-    } else if (current_binary.fdate == newest_binary.fdate) {
-      if (current_binary.ftime > newest_binary.ftime) {
-        newest_binary = current_binary;
-      }
-    }
+  /* newest_binary = current_binary; */
 
-    f_findnext(&rootdir, &current_binary);
-  }
+  /* // Null string is returned if no next */
+  /* while (current_binary.fname != "") { */
+  /*   if (current_binary.fdate > newest_binary.fdate) { */
+  /*     newest_binary = current_binary; */
+  /*   } else if (current_binary.fdate == newest_binary.fdate) { */
+  /*     if (current_binary.ftime > newest_binary.ftime) { */
+  /*       newest_binary = current_binary; */
+  /*     } */
+  /*   } */
+
+  /*   f_findnext(&rootdir, &current_binary); */
+  /* } */
 
 
-  if (!newest_binary) {
-    // Error handling
+  /* if (!newest_binary) { */
+  /*   // Error handling */
 
-  }
+  /* } */
 
   // Load found binary into user app location
+  /* if(f_open(&target_bin, newest_bin.f_name, FA_CREATE_ALWAYS | FA_READ) != FR_OK) { */
+  /*     // Error handling */
+  /* } */
+
+
 
 
   // Init cdc usb for printf and boot normally
@@ -267,11 +281,11 @@ void DWT_Config(void)
 
 void RTC_Config(void)
 {
+  // TODO most of these hal clocks are done and thus break this function when called again
   __HAL_RCC_PWR_CLK_ENABLE();
   HAL_PWR_EnableBkUpAccess();
   __HAL_RCC_RTC_CONFIG(RCC_RTCCLKSOURCE_LSI);
   __HAL_RCC_RTC_ENABLE();
-
 }
 
 #ifdef  USE_FULL_ASSERT
