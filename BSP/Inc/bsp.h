@@ -21,8 +21,6 @@
 #include "ff_gen_drv.h"
 #include "diskio.h"     /* Declarations of disk functions */
 
-#define USE_USB_FS
-
 extern void bsp_config(void);
 
 void SystemClock_Config(void);
