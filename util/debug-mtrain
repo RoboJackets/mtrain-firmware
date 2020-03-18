@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Kill background gdb server if we have and error or kill the script
+function finish {
+    pkill JLinkGDBServer
+}
+trap finish EXIT
+
+# Runs flash-mtrain but then launches the gdb server on the JLink and gdb
+SPECGDB=$(find ~/.conan/data/GnuArmNoneToolchainInstaller/0.1.0/robojackets/testing/build -name arm-none-eabi-gdb)
+ELFSTRING="${1/.bin/.elf}"
+COMMAND="$SPECGDB $ELFSTRING"
+
+./util/flash-mtrain $1
+
+JLinkGDBServer -select USB -device STM32F769NI -endian little -if JTAG -speed auto -noLocalhostOnly > /dev/null 2>&1 &
+
+$COMMAND
