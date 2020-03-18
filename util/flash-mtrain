@@ -1,0 +1,10 @@
+#!/bin/bash
+
+DEVICE=STM32F769NI
+IF=JTAG
+SPEED=4000
+TARG=$1
+# replaces end of JLink script with a load command with path given as argument 1
+sed -i 's,loadfile.*$,loadfile '"$TARG"' 0x08000000,' ./util/flash-mtrain.jlink
+
+JLinkExe -device $DEVICE -if $IF -jtagconf -1,-1 -speed $SPEED -autoconnect 1 -CommanderScript ./util/flash-mtrain.jlink
