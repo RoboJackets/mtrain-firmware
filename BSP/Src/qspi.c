@@ -19,7 +19,6 @@ uint8_t BSP_QSPI_Init(void)
     }
 
     // TODO
-    /* QSPI freq = SYSCLK /(1 + ClockPrescaler) */
     QSPIHandle.Init.ClockPrescaler     = 1;                                 /* 216 MHz/(1+1) = 108 Mhz */
     QSPIHandle.Init.FifoThreshold      = 4;                                 // TODO: correct?
     QSPIHandle.Init.SampleShifting     = QSPI_SAMPLE_SHIFTING_HALFCYCLE;    // TODO: correct?

@@ -10,6 +10,7 @@ int main(void)
   uint8_t readData [size];
 
   uint32_t addr_min = 0x0;
+  uint32_t addr_mid = 0x20;
   uint32_t addr_max = 0x1FFFFFF - size - 1;
 
 
@@ -29,6 +30,18 @@ int main(void)
   printf("write data length should be %d\r\n", size);
   printf("written data was %s\r\n", (char*)writeData);
   printf("read data was %s\r\n", (char*)readData);
+  // assert equals
+
+  HAL_Delay(1000);
+
+  BSP_QSPI_Write(writeData, addr_mid, size);
+  BSP_QSPI_Read(readData, addr_min, size);
+  BSP_QSPI_Read(readData, addr_mid, size);
+
+  printf("write data length should be %d\r\n", size);
+  printf("written data was %s\r\n", (char*)writeData);
+  printf("read data at min was %s\r\n", (char*)readData);
+  printf("read data at mid was %s\r\n", (char*)readData);
   // assert equals
 
   HAL_Delay(3000);

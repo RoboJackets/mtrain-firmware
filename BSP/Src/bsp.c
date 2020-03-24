@@ -82,7 +82,7 @@ void bsp_config(void)
   // TODO Change naming scheme to be something like info
   /* FILINFO current_binary; */
   /* FILINFO newest_binary; */
-  FIL target_bin;
+  /* FIL target_bin; */
   /* char path[] = "/"; */
   /* char pattern[] = "*.bin"; */
 

@@ -23,8 +23,14 @@ class MtrainConan(ConanFile):
         self.copy(pattern='*.hpp', dst='API', src='API')
         self.copy(pattern='*.h', dst='BSP', src='BSP')
         self.copy(pattern='*.h', dst='external', src='external')
+
         self.copy(pattern='flash.ld', dst='.', src='BSP')
         self.copy(pattern='flash.py', dst='.', src='util')
+
+        # Collins attempt at madness
+        self.copy(pattern='.gdbinit', dst='bin', src='util')
+        self.copy(pattern='flash-mtrain', dst='.', src='util')
+        self.copy(pattern='flash-mtrain.jlink', dst='.', src='util')
 
     def package_info(self):
         self.cpp_info.includedirs = ['API/c/Inc', 'API/cpp/Inc', 'BSP/config/hal', 'BSP/config/usb', 'BSP/Inc',
