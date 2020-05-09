@@ -14,6 +14,12 @@ extern "C" {
 
 #include "integer.h"
 
+#define RAM_DISK_SIZE 0x10000         // 64 KBytes
+#define RAM_SECTOR_SIZE 0x1000        // 4 KBytes
+#define RAM_SECTOR_COUNT (RAM_DISK_SIZE) / (RAM_SECTOR_SIZE)  // 16 sectors
+
+BYTE *RamDisk;
+
 
 /* Status of Disk Functions */
 typedef BYTE	DSTATUS;

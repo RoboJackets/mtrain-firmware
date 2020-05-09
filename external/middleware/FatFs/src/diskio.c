@@ -7,13 +7,14 @@
 /* Private define ------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
 extern Disk_drvTypeDef  disk;
+extern BYTE *RamDisk;
 // TODO Global status var
 static volatile DSTATUS stat = STA_NOINIT;
 
 /* Private function prototypes -----------------------------------------------*/
 
 
-const Diskio_drvTypeDef  qspi_flash_driver =
+const Diskio_drvTypeDef  ram_driver =
   {
     disk_initialize,
     disk_status,
@@ -64,12 +65,19 @@ DSTATUS disk_initialize (
 {
   stat = STA_NOINIT;
 
+  RamDisk = malloc(RAM_DISK_SIZE);
+
+  // fail
   if (pdrv){
     return stat;		/* Supports only drive 0 */
   }
 
-  stat &= ~STA_NOINIT;
+  if (!RamDisk){
+    return stat;		/* if memory was not allocated for the ramdisk */
+  }
 
+  // success
+  stat &= ~STA_NOINIT;
   return stat;
 }
 
@@ -93,16 +101,14 @@ DRESULT disk_read (
   if (pdrv) {
     return RES_PARERR;
   }
+  // TODO param check for oversize
 
-  // TODO Modify BSP qspi to return busy if thats the error and return
-	//RES_NOTRDY,		/* 3: Not Ready */
 
-  // convert block_address to byte address
-  uint32_t addr = sector * FLASH_SUBSECTOR_SIZE;
-  uint32_t size = count * FLASH_SUBSECTOR_SIZE;
-  if (BSP_QSPI_Read(buff, addr, size) != QSPI_OK) {
-    res = RES_ERROR;
-  }
+  BYTE* addr = (sector * RAM_SECTOR_SIZE) + RamDisk;
+  uint32_t size = count * RAM_SECTOR_SIZE;
+  memcpy(buff, addr, size);
+
+  res = RES_ERROR;
 
   return res;
 }
@@ -128,12 +134,12 @@ DRESULT disk_write (
   if (pdrv) {
     return RES_PARERR;
   }
+  // TODO param check for oversize
 
-  uint32_t addr = sector * FLASH_SUBSECTOR_SIZE;
-  uint32_t size = count * FLASH_SUBSECTOR_SIZE;
-  if (BSP_QSPI_Write(buff, addr, size) != QSPI_OK) {
-    res = RES_ERROR;
-  }
+
+  BYTE* addr = (sector * RAM_SECTOR_SIZE) + RamDisk;
+  uint32_t size = count * RAM_SECTOR_SIZE;
+  memcpy(addr, buff, size);
 
   return res;
 }
@@ -170,24 +176,24 @@ DRESULT disk_ioctl (
 
   case 1:
     //GET_SECTOR_COUNT
-    return FLASH_SUBSECTOR_COUNT;
+    return RAM_SECTOR_COUNT;
     break;
 
   case 2:
     //GET_SECTOR_SIZE
-    return FLASH_SUBSECTOR_SIZE;
+    return RAM_SECTOR_SIZE;
     break;
 
   case 3:
     //GET_BLOCK_SIZE
-    //These should be the 16k sectors as they make up the bulk of storage
-    return FLASH_SUBSECTOR_SIZE * 4;
+    return RAM_SECTOR_SIZE;
     break;
 
   case 4:
     //CTRL_TRIM
     // not defining this right now but should do the following
     // Informs the device the data on the block of sectors is no longer needed and it can be erased. The sector block is specified in an LBA_t array {<Start LBA>, <End LBA>} pointed by buff. This is an identical command to Trim of ATA device. Nothing to do for this command if this funcion is not supported or not a flash memory device. FatFs does not check the result code and the file function is not affected even if the sector block was not erased well. This command is called on remove a cluster chain and in the f_mkfs function. It is required when FF_USE_TRIM == 1.
+    // TODO HAVE THIS DO A FULL WRITE TO FLASH
 
     break;
   }

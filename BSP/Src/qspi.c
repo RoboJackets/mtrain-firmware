@@ -2,12 +2,11 @@
 
 QSPI_HandleTypeDef QSPIHandle;
 
+
 static uint8_t QSPI_ResetMemory (QSPI_HandleTypeDef *hqspi);
 static uint8_t QSPI_EnterFourBytesAddress(QSPI_HandleTypeDef *hqspi);
 static uint8_t QSPI_AutoPollingMemReady(QSPI_HandleTypeDef *hqspi, uint32_t Timeout);
 static uint8_t QSPI_WriteEnable(QSPI_HandleTypeDef *hqspi);
-
-static uint8_t QSPI_Set4KSector();
 
 
 uint8_t BSP_QSPI_Init(void)
@@ -40,9 +39,6 @@ uint8_t BSP_QSPI_Init(void)
         return QSPI_NOT_SUPPORTED;
     }
 
-    // if (QSPI_Set4KSector() != QSPI_OK) {
-    //     return QSPI_NOT_SUPPORTED;
-    // }
 
     // TODO
     return QSPI_OK;
@@ -86,24 +82,12 @@ uint8_t BSP_QSPI_Read(uint8_t* pData, uint32_t ReadAddr, uint32_t Size)
   /* Set S# timing for Read command */
   MODIFY_REG(QSPIHandle.Instance->DCR, QUADSPI_DCR_CSHT, QSPI_CS_HIGH_TIME_3_CYCLE);
 
-  /* GPIO_InitTypeDef  GPIO_InitStruct; */
-  /* GPIO_InitStruct.Pin = GPIO_PIN_11; */
-  /* GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP; */
-  /* GPIO_InitStruct.Pull = GPIO_NOPULL; */
-  /* GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH; */
-
-  /* HAL_GPIO_Init(GPIOC, &GPIO_InitStruct); */
-  /* HAL_GPIO_WritePin(GPIOC, GPIO_PIN_11, (GPIO_PinState)0); */
-
   // TODO Hal can get status status = HAL_BUSY; if the unit is locked doing a write
   /* Reception of the data */
   if (HAL_QSPI_Receive(&QSPIHandle, pData, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK)
   {
-
     return QSPI_ERROR;
   }
-
-  /* HAL_GPIO_WritePin(GPIOC, GPIO_PIN_11, (GPIO_PinState)1); */
 
   /* Restore S# timing for nonRead commands */
   MODIFY_REG(QSPIHandle.Instance->DCR, QUADSPI_DCR_CSHT, QSPI_CS_HIGH_TIME_6_CYCLE);
@@ -159,22 +143,12 @@ uint8_t BSP_QSPI_Write(uint8_t* pData, uint32_t WriteAddr, uint32_t Size)
       return QSPI_ERROR;
     }
 
-    /* GPIO_InitTypeDef  GPIO_InitStruct; */
-    /* GPIO_InitStruct.Pin = GPIO_PIN_11; */
-    /* GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP; */
-    /* GPIO_InitStruct.Pull = GPIO_NOPULL; */
-    /* GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH; */
-
-    /* HAL_GPIO_Init(GPIOC, &GPIO_InitStruct); */
-    /* HAL_GPIO_WritePin(GPIOC, GPIO_PIN_11, (GPIO_PinState)0); */
 
     /* Transmission of the data */
     if (HAL_QSPI_Transmit(&QSPIHandle, pData, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK)
     {
       return QSPI_ERROR;
     }
-
-    /* HAL_GPIO_WritePin(GPIOC, GPIO_PIN_11, (GPIO_PinState)1); */
 
 
     /* Configure automatic polling mode to wait for end of program */
@@ -191,6 +165,7 @@ uint8_t BSP_QSPI_Write(uint8_t* pData, uint32_t WriteAddr, uint32_t Size)
 
   return QSPI_OK;
 }
+
 
 uint8_t BSP_QSPI_Erase_Sector(uint32_t BlockAddress)
 {
@@ -517,52 +492,52 @@ static uint8_t QSPI_WriteEnable(QSPI_HandleTypeDef *hqspi)
 }
 
 
-static uint8_t QSPI_Set4KSector()
-{
-    QSPI_CommandTypeDef s_command;
+/* static uint8_t QSPI_Set4KSector() */
+/* { */
+/*     QSPI_CommandTypeDef s_command; */
 
-    s_command.InstructionMode   = QSPI_INSTRUCTION_1_LINE;
-    s_command.Instruction       = FLASH_CMD_WRAR;
-    s_command.AddressMode       = QSPI_ADDRESS_1_LINE;
-    s_command.AddressSize       = QSPI_ADDRESS_32_BITS;
-    s_command.AlternateByteMode = QSPI_ALTERNATE_BYTES_NONE;
-    s_command.DataMode          = QSPI_DATA_1_LINE;
-    s_command.DummyCycles       = 0;
-    s_command.DdrMode           = QSPI_DDR_MODE_DISABLE;
-    s_command.DdrHoldHalfCycle  = QSPI_DDR_HHC_ANALOG_DELAY;
-    s_command.SIOOMode          = QSPI_SIOO_INST_EVERY_CMD;
+/*     s_command.InstructionMode   = QSPI_INSTRUCTION_1_LINE; */
+/*     s_command.Instruction       = FLASH_CMD_WRAR; */
+/*     s_command.AddressMode       = QSPI_ADDRESS_1_LINE; */
+/*     s_command.AddressSize       = QSPI_ADDRESS_32_BITS; */
+/*     s_command.AlternateByteMode = QSPI_ALTERNATE_BYTES_NONE; */
+/*     s_command.DataMode          = QSPI_DATA_1_LINE; */
+/*     s_command.DummyCycles       = 0; */
+/*     s_command.DdrMode           = QSPI_DDR_MODE_DISABLE; */
+/*     s_command.DdrHoldHalfCycle  = QSPI_DDR_HHC_ANALOG_DELAY; */
+/*     s_command.SIOOMode          = QSPI_SIOO_INST_EVERY_CMD; */
 
-    s_command.Address = 0x00000000;
-    s_command.NbData  = 1;
+/*     s_command.Address = 0x00000000; */
+/*     s_command.NbData  = 1; */
 
-    /* Enable write operations */
-    if (QSPI_WriteEnable(&QSPIHandle) != QSPI_OK)
-    {
-      return QSPI_ERROR;
-    }
+/*     /\* Enable write operations *\/ */
+/*     if (QSPI_WriteEnable(&QSPIHandle) != QSPI_OK) */
+/*     { */
+/*       return QSPI_ERROR; */
+/*     } */
 
-    BSP_print_regs();
+/*     BSP_print_regs(); */
 
-    /* Configure the command */
-    if (HAL_QSPI_Command(&QSPIHandle, &s_command, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK)
-    {
-      return QSPI_ERROR;
-    }
+/*     /\* Configure the command *\/ */
+/*     if (HAL_QSPI_Command(&QSPIHandle, &s_command, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK) */
+/*     { */
+/*       return QSPI_ERROR; */
+/*     } */
 
-    uint8_t data = 0x0;
-    if (HAL_QSPI_Transmit(&QSPIHandle, &data, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK)
-    {
-      return QSPI_ERROR;
-    }
+/*     uint8_t data = 0x0; */
+/*     if (HAL_QSPI_Transmit(&QSPIHandle, &data, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK) */
+/*     { */
+/*       return QSPI_ERROR; */
+/*     } */
 
-    /* Configure automatic polling mode to wait for end of program */
-    if (QSPI_AutoPollingMemReady(&QSPIHandle, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != QSPI_OK)
-    {
-      return QSPI_ERROR;
-    }
+/*     /\* Configure automatic polling mode to wait for end of program *\/ */
+/*     if (QSPI_AutoPollingMemReady(&QSPIHandle, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != QSPI_OK) */
+/*     { */
+/*       return QSPI_ERROR; */
+/*     } */
 
-  return QSPI_OK;
-}
+/*   return QSPI_OK; */
+/* } */
 
 
 

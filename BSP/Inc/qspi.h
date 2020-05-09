@@ -36,10 +36,12 @@
 */
 #define FLASH_SIZE              0x2000000      // 256 MBits = 32 MBytes
 #define FLASH_SUBSECTOR_SIZE    0x1000         // 4 KBytes
+#define FLASH_SECTOR_SIZE       0x10000        // 64 KBytes
 #define FLASH_PAGE_SIZE         0x100          // 256 Bytes
-#define FLASH_SUBSECTOR_COUNT   (FLASH_SIZE) / (FLASH_SUBSECTOR_SIZE)
-
 #define FLASH_4K_SECTOR_MAX     0x10000
+#define FLASH_SUBSECTOR_COUNT   (FLASH_4K_SECTOR_MAX) / (FLASH_SUBSECTOR_SIZE)
+#define FLASH_SECTOR_COUNT      (FLASH_SIZE - FLASH_4K_SECTOR_MAX) / (FLASH_SECTOR_SIZE) + FLASH_SUBSECTOR_COUNT
+
 
 /*
  * Command names

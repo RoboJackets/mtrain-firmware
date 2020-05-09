@@ -82,6 +82,7 @@
 /* This option switches f_forward() function. (0:Disable or 1:Enable)
 /  To enable it, also _FS_TINY need to be set to 1. */
 
+
 #define _USE_BUFF_WO_ALIGNMENT  0
 /* This option is available only for usbh diskio interface and allow to disable
 /  the management of the unaligned buffer.

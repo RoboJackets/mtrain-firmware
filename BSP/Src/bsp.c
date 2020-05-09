@@ -37,9 +37,6 @@ void bsp_config(void)
     // Error handling
   }
 
-
-
-
   // Check USB pin (PA10, D15)
   GPIO_InitTypeDef pin_structure;
   pin_structure.Pin = GPIO_PIN_10;
@@ -55,7 +52,6 @@ void bsp_config(void)
     /* USBD_RegisterClass(&USBD_Device, USBD_MSC_CLASS); */
     /* USBD_CDC_RegisterInterface(&USBD_Device, &USBD_CDC_fops); */
     /* USBD_Start(&USBD_Device); */
-
 
     // USB MSC Deinit
 

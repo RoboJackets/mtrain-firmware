@@ -9,8 +9,16 @@ int main(void)
   uint32_t size = sizeof(writeData);
   uint8_t readData [size];
 
-  uint32_t addr = 0xF23BB80;
+  uint32_t addr = 0x0BB80;
+  uint32_t blockAddr = 0x0;
 
+  if (addr < FLASH_4K_SECTOR_MAX) {
+    blockAddr = addr / FLASH_SUBSECTOR_SIZE;
+  } else {
+    blockAddr = ((addr - FLASH_4K_SECTOR_MAX) / FLASH_SECTOR_SIZE) + FLASH_SUBSECTOR_COUNT;
+  }
+
+  BSP_QSPI_Erase_Sector(blockAddr);
   BSP_QSPI_Write(writeData, addr, size);
   BSP_QSPI_Read(readData, addr, size);
 
@@ -18,5 +26,4 @@ int main(void)
   printf("written data was %s\r\n", (char*)writeData);
   printf("read data was %s\r\n", (char*)readData);
 
-  HAL_Delay(3000);
 }
