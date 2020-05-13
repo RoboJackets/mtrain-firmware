@@ -11,7 +11,7 @@
 /* Private functions ---------------------------------------------------------*/
 
 #define STORAGE_LUN_NBR                  1
-#define STORAGE_BLK_NBR                  0x2000 // 8192 blocks for 32MB storage at blocks of size 4096 bytes
+#define STORAGE_BLK_NBR                  0x10 // 16 blocks for 64Kb storage at blocks of size 4096 bytes
 #define STORAGE_BLK_SIZ                  0x1000 // blocks of size 4096 bytes
 
 int8_t STORAGE_Init (uint8_t lun);
@@ -54,7 +54,7 @@ int8_t  STORAGE_Inquirydata[] = {//36
   '0', '.', '0' ,'1',                     /* Version      : 4 Bytes */
 };
 
-USBD_StorageTypeDef USBD_MSC_Template_fops =
+USBD_StorageTypeDef USBD_MSC_fops =
 {
   STORAGE_Init,
   STORAGE_GetCapacity,
@@ -106,7 +106,8 @@ int8_t STORAGE_GetCapacity (uint8_t lun, uint32_t *block_num, uint16_t *block_si
 *******************************************************************************/
 int8_t  STORAGE_IsReady (uint8_t lun)
 {
-  return BSP_QSPI_Check_Ready();
+  // ram is basically always ready
+  return 1;
 }
 
 
@@ -120,6 +121,7 @@ int8_t  STORAGE_IsReady (uint8_t lun)
 *******************************************************************************/
 int8_t  STORAGE_IsWriteProtected (uint8_t lun)
 {
+  // ram is not write protected
   return  0;
 }
 
@@ -139,11 +141,9 @@ int8_t STORAGE_Read (uint8_t lun,
 {
   // theres only 1 lun so it doesnt matter
   // convert block_address to byte address
-  uint32_t addr = blk_addr * FLASH_SUBSECTOR_SIZE;
-  uint32_t size = blk_len * FLASH_SUBSECTOR_SIZE;
-  if (BSP_QSPI_Read(buf, addr, size) != QSPI_OK) {
-    return 1;
-  }
+  unsigned char* addr = (blk_addr * STORAGE_BLK_SIZ) + RamDisk;
+  uint32_t size = blk_len * STORAGE_BLK_SIZ;
+  memcpy(buf, addr, size);
 
   return 0;
 }
@@ -164,13 +164,11 @@ int8_t STORAGE_Write (uint8_t lun,
 {
   // theres only 1 lun so it doesnt matter
   // convert block_address to byte address
-  uint32_t addr = blk_addr * FLASH_SUBSECTOR_SIZE;
-  uint32_t size = blk_len * FLASH_SUBSECTOR_SIZE;
-  if (BSP_QSPI_Read(buf, addr, size) != QSPI_OK) {
-    return 1;
-  }
+  unsigned char* addr = (blk_addr * STORAGE_BLK_SIZ) + RamDisk;
+  uint32_t size = blk_len * STORAGE_BLK_SIZ;
+  memcpy(addr, buf, size);
 
-  return 0
+  return 0;
 }
 
 

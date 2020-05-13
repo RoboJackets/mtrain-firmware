@@ -6,8 +6,8 @@
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
+extern unsigned char* RamDisk;
 extern Disk_drvTypeDef  disk;
-extern BYTE *RamDisk;
 // TODO Global status var
 static volatile DSTATUS stat = STA_NOINIT;
 
@@ -64,8 +64,6 @@ DSTATUS disk_initialize (
 )
 {
   stat = STA_NOINIT;
-
-  RamDisk = malloc(RAM_DISK_SIZE);
 
   // fail
   if (pdrv){

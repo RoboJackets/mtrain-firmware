@@ -22,9 +22,9 @@ int main(void)
   FRESULT status = FR_OK;
 
 
-  if(FATFS_LinkDriver(&qspi_flash_driver, mynewdiskPath) != 0)
-  {
-  }
+  /* if(FATFS_LinkDriver(&qspi_flash_driver, mynewdiskPath) != 0) */
+  /* { */
+  /* } */
 
 
   status = f_mount(&FatFs, "", 0);

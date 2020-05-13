@@ -63,6 +63,9 @@
 #define USBD_SELF_POWERED                     1
 #define USBD_DEBUG_LEVEL                      0
 
+/* MSC Class Config */
+#define MSC_MEDIA_PACKET                      4096
+
 /* DFU Class Config */
 #define USBD_DFU_MAX_ITF_NUM                   1
 #define USBD_DFU_XFER_SIZE                     1024   /* Max DFU Packet Size = 1024 bytes */

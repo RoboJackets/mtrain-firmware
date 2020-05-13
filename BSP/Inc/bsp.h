@@ -13,13 +13,16 @@
 #include "usbd_desc.h"
 #include "usbd_cdc.h"
 #include "usbd_cdc_interface.h"
-/* #include "usbd_msc.h" */
-/* #include "usbd_msc_interface.h" */
+#include "usbd_msc.h"
+#include "usbd_msc_interface.h"
 
 // FAT Stuff
 #include "ff.h"
 #include "ff_gen_drv.h"
 #include "diskio.h"     /* Declarations of disk functions */
+
+
+unsigned char* RamDisk;
 
 extern void bsp_config(void);
 

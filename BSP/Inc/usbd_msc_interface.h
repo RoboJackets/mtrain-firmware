@@ -3,7 +3,9 @@
 
 #include "usbd_msc.h"
 
-extern USBD_MSC_ItfTypeDef
+extern unsigned char* RamDisk;
+
+extern USBD_StorageTypeDef
 USBD_MSC_fops;
 
 #endif

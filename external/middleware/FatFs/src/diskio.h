@@ -18,7 +18,7 @@ extern "C" {
 #define RAM_SECTOR_SIZE 0x1000        // 4 KBytes
 #define RAM_SECTOR_COUNT (RAM_DISK_SIZE) / (RAM_SECTOR_SIZE)  // 16 sectors
 
-BYTE *RamDisk;
+extern unsigned char* RamDisk;
 
 
 /* Status of Disk Functions */

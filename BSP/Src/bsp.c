@@ -1,5 +1,6 @@
 #include "bsp.h"
 #include  <unistd.h>
+#include <stdlib.h>
 
 /* TODO: make this better */
 USBD_HandleTypeDef USBD_Device;
@@ -37,6 +38,10 @@ void bsp_config(void)
     // Error handling
   }
 
+  // RamDisk init
+  RamDisk = malloc(RAM_DISK_SIZE);
+
+
   // Check USB pin (PA10, D15)
   GPIO_InitTypeDef pin_structure;
   pin_structure.Pin = GPIO_PIN_10;
@@ -47,14 +52,15 @@ void bsp_config(void)
 
   if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_10)) {
 
-    // USB MSC Init
-    /* USBD_Init(&USBD_Device, &VCP_Desc, 0); */
-    /* USBD_RegisterClass(&USBD_Device, USBD_MSC_CLASS); */
-    /* USBD_CDC_RegisterInterface(&USBD_Device, &USBD_CDC_fops); */
-    /* USBD_Start(&USBD_Device); */
+    /* USB MSC Init */
+    USBD_Init(&USBD_Device, &VCP_Desc, 0);
+    USBD_RegisterClass(&USBD_Device, USBD_MSC_CLASS);
+    USBD_MSC_RegisterStorage(&USBD_Device, &USBD_MSC_fops);
+    USBD_Start(&USBD_Device);
 
     // USB MSC Deinit
 
+    // Use qspi to writeback RamDisk to the qspi flash
 
   }
 
