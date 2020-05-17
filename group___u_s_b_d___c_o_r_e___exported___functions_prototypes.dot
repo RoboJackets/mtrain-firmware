@@ -1,0 +1,9 @@
+digraph "USBD_CORE_Exported_FunctionsPrototypes"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="MSC_BOT",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___m_s_c___b_o_t.html",tooltip="This file is the Header file for usbd_msc_bot.c. "];
+  Node0 [label="USBD_CORE_Exported\l_FunctionsPrototypes",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+}

@@ -1,0 +1,17 @@
+digraph "/home/developer/mtrain-firmware/external/CMSIS/Device/STM32F7xx" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_fc87cadb59a46a005bd75c1c663e66ba {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Device" fontname="Helvetica", fontsize="10", URL="dir_fc87cadb59a46a005bd75c1c663e66ba.html"]
+  subgraph clusterdir_ca6b782e1e582c29d056b3c0e389f791 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_ca6b782e1e582c29d056b3c0e389f791.html"];
+    dir_ca6b782e1e582c29d056b3c0e389f791 [shape=plaintext label="STM32F7xx"];
+    dir_2f3cbb038120cdaba8627982788693d8 [shape=box label="Include" color="black" fillcolor="white" style="filled" URL="dir_2f3cbb038120cdaba8627982788693d8.html"];
+    dir_43c2164cfd440ca0116273659f424686 [shape=box label="Src" color="black" fillcolor="white" style="filled" URL="dir_43c2164cfd440ca0116273659f424686.html"];
+  }
+  }
+  dir_ea7e36173fdf5d3e10f7d99384a1945b [shape=box label="Include" URL="dir_ea7e36173fdf5d3e10f7d99384a1945b.html"];
+  dir_43c2164cfd440ca0116273659f424686->dir_2f3cbb038120cdaba8627982788693d8 [headlabel="1", labeldistance=1.5 headhref="dir_000020_000019.html"];
+  dir_2f3cbb038120cdaba8627982788693d8->dir_ea7e36173fdf5d3e10f7d99384a1945b [headlabel="1", labeldistance=1.5 headhref="dir_000019_000032.html"];
+}

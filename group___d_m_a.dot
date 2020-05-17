@@ -1,0 +1,21 @@
+digraph "DMA"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node5 [label="DMA Private Constants",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___d_m_a___private___constants.html",tooltip="DMA private defines and constants. "];
+  Node3 [label="DMA Exported Constants",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___d_m_a___exported___constants.html",tooltip="DMA Exported constants. "];
+  Node1 [label="STM32F7xx_HAL_Driver",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_t_m32_f7xx___h_a_l___driver.html"];
+  Node6 [label="DMA Private Macros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___d_m_a___private___macros.html",tooltip="DMA private macros. "];
+  Node2 [label="DMA Exported Types",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___d_m_a___exported___types.html",tooltip="DMA Exported Types. "];
+  Node0 [label="DMA",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node4 [label="DMA Exported Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___d_m_a___exported___functions.html",tooltip="DMA Exported functions. "];
+  Node7 [label="DMA Private Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___d_m_a___private___functions.html",tooltip="DMA private functions. "];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node7 [shape=plaintext, dir="back", style="solid"];
+}

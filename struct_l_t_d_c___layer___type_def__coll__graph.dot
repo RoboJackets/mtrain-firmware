@@ -1,0 +1,6 @@
+digraph "LTDC_Layer_TypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{LTDC_Layer_TypeDef\n|+ CR\l+ WHPCR\l+ WVPCR\l+ CKCR\l+ PFCR\l+ CACR\l+ DCCR\l+ BFCR\l+ RESERVED0\l+ CFBAR\l+ CFBLR\l+ CFBLNR\l+ RESERVED1\l+ CLUTWR\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

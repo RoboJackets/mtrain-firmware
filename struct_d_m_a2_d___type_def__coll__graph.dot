@@ -1,0 +1,6 @@
+digraph "DMA2D_TypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{DMA2D_TypeDef\n|+ CR\l+ ISR\l+ IFCR\l+ FGMAR\l+ FGOR\l+ BGMAR\l+ BGOR\l+ FGPFCCR\l+ FGCOLR\l+ BGPFCCR\land 13 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

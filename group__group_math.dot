@@ -1,0 +1,25 @@
+digraph "Basic Math Functions"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="Vector Absolute Value",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___basic_abs.html",tooltip="Computes the absolute value of a vector on an element-by-element basis. "];
+  Node2 [label="Vector Addition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___basic_add.html",tooltip="Element-by-element addition of two vectors. "];
+  Node4 [label="Vector Multiplication",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___basic_mult.html",tooltip="Element-by-element multiplication of two vectors. "];
+  Node5 [label="Vector Negate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__negate.html",tooltip="Negates the elements of a vector. "];
+  Node0 [label="Basic Math Functions",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node7 [label="Vector Scale",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__scale.html",tooltip="Multiply a vector by a scalar value. "];
+  Node6 [label="Vector Offset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__offset.html",tooltip="Adds a constant offset to each element of a vector. "];
+  Node3 [label="Vector Dot Product",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__dot__prod.html",tooltip="Computes the dot product of two vectors. "];
+  Node9 [label="Vector Subtraction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___basic_sub.html",tooltip="Element-by-element subtraction of two vectors. "];
+  Node8 [label="Vector Shift",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__shift.html",tooltip="Shifts the elements of a fixed-point vector by a specified number of bits. "];
+  Node0->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node9 [shape=plaintext, dir="back", style="solid"];
+}

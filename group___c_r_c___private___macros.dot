@@ -1,0 +1,9 @@
+digraph "CRC Private Macros"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="CRC",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_r_c.html",tooltip="CRC HAL module driver. "];
+  Node0 [label="CRC Private Macros",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+}

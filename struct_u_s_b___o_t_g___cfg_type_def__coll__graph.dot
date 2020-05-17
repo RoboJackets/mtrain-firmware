@@ -1,0 +1,6 @@
+digraph "USB_OTG_CfgTypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{USB_OTG_CfgTypeDef\n|+ dev_endpoints\l+ Host_channels\l+ speed\l+ dma_enable\l+ ep0_mps\l+ phy_itface\l+ Sof_enable\l+ low_power_enable\l+ lpm_enable\l+ battery_charging_enable\l+ vbus_sensing_enable\l+ use_dedicated_ep1\l+ use_external_vbus\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

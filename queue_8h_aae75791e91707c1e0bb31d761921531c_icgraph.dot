@@ -1,0 +1,11 @@
+digraph "uxQueueSpacesAvailable"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node14 [label="uxQueueSpacesAvailable",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node14 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="osMessageAvailableSpace",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cmsis__os_8h.html#a4f80ea3dd0140a782dc3e79fc7d1cba6",tooltip="Get the available space in a message queue. "];
+  Node14 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="MPU_uxQueueSpacesAvailable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mpu__wrappers_8c.html#af423f8035d982ede94ddbdc4795af8ca"];
+}

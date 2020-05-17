@@ -1,0 +1,6 @@
+digraph "NVIC_Type"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{NVIC_Type\n|+ ISER\l+ RESERVED0\l+ ICER\l+ RSERVED1\l+ ISPR\l+ RESERVED2\l+ ICPR\l+ RESERVED3\l+ RESERVED4\l+ IP\l+ IABR\l+ IP\l+ RESERVED5\l+ STIR\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

@@ -1,0 +1,21 @@
+digraph "USBD_CDC"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node7 [label="USBD_CDC_Private_Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_d_c___private___functions.html"];
+  Node6 [label="USBD_CDC_Private_Variables",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_d_c___private___variables.html"];
+  Node5 [label="USBD_CDC_Private_Function\lPrototypes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_d_c___private___function_prototypes.html"];
+  Node1 [label="STM32_USB_DEVICE_LIBRARY",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_t_m32___u_s_b___d_e_v_i_c_e___l_i_b_r_a_r_y.html"];
+  Node2 [label="USBD_CDC_Private_TypesDefinitions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_d_c___private___types_definitions.html"];
+  Node4 [label="USBD_CDC_Private_Macros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_d_c___private___macros.html"];
+  Node0 [label="USBD_CDC",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node3 [label="USBD_CDC_Private_Defines",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_d_c___private___defines.html"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node7 [shape=plaintext, dir="back", style="solid"];
+}

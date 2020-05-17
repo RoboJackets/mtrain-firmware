@@ -1,0 +1,20 @@
+digraph "CAN_HandleTypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{CAN_HandleTypeDef\n|+ State\l+ Lock\l+ ErrorCode\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +pTxMsg" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{CanTxMsgTypeDef\n|+ StdId\l+ ExtId\l+ IDE\l+ RTR\l+ DLC\l+ Data\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_can_tx_msg_type_def.html",tooltip="CAN Tx message structure definition. "];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +pRxMsg" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{CanRxMsgTypeDef\n|+ StdId\l+ ExtId\l+ IDE\l+ RTR\l+ DLC\l+ Data\l+ FMI\l+ FIFONumber\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_can_rx_msg_type_def.html",tooltip="CAN Rx message structure definition. "];
+  Node4 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +Init" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{CAN_InitTypeDef\n|+ Prescaler\l+ Mode\l+ SJW\l+ BS1\l+ BS2\l+ TTCM\l+ ABOM\l+ AWUM\l+ NART\l+ RFLM\l+ TXFP\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_c_a_n___init_type_def.html",tooltip="CAN init structure definition. "];
+  Node5 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +Instance" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 [label="{CAN_TypeDef\n|+ MCR\l+ MSR\l+ TSR\l+ RF0R\l+ RF1R\l+ IER\l+ ESR\l+ BTR\l+ RESERVED0\l+ RESERVED1\land 9 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_c_a_n___type_def.html",tooltip="Controller Area Network. "];
+  Node6 -> Node5 [color="grey25",fontsize="10",style="solid",label=" +sFilterRegister" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node6 [label="{CAN_FilterRegister\l_TypeDef\n|+ FR1\l+ FR2\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_c_a_n___filter_register___type_def.html",tooltip="Controller Area Network FilterRegister. "];
+  Node7 -> Node5 [color="grey25",fontsize="10",style="solid",label=" +sTxMailBox" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node7 [label="{CAN_TxMailBox_TypeDef\n|+ TIR\l+ TDTR\l+ TDLR\l+ TDHR\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_c_a_n___tx_mail_box___type_def.html",tooltip="Controller Area Network TxMailBox. "];
+  Node8 -> Node5 [color="grey25",fontsize="10",style="solid",label=" +sFIFOMailBox" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node8 [label="{CAN_FIFOMailBox_TypeDef\n|+ RIR\l+ RDTR\l+ RDLR\l+ RDHR\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_c_a_n___f_i_f_o_mail_box___type_def.html",tooltip="Controller Area Network FIFOMailBox. "];
+}

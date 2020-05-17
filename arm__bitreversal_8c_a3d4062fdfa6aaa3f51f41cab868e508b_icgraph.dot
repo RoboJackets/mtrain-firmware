@@ -1,0 +1,13 @@
+digraph "arm_bitreversal_f32"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="arm_bitreversal_f32",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="arm_cfft_radix2_f32",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___complex_f_f_t.html#ga9fadd650b802f612ae558ddaab789a6d",tooltip="Radix-2 CFFT/CIFFT. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="arm_cfft_radix4_f32",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___complex_f_f_t.html#ga521f670cd9c571bc61aff9bec89f4c26",tooltip="Processing function for the floating-point Radix-4 CFFT/CIFFT. "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="arm_rfft_f32",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___real_f_f_t.html#ga3df1766d230532bc068fc4ed69d0fcdc",tooltip="Processing function for the floating-point RFFT/RIFFT. "];
+}

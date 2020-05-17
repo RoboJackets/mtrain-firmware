@@ -1,0 +1,11 @@
+digraph "/home/developer/mtrain-firmware/external/STM32F7xx_HAL_Drivers/Src" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_d44dc8085d5faa6a792c35ee8daf1893 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="STM32F7xx_HAL_Drivers" fontname="Helvetica", fontsize="10", URL="dir_d44dc8085d5faa6a792c35ee8daf1893.html"]
+  dir_cc091850d3bc9e9ece6a451bf574e1b1 [shape=box, label="Src", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_cc091850d3bc9e9ece6a451bf574e1b1.html"];
+  }
+  dir_ad8ec080499984a8e3c23a7affdafd94 [shape=box label="Inc" fillcolor="white" style="filled" color="red" URL="dir_ad8ec080499984a8e3c23a7affdafd94.html"];
+  dir_cc091850d3bc9e9ece6a451bf574e1b1->dir_ad8ec080499984a8e3c23a7affdafd94 [headlabel="71", labeldistance=1.5 headhref="dir_000082_000080.html"];
+}

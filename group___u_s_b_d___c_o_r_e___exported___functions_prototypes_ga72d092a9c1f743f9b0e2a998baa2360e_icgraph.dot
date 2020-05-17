@@ -1,0 +1,9 @@
+digraph "MSC_BOT_Init"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node30 [label="MSC_BOT_Init",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node30 -> Node31 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node31 [label="USBD_MSC_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___m_s_c___c_o_r_e___private___functions.html#gafe6062fbb86344c0d4339601d2fe0de1",tooltip="USBD_MSC_Init Initialize the mass storage configuration. "];
+}

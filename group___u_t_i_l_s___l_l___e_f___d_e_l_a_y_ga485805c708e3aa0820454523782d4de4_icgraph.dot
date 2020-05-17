@@ -1,0 +1,9 @@
+digraph "LL_Init1msTick"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="LL_Init1msTick",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="LL_InitTick",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_t_i_l_s___l_l___e_f___d_e_l_a_y.html#ga170d1d651b46544daf571fb6b4e3b850",tooltip="This function configures the Cortex-M SysTick source of the time base. "];
+}

@@ -1,0 +1,35 @@
+digraph "SMBUS Exported Constants"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node14 [label="SMBUS Flag definition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_m_b_u_s___flag__definition.html",tooltip="Flag definition Elements values convention: 0xXXXXYYYY. "];
+  Node2 [label="SMBUS Analog Filter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_m_b_u_s___analog___filter.html"];
+  Node12 [label="SMBUS XferOptions definition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_m_b_u_s___xfer_options__definition.html"];
+  Node6 [label="SMBUS general call\l addressing mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_m_b_u_s__general__call__addressing__mode.html"];
+  Node8 [label="SMBUS packet error\l check mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_m_b_u_s__packet__error__check__mode.html"];
+  Node4 [label="SMBUS dual addressing mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_m_b_u_s__dual__addressing__mode.html"];
+  Node10 [label="SMBUS ReloadEndMode\l definition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_m_b_u_s___reload_end_mode__definition.html"];
+  Node7 [label="SMBUS nostretch mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_m_b_u_s__nostretch__mode.html"];
+  Node3 [label="SMBUS addressing mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_m_b_u_s__addressing__mode.html"];
+  Node0 [label="SMBUS Exported Constants",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node9 [label="SMBUS peripheral mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_m_b_u_s__peripheral__mode.html"];
+  Node13 [label="SMBUS Interrupt configuration\l definition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_m_b_u_s___interrupt__configuration__definition.html",tooltip="SMBUS Interrupt definition Elements values convention: 0xXXXXXXXX. "];
+  Node1 [label="SMBUS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_m_b_u_s.html",tooltip="SMBUS HAL module driver. "];
+  Node11 [label="SMBUS StartStopMode\l definition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_m_b_u_s___start_stop_mode__definition.html"];
+  Node5 [label="SMBUS ownaddress2 masks",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_m_b_u_s__own__address2__masks.html"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node9 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node10 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node11 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node12 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node13 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node14 [shape=plaintext, dir="back", style="solid"];
+}

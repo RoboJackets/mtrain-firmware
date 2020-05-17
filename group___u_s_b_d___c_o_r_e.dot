@@ -1,0 +1,33 @@
+digraph "USBD_CORE"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node11 [label="USBD_CORE_Private_Function\lPrototypes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e___private___function_prototypes.html"];
+  Node1 [label="STM32_USB_DEVICE_LIBRARY",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_t_m32___u_s_b___d_e_v_i_c_e___l_i_b_r_a_r_y.html"];
+  Node2 [label="STM32_USBD_DEVICE_LIBRARY",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_t_m32___u_s_b_d___d_e_v_i_c_e___l_i_b_r_a_r_y.html"];
+  Node0 [label="USBD_CORE",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node6 [label="USBD_CORE_Exported\l_Variables",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e___exported___variables.html"];
+  Node13 [label="USBD_CORE_Private_Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e___private___functions.html"];
+  Node3 [label="USBD_CORE_Exported\l_Defines",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e___exported___defines.html"];
+  Node4 [label="USBD_CORE_Exported\l_TypesDefinitions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e___exported___types_definitions.html"];
+  Node8 [label="USBD_CORE_Private_TypesDefinitions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e___private___types_definitions.html"];
+  Node12 [label="USBD_CORE_Private_Variables",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e___private___variables.html"];
+  Node9 [label="USBD_CORE_Private_Defines",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e___private___defines.html"];
+  Node7 [label="USBD_CORE_Exported\l_FunctionsPrototype",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html"];
+  Node5 [label="USBD_CORE_Exported\l_Macros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e___exported___macros.html"];
+  Node10 [label="USBD_CORE_Private_Macros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e___private___macros.html"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node2->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node9 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node10 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node11 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node12 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node13 [shape=plaintext, dir="back", style="solid"];
+}

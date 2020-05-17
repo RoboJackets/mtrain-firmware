@@ -1,0 +1,11 @@
+digraph "pcTaskGetName"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node6 [label="pcTaskGetName",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="xTaskGetHandle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$task_8h.html#a45b3b1cd0227269609499beeeb8c5c26"];
+  Node6 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="vTaskSuspendAll",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tasks_8c.html#a084d232640bd1d04bcac0b8784417015"];
+}

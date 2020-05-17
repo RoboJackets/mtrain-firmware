@@ -1,0 +1,33 @@
+digraph "Stm32f7xx_system"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node5 [label="STM32F7xx_System_Exported\l_Macros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_t_m32_f7xx___system___exported___macros.html"];
+  Node11 [label="STM32F7xx_System_Private\l_Variables",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_t_m32_f7xx___system___private___variables.html"];
+  Node3 [label="STM32F7xx_System_Exported\l_Variables",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_t_m32_f7xx___system___exported___variables.html"];
+  Node12 [label="STM32F7xx_System_Private\l_FunctionPrototypes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_t_m32_f7xx___system___private___function_prototypes.html"];
+  Node2 [label="STM32F7xx_System_Includes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_t_m32_f7xx___system___includes.html",tooltip="Define to prevent recursive inclusion. "];
+  Node0 [label="Stm32f7xx_system",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node4 [label="STM32F7xx_System_Exported\l_Constants",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_t_m32_f7xx___system___exported___constants.html"];
+  Node1 [label="CMSIS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_m_s_i_s.html"];
+  Node8 [label="STM32F7xx_System_Private\l_TypesDefinitions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_t_m32_f7xx___system___private___types_definitions.html"];
+  Node9 [label="STM32F7xx_System_Private\l_Defines",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_t_m32_f7xx___system___private___defines.html"];
+  Node7 [label="STM32F7xx_System_Private\l_Includes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_t_m32_f7xx___system___private___includes.html"];
+  Node6 [label="STM32F7xx_System_Exported\l_Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_t_m32_f7xx___system___exported___functions.html"];
+  Node13 [label="STM32F7xx_System_Private\l_Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_t_m32_f7xx___system___private___functions.html"];
+  Node10 [label="STM32F7xx_System_Private\l_Macros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_t_m32_f7xx___system___private___macros.html"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node9 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node10 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node11 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node12 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node13 [shape=plaintext, dir="back", style="solid"];
+}

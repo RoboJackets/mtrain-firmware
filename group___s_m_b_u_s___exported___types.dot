@@ -1,0 +1,17 @@
+digraph "SMBUS Exported Types"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node2 [label="SMBUS Configuration\l Structure definition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_m_b_u_s___configuration___structure__definition.html",tooltip="SMBUS Configuration Structure definition. "];
+  Node0 [label="SMBUS Exported Types",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node5 [label="SMBUS handle Structure\l definition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_m_b_u_s__handle___structure__definition.html",tooltip="SMBUS handle Structure definition. "];
+  Node1 [label="SMBUS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_m_b_u_s.html",tooltip="SMBUS HAL module driver. "];
+  Node3 [label="HAL state definition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___h_a_l__state__definition.html",tooltip="HAL State definition. "];
+  Node4 [label="SMBUS Error Code definition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_m_b_u_s___error___code__definition.html",tooltip="SMBUS Error Code definition. "];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+}

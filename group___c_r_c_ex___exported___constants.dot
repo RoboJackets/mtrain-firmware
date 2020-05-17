@@ -1,0 +1,13 @@
+digraph "CRC Extended exported constants"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node3 [label="CRC Extended output\l data inversion modes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_r_c_ex___output___data___inversion.html"];
+  Node2 [label="CRC Extended input\l data inversion modes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_r_c_ex___input___data___inversion.html"];
+  Node1 [label="CRCEx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_r_c_ex.html",tooltip="CRC Extended HAL module driver. "];
+  Node0 [label="CRC Extended exported\l constants",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+}

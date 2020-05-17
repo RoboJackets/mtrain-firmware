@@ -1,0 +1,6 @@
+digraph "GPIO_TypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{GPIO_TypeDef\n|+ MODER\l+ OTYPER\l+ OSPEEDR\l+ PUPDR\l+ IDR\l+ ODR\l+ BSRR\l+ LCKR\l+ AFR\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

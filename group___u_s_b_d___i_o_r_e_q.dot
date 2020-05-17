@@ -1,0 +1,31 @@
+digraph "USBD_IOREQ"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node3 [label="USBD_IOREQ_Exported\l_Types",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___i_o_r_e_q___exported___types.html"];
+  Node1 [label="STM32_USB_DEVICE_LIBRARY",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_t_m32___u_s_b___d_e_v_i_c_e___l_i_b_r_a_r_y.html"];
+  Node0 [label="USBD_IOREQ",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node10 [label="USBD_IOREQ_Private\l_Variables",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___i_o_r_e_q___private___variables.html"];
+  Node7 [label="USBD_IOREQ_Private\l_TypesDefinitions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___i_o_r_e_q___private___types_definitions.html"];
+  Node9 [label="USBD_IOREQ_Private\l_Macros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___i_o_r_e_q___private___macros.html"];
+  Node11 [label="USBD_IOREQ_Private\l_FunctionPrototypes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___i_o_r_e_q___private___function_prototypes.html"];
+  Node6 [label="USBD_IOREQ_Exported\l_FunctionsPrototype",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___i_o_r_e_q___exported___functions_prototype.html"];
+  Node2 [label="USBD_IOREQ_Exported\l_Defines",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___i_o_r_e_q___exported___defines.html"];
+  Node4 [label="USBD_IOREQ_Exported\l_Macros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___i_o_r_e_q___exported___macros.html"];
+  Node12 [label="USBD_IOREQ_Private\l_Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___i_o_r_e_q___private___functions.html"];
+  Node8 [label="USBD_IOREQ_Private\l_Defines",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___i_o_r_e_q___private___defines.html"];
+  Node5 [label="USBD_IOREQ_Exported\l_Variables",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___i_o_r_e_q___exported___variables.html"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node9 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node10 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node11 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node12 [shape=plaintext, dir="back", style="solid"];
+}

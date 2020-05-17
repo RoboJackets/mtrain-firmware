@@ -1,0 +1,13 @@
+digraph "USBD_MSC"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node0 [label="USBD_MSC",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node3 [label="USB_CORE_Exported_Types",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b___c_o_r_e___exported___types.html"];
+  Node1 [label="USBD_MSC_BOT",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___m_s_c___b_o_t.html"];
+  Node2 [label="USBD_BOT_Exported_Defines",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___b_o_t___exported___defines.html"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+}

@@ -1,0 +1,6 @@
+digraph "CAN_FilterConfTypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{CAN_FilterConfTypeDef\n|+ FilterIdHigh\l+ FilterIdLow\l+ FilterMaskIdHigh\l+ FilterMaskIdLow\l+ FilterFIFOAssignment\l+ FilterNumber\l+ FilterMode\l+ FilterScale\l+ FilterActivation\l+ BankNumber\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

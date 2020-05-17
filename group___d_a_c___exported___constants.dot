@@ -1,0 +1,23 @@
+digraph "DAC Exported Constants"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node7 [label="DAC Flags Definition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___d_a_c__flags__definition.html"];
+  Node4 [label="DAC Output Buffer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___d_a_c__output__buffer.html"];
+  Node5 [label="DAC Channel Selection",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___d_a_c___channel__selection.html"];
+  Node1 [label="DAC",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___d_a_c.html",tooltip="DAC driver modules. "];
+  Node6 [label="DAC Data Alignment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___d_a_c__data__alignment.html"];
+  Node2 [label="DAC Error Code",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___d_a_c___error___code.html"];
+  Node0 [label="DAC Exported Constants",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node3 [label="DAC Trigger Selection",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___d_a_c__trigger__selection.html"];
+  Node8 [label="DAC IT Definition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___d_a_c___i_t__definition.html"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node8 [shape=plaintext, dir="back", style="solid"];
+}

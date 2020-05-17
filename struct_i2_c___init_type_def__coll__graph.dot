@@ -1,0 +1,6 @@
+digraph "I2C_InitTypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{I2C_InitTypeDef\n|+ Timing\l+ OwnAddress1\l+ AddressingMode\l+ DualAddressMode\l+ OwnAddress2\l+ OwnAddress2Masks\l+ GeneralCallMode\l+ NoStretchMode\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

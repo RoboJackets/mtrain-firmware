@@ -1,0 +1,15 @@
+digraph "/home/developer/mtrain-firmware/external/CMSIS/Device" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_651c4281f36ab60688d2b827c8ad2c3b {
+    graph [ bgcolor="#ddddee", pencolor="black", label="CMSIS" fontname="Helvetica", fontsize="10", URL="dir_651c4281f36ab60688d2b827c8ad2c3b.html"]
+  subgraph clusterdir_fc87cadb59a46a005bd75c1c663e66ba {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_fc87cadb59a46a005bd75c1c663e66ba.html"];
+    dir_fc87cadb59a46a005bd75c1c663e66ba [shape=plaintext label="Device"];
+    dir_ca6b782e1e582c29d056b3c0e389f791 [shape=box label="STM32F7xx" color="red" fillcolor="white" style="filled" URL="dir_ca6b782e1e582c29d056b3c0e389f791.html"];
+  }
+  }
+  dir_ea7e36173fdf5d3e10f7d99384a1945b [shape=box label="Include" URL="dir_ea7e36173fdf5d3e10f7d99384a1945b.html"];
+  dir_ca6b782e1e582c29d056b3c0e389f791->dir_ea7e36173fdf5d3e10f7d99384a1945b [headlabel="1", labeldistance=1.5 headhref="dir_000018_000032.html"];
+}

@@ -1,0 +1,6 @@
+digraph "IPSR_Type"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{IPSR_Type\n|+ ISR\l+ _reserved0\l+ b\l+ w\l+ b\l+ b\l+ b\l+ b\l+ b\l+ b\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

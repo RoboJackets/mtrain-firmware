@@ -1,0 +1,13 @@
+digraph "HAL_PCDEx_SetTxFiFo"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node20 [label="HAL_PCDEx_SetTxFiFo",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node20 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="USBD_LL_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#ga24b61e95db7e4c7ad30a835e8d905943",tooltip="Initializes the Low Level portion of the Device driver. "];
+  Node21 -> Node22 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="USBD_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e___private___functions.html#gad35f19488381872e83fa7b23d96589e7",tooltip="USBD_Init Initializes the device stack and load the class driver. "];
+  Node22 -> Node23 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="bsp_config",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bsp_8c.html#a1daad6f02d05b6715108e804f68c3d21"];
+}

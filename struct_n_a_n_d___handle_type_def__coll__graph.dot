@@ -1,0 +1,10 @@
+digraph "NAND_HandleTypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{NAND_HandleTypeDef\n|+ Instance\l+ Lock\l+ State\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +Config" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{NAND_DeviceConfigTypeDef\n|+ PageSize\l+ SpareAreaSize\l+ BlockSize\l+ BlockNbr\l+ PlaneNbr\l+ PlaneSize\l+ ExtraCommandEnable\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_n_a_n_d___device_config_type_def.html",tooltip="NAND Memory info Structure definition. "];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +Init" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{FMC_NAND_InitTypeDef\n|+ NandBank\l+ Waitfeature\l+ MemoryDataWidth\l+ EccComputation\l+ ECCPageSize\l+ TCLRSetupTime\l+ TARSetupTime\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_f_m_c___n_a_n_d___init_type_def.html",tooltip="FMC NAND Configuration Structure definition. "];
+}

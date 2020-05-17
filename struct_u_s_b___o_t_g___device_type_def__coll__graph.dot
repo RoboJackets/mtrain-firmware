@@ -1,0 +1,6 @@
+digraph "USB_OTG_DeviceTypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{USB_OTG_DeviceTypeDef\n|+ DCFG\l+ DCTL\l+ DSTS\l+ Reserved0C\l+ DIEPMSK\l+ DOEPMSK\l+ DAINT\l+ DAINTMSK\l+ Reserved20\l+ Reserved9\land 10 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

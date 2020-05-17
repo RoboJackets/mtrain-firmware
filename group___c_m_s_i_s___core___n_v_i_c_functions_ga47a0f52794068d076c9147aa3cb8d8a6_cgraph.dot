@@ -1,0 +1,11 @@
+digraph "NVIC_GetActive"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node16 [label="NVIC_GetActive",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node16 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="NVIC_SetPriority",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_m_s_i_s___core___n_v_i_c_functions.html#ga2305cbd44aaad792e3a4e538bdaf14f9",tooltip="Set Interrupt Priority. "];
+  Node16 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="NVIC_GetPriority",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_m_s_i_s___core___n_v_i_c_functions.html#ga1cbaf8e6abd4aa4885828e7f24fcfeb4",tooltip="Get Interrupt Priority. "];
+}

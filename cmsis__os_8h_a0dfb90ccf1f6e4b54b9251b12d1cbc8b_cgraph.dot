@@ -1,0 +1,9 @@
+digraph "osThreadSetPriority"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node130 [label="osThreadSetPriority",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node130 -> Node131 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node131 [label="vTaskPrioritySet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$task_8h.html#a1ee31be76e326e0644dbd6ac40a787b6"];
+}

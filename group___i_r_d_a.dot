@@ -1,0 +1,23 @@
+digraph "IRDA"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node6 [label="IRDA Private Macros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i_r_d_a___private___macros.html"];
+  Node5 [label="IRDA Private Constants",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i_r_d_a___private___constants.html"];
+  Node0 [label="IRDA",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node3 [label="IRDA Exported constants",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i_r_d_a___exported___constants.html",tooltip="IRDA Configuration enumeration values definition. "];
+  Node1 [label="STM32F7xx_HAL_Driver",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_t_m32_f7xx___h_a_l___driver.html"];
+  Node7 [label="IRDA Private Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i_r_d_a___private___functions.html"];
+  Node4 [label="IRDA Exported Macros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i_r_d_a___exported___macros.html"];
+  Node2 [label="IRDA Exported Types",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i_r_d_a___exported___types.html"];
+  Node8 [label="IRDA Exported Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i_r_d_a___exported___functions.html"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node8 [shape=plaintext, dir="back", style="solid"];
+}

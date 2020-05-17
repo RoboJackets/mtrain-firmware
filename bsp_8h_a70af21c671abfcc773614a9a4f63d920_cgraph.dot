@@ -1,0 +1,15 @@
+digraph "SystemClock_Config"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node43 [label="SystemClock_Config",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node43 -> Node44 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node44 [label="HAL_RCC_OscConfig",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_c_c___exported___functions___group1.html#ga9c504088722e03830df6caad932ad06b"];
+  Node43 -> Node45 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node45 [label="Error_Handler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bsp_8c.html#a1730ffe1e560465665eb47d9264826f9",tooltip="This function is executed in case of error occurrence. "];
+  Node43 -> Node46 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node46 [label="HAL_PWREx_EnableOverDrive",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___p_w_r_ex___exported___functions___group1.html#gaaf092495bffd53ad2fe6a91f90f87032"];
+  Node43 -> Node47 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node47 [label="HAL_RCC_ClockConfig",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_c_c___exported___functions___group1.html#gad0a4b5c7459219fafc15f3f867563ef3"];
+}

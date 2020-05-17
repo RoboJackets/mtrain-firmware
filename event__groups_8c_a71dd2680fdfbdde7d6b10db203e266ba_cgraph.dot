@@ -1,0 +1,12 @@
+digraph "xEventGroupClearBits"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node20 [label="xEventGroupClearBits",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node20 -> Node21 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="xTimerPendFunctionCallFromISR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$timers_8h.html#ae0d9338933037e6feebe6437763fa299",tooltip="BaseType_t xTimerPendFunctionCallFromISR( PendedFunction_t xFunctionToPend, void *pvParameter1, uint32_t ulParameter2, BaseType_t *pxHigherPriorityTaskWoken );. "];
+  Node20 -> Node22 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="vEventGroupClearBitsCallback",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$event__groups_8c.html#a3bce459038e87064109c8462b1174c29"];
+  Node22 -> Node20 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

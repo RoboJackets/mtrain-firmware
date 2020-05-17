@@ -1,0 +1,6 @@
+digraph "RCC_PLLI2SInitTypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{RCC_PLLI2SInitTypeDef\n|+ PLLI2SN\l+ PLLI2SR\l+ PLLI2SQ\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

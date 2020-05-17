@@ -1,0 +1,25 @@
+digraph "arm_rfft_q15"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node24 [label="arm_rfft_q15",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node24 -> Node25 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node25 [label="arm_split_rifft_q15",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$arm__rfft__q15_8c.html#aa72a531dd15a53570dddaf01b62158f4",tooltip="Core Real IFFT process. "];
+  Node24 -> Node26 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node26 [label="arm_cfft_q15",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___complex_f_f_t.html#ga68cdacd2267a2967955e40e6b7ec1229",tooltip="Processing function for the Q15 complex FFT. "];
+  Node26 -> Node27 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node27 [label="arm_radix4_butterfly\l_inverse_q15",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$arm__cfft__q15_8c.html#a734ecff00f21a6a10e9ec437c8987eb1",tooltip="Core function for the Q15 CIFFT butterfly process. "];
+  Node26 -> Node28 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node28 [label="arm_cfft_radix4by2\l_inverse_q15",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$arm__cfft__q15_8c.html#abe669acc8db57d1fb9b1e2bba30f2224"];
+  Node28 -> Node27 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node26 -> Node29 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node29 [label="arm_radix4_butterfly_q15",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$arm__cfft__q15_8c.html#abf1a2f9aa9f44ad5da1f0dbae8b54f2f",tooltip="end of ComplexFFT group "];
+  Node26 -> Node30 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node30 [label="arm_cfft_radix4by2_q15",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$arm__cfft__q15_8c.html#af1d4a751153857c173511e0c77ab4fa9",tooltip="end of ComplexFFT group "];
+  Node30 -> Node29 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node26 -> Node31 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node31 [label="arm_bitreversal_16",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$arm__cfft__q15_8c.html#a773957c278f4d9e728711f27e8a6e278"];
+  Node24 -> Node32 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node32 [label="arm_split_rfft_q15",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$arm__rfft__q15_8c.html#a7c2a21793586f9a69c42140665550e09",tooltip="end of RealFFT group "];
+}

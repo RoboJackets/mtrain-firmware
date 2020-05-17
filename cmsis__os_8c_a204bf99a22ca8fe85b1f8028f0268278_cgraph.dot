@@ -1,0 +1,9 @@
+digraph "osThreadSuspend"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node135 [label="osThreadSuspend",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node135 -> Node136 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node136 [label="vTaskSuspend",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$task_8h.html#a84d4e660b04630be2939d91b3c2412f8"];
+}

@@ -1,0 +1,19 @@
+digraph "USBD_LL_DataOutStage"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node36 [label="USBD_LL_DataOutStage",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node36 -> Node37 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node37 [label="USBD_CtlContinueRx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___i_o_r_e_q___exported___functions_prototype.html#gaf6cabd5a8d9d527cf6aa64915abb7f2b",tooltip="USBD_CtlContinueRx continue receive data on the ctl pipe. "];
+  Node37 -> Node38 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node38 [label="USBD_LL_PrepareReceive",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#ga259b00707b333065b66be515dd019428",tooltip="Prepares an endpoint for reception. "];
+  Node38 -> Node39 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node39 [label="HAL_PCD_EP_Receive",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___p_c_d___exported___functions___group3.html#ga0029fe7a8d3db91b13637e2507fba60c"];
+  Node36 -> Node40 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node40 [label="USBD_CtlSendStatus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___i_o_r_e_q___exported___functions_prototype.html#ga19e53947fc912c43bcee2c7d7429e8ee",tooltip="USBD_CtlSendStatus send zero lzngth packet on the ctl pipe. "];
+  Node40 -> Node41 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node41 [label="USBD_LL_Transmit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#gab87eb9f3d4d9f8956d2c6b77230f265c",tooltip="Transmits data over an endpoint. "];
+  Node41 -> Node42 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node42 [label="HAL_PCD_EP_Transmit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___p_c_d___exported___functions___group3.html#ga116ada543442c8f7a1003c4d4c211618"];
+}

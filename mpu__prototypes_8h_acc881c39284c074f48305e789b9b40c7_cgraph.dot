@@ -1,0 +1,13 @@
+digraph "MPU_xQueueGenericReceive"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node158 [label="MPU_xQueueGenericReceive",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node158 -> Node159 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node159 [label="xPortRaisePrivilege",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mpu__wrappers_8c.html#ac42aa31652a6e8158f8ea8a88aad8275"];
+  Node158 -> Node160 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node160 [label="xQueueGenericReceive",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$queue_8h.html#a6a0c9135edf180d270ac0ffb17ec21b4"];
+  Node160 -> Node161 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node161 [label="xTaskGetSchedulerState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$task_8h.html#a0241000e08a261372186d34825a35979"];
+}

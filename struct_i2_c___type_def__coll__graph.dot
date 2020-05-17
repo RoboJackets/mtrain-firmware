@@ -1,0 +1,6 @@
+digraph "I2C_TypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{I2C_TypeDef\n|+ CR1\l+ CR2\l+ OAR1\l+ OAR2\l+ TIMINGR\l+ TIMEOUTR\l+ ISR\l+ ICR\l+ PECR\l+ RXDR\l+ TXDR\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

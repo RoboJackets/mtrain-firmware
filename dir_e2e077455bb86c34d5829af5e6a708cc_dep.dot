@@ -1,0 +1,18 @@
+digraph "/home/developer/mtrain-firmware/API/c" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_19ea4dbfe8f0e4681f60b9b97f7b5d11 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="API" fontname="Helvetica", fontsize="10", URL="dir_19ea4dbfe8f0e4681f60b9b97f7b5d11.html"]
+  subgraph clusterdir_e2e077455bb86c34d5829af5e6a708cc {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_e2e077455bb86c34d5829af5e6a708cc.html"];
+    dir_e2e077455bb86c34d5829af5e6a708cc [shape=plaintext label="c"];
+    dir_0b8b80d2a0f72e6fb2e9bec28573bc04 [shape=box label="Inc" color="black" fillcolor="white" style="filled" URL="dir_0b8b80d2a0f72e6fb2e9bec28573bc04.html"];
+    dir_67af731afa1354861ed30f5ee79f40c2 [shape=box label="Src" color="black" fillcolor="white" style="filled" URL="dir_67af731afa1354861ed30f5ee79f40c2.html"];
+  }
+  }
+  dir_397d9aeee4af8edecac90968d93b57df [shape=box label="external" fillcolor="white" style="filled" color="red" URL="dir_397d9aeee4af8edecac90968d93b57df.html"];
+  dir_67af731afa1354861ed30f5ee79f40c2->dir_0b8b80d2a0f72e6fb2e9bec28573bc04 [headlabel="4", labeldistance=1.5 headhref="dir_000003_000002.html"];
+  dir_67af731afa1354861ed30f5ee79f40c2->dir_397d9aeee4af8edecac90968d93b57df [headlabel="1", labeldistance=1.5 headhref="dir_000003_000015.html"];
+  dir_0b8b80d2a0f72e6fb2e9bec28573bc04->dir_397d9aeee4af8edecac90968d93b57df [headlabel="1", labeldistance=1.5 headhref="dir_000002_000015.html"];
+}

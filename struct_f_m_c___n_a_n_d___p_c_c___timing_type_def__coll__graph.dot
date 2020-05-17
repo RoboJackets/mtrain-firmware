@@ -1,0 +1,6 @@
+digraph "FMC_NAND_PCC_TimingTypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{FMC_NAND_PCC_TimingTypeDef\n|+ SetupTime\l+ WaitSetupTime\l+ HoldSetupTime\l+ HiZSetupTime\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

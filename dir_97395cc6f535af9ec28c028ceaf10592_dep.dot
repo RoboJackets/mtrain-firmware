@@ -1,0 +1,33 @@
+digraph "/home/developer/mtrain-firmware/external/CMSIS/DSP_Lib" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_651c4281f36ab60688d2b827c8ad2c3b {
+    graph [ bgcolor="#ddddee", pencolor="black", label="CMSIS" fontname="Helvetica", fontsize="10", URL="dir_651c4281f36ab60688d2b827c8ad2c3b.html"]
+  subgraph clusterdir_97395cc6f535af9ec28c028ceaf10592 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_97395cc6f535af9ec28c028ceaf10592.html"];
+    dir_97395cc6f535af9ec28c028ceaf10592 [shape=plaintext label="DSP_Lib"];
+    dir_0c9ab70a75c4bad7a0086add90e1bdba [shape=box label="BasicMathFunctions" color="black" fillcolor="white" style="filled" URL="dir_0c9ab70a75c4bad7a0086add90e1bdba.html"];
+    dir_7bdb6d798d80a101f653f3f1fc1e9e90 [shape=box label="CommonTables" color="black" fillcolor="white" style="filled" URL="dir_7bdb6d798d80a101f653f3f1fc1e9e90.html"];
+    dir_bc635a7318236c621e884f4e2f1686ca [shape=box label="ComplexMathFunctions" color="black" fillcolor="white" style="filled" URL="dir_bc635a7318236c621e884f4e2f1686ca.html"];
+    dir_5e16eec8798b7ba22b63e370893982bd [shape=box label="ControllerFunctions" color="black" fillcolor="white" style="filled" URL="dir_5e16eec8798b7ba22b63e370893982bd.html"];
+    dir_0f382ceea3653d0dee6bb06c859369be [shape=box label="FastMathFunctions" color="black" fillcolor="white" style="filled" URL="dir_0f382ceea3653d0dee6bb06c859369be.html"];
+    dir_f17d8e64fda74890e1ea15d151dd9bc8 [shape=box label="FilteringFunctions" color="black" fillcolor="white" style="filled" URL="dir_f17d8e64fda74890e1ea15d151dd9bc8.html"];
+    dir_087c5c139db1356e68b4fece4d8a8051 [shape=box label="MatrixFunctions" color="black" fillcolor="white" style="filled" URL="dir_087c5c139db1356e68b4fece4d8a8051.html"];
+    dir_052aae8c0758759ddd6f34b9fc9782dc [shape=box label="StatisticsFunctions" color="black" fillcolor="white" style="filled" URL="dir_052aae8c0758759ddd6f34b9fc9782dc.html"];
+    dir_55d781b5a5cf149c44349c6dca2a6e45 [shape=box label="SupportFunctions" color="black" fillcolor="white" style="filled" URL="dir_55d781b5a5cf149c44349c6dca2a6e45.html"];
+    dir_d59b9d8cf0cdee77541e193e8f44fa46 [shape=box label="TransformFunctions" color="black" fillcolor="white" style="filled" URL="dir_d59b9d8cf0cdee77541e193e8f44fa46.html"];
+  }
+  }
+  dir_ea7e36173fdf5d3e10f7d99384a1945b [shape=box label="Include" URL="dir_ea7e36173fdf5d3e10f7d99384a1945b.html"];
+  dir_55d781b5a5cf149c44349c6dca2a6e45->dir_ea7e36173fdf5d3e10f7d99384a1945b [headlabel="20", labeldistance=1.5 headhref="dir_000030_000032.html"];
+  dir_bc635a7318236c621e884f4e2f1686ca->dir_ea7e36173fdf5d3e10f7d99384a1945b [headlabel="18", labeldistance=1.5 headhref="dir_000024_000032.html"];
+  dir_5e16eec8798b7ba22b63e370893982bd->dir_ea7e36173fdf5d3e10f7d99384a1945b [headlabel="10", labeldistance=1.5 headhref="dir_000025_000032.html"];
+  dir_f17d8e64fda74890e1ea15d151dd9bc8->dir_ea7e36173fdf5d3e10f7d99384a1945b [headlabel="101", labeldistance=1.5 headhref="dir_000027_000032.html"];
+  dir_0f382ceea3653d0dee6bb06c859369be->dir_ea7e36173fdf5d3e10f7d99384a1945b [headlabel="16", labeldistance=1.5 headhref="dir_000026_000032.html"];
+  dir_7bdb6d798d80a101f653f3f1fc1e9e90->dir_ea7e36173fdf5d3e10f7d99384a1945b [headlabel="3", labeldistance=1.5 headhref="dir_000023_000032.html"];
+  dir_d59b9d8cf0cdee77541e193e8f44fa46->dir_ea7e36173fdf5d3e10f7d99384a1945b [headlabel="44", labeldistance=1.5 headhref="dir_000031_000032.html"];
+  dir_0c9ab70a75c4bad7a0086add90e1bdba->dir_ea7e36173fdf5d3e10f7d99384a1945b [headlabel="35", labeldistance=1.5 headhref="dir_000022_000032.html"];
+  dir_052aae8c0758759ddd6f34b9fc9782dc->dir_ea7e36173fdf5d3e10f7d99384a1945b [headlabel="25", labeldistance=1.5 headhref="dir_000029_000032.html"];
+  dir_087c5c139db1356e68b4fece4d8a8051->dir_ea7e36173fdf5d3e10f7d99384a1945b [headlabel="25", labeldistance=1.5 headhref="dir_000028_000032.html"];
+}

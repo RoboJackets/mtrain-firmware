@@ -1,0 +1,17 @@
+digraph "LL_InitTick"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node3 [label="LL_InitTick",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="LL_Init1msTick",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_t_i_l_s___l_l___e_f___d_e_l_a_y.html#ga485805c708e3aa0820454523782d4de4"];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="LL_mDelay",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_t_i_l_s___l_l___e_f___d_e_l_a_y.html#ga7b7ca6d9cbec320c3e9f326b203807aa"];
+  Node3 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="LL_SetSystemCoreClock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_t_i_l_s___e_f___s_y_s_t_e_m.html#ga5af902d59c4c2d9dc5e189df0bc71ecd"];
+  Node3 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="LL_PLL_ConfigSystemClock_HSI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_t_i_l_s___e_f___s_y_s_t_e_m.html#ga7ada5e4210f6ef80ef9f55bf9dd048c6"];
+  Node3 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="LL_PLL_ConfigSystemClock_HSE",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_t_i_l_s___e_f___s_y_s_t_e_m.html#gaf6c8553d03464d4646b63321b97d25e2"];
+}

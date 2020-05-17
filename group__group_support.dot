@@ -1,0 +1,19 @@
+digraph "Support Functions"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node4 [label="Convert 16-bit Integer\l value",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__q15__to__x.html"];
+  Node3 [label="Convert 32-bit floating\l point value",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__float__to__x.html"];
+  Node0 [label="Support Functions",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node5 [label="Convert 32-bit Integer\l value",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__q31__to__x.html"];
+  Node2 [label="Vector Fill",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___fill.html",tooltip="Fills the destination vector with a constant value. "];
+  Node6 [label="Convert 8-bit Integer\l value",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__q7__to__x.html"];
+  Node1 [label="Vector Copy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__copy.html",tooltip="Copies sample by sample from source vector to destination vector. "];
+  Node0->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+}

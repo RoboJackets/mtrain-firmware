@@ -1,0 +1,31 @@
+digraph "USBD_DFU"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node12 [label="USBD_DFU_Private_Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___d_f_u___private___functions.html"];
+  Node1 [label="STM32_USB_DEVICE_LIBRARY",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_t_m32___u_s_b___d_e_v_i_c_e___l_i_b_r_a_r_y.html"];
+  Node5 [label="USBD_CORE_Exported\l_Variables",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e___exported___variables.html"];
+  Node0 [label="USBD_DFU",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node3 [label="USBD_CORE_Exported\l_TypesDefinitions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e___exported___types_definitions.html"];
+  Node8 [label="USBD_DFU_Private_Defines",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___d_f_u___private___defines.html"];
+  Node2 [label="USBD_DFU_Exported_Defines",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___d_f_u___exported___defines.html"];
+  Node11 [label="USBD_DFU_Private_Variables",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___d_f_u___private___variables.html"];
+  Node10 [label="USBD_DFU_Private_Function\lPrototypes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___d_f_u___private___function_prototypes.html"];
+  Node4 [label="USBD_CORE_Exported\l_Macros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e___exported___macros.html"];
+  Node9 [label="USBD_DFU_Private_Macros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___d_f_u___private___macros.html"];
+  Node7 [label="USBD_DFU_Private_TypesDefinitions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___d_f_u___private___types_definitions.html"];
+  Node6 [label="USB_CORE_Exported_Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b___c_o_r_e___exported___functions.html"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node9 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node10 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node11 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node12 [shape=plaintext, dir="back", style="solid"];
+}

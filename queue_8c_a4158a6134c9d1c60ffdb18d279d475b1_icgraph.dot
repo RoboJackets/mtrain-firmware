@@ -1,0 +1,9 @@
+digraph "uxQueueMessagesWaiting"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="uxQueueMessagesWaiting",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="MPU_uxQueueMessagesWaiting",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mpu__wrappers_8c.html#ab197334f4b3b92d0a0c744f568481a5d"];
+}

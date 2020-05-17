@@ -1,0 +1,11 @@
+digraph "/home/developer/mtrain-firmware/external/middleware/FreeRTOS/src/portable/GCC/ARM_CM0" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_c3f6510a47af292d4765bcaa26bd18e3 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="GCC" fontname="Helvetica", fontsize="10", URL="dir_c3f6510a47af292d4765bcaa26bd18e3.html"]
+  dir_794683b2f00105abacce6bbde64137da [shape=box, label="ARM_CM0", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_794683b2f00105abacce6bbde64137da.html"];
+  }
+  dir_e8f305f026f0eedfd01db8b47ccd6bd3 [shape=box label="include" URL="dir_e8f305f026f0eedfd01db8b47ccd6bd3.html"];
+  dir_794683b2f00105abacce6bbde64137da->dir_e8f305f026f0eedfd01db8b47ccd6bd3 [headlabel="2", labeldistance=1.5 headhref="dir_000045_000041.html"];
+}

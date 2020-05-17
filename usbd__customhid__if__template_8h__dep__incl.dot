@@ -1,0 +1,8 @@
+digraph "/home/developer/mtrain-firmware/external/middleware/STM32_USB_Device_Library/Class/CustomHID/Inc/usbd_customhid_if_template.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node76 [label="/home/developer/mtrain\l-firmware/external/middleware\l/STM32_USB_Device_Library/Class\l/CustomHID/Inc/usbd_customhid\l_if_template.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node76 -> Node77 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node77 [label="/home/developer/mtrain\l-firmware/external/middleware\l/STM32_USB_Device_Library/Class\l/CustomHID/Src/usbd_customhid\l_if_template.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$usbd__customhid__if__template_8c.html",tooltip="USB Device Custom HID interface file. This template should be copied to the user folder, renamed and customized following user needs. "];
+}

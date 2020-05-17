@@ -1,0 +1,23 @@
+digraph "osSystickHandler"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node105 [label="osSystickHandler",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node105 -> Node106 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node106 [label="xTaskGetSchedulerState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$task_8h.html#a0241000e08a261372186d34825a35979"];
+  Node105 -> Node107 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node107 [label="xPortSysTickHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cmsis__os_8c.html#a78100b2d36913d0b45565be8975e5de8"];
+  Node107 -> Node108 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node108 [label="xTaskIncrementTick",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$task_8h.html#a978e25460ac35706f9ad30b46d9403d8"];
+  Node107 -> Node109 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node109 [label="__attribute__",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_a_r_m___c_m0_2port_8c.html#af9aace1b44b73111e15aa39f06f43456"];
+  Node107 -> Node110 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node110 [label="vPortSuppressTicksAndSleep",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_a_r_m___c_m0_2portmacro_8h.html#aefd025907402b0b863d5012673d5036e"];
+  Node107 -> Node111 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node111 [label="eTaskConfirmSleepModeStatus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$task_8h.html#ad185d5a451380c4040888620d9a92ec6"];
+  Node107 -> Node112 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node112 [label="vTaskStepTick",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$task_8h.html#a8dda6cb26bb158dd9636873135e63912"];
+  Node105 -> Node113 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node113 [label="eTaskGetState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$task_8h.html#a954df77397d616484edb7c58c7760b10",tooltip="task. "];
+}

@@ -1,0 +1,6 @@
+digraph "JPEG_TypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{JPEG_TypeDef\n|+ CONFR0\l+ CONFR1\l+ CONFR2\l+ CONFR3\l+ CONFR4\l+ CONFR5\l+ CONFR6\l+ CONFR7\l+ Reserved20\l+ CR\land 19 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

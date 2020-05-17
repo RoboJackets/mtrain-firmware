@@ -1,0 +1,6 @@
+digraph "CRC_TypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{CRC_TypeDef\n|+ DR\l+ IDR\l+ RESERVED0\l+ RESERVED1\l+ CR\l+ RESERVED2\l+ INIT\l+ POL\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

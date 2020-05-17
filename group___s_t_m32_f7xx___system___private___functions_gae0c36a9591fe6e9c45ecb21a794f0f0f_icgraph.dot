@@ -1,0 +1,9 @@
+digraph "SystemCoreClockUpdate"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="SystemCoreClockUpdate",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="SystemInit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_t_m32_f7xx___system___private___functions.html#ga93f514700ccf00d08dbdcff7f1224eb2",tooltip="Setup the microcontroller system Initialize the Embedded Flash Interface, the PLL and update the Syst..."];
+}

@@ -1,0 +1,12 @@
+digraph "/home/developer/mtrain-firmware/external/CMSIS/Include/core_cmSimd.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="/home/developer/mtrain\l-firmware/external/CMSIS\l/Include/core_cmSimd.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="/home/developer/mtrain\l-firmware/external/CMSIS\l/Include/core_cm4.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$core__cm4_8h.html",tooltip="CMSIS Cortex-M4 Core Peripheral Access Layer Header File. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="/home/developer/mtrain\l-firmware/external/CMSIS\l/Include/core_cm7.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$core__cm7_8h.html",tooltip="CMSIS Cortex-M7 Core Peripheral Access Layer Header File. "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="/home/developer/mtrain\l-firmware/external/CMSIS\l/Device/STM32F7xx/Include\l/stm32f769xx.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$stm32f769xx_8h.html",tooltip="CMSIS Cortex-M7 Device Peripheral Access Layer Header File. "];
+}

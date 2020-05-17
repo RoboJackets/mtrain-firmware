@@ -1,0 +1,15 @@
+digraph "uxListRemove"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="uxListRemove",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="xTaskRemoveFromEventList",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tasks_8c.html#a6d21c9054b62d8bc1bfb2724e11578d9"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="xQueueGenericReset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$queue_8c.html#a5e54273dbe3f56b8bdc8f7abee67a871"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="MPU_xQueueGenericReset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mpu__wrappers_8c.html#ac7dccb1862fd656e1aedff73bd7c3433"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="xQueueGiveFromISR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$queue_8c.html#a4df49fafb6ba4400ede6f2d07a40865f"];
+}

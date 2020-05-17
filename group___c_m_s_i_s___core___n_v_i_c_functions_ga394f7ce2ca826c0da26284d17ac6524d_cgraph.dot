@@ -1,0 +1,17 @@
+digraph "NVIC_GetPriorityGrouping"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node26 [label="NVIC_GetPriorityGrouping",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node26 -> Node27 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node27 [label="NVIC_EnableIRQ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_m_s_i_s___core___n_v_i_c_functions.html#ga3349f2e3580d7ce22d6530b7294e5921",tooltip="Enable External Interrupt. "];
+  Node26 -> Node28 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node28 [label="NVIC_DisableIRQ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_m_s_i_s___core___n_v_i_c_functions.html#ga260fba04ac8346855c57f091d4ee1e71",tooltip="Disable External Interrupt. "];
+  Node26 -> Node29 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node29 [label="NVIC_GetPendingIRQ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_m_s_i_s___core___n_v_i_c_functions.html#gafec8042db64c0f8ed432b6c8386a05d8",tooltip="Get Pending Interrupt. "];
+  Node26 -> Node30 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node30 [label="NVIC_SetPendingIRQ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_m_s_i_s___core___n_v_i_c_functions.html#ga3ecf446519da33e1690deffbf5be505f",tooltip="Set Pending Interrupt. "];
+  Node26 -> Node31 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node31 [label="NVIC_ClearPendingIRQ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_m_s_i_s___core___n_v_i_c_functions.html#ga332e10ef9605dc6eb10b9e14511930f8",tooltip="Clear Pending Interrupt. "];
+}

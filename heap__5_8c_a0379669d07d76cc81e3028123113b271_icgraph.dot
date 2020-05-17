@@ -1,0 +1,12 @@
+digraph "pvPortMalloc"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="pvPortMalloc",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="osPoolCreate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cmsis__os_8h.html#a34af5c4f4ab38f4138ea7f1f9ece3a1a",tooltip="Create and Initialize a memory pool. "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="osMailCreate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cmsis__os_8h.html#aa177e7fe5820dd70d8c9e46ded131174",tooltip="Create and Initialize mail queue. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

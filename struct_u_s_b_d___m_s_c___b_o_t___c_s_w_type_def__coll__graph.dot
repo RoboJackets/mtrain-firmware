@@ -1,0 +1,6 @@
+digraph "USBD_MSC_BOT_CSWTypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{USBD_MSC_BOT_CSWTypeDef\n|+ dSignature\l+ dTag\l+ dDataResidue\l+ bStatus\l+ ReservedForAlign\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

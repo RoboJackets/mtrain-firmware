@@ -1,0 +1,9 @@
+digraph "RTC_Exported_Functions_Group4"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="RTC_Exported_Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_t_c___exported___functions.html"];
+  Node0 [label="RTC_Exported_Functions\l_Group4",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+}

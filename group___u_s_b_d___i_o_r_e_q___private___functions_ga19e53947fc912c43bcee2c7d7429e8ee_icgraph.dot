@@ -1,0 +1,20 @@
+digraph "USBD_CtlSendStatus"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node33 [label="USBD_CtlSendStatus",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node33 -> Node34 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node34 [label="USBD_LL_DataOutStage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e___private___functions.html#ga1ab0439714328647692719a2b1c9e689",tooltip="USBD_DataOutStage Handle data OUT stage. "];
+  Node34 -> Node35 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node35 [label="HAL_PCD_DataOutStageCallback",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___p_c_d___exported___functions___group2.html#ga2f1ac834d9677dcae7d8973828f81149",tooltip="DataOut Stage callback. "];
+  Node33 -> Node36 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node36 [label="USBD_StdItfReq",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___r_e_q___private___functions.html#gac1c8cd8a59f1c99887f131a4299f31b1",tooltip="USBD_StdItfReq Handle standard usb interface requests. "];
+  Node36 -> Node37 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node37 [label="USBD_LL_SetupStage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e___private___functions.html#gabdcdfefaffa1651c77a38d08eb3a82ce",tooltip="USBD_SetupStage Handle the setup stage. "];
+  Node37 -> Node38 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node38 [label="HAL_PCD_SetupStageCallback",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___p_c_d___exported___functions___group2.html#ga9d72aa4d3d984b164047b081d4566f6d",tooltip="SetupStage callback. "];
+  Node33 -> Node39 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node39 [label="USBD_StdEPReq",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___r_e_q___private___functions.html#ga46d1a0a4e23e1e8c80167dcdc59b2538",tooltip="USBD_StdEPReq Handle standard usb endpoint requests. "];
+  Node39 -> Node37 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

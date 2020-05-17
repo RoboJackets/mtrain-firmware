@@ -1,0 +1,18 @@
+digraph "USBD_CtlError"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node3 [label="USBD_CtlError",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="USBD_MSC_Setup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___m_s_c___c_o_r_e___private___functions.html#gaf7c2344d42242f52ce4e1f9d68c7b0b9",tooltip="USBD_MSC_Setup Handle the MSC specific requests. "];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="USBD_StdItfReq",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___r_e_q___private___functions.html#gac1c8cd8a59f1c99887f131a4299f31b1",tooltip="USBD_StdItfReq Handle standard usb interface requests. "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="USBD_LL_SetupStage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e___private___functions.html#gabdcdfefaffa1651c77a38d08eb3a82ce",tooltip="USBD_SetupStage Handle the setup stage. "];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="HAL_PCD_SetupStageCallback",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___p_c_d___exported___functions___group2.html#ga9d72aa4d3d984b164047b081d4566f6d",tooltip="SetupStage callback. "];
+  Node3 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="USBD_StdEPReq",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___r_e_q___private___functions.html#ga46d1a0a4e23e1e8c80167dcdc59b2538",tooltip="USBD_StdEPReq Handle standard usb endpoint requests. "];
+  Node8 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

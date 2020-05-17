@@ -1,0 +1,19 @@
+digraph "/home/developer/mtrain-firmware/external/middleware/FreeRTOS/src/portable" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_0fedec421376a987f9770604e6be1de2 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="src" fontname="Helvetica", fontsize="10", URL="dir_0fedec421376a987f9770604e6be1de2.html"]
+  subgraph clusterdir_7659f65cb1edd4da2c984ee69bd9b4a5 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_7659f65cb1edd4da2c984ee69bd9b4a5.html"];
+    dir_7659f65cb1edd4da2c984ee69bd9b4a5 [shape=plaintext label="portable"];
+    dir_56c9ab02728aafc57c76e4dd2422601b [shape=box label="Common" color="black" fillcolor="white" style="filled" URL="dir_56c9ab02728aafc57c76e4dd2422601b.html"];
+    dir_c3f6510a47af292d4765bcaa26bd18e3 [shape=box label="GCC" color="red" fillcolor="white" style="filled" URL="dir_c3f6510a47af292d4765bcaa26bd18e3.html"];
+    dir_007e577c4a8f63bba1d56b7f812a34be [shape=box label="MemMang" color="black" fillcolor="white" style="filled" URL="dir_007e577c4a8f63bba1d56b7f812a34be.html"];
+  }
+  }
+  dir_e8f305f026f0eedfd01db8b47ccd6bd3 [shape=box label="include" URL="dir_e8f305f026f0eedfd01db8b47ccd6bd3.html"];
+  dir_56c9ab02728aafc57c76e4dd2422601b->dir_e8f305f026f0eedfd01db8b47ccd6bd3 [headlabel="6", labeldistance=1.5 headhref="dir_000043_000041.html"];
+  dir_007e577c4a8f63bba1d56b7f812a34be->dir_e8f305f026f0eedfd01db8b47ccd6bd3 [headlabel="10", labeldistance=1.5 headhref="dir_000052_000041.html"];
+  dir_c3f6510a47af292d4765bcaa26bd18e3->dir_e8f305f026f0eedfd01db8b47ccd6bd3 [headlabel="18", labeldistance=1.5 headhref="dir_000044_000041.html"];
+}

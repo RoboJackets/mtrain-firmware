@@ -1,0 +1,29 @@
+digraph "I2S Exported Constants"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node10 [label="I2S Interrupts Definition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i2_s___interrupts___definition.html"];
+  Node11 [label="I2S Flags Definition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i2_s___flags___definition.html"];
+  Node2 [label="I2S_Error_Defintion",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i2_s___error___defintion.html",tooltip="I2S Error Code. "];
+  Node4 [label="I2S Mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i2_s___mode.html"];
+  Node6 [label="I2S Data Format",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i2_s___data___format.html"];
+  Node1 [label="I2S",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i2_s.html",tooltip="I2S HAL module driver. "];
+  Node0 [label="I2S Exported Constants",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node7 [label="I2S Mclk Output",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i2_s___m_c_l_k___output.html"];
+  Node5 [label="I2S Standard",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i2_s___standard.html"];
+  Node8 [label="I2S Audio Frequency",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i2_s___audio___frequency.html"];
+  Node9 [label="I2S Clock Polarity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i2_s___clock___polarity.html"];
+  Node3 [label="I2S Clock Source",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i2_s___clock___source.html"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node9 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node10 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node11 [shape=plaintext, dir="back", style="solid"];
+}

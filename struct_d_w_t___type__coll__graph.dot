@@ -1,0 +1,6 @@
+digraph "DWT_Type"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{DWT_Type\n|+ CTRL\l+ CYCCNT\l+ CPICNT\l+ EXCCNT\l+ SLEEPCNT\l+ LSUCNT\l+ FOLDCNT\l+ PCSR\l+ COMP0\l+ MASK0\land 16 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

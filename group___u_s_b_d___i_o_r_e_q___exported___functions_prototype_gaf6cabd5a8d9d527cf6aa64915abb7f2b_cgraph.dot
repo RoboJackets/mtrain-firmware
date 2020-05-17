@@ -1,0 +1,11 @@
+digraph "USBD_CtlContinueRx"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="USBD_CtlContinueRx",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="USBD_LL_PrepareReceive",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#ga259b00707b333065b66be515dd019428",tooltip="Prepares an endpoint for reception. "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="HAL_PCD_EP_Receive",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___p_c_d___exported___functions___group3.html#ga0029fe7a8d3db91b13637e2507fba60c"];
+}

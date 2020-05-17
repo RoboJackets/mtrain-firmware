@@ -1,0 +1,6 @@
+digraph "USB_OTG_GlobalTypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{USB_OTG_GlobalTypeDef\n|+ GOTGCTL\l+ GOTGINT\l+ GAHBCFG\l+ GUSBCFG\l+ GRSTCTL\l+ GINTSTS\l+ GINTMSK\l+ GRXSTSR\l+ GRXSTSP\l+ GRXFSIZ\land 15 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

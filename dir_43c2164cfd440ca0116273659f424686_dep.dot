@@ -1,0 +1,11 @@
+digraph "/home/developer/mtrain-firmware/external/CMSIS/Device/STM32F7xx/Src" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_ca6b782e1e582c29d056b3c0e389f791 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="STM32F7xx" fontname="Helvetica", fontsize="10", URL="dir_ca6b782e1e582c29d056b3c0e389f791.html"]
+  dir_43c2164cfd440ca0116273659f424686 [shape=box, label="Src", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_43c2164cfd440ca0116273659f424686.html"];
+  }
+  dir_2f3cbb038120cdaba8627982788693d8 [shape=box label="Include" URL="dir_2f3cbb038120cdaba8627982788693d8.html"];
+  dir_43c2164cfd440ca0116273659f424686->dir_2f3cbb038120cdaba8627982788693d8 [headlabel="1", labeldistance=1.5 headhref="dir_000020_000019.html"];
+}

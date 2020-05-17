@@ -1,0 +1,11 @@
+digraph "arm_dct4_q15"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node10 [label="arm_dct4_q15",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="arm_mult_q15",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___basic_mult.html#gafb0778d27ed98a2a6f2ecb7d48cc8c75",tooltip="Q15 vector multiplication. "];
+  Node10 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="arm_shift_q15",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__shift.html#gaa1757e53279780107acc92cf100adb61",tooltip="Shifts the elements of a Q15 vector a specified number of bits. "];
+}

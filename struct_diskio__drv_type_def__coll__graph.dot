@@ -1,0 +1,6 @@
+digraph "Diskio_drvTypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Diskio_drvTypeDef\n|+ disk_initialize\l+ disk_status\l+ disk_read\l+ disk_write\l+ disk_ioctl\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

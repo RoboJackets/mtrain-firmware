@@ -1,0 +1,19 @@
+digraph "I2C Exported Types"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node4 [label="HAL mode structure\l definition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___h_a_l__mode__structure__definition.html",tooltip="HAL Mode structure definition. "];
+  Node1 [label="I2C",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i2_c.html",tooltip="I2C HAL module driver. "];
+  Node5 [label="I2C Error Code definition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i2_c___error___code__definition.html",tooltip="I2C Error Code definition. "];
+  Node0 [label="I2C Exported Types",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node6 [label="I2C handle Structure\l definition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i2_c__handle___structure__definition.html",tooltip="I2C handle Structure definition. "];
+  Node3 [label="HAL state structure\l definition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___h_a_l__state__structure__definition.html",tooltip="HAL State structure definition. "];
+  Node2 [label="I2C Configuration Structure\l definition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i2_c___configuration___structure__definition.html",tooltip="I2C Configuration Structure definition. "];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+}

@@ -1,0 +1,9 @@
+digraph "Cosine"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="Fast Math Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__group_fast_math.html",tooltip="This set of functions provides a fast approximation to sine, cosine, and square root. "];
+  Node0 [label="Cosine",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+}

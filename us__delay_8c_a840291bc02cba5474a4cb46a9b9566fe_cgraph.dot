@@ -1,0 +1,17 @@
+digraph "main"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="digitalout_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$digital__out_8h.html#a1c308574bdf1795a9d828683cfb02d24",tooltip="Configures GPIO pin for digital out, push pull. "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="HAL_GPIO_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___g_p_i_o___exported___functions___group1.html#ga41bda93b6dd639e4905fdb1454eff98e"];
+  Node0 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="digitalout_toggle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$digital__out_8h.html#a549af9eaff8500d0b994e5461ea0f2df",tooltip="Toggle pin output. "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="HAL_GPIO_TogglePin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___g_p_i_o___exported___functions___group2.html#gaf5e0c89f752de5cdedcc30db068133f6"];
+  Node0 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="DWT_Delay",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$delay_8h.html#ac2a53b2530a71f3e19b29343d2566c14",tooltip="Delay routine itself. "];
+}

@@ -1,0 +1,9 @@
+digraph "Indicates whether or not default polynomial is used"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="CRC exported constants",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_r_c___exported___constants.html"];
+  Node0 [label="Indicates whether or\l not default polynomial\l is used",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+}

@@ -1,0 +1,6 @@
+digraph "FMC_SDRAM_InitTypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{FMC_SDRAM_InitTypeDef\n|+ SDBank\l+ ColumnBitsNumber\l+ RowBitsNumber\l+ MemoryDataWidth\l+ InternalBankNumber\l+ CASLatency\l+ WriteProtection\l+ SDClockPeriod\l+ ReadBurst\l+ ReadPipeDelay\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

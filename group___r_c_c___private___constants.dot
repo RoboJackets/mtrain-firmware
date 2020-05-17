@@ -1,0 +1,11 @@
+digraph "RCC Private Constants"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node2 [label="RCC BitAddress Alias",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_c_c___bit_address___alias.html",tooltip="RCC registers bit address alias. "];
+  Node0 [label="RCC Private Constants",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 [label="RCC",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_c_c.html",tooltip="RCC HAL module driver. "];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+}

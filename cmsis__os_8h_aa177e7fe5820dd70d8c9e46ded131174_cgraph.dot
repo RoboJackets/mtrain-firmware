@@ -1,0 +1,21 @@
+digraph "osMailCreate"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node28 [label="osMailCreate",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node28 -> Node29 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node29 [label="pvPortMalloc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$portable_8h.html#a237d63f90b28e0950bd86f76815cd6e3"];
+  Node29 -> Node30 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node30 [label="vTaskSuspendAll",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$task_8h.html#a366b302eba79d10b5ee2a3756f0fcc43"];
+  Node29 -> Node31 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node31 [label="xTaskResumeAll",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$task_8h.html#a003f8ae6d649225abd030cc76e1c7d0e"];
+  Node28 -> Node32 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node32 [label="vPortFree",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$portable_8h.html#a735cd3085bb7ba06ff8e47565bfd7016"];
+  Node32 -> Node30 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node32 -> Node31 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node28 -> Node33 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node33 [label="osPoolCreate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cmsis__os_8c.html#a34af5c4f4ab38f4138ea7f1f9ece3a1a",tooltip="Create and Initialize a memory pool. "];
+  Node33 -> Node29 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node33 -> Node32 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

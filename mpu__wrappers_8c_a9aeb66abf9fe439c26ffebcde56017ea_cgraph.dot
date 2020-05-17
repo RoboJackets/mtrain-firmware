@@ -1,0 +1,11 @@
+digraph "MPU_xQueuePeekFromISR"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node109 [label="MPU_xQueuePeekFromISR",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node109 -> Node110 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node110 [label="xPortRaisePrivilege",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mpu__wrappers_8c.html#ac42aa31652a6e8158f8ea8a88aad8275"];
+  Node109 -> Node111 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node111 [label="xQueuePeekFromISR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$queue_8h.html#ac402adf98be1fb8ca0345f30dc11a9dc"];
+}

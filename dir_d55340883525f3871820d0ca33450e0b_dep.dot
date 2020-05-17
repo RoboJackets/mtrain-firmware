@@ -1,0 +1,11 @@
+digraph "/home/developer/mtrain-firmware/external/middleware/STM32_USB_Device_Library/Class/Template/Inc" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_ea68d21bba23a531ef493cc0482780a7 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Template" fontname="Helvetica", fontsize="10", URL="dir_ea68d21bba23a531ef493cc0482780a7.html"]
+  dir_d55340883525f3871820d0ca33450e0b [shape=box, label="Inc", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_d55340883525f3871820d0ca33450e0b.html"];
+  }
+  dir_19e504b8294315d876b43ba053bc3f8f [shape=box label="Core" fillcolor="white" style="filled" color="red" URL="dir_19e504b8294315d876b43ba053bc3f8f.html"];
+  dir_d55340883525f3871820d0ca33450e0b->dir_19e504b8294315d876b43ba053bc3f8f [headlabel="1", labeldistance=1.5 headhref="dir_000074_000076.html"];
+}

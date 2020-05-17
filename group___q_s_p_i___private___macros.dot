@@ -1,0 +1,25 @@
+digraph "QSPI Private Macros"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node9 [label="QSPI TimeOut Period",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___q_s_p_i___time_out_period.html"];
+  Node7 [label="QSPI Interval",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___q_s_p_i___interval.html"];
+  Node1 [label="QSPI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___q_s_p_i.html",tooltip="HAL QSPI module driver. "];
+  Node6 [label="QSPI Dummy Cycles",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___q_s_p_i___dummy_cycles.html"];
+  Node4 [label="QSPI Flash Size",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___q_s_p_i___flash_size.html"];
+  Node5 [label="QSPI Instruction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___q_s_p_i___instruction.html"];
+  Node3 [label="QSPI Fifo Threshold",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___q_s_p_i___fifo_threshold.html"];
+  Node8 [label="QSPI Status Bytes Size",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___q_s_p_i___status_bytes_size.html"];
+  Node2 [label="QSPI Clock Prescaler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___q_s_p_i___clock_prescaler.html"];
+  Node0 [label="QSPI Private Macros",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node9 [shape=plaintext, dir="back", style="solid"];
+}

@@ -1,0 +1,19 @@
+digraph "/home/developer/mtrain-firmware/external/CMSIS/Device/STM32F7xx/Include/stm32f769xx.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node0 [label="/home/developer/mtrain\l-firmware/external/CMSIS\l/Device/STM32F7xx/Include\l/stm32f769xx.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="core_cm7.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$core__cm7_8h.html",tooltip="CMSIS Cortex-M7 Core Peripheral Access Layer Header File. "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="stdint.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="core_cmInstr.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$core__cm_instr_8h.html",tooltip="CMSIS Cortex-M Core Instruction Access Header File. "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="core_cmFunc.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$core__cm_func_8h.html",tooltip="CMSIS Cortex-M Core Function Access Header File. "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="core_cmSimd.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$core__cm_simd_8h.html",tooltip="CMSIS Cortex-M SIMD Header File. "];
+  Node0 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="system_stm32f7xx.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$system__stm32f7xx_8h.html",tooltip="CMSIS Cortex-M7 Device System Source File for STM32F7xx devices. "];
+  Node0 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

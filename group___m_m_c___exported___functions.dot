@@ -1,0 +1,35 @@
+digraph "MMC Exported Functions"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node13 [label="MMC Private Functions\l Prototypes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___m_m_c___private___functions___prototypes.html"];
+  Node12 [label="MMC Private Macros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___m_m_c___private___macros.html"];
+  Node10 [label="MMC Private Variables",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___m_m_c___private___variables.html"];
+  Node8 [label="MMC Private Types",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___m_m_c___private___types.html"];
+  Node0 [label="MMC Exported Functions",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 [label="Initialization and\l de-initialization functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___m_m_c___exported___functions___group1.html"];
+  Node3 [label="Input and Output operation\l functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___m_m_c___exported___functions___group2.html"];
+  Node4 [label="Peripheral Control\l functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___m_m_c___exported___functions___group3.html"];
+  Node5 [label="MMC card related functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___m_m_c___exported___functions___group4.html"];
+  Node6 [label="Peripheral State and\l Errors functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___m_m_c___exported___functions___group5.html"];
+  Node7 [label="Perioheral Abort management",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___m_m_c___exported___functions___group6.html"];
+  Node14 [label="MMC Private Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___m_m_c___private___functions.html"];
+  Node1 [label="MMC",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___m_m_c.html",tooltip="MMC HAL module driver. "];
+  Node9 [label="MMC Private Defines",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___m_m_c___private___defines.html"];
+  Node11 [label="MMC Private Constants",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___m_m_c___private___constants.html"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node9 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node10 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node11 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node12 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node13 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node14 [shape=plaintext, dir="back", style="solid"];
+}

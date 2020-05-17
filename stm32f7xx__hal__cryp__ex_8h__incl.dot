@@ -1,0 +1,14 @@
+digraph "/home/developer/mtrain-firmware/external/STM32F7xx_HAL_Drivers/Inc/stm32f7xx_hal_cryp_ex.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node0 [label="/home/developer/mtrain\l-firmware/external/STM32F7xx\l_HAL_Drivers/Inc/stm32f7xx\l_hal_cryp_ex.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="stm32f7xx_hal_def.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$stm32f7xx__hal__def_8h.html",tooltip="This file contains HAL common defines, enumeration, macros and structures definitions. "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="stm32f7xx.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$stm32f7xx_8h.html",tooltip="CMSIS STM32F7xx Device Peripheral Access Layer Header File. "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Legacy/stm32_hal_legacy.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$stm32__hal__legacy_8h.html",tooltip="This file contains aliases definition for the STM32Cube HAL constants macros and functions maintained..."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="stdio.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

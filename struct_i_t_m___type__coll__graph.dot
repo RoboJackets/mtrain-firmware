@@ -1,0 +1,6 @@
+digraph "ITM_Type"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{ITM_Type\n|+ u8\l+ u16\l+ u32\l+ PORT\l+ RESERVED0\l+ TER\l+ RESERVED1\l+ TPR\l+ RESERVED2\l+ TCR\land 23 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

@@ -1,0 +1,21 @@
+digraph "MSC_BOT_CplClrFeature"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="MSC_BOT_CplClrFeature",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="USBD_LL_StallEP",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#gabc2b4a7c8307e04955b015fd32057ec7",tooltip="Sets a Stall condition on an endpoint of the Low Level Driver. "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="HAL_PCD_EP_SetStall",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___p_c_d___exported___functions___group3.html#gaecee197a59aacc015742c62b74881b6f"];
+  Node0 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="MSC_BOT_SendCSW",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___m_s_c___b_o_t___private___functions.html#gaaa2676ffcc7ca9a34ec85395cd3ead9e",tooltip="MSC_BOT_SendCSW Send the Command Status Wrapper. "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="USBD_LL_Transmit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#gab87eb9f3d4d9f8956d2c6b77230f265c",tooltip="Transmits data over an endpoint. "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="HAL_PCD_EP_Transmit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___p_c_d___exported___functions___group3.html#ga116ada543442c8f7a1003c4d4c211618"];
+  Node3 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="USBD_LL_PrepareReceive",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#ga259b00707b333065b66be515dd019428",tooltip="Prepares an endpoint for reception. "];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="HAL_PCD_EP_Receive",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___p_c_d___exported___functions___group3.html#ga0029fe7a8d3db91b13637e2507fba60c"];
+}

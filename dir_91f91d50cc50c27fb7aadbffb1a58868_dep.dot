@@ -1,0 +1,11 @@
+digraph "/home/developer/mtrain-firmware/BSP/Src" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_350c8a3315b9de76597c9530ef31a96a {
+    graph [ bgcolor="#ddddee", pencolor="black", label="BSP" fontname="Helvetica", fontsize="10", URL="dir_350c8a3315b9de76597c9530ef31a96a.html"]
+  dir_91f91d50cc50c27fb7aadbffb1a58868 [shape=box, label="Src", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_91f91d50cc50c27fb7aadbffb1a58868.html"];
+  }
+  dir_4192f726b9a16ed5f168a0b6fbcc51b6 [shape=box label="Inc" URL="dir_4192f726b9a16ed5f168a0b6fbcc51b6.html"];
+  dir_91f91d50cc50c27fb7aadbffb1a58868->dir_4192f726b9a16ed5f168a0b6fbcc51b6 [headlabel="5", labeldistance=1.5 headhref="dir_000014_000013.html"];
+}

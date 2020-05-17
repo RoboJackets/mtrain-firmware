@@ -1,0 +1,33 @@
+digraph "LPTIM Exported Constants"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node6 [label="LPTIM Clock Polarity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___l_p_t_i_m___clock___polarity.html"];
+  Node10 [label="LPTIM Updating Mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___l_p_t_i_m___updating___mode.html"];
+  Node13 [label="LPTIM Interrupts Definition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___l_p_t_i_m___interrupts___definition.html"];
+  Node11 [label="LPTIM Counter Source",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___l_p_t_i_m___counter___source.html"];
+  Node8 [label="LPTIM External Trigger\l Polarity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___l_p_t_i_m___external___trigger___polarity.html"];
+  Node0 [label="LPTIM Exported Constants",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 [label="LPTIM",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___l_p_t_i_m.html",tooltip="LPTIM HAL module driver. "];
+  Node7 [label="LPTIM Trigger Source",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___l_p_t_i_m___trigger___source.html"];
+  Node12 [label="LPTIM Flag Definition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___l_p_t_i_m___flag___definition.html"];
+  Node5 [label="LPTIM Clock Sample Time",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___l_p_t_i_m___clock___sample___time.html"];
+  Node3 [label="LPTIM Clock Prescaler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___l_p_t_i_m___clock___prescaler.html"];
+  Node4 [label="LPTIM Output Polarity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___l_p_t_i_m___output___polarity.html"];
+  Node9 [label="LPTIM Trigger Sample Time",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___l_p_t_i_m___trigger___sample___time.html"];
+  Node2 [label="LPTIM Clock Source",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___l_p_t_i_m___clock___source.html"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node9 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node10 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node11 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node12 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node13 [shape=plaintext, dir="back", style="solid"];
+}

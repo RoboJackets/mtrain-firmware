@@ -1,0 +1,12 @@
+digraph "PCD_HandleTypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{PCD_HandleTypeDef\n|+ Lock\l+ State\l+ Setup\l+ LPM_State\l+ BESL\l+ lpm_active\l+ battery_charging_active\l+ pData\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +Instance" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{USB_OTG_GlobalTypeDef\n|+ GOTGCTL\l+ GOTGINT\l+ GAHBCFG\l+ GUSBCFG\l+ GRSTCTL\l+ GINTSTS\l+ GINTMSK\l+ GRXSTSR\l+ GRXSTSP\l+ GRXFSIZ\land 15 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_u_s_b___o_t_g___global_type_def.html",tooltip="USB_OTG_Core_Registers. "];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +OUT_ep\n+IN_ep" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{USB_OTG_EPTypeDef\n|+ num\l+ is_in\l+ is_stall\l+ type\l+ data_pid_start\l+ even_odd_frame\l+ tx_fifo_num\l+ maxpacket\l+ xfer_buff\l+ dma_addr\l+ xfer_len\l+ xfer_count\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_u_s_b___o_t_g___e_p_type_def.html"];
+  Node4 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +Init" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{USB_OTG_CfgTypeDef\n|+ dev_endpoints\l+ Host_channels\l+ speed\l+ dma_enable\l+ ep0_mps\l+ phy_itface\l+ Sof_enable\l+ low_power_enable\l+ lpm_enable\l+ battery_charging_enable\l+ vbus_sensing_enable\l+ use_dedicated_ep1\l+ use_external_vbus\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_u_s_b___o_t_g___cfg_type_def.html",tooltip="PCD Initialization Structure definition. "];
+}

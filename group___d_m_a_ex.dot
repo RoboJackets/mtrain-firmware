@@ -1,0 +1,19 @@
+digraph "DMAEx"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node3 [label="DMA Exported Constants",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___d_m_a___exported___constants.html",tooltip="DMA Exported constants. "];
+  Node5 [label="DMA Private Macros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___d_m_a_ex___private___macros.html",tooltip="DMAEx private macros. "];
+  Node4 [label="DMAEx Exported Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___d_m_a_ex___exported___functions.html",tooltip="DMAEx Exported functions. "];
+  Node1 [label="STM32F7xx_HAL_Driver",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_t_m32_f7xx___h_a_l___driver.html"];
+  Node6 [label="DMAEx Private Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___d_m_a_ex___private___functions.html",tooltip="DMAEx Private functions. "];
+  Node2 [label="DMAEx Exported Types",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___d_m_a_ex___exported___types.html",tooltip="DMAEx Exported types. "];
+  Node0 [label="DMAEx",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+}

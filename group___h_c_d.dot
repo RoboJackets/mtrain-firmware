@@ -1,0 +1,23 @@
+digraph "HCD"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node8 [label="HCD Exported Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___h_c_d___exported___functions.html"];
+  Node0 [label="HCD",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 [label="STM32F7xx_HAL_Driver",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_t_m32_f7xx___h_a_l___driver.html"];
+  Node3 [label="HCD Exported Constants",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___h_c_d___exported___constants.html"];
+  Node7 [label="HCD Private Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___h_c_d___private___functions.html"];
+  Node6 [label="HCD Private Functions\l Prototypes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___h_c_d___private___functions___prototypes.html"];
+  Node5 [label="HCD Private Macros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___h_c_d___private___macros.html"];
+  Node2 [label="HCD Exported Types",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___h_c_d___exported___types.html"];
+  Node4 [label="HCD Exported Macros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___h_c_d___exported___macros.html",tooltip="macros to handle interrupts and specific clock configurations "];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node8 [shape=plaintext, dir="back", style="solid"];
+}

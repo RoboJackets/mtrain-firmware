@@ -1,0 +1,9 @@
+digraph "FATFS_LinkDriver"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node2 [label="FATFS_LinkDriver",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="FATFS_LinkDriverEx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ff__gen__drv_8c.html#a7295ae1eccd7de39fff7cb85120ec6a2",tooltip="Links a compatible diskio driver/lun id and increments the number of active linked drivers..."];
+}

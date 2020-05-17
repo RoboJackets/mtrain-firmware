@@ -1,0 +1,19 @@
+digraph "USBD_MEDIA"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node4 [label="USBD_MEDIA_Exported\l_Macros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___m_e_d_i_a___exported___macros.html"];
+  Node1 [label="STM32_USB_DEVICE_LIBRARY",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_t_m32___u_s_b___d_e_v_i_c_e___l_i_b_r_a_r_y.html"];
+  Node6 [label="USBD_MEDIA_Exported\l_FunctionsPrototype",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___m_e_d_i_a___exported___functions_prototype.html"];
+  Node3 [label="USBD_MEDIA_Exported\l_Types",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___m_e_d_i_a___exported___types.html"];
+  Node0 [label="USBD_MEDIA",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 [label="USBD_MEDIA_Exported\l_Defines",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___m_e_d_i_a___exported___defines.html"];
+  Node5 [label="USBD_MEDIA_Exported\l_Variables",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___m_e_d_i_a___exported___variables.html"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+}

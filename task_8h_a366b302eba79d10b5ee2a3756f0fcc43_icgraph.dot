@@ -1,0 +1,38 @@
+digraph "vTaskSuspendAll"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node97 [label="vTaskSuspendAll",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node97 -> Node98 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node98 [label="osThreadSuspendAll",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cmsis__os_8h.html#a56a2ad8a2fb63a7fdad28d2e9411c3a1",tooltip="Suspend execution of a all active threads. "];
+  Node97 -> Node99 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node99 [label="xEventGroupSync",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$event__groups_8h.html#a869511456b86426f52e2eec898bff341"];
+  Node99 -> Node100 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node100 [label="MPU_xEventGroupSync",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mpu__wrappers_8c.html#a6a226283b88af6323ec11950dfaa9c7e"];
+  Node97 -> Node101 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node101 [label="xEventGroupWaitBits",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$event__groups_8h.html#aab9d5b405bc57b7624dcabe9a9a503db"];
+  Node101 -> Node102 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node102 [label="MPU_xEventGroupWaitBits",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mpu__wrappers_8c.html#a9de3688a138371bf668f3db7d246c4f6"];
+  Node97 -> Node103 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node103 [label="xEventGroupSetBits",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$event__groups_8h.html#a02d7b3bb55f7e11d9c47116266c5fb2e"];
+  Node103 -> Node99 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node103 -> Node104 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node104 [label="vEventGroupSetBitsCallback",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$event__groups_8h.html#abe76a301815525eb5e03f331e5e51ae3"];
+  Node103 -> Node105 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node105 [label="MPU_xEventGroupSetBits",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mpu__wrappers_8c.html#a0432497ecd5f8a19cc61a13cf53adaff"];
+  Node97 -> Node106 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node106 [label="vEventGroupDelete",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$event__groups_8h.html#a50cb52d1c81b063fd8d94f5293dcfea9",tooltip="event_groups.h "];
+  Node106 -> Node107 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node107 [label="MPU_vEventGroupDelete",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mpu__wrappers_8c.html#a5c58731972a24a3ef87e83179cb3a078"];
+  Node97 -> Node108 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node108 [label="MPU_vTaskSuspendAll",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mpu__wrappers_8c.html#a5a89966e24025e52ea10166ce2c492d4"];
+  Node97 -> Node109 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node109 [label="pvPortMalloc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$heap__1_8c.html#a0379669d07d76cc81e3028123113b271"];
+  Node97 -> Node110 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node110 [label="vPortFree",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$heap__3_8c.html#a1e7cea2fd1bc894ea3b5f5e8179d259b"];
+  Node97 -> Node111 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node111 [label="pcTaskGetName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tasks_8c.html#a2ee63040e19e7c0cd7dbd070b8e1bca5"];
+  Node111 -> Node112 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node112 [label="MPU_pcTaskGetName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mpu__wrappers_8c.html#a0a39a60680b18b8b9c650a3d38af4f7b"];
+}

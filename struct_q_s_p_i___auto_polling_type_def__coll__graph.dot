@@ -1,0 +1,6 @@
+digraph "QSPI_AutoPollingTypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{QSPI_AutoPollingTypeDef\n|+ Match\l+ Mask\l+ Interval\l+ StatusBytesSize\l+ MatchMode\l+ AutomaticStop\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

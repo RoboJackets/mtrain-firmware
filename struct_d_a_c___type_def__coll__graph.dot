@@ -1,0 +1,6 @@
+digraph "DAC_TypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{DAC_TypeDef\n|+ CR\l+ SWTRIGR\l+ DHR12R1\l+ DHR12L1\l+ DHR8R1\l+ DHR12R2\l+ DHR12L2\l+ DHR8R2\l+ DHR12RD\l+ DHR12LD\l+ DHR8RD\l+ DOR1\l+ DOR2\l+ SR\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

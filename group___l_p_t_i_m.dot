@@ -1,0 +1,27 @@
+digraph "LPTIM"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node10 [label="LPTIM Private Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___l_p_t_i_m___private___functions.html"];
+  Node5 [label="LPTIM Exported Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___l_p_t_i_m___exported___functions.html"];
+  Node8 [label="LPTIM Private Constants",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___l_p_t_i_m___private___constants.html"];
+  Node4 [label="LPTIM Exported Macros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___l_p_t_i_m___exported___macros.html"];
+  Node9 [label="LPTIM Private Macros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___l_p_t_i_m___private___macros.html"];
+  Node1 [label="STM32F7xx_HAL_Driver",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_t_m32_f7xx___h_a_l___driver.html"];
+  Node3 [label="LPTIM Exported Constants",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___l_p_t_i_m___exported___constants.html"];
+  Node0 [label="LPTIM",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 [label="LPTIM Exported Types",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___l_p_t_i_m___exported___types.html"];
+  Node7 [label="LPTIM Private Variables",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___l_p_t_i_m___private___variables.html"];
+  Node6 [label="LPTIM Private Types",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___l_p_t_i_m___private___types.html"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node9 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node10 [shape=plaintext, dir="back", style="solid"];
+}

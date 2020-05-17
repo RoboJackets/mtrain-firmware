@@ -1,0 +1,8 @@
+digraph "Disk_drvTypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Disk_drvTypeDef\n|+ is_initialized\l+ lun\l+ nbr\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +drv" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{Diskio_drvTypeDef\n|+ disk_initialize\l+ disk_status\l+ disk_read\l+ disk_write\l+ disk_ioctl\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_diskio__drv_type_def.html",tooltip="Disk IO Driver structure definition. "];
+}

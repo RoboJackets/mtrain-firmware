@@ -1,0 +1,15 @@
+digraph "CRC Exported Functions"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node2 [label="Initialization/de-initialization\l functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_r_c___exported___functions___group1.html"];
+  Node3 [label="Peripheral Control\l functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_r_c___exported___functions___group2.html"];
+  Node4 [label="Peripheral State functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_r_c___exported___functions___group3.html"];
+  Node1 [label="CRC",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_r_c.html",tooltip="CRC HAL module driver. "];
+  Node0 [label="CRC Exported Functions",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+}

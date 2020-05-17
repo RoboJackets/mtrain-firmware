@@ -1,0 +1,13 @@
+digraph "osEvent"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{osEvent\n|+ status\l+ v\l+ p\l+ signals\l+ value\l+ message_id\l+ def\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +mail_id" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{os_mailQ_cb\n|+ handle\l|}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node2 [color="grey25",fontsize="10",style="solid",label=" +queue_def" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{os_mailQ_def\n|+ queue_sz\l+ item_sz\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structos__mail_q__def.html",tooltip="Definition structure for mail queue. "];
+  Node2 -> Node3 [color="grey25",fontsize="10",style="solid",label=" +cb" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 -> Node2 [color="grey25",fontsize="10",style="solid",label=" +pool" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{os_pool_cb\n|+ pool\l+ markers\l+ pool_sz\l+ item_sz\l+ currentIndex\l|}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

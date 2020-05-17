@@ -1,0 +1,6 @@
+digraph "USB_OTG_HCTypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{USB_OTG_HCTypeDef\n|+ dev_addr\l+ ch_num\l+ ep_num\l+ ep_is_in\l+ speed\l+ do_ping\l+ process_ping\l+ ep_type\l+ max_packet\l+ data_pid\land 9 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

@@ -1,0 +1,6 @@
+digraph "DCMI_TypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{DCMI_TypeDef\n|+ CR\l+ SR\l+ RISR\l+ IER\l+ MISR\l+ ICR\l+ ESCR\l+ ESUR\l+ CWSTRTR\l+ CWSIZER\l+ DR\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

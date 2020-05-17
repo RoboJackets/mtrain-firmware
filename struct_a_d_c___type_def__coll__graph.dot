@@ -1,0 +1,6 @@
+digraph "ADC_TypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{ADC_TypeDef\n|+ SR\l+ CR1\l+ CR2\l+ SMPR1\l+ SMPR2\l+ JOFR1\l+ JOFR2\l+ JOFR3\l+ JOFR4\l+ HTR\land 10 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

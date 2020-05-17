@@ -1,0 +1,40 @@
+digraph "USBD_LL_SetupStage"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node57 [label="USBD_LL_SetupStage",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node57 -> Node58 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node58 [label="USBD_ParseSetupRequest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___r_e_q___exported___functions_prototype.html#ga54a17c9993f3422dce6dce7e9d8614b9",tooltip="USBD_ParseSetupRequest Copy buffer into setup structure. "];
+  Node57 -> Node59 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node59 [label="USBD_StdDevReq",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___r_e_q___exported___functions_prototype.html#gac40d4171a55983d25bbbb7b8c3fce95e",tooltip="USBD_StdDevReq Handle standard usb device requests. "];
+  Node57 -> Node60 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node60 [label="USBD_StdItfReq",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___r_e_q___exported___functions_prototype.html#gac1c8cd8a59f1c99887f131a4299f31b1",tooltip="USBD_StdItfReq Handle standard usb interface requests. "];
+  Node60 -> Node61 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node61 [label="USBD_CtlSendStatus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___i_o_r_e_q___exported___functions_prototype.html#ga19e53947fc912c43bcee2c7d7429e8ee",tooltip="USBD_CtlSendStatus send zero lzngth packet on the ctl pipe. "];
+  Node61 -> Node62 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node62 [label="USBD_LL_Transmit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#gab87eb9f3d4d9f8956d2c6b77230f265c",tooltip="Transmits data over an endpoint. "];
+  Node62 -> Node63 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node63 [label="HAL_PCD_EP_Transmit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___p_c_d___exported___functions___group3.html#ga116ada543442c8f7a1003c4d4c211618"];
+  Node60 -> Node64 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node64 [label="USBD_CtlError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___r_e_q___private___functions.html#ga48795256b00d45158aa8036e843d300a",tooltip="USBD_CtlError Handle USB low level Error. "];
+  Node64 -> Node65 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node65 [label="USBD_LL_StallEP",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#gabc2b4a7c8307e04955b015fd32057ec7",tooltip="Sets a Stall condition on an endpoint of the Low Level Driver. "];
+  Node65 -> Node66 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node66 [label="HAL_PCD_EP_SetStall",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___p_c_d___exported___functions___group3.html#gaecee197a59aacc015742c62b74881b6f"];
+  Node57 -> Node67 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node67 [label="USBD_StdEPReq",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___r_e_q___exported___functions_prototype.html#ga46d1a0a4e23e1e8c80167dcdc59b2538",tooltip="USBD_StdEPReq Handle standard usb endpoint requests. "];
+  Node67 -> Node65 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node67 -> Node61 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node67 -> Node64 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node67 -> Node68 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node68 [label="USBD_LL_ClearStallEP",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#gad4fa6f2eeefe95d07148c6c53d111eae",tooltip="Clears a Stall condition on an endpoint of the Low Level Driver. "];
+  Node68 -> Node69 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node69 [label="HAL_PCD_EP_ClrStall",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___p_c_d___exported___functions___group3.html#ga56466fbd2aa05a80c924b18ddc2ac3ca"];
+  Node67 -> Node70 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node70 [label="USBD_LL_IsStallEP",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#ga2a0f10f93cc4246272b63661051a64b7",tooltip="Returns Stall condition. "];
+  Node67 -> Node71 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node71 [label="USBD_CtlSendData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___i_o_r_e_q___exported___functions_prototype.html#ga5485330015d6e90ae4db3d4eda425913",tooltip="USBD_CtlSendData send data on the ctl pipe. "];
+  Node71 -> Node62 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node57 -> Node65 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

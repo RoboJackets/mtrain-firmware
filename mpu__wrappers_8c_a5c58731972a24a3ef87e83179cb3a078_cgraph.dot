@@ -1,0 +1,21 @@
+digraph "MPU_vEventGroupDelete"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node18 [label="MPU_vEventGroupDelete",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node18 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="xPortRaisePrivilege",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mpu__wrappers_8c.html#ac42aa31652a6e8158f8ea8a88aad8275"];
+  Node18 -> Node20 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="vEventGroupDelete",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$event__groups_8c.html#a6939faca89fc4ba52fa8288527042464",tooltip="event_groups.h "];
+  Node20 -> Node21 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="vTaskSuspendAll",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$task_8h.html#a366b302eba79d10b5ee2a3756f0fcc43"];
+  Node20 -> Node22 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="xTaskRemoveFromUnordered\lEventList",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$task_8h.html#aca64fad00201055cbaf9fff74f181b85"];
+  Node20 -> Node23 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="vPortFree",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$portable_8h.html#a735cd3085bb7ba06ff8e47565bfd7016"];
+  Node23 -> Node21 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 -> Node24 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node24 [label="xTaskResumeAll",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$task_8h.html#a003f8ae6d649225abd030cc76e1c7d0e"];
+  Node20 -> Node24 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

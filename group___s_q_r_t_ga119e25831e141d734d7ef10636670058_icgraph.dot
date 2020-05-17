@@ -1,0 +1,13 @@
+digraph "arm_sqrt_q31"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node6 [label="arm_sqrt_q31",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="arm_cmplx_mag_q31",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__cmplx__mag.html#ga14f82f9230e9d96d5b9774e2fefcb7be",tooltip="Q31 complex magnitude. "];
+  Node6 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="arm_rms_q31",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_m_s.html#gae33015fda23fc44e7ead5e5ed7e8d314",tooltip="Root Mean Square of the elements of a Q31 vector. "];
+  Node6 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="arm_std_q31",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_t_d.html#ga39495e74f96116178be085c9dc7742f5",tooltip="Standard deviation of the elements of a Q31 vector. "];
+}

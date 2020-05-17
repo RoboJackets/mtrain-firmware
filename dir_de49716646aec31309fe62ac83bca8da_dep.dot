@@ -1,0 +1,18 @@
+digraph "/home/developer/mtrain-firmware/external/middleware/STM32_USB_Device_Library/Class/AUDIO/Src" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_c11500816f8ec3526ffeede5315c5ad7 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="AUDIO" fontname="Helvetica", fontsize="10", URL="dir_c11500816f8ec3526ffeede5315c5ad7.html"]
+  dir_de49716646aec31309fe62ac83bca8da [shape=box, label="Src", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_de49716646aec31309fe62ac83bca8da.html"];
+  }
+  dir_2f220259f3445559f686f0f48cde4942 [shape=box label="Inc" URL="dir_2f220259f3445559f686f0f48cde4942.html"];
+  dir_19e504b8294315d876b43ba053bc3f8f [shape=box label="Core" fillcolor="white" style="filled" color="red" URL="dir_19e504b8294315d876b43ba053bc3f8f.html"];
+  dir_350c8a3315b9de76597c9530ef31a96a [shape=box label="BSP" fillcolor="white" style="filled" color="red" URL="dir_350c8a3315b9de76597c9530ef31a96a.html"];
+  dir_de49716646aec31309fe62ac83bca8da->dir_2f220259f3445559f686f0f48cde4942 [headlabel="2", labeldistance=1.5 headhref="dir_000057_000056.html"];
+  dir_de49716646aec31309fe62ac83bca8da->dir_19e504b8294315d876b43ba053bc3f8f [headlabel="1", labeldistance=1.5 headhref="dir_000057_000076.html"];
+  dir_de49716646aec31309fe62ac83bca8da->dir_350c8a3315b9de76597c9530ef31a96a [headlabel="1", labeldistance=1.5 headhref="dir_000057_000009.html"];
+  dir_2f220259f3445559f686f0f48cde4942->dir_19e504b8294315d876b43ba053bc3f8f [headlabel="1", labeldistance=1.5 headhref="dir_000056_000076.html"];
+  dir_19e504b8294315d876b43ba053bc3f8f->dir_350c8a3315b9de76597c9530ef31a96a [headlabel="2", labeldistance=1.5 headhref="dir_000076_000009.html"];
+  dir_350c8a3315b9de76597c9530ef31a96a->dir_19e504b8294315d876b43ba053bc3f8f [headlabel="4", labeldistance=1.5 headhref="dir_000009_000076.html"];
+}

@@ -1,0 +1,11 @@
+digraph "uxTaskResetEventItemValue"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node37 [label="uxTaskResetEventItemValue",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node37 -> Node38 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node38 [label="xEventGroupSync",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$event__groups_8h.html#a869511456b86426f52e2eec898bff341"];
+  Node38 -> Node39 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node39 [label="MPU_xEventGroupSync",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mpu__wrappers_8c.html#a6a226283b88af6323ec11950dfaa9c7e"];
+}

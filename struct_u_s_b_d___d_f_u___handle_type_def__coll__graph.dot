@@ -1,0 +1,6 @@
+digraph "USBD_DFU_HandleTypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{USBD_DFU_HandleTypeDef\n|+ d32\l+ d8\l+ buffer\l+ dev_state\l+ dev_status\l+ manif_state\l+ wblock_num\l+ wlength\l+ data_ptr\l+ alt_setting\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

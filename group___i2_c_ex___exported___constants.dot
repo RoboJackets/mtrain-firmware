@@ -1,0 +1,13 @@
+digraph "I2C Extended Exported Constants"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node0 [label="I2C Extended Exported\l Constants",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node3 [label="I2C Extended Fast Mode Plus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i2_c_ex___fast_mode_plus.html"];
+  Node1 [label="I2CEx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i2_c_ex.html",tooltip="I2C Extended HAL module driver. "];
+  Node2 [label="I2C Extended Analog\l Filter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i2_c_ex___analog___filter.html"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+}

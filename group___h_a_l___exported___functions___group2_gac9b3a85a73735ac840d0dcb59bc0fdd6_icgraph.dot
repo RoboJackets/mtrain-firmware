@@ -1,0 +1,13 @@
+digraph "HAL_GetTick"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node32 [label="HAL_GetTick",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node32 -> Node33 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node33 [label="HAL_Delay",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___h_a_l___exported___functions___group2.html#gaef87d3fec667bb34c418f5687e8204c1",tooltip="This function provides accurate delay (in milliseconds) based on variable incremented. "];
+  Node33 -> Node34 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node34 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tests_2cpp_2_i2_c_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4"];
+  Node33 -> Node35 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node35 [label="USBD_LL_Delay",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#ga383d9a41089cf426cdc61b5b24e2ca0a",tooltip="Delays routine for the USB Device Library. "];
+}

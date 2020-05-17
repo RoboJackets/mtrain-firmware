@@ -1,0 +1,6 @@
+digraph "USBD_DFU_MediaTypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{USBD_DFU_MediaTypeDef\n|+ pStrDesc\l+ Init\l+ DeInit\l+ Erase\l+ Write\l+ Read\l+ GetStatus\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

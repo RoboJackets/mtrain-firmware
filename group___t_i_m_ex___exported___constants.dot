@@ -1,0 +1,27 @@
+digraph "TIMEx Exported Constants"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="TIMEx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___t_i_m_ex.html",tooltip="TIM Extended HAL module driver. "];
+  Node4 [label="TIMEx Remap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___t_i_m_ex___remap.html"];
+  Node8 [label="TIMEx Group Channel\l 5 and Channel 1, 2 or 3",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___t_i_m_ex___group___channel5.html"];
+  Node9 [label="TIMEx Master Mode Selection\l 2 (TRGO2)",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___t_i_m_ex___master___mode___selection__2.html"];
+  Node0 [label="TIMEx Exported Constants",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node6 [label="TIMEx Break input 2\l Enable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___t_i_m_ex___break2___input__enable__disable.html"];
+  Node10 [label="TIMEx Slave mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___t_i_m_ex___slave___mode.html"];
+  Node2 [label="TIMEx Channel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___t_i_m_ex___channel.html"];
+  Node3 [label="TIMEx Output Compare\l and PWM Modes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___t_i_m_ex___output___compare__and___p_w_m__modes.html"];
+  Node7 [label="TIMEx Break2 Polarity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___t_i_m_ex___break2___polarity.html"];
+  Node5 [label="TIMEx Clear Input Source",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___t_i_m_ex___clear_input___source.html"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node9 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node10 [shape=plaintext, dir="back", style="solid"];
+}

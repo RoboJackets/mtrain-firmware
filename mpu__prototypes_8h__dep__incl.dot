@@ -1,0 +1,12 @@
+digraph "/home/developer/mtrain-firmware/external/middleware/FreeRTOS/src/include/mpu_prototypes.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="/home/developer/mtrain\l-firmware/external/middleware\l/FreeRTOS/src/include/mpu_prototypes.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="/home/developer/mtrain\l-firmware/external/middleware\l/FreeRTOS/src/portable/Common\l/mpu_wrappers.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mpu__wrappers_8c.html"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="/home/developer/mtrain\l-firmware/external/middleware\l/FreeRTOS/src/portable/GCC\l/ARM_CM3_MPU/port.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_a_r_m___c_m3___m_p_u_2port_8c.html"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="/home/developer/mtrain\l-firmware/external/middleware\l/FreeRTOS/src/portable/GCC\l/ARM_CM4_MPU/port.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_a_r_m___c_m4___m_p_u_2port_8c.html"];
+}

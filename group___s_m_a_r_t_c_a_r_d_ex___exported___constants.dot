@@ -1,0 +1,19 @@
+digraph "SMARTCARD Extended Exported Constants"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node0 [label="SMARTCARD Extended\l Exported Constants",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node4 [label="SMARTCARD Flags",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_m_a_r_t_c_a_r_d_ex___flags.html",tooltip="   Elements values convention: 0xXXXX  "];
+  Node3 [label="SMARTCARD advanced\l feature initialization type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_m_a_r_t_c_a_r_d_ex___advanced___features___initialization___type.html"];
+  Node6 [label="SMARTCARD Interruption\l Clear Flags",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_m_a_r_t_c_a_r_d_ex___i_t___c_l_e_a_r___flags.html"];
+  Node1 [label="SMARTCARDEx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_m_a_r_t_c_a_r_d_ex.html",tooltip="SMARTCARD Extended HAL module driver. "];
+  Node2 [label="SMARTCARD Transmission\l Completion Indication",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_m_a_r_t_c_a_r_d_ex___transmission___completion___indication.html"];
+  Node5 [label="SMARTCARD Interrupts\l Definition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_m_a_r_t_c_a_r_d_ex___interrupt__definition.html",tooltip="   Elements values convention: 000ZZZZZ0XXYYYYYb  "];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+}

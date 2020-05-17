@@ -1,0 +1,11 @@
+digraph "SPI::transmitReceive"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node37 [label="SPI::transmitReceive",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node37 -> Node38 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node38 [label="SPI::transmitReceive",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_s_p_i.html#a0c205413a76d117b835acdd2f6be08b3"];
+  Node38 -> Node39 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node39 [label="HAL_GPIO_WritePin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___g_p_i_o___exported___functions___group2.html#gaf4b97bdf533a02f51ef696d43b6da5c4"];
+}

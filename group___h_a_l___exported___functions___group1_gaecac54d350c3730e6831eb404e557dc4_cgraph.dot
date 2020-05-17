@@ -1,0 +1,17 @@
+digraph "HAL_Init"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node3 [label="HAL_Init",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="HAL_NVIC_SetPriorityGrouping",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_o_r_t_e_x___exported___functions___group1.html#gad9be53e08b1498adea006e5e037f238f"];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="HAL_InitTick",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___h_a_l___exported___functions___group1.html#ga44d1542f9985b2243b14a41070cc41cc",tooltip="This function configures the source of the time base. "];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="HAL_SYSTICK_Config",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_o_r_t_e_x___exported___functions___group1.html#gac3a3f0d53c315523a8e6e7bcac1940cf"];
+  Node5 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="HAL_NVIC_SetPriority",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_o_r_t_e_x___exported___functions___group1.html#ga8581a82025a4780efd00876a66e3e91b"];
+  Node3 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="HAL_MspInit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$stm32f7xx__hal__msp_8c.html#gae4fb8e66865c87d0ebab74a726a6891f",tooltip="Initializes the MSP. "];
+}

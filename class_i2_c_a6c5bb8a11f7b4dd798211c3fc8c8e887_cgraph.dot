@@ -1,0 +1,19 @@
+digraph "I2C::transmit"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node45 [label="I2C::transmit",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node45 -> Node46 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node46 [label="HAL_I2C_Mem_Write",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i2_c___exported___functions___group2.html#ga33e725a824eb672f9f999d9d5ce088fb"];
+  Node45 -> Node47 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node47 [label="I2C::recover_bus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_i2_c.html#a11722e4027650574e7d74ee9b5509097"];
+  Node47 -> Node48 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node48 [label="HAL_GPIO_DeInit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___g_p_i_o___exported___functions___group1.html#gafe9c756b5aa18961032a3f8aa572959b"];
+  Node47 -> Node49 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node49 [label="HAL_GPIO_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___g_p_i_o___exported___functions___group1.html#ga41bda93b6dd639e4905fdb1454eff98e"];
+  Node47 -> Node50 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node50 [label="HAL_GPIO_WritePin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___g_p_i_o___exported___functions___group2.html#gaf4b97bdf533a02f51ef696d43b6da5c4"];
+  Node47 -> Node51 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node51 [label="DWT_Delay",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$delay_8h.html#ac2a53b2530a71f3e19b29343d2566c14",tooltip="Delay routine itself. "];
+}

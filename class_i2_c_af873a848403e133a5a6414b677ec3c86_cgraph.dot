@@ -1,0 +1,15 @@
+digraph "I2C::I2C"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="I2C::I2C",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="HAL_RCCEx_PeriphCLKConfig",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_c_c_ex___exported___functions___group1.html#ga0c0f61a1e2f47cc81bc43d83ba3e0d95"];
+  Node0 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="HAL_GPIO_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___g_p_i_o___exported___functions___group1.html#ga41bda93b6dd639e4905fdb1454eff98e"];
+  Node0 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="HAL_I2C_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i2_c___exported___functions___group1.html#ga9d29159a6da072287fff73743fd93260"];
+  Node0 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="HAL_I2CEx_ConfigAnalogFilter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i2_c_ex___exported___functions___group1.html#ga2f0b5fc42fca412214f3968e528e2b9e"];
+}

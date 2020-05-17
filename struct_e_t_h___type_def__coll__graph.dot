@@ -1,0 +1,6 @@
+digraph "ETH_TypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{ETH_TypeDef\n|+ MACCR\l+ MACFFR\l+ MACHTHR\l+ MACHTLR\l+ MACMIIAR\l+ MACMIIDR\l+ MACFCR\l+ MACVLANTR\l+ RESERVED0\l+ MACRWUFFR\land 57 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

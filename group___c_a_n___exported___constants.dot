@@ -1,0 +1,39 @@
+digraph "CAN Exported Constants"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node8 [label="CAN Filter Mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_a_n__filter__mode.html"];
+  Node1 [label="CAN",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_a_n.html",tooltip="CAN driver modules. "];
+  Node3 [label="CAN InitStatus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_a_n___init_status.html"];
+  Node13 [label="CAN Receive FIFO Number\l Constants",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_a_n__receive___f_i_f_o__number__constants.html"];
+  Node2 [label="CAN Error Code",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_a_n___error___code.html"];
+  Node10 [label="CAN Filter FIFO",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_a_n__filter___f_i_f_o.html"];
+  Node14 [label="CAN Flags",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_a_n__flags.html"];
+  Node12 [label="CAN Remote Transmission\l Request",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_a_n__remote__transmission__request.html"];
+  Node15 [label="CAN Interrupts",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_a_n___interrupts.html"];
+  Node16 [label="CAN Mailboxes Definition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_a_n___mailboxes___definition.html"];
+  Node0 [label="CAN Exported Constants",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node11 [label="CAN Identifier Type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_a_n___identifier___type.html"];
+  Node5 [label="CAN Synchronisation\l Jump Width",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_a_n__synchronisation__jump__width.html"];
+  Node9 [label="CAN Filter Scale",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_a_n__filter__scale.html"];
+  Node4 [label="CAN Operating Mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_a_n__operating__mode.html"];
+  Node6 [label="CAN Time Quantum in\l bit segment 1",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_a_n__time__quantum__in__bit__segment__1.html"];
+  Node7 [label="CAN Time Quantum in\l bit segment 2",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_a_n__time__quantum__in__bit__segment__2.html"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node9 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node10 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node11 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node12 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node13 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node14 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node15 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node16 [shape=plaintext, dir="back", style="solid"];
+}

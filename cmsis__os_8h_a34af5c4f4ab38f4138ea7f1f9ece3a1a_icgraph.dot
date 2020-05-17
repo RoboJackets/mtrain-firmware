@@ -1,0 +1,9 @@
+digraph "osPoolCreate"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node78 [label="osPoolCreate",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node78 -> Node79 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node79 [label="osMailCreate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cmsis__os_8h.html#aa177e7fe5820dd70d8c9e46ded131174",tooltip="Create and Initialize mail queue. "];
+}

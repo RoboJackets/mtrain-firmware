@@ -1,0 +1,6 @@
+digraph "FMC_NORSRAM_InitTypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{FMC_NORSRAM_InitTypeDef\n|+ NSBank\l+ DataAddressMux\l+ MemoryType\l+ MemoryDataWidth\l+ BurstAccessMode\l+ WaitSignalPolarity\l+ WaitSignalActive\l+ WriteOperation\l+ WaitSignal\l+ ExtendedMode\l+ AsynchronousWait\l+ WriteBurst\l+ ContinuousClock\l+ WriteFifo\l+ PageSize\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

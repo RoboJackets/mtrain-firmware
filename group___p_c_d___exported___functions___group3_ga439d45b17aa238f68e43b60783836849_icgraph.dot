@@ -1,0 +1,13 @@
+digraph "HAL_PCD_EP_Close"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node9 [label="HAL_PCD_EP_Close",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="USBD_LL_CloseEP",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#gae12e7de3c398d5663976bf11faa63572",tooltip="Closes an endpoint of the Low Level Driver. "];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="USBD_MSC_DeInit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___m_s_c___c_o_r_e___private___functions.html#gabb643a5bc10a2900666b2f4b5d6582e2",tooltip="USBD_MSC_DeInit DeInitilaize the mass storage configuration. "];
+  Node10 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="USBD_MSC_Setup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___m_s_c___c_o_r_e___private___functions.html#gaf7c2344d42242f52ce4e1f9d68c7b0b9",tooltip="USBD_MSC_Setup Handle the MSC specific requests. "];
+}

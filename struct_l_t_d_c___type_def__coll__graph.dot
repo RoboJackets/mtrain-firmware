@@ -1,0 +1,6 @@
+digraph "LTDC_TypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{LTDC_TypeDef\n|+ RESERVED0\l+ SSCR\l+ BPCR\l+ AWCR\l+ TWCR\l+ GCR\l+ RESERVED1\l+ SRCR\l+ RESERVED2\l+ BCCR\land 7 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

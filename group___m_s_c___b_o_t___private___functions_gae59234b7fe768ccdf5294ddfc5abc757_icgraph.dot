@@ -1,0 +1,9 @@
+digraph "MSC_BOT_CplClrFeature"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node8 [label="MSC_BOT_CplClrFeature",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="USBD_MSC_Setup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___m_s_c___c_o_r_e___private___functions.html#gaf7c2344d42242f52ce4e1f9d68c7b0b9",tooltip="USBD_MSC_Setup Handle the MSC specific requests. "];
+}

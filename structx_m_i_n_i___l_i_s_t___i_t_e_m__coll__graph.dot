@@ -1,0 +1,9 @@
+digraph "xMINI_LIST_ITEM"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{xMINI_LIST_ITEM\n|+ xItemValue\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +pxPrevious\n+pxNext" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{xLIST_ITEM\n|+ xItemValue\l+ pvOwner\l+ pvContainer\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structx_l_i_s_t___i_t_e_m.html"];
+  Node2 -> Node2 [color="grey25",fontsize="10",style="solid",label=" +pxPrevious\n+pxNext" ,arrowhead="odiamond",fontname="Helvetica"];
+}

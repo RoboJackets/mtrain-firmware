@@ -1,0 +1,13 @@
+digraph "/home/developer/mtrain-firmware/external/middleware/FreeRTOS/src/CMSIS_RTOS" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_0fedec421376a987f9770604e6be1de2 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="src" fontname="Helvetica", fontsize="10", URL="dir_0fedec421376a987f9770604e6be1de2.html"]
+  dir_bb9b3e85ed24efc69047d0f3bdd5b2ef [shape=box, label="CMSIS_RTOS", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_bb9b3e85ed24efc69047d0f3bdd5b2ef.html"];
+  }
+  dir_e8f305f026f0eedfd01db8b47ccd6bd3 [shape=box label="include" URL="dir_e8f305f026f0eedfd01db8b47ccd6bd3.html"];
+  dir_651c4281f36ab60688d2b827c8ad2c3b [shape=box label="CMSIS" fillcolor="white" style="filled" color="red" URL="dir_651c4281f36ab60688d2b827c8ad2c3b.html"];
+  dir_bb9b3e85ed24efc69047d0f3bdd5b2ef->dir_e8f305f026f0eedfd01db8b47ccd6bd3 [headlabel="6", labeldistance=1.5 headhref="dir_000040_000041.html"];
+  dir_bb9b3e85ed24efc69047d0f3bdd5b2ef->dir_651c4281f36ab60688d2b827c8ad2c3b [headlabel="1", labeldistance=1.5 headhref="dir_000040_000016.html"];
+}

@@ -1,0 +1,23 @@
+digraph "PWR Exported Constants"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node8 [label="PWR Flag",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___p_w_r___flag.html"];
+  Node2 [label="PWR PVD detection level",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___p_w_r___p_v_d__detection__level.html"];
+  Node6 [label="PWR STOP mode entry",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___p_w_r___s_t_o_p__mode__entry.html"];
+  Node4 [label="PWR Regulator state\l in SLEEP/STOP mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___p_w_r___regulator__state__in___s_t_o_p__mode.html"];
+  Node0 [label="PWR Exported Constants",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 [label="PWR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___p_w_r.html",tooltip="PWR HAL module driver. "];
+  Node3 [label="PWR PVD Mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___p_w_r___p_v_d___mode.html"];
+  Node7 [label="PWR Regulator Voltage\l Scale",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___p_w_r___regulator___voltage___scale.html"];
+  Node5 [label="PWR SLEEP mode entry",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___p_w_r___s_l_e_e_p__mode__entry.html"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node8 [shape=plaintext, dir="back", style="solid"];
+}

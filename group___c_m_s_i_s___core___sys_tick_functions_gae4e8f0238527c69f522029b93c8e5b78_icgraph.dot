@@ -1,0 +1,11 @@
+digraph "SysTick_Config"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node2 [label="SysTick_Config",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="NVIC_DecodePriority",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_m_s_i_s___core___n_v_i_c_functions.html#ga3387607fd8a1a32cccd77d2ac672dd96",tooltip="Decode Priority. "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="SCB_CleanInvalidateDCache\l_by_Addr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_m_s_i_s___core___cache_functions.html#ga630131b2572eaa16b569ed364dfc895e",tooltip="D-Cache Clean and Invalidate by address. "];
+}

@@ -1,0 +1,11 @@
+digraph "PWR Private Constants"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node0 [label="PWR Private Constants",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 [label="PWR PVD EXTI Line",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___p_w_r___p_v_d___e_x_t_i___line.html"];
+  Node1 [label="PWR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___p_w_r.html",tooltip="PWR HAL module driver. "];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+}

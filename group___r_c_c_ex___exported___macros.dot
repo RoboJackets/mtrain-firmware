@@ -1,0 +1,19 @@
+digraph "RCCEx Exported Macros"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node3 [label="Peripheral Clock Enable\l Disable Status",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_c_c_ex___peripheral___clock___enable___disable___status.html",tooltip="Get the enable or disable status of the AHB/APB peripheral clock. "];
+  Node0 [label="RCCEx Exported Macros",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 [label="RCCEx_Peripheral_Clock\l_Enable_Disable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_c_c_ex___peripheral___clock___enable___disable.html",tooltip="Enables or disables the AHB/APB peripheral clock. "];
+  Node1 [label="RCCEx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_c_c_ex.html",tooltip="RCCEx HAL module driver. "];
+  Node6 [label="AHB/APB Peripheral\l Clock Sleep Enable\l Disable Status",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_c_c___clock___sleep___enable___disable___status.html",tooltip="Get the enable or disable status of the AHB/APB peripheral clock during Low Power (Sleep) mode..."];
+  Node4 [label="RCCEx Force Release\l Peripheral Reset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_c_c_ex___force___release___peripheral___reset.html",tooltip="Forces or releases AHB/APB peripheral reset. "];
+  Node5 [label="RCCEx Peripheral Clock\l Sleep Enable Disable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_c_c_ex___peripheral___clock___sleep___enable___disable.html",tooltip="Enables or disables the AHB/APB peripheral clock during Low Power (Sleep) mode. "];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+}

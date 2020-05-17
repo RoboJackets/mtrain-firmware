@@ -1,0 +1,11 @@
+digraph "xQueueGiveFromISR"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node72 [label="xQueueGiveFromISR",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node72 -> Node73 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node73 [label="xTaskRemoveFromEventList",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$task_8h.html#a14513b7dd36055f73fba3c5ebbdc1b06"];
+  Node73 -> Node74 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node74 [label="uxListRemove",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$list_8h.html#a2eb1558482076fff8cafc63419c2d34a"];
+}

@@ -1,0 +1,9 @@
+digraph "/home/developer/mtrain-firmware/external/middleware/FatFs/src/drivers" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_0a5f479ec9b37f074014b54db89ced3a {
+    graph [ bgcolor="#ddddee", pencolor="black", label="src" fontname="Helvetica", fontsize="10", URL="dir_0a5f479ec9b37f074014b54db89ced3a.html"]
+  dir_e1d9ccfd1d34221718febcc9e0dcf92d [shape=box, label="drivers", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_e1d9ccfd1d34221718febcc9e0dcf92d.html"];
+  }
+}

@@ -1,0 +1,43 @@
+digraph "STM32_USB_DEVICE_LIBRARY"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node10 [label="USBD_SCSI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___s_c_s_i.html",tooltip="header file for the storage disk file "];
+  Node0 [label="STM32_USB_DEVICE_LIBRARY",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node18 [label="USBD_IOREQ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___i_o_r_e_q.html",tooltip="header file for the usbd_ioreq.c file "];
+  Node13 [label="MSC_DATA",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___m_s_c___d_a_t_a.html",tooltip="Mass storage info/data module. "];
+  Node8 [label="MSC_BOT",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___m_s_c___b_o_t.html",tooltip="This file is the Header file for usbd_msc_bot.c. "];
+  Node9 [label="USB_INFO",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b___i_n_f_o.html",tooltip="general defines for the usb device library file "];
+  Node16 [label="USBD_CORE",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e.html",tooltip="This file is the Header file for usbd_core.c file. "];
+  Node5 [label="USBD_DFU",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___d_f_u.html",tooltip="This file is the Header file for usbd_dfu.c. "];
+  Node2 [label="Usbd_cdc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__usbd__cdc.html",tooltip="This file is the Header file for usbd_cdc.c. "];
+  Node1 [label="USBD_AUDIO",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___a_u_d_i_o.html",tooltip="This file is the Header file for usbd_audio.c. "];
+  Node7 [label="USBD_HID",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___h_i_d.html",tooltip="This file is the Header file for usbd_hid.c. "];
+  Node15 [label="USBD_TEMPLATE",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___t_e_m_p_l_a_t_e.html",tooltip="This file is the header file for usbd_template_core.c. "];
+  Node6 [label="USBD_MEDIA",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___m_e_d_i_a.html",tooltip="header file for the usbd_dfu_media_template.c file "];
+  Node3 [label="USBD_CDC",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_d_c.html",tooltip="usbd core module "];
+  Node4 [label="USBD_CUSTOM_HID",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_u_s_t_o_m___h_i_d.html",tooltip="This file is the Header file for USBD_customhid.c. "];
+  Node14 [label="MSC_SCSI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___m_s_c___s_c_s_i.html",tooltip="Mass storage SCSI layer module. "];
+  Node12 [label="MSC_CORE",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___m_s_c___c_o_r_e.html",tooltip="Mass storage core module. "];
+  Node17 [label="USBD_REQ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___r_e_q.html",tooltip="header file for the usbd_req.c file "];
+  Node11 [label="USBD_STORAGE",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___s_t_o_r_a_g_e.html",tooltip="header file for the usbd_msc_storage.c file "];
+  Node0->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node9 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node10 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node11 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node12 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node13 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node14 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node15 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node16 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node17 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node18 [shape=plaintext, dir="back", style="solid"];
+}

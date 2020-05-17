@@ -1,0 +1,41 @@
+digraph "PCD Exported Constants"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node2 [label="USB_Core",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b___core.html"];
+  Node13 [label="USB EP Speed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b___e_p___speed__.html"];
+  Node10 [label="USB Core Phy Frequency",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b___core___phy___frequency__.html"];
+  Node4 [label="PCD PHY Module",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___p_c_d___p_h_y___module.html"];
+  Node8 [label="USB Core PHY",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b___core___p_h_y__.html"];
+  Node7 [label="USB Core Speed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b___core___speed__.html"];
+  Node3 [label="PCD Speed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___p_c_d___speed.html"];
+  Node5 [label="Turnaround Timeout\l Value",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___p_c_d___turnaround___timeout.html"];
+  Node11 [label="USB CORE Frame Interval",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b___c_o_r_e___frame___interval__.html"];
+  Node1 [label="PCD",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___p_c_d.html",tooltip="PCD HAL module driver. "];
+  Node17 [label="HPRT0 PRTSPD SPEED\l Defines",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___h_p_r_t0___p_r_t_s_p_d___s_p_e_e_d___defines__.html"];
+  Node16 [label="HCFG SPEED Defines",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___h_c_f_g___s_p_e_e_d___defines__.html"];
+  Node9 [label="USB Core MPS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b___core___m_p_s__.html"];
+  Node0 [label="PCD Exported Constants",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node14 [label="USB EP Type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b___e_p___type__.html"];
+  Node15 [label="USB STS Defines",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b___s_t_s___defines__.html"];
+  Node6 [label="USB Core Mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b___core___mode__.html"];
+  Node12 [label="USB EP0 MPS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b___e_p0___m_p_s__.html"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node2->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node9 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node10 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node11 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node12 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node13 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node14 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node15 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node16 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node17 [shape=plaintext, dir="back", style="solid"];
+}

@@ -1,0 +1,11 @@
+digraph "MSC_CORE_Private_TypesDefinitions"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="MSC_BOT",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___m_s_c___b_o_t.html",tooltip="This file is the Header file for usbd_msc_bot.c. "];
+  Node2 [label="MSC_CORE",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___m_s_c___c_o_r_e.html",tooltip="Mass storage core module. "];
+  Node0 [label="MSC_CORE_Private_TypesDefinitions",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node2->Node0 [shape=plaintext, dir="back", style="solid"];
+}

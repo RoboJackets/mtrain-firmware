@@ -1,0 +1,17 @@
+digraph "xPortSysTickHandler"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node46 [label="xPortSysTickHandler",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node46 -> Node47 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node47 [label="xTaskIncrementTick",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$task_8h.html#a978e25460ac35706f9ad30b46d9403d8"];
+  Node46 -> Node48 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node48 [label="__attribute__",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_a_r_m___c_m0_2port_8c.html#af9aace1b44b73111e15aa39f06f43456"];
+  Node46 -> Node49 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node49 [label="vPortSuppressTicksAndSleep",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_a_r_m___c_m0_2portmacro_8h.html#aefd025907402b0b863d5012673d5036e"];
+  Node46 -> Node50 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node50 [label="eTaskConfirmSleepModeStatus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$task_8h.html#ad185d5a451380c4040888620d9a92ec6"];
+  Node46 -> Node51 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node51 [label="vTaskStepTick",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$task_8h.html#a8dda6cb26bb158dd9636873135e63912"];
+}

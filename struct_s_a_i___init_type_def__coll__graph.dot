@@ -1,0 +1,6 @@
+digraph "SAI_InitTypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{SAI_InitTypeDef\n|+ AudioMode\l+ Synchro\l+ SynchroExt\l+ OutputDrive\l+ NoDivider\l+ FIFOThreshold\l+ AudioFrequency\l+ Mckdiv\l+ MonoStereoMode\l+ CompandingMode\l+ TriState\l+ Protocol\l+ DataSize\l+ FirstBit\l+ ClockStrobing\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

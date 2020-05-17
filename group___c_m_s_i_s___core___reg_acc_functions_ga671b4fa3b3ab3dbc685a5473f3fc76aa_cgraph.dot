@@ -1,0 +1,29 @@
+digraph "__attribute__"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="__attribute__",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="__get_CONTROL",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_m_s_i_s___core___reg_acc_functions.html#ga5fe64567d5bf0a81c118374e9a3a4598",tooltip="Get Control Register. "];
+  Node0 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="__set_CONTROL",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_m_s_i_s___core___reg_acc_functions.html#ga558df7eeb0a34765e0b54d9853d08484",tooltip="Set Control Register. "];
+  Node0 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="__get_IPSR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_m_s_i_s___core___reg_acc_functions.html#ga2c18685a915eb9b7513a907c2b866636",tooltip="Get IPSR Register. "];
+  Node0 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="__get_APSR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_m_s_i_s___core___reg_acc_functions.html#gaf082254959c727c663f2334021f1a98a",tooltip="Get APSR Register. "];
+  Node0 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="__get_xPSR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_m_s_i_s___core___reg_acc_functions.html#ga94c675a736d4754a5f73d8748b24aa11",tooltip="Get xPSR Register. "];
+  Node0 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="__get_PSP",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_m_s_i_s___core___reg_acc_functions.html#ga0c569cbb49336f8d638686f9103047aa",tooltip="Get Process Stack Pointer. "];
+  Node0 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="__set_PSP",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_m_s_i_s___core___reg_acc_functions.html#gab145e35dbaf6868d3a17a8ad360fe379",tooltip="Set Process Stack Pointer. "];
+  Node0 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="__get_MSP",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_m_s_i_s___core___reg_acc_functions.html#gac5267c10c9b15b5349eea0a959ea014c",tooltip="Get Main Stack Pointer. "];
+  Node0 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="__set_MSP",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_m_s_i_s___core___reg_acc_functions.html#ga1ff33c0b5ed0e687dd7967a1dd283d5f",tooltip="Set Main Stack Pointer. "];
+  Node0 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="__get_PRIMASK",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_m_s_i_s___core___reg_acc_functions.html#gac9e3a67ff722261b89c77ebe49b6f9a7",tooltip="Get Priority Mask. "];
+  Node0 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="__set_PRIMASK",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_m_s_i_s___core___reg_acc_functions.html#ga42e74e3fffe1a2d93db1de04d9260929",tooltip="Set Priority Mask. "];
+}

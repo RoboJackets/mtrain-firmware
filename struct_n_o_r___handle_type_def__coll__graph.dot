@@ -1,0 +1,8 @@
+digraph "NOR_HandleTypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{NOR_HandleTypeDef\n|+ Instance\l+ Extended\l+ Lock\l+ State\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +Init" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{FMC_NORSRAM_InitTypeDef\n|+ NSBank\l+ DataAddressMux\l+ MemoryType\l+ MemoryDataWidth\l+ BurstAccessMode\l+ WaitSignalPolarity\l+ WaitSignalActive\l+ WriteOperation\l+ WaitSignal\l+ ExtendedMode\l+ AsynchronousWait\l+ WriteBurst\l+ ContinuousClock\l+ WriteFifo\l+ PageSize\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_f_m_c___n_o_r_s_r_a_m___init_type_def.html",tooltip="FMC NORSRAM Configuration Structure definition. "];
+}

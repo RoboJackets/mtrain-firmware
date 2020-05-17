@@ -1,0 +1,11 @@
+digraph "vApplicationGetIdleTaskMemory"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="vApplicationGetIdleTaskMemory",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="vTaskStartScheduler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tasks_8c.html#a598661cdd2a6af95a077245d11e3d142"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="osKernelStart",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cmsis__os_8h.html#aab668ffd2ea76bb0a77ab0ab385eaef2",tooltip="Start the RTOS Kernel. "];
+}

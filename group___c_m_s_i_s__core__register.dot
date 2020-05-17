@@ -1,0 +1,29 @@
+digraph "Defines and Type Definitions"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node11 [label="Trace Port Interface\l (TPI)",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_m_s_i_s___t_p_i.html",tooltip="Type definitions for the Trace Port Interface (TPI) "];
+  Node1 [label="Status and Control\l Registers",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_m_s_i_s___c_o_r_e.html",tooltip="Core Register type definitions. "];
+  Node7 [label="Core Definitions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_m_s_i_s__core__base.html",tooltip="Definitions for base addresses, unions, and structures. "];
+  Node4 [label="System Tick Timer \l(SysTick)",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_m_s_i_s___sys_tick.html",tooltip="Type definitions for the System Timer Registers. "];
+  Node2 [label="Nested Vectored Interrupt\l Controller (NVIC)",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_m_s_i_s___n_v_i_c.html",tooltip="Type definitions for the NVIC Registers. "];
+  Node8 [label="System Controls not\l in SCB (SCnSCB)",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_m_s_i_s___s_cn_s_c_b.html",tooltip="Type definitions for the System Control and ID Register not in the SCB. "];
+  Node3 [label="System Control Block\l (SCB)",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_m_s_i_s___s_c_b.html",tooltip="Type definitions for the System Control Block Registers. "];
+  Node10 [label="Data Watchpoint and\l Trace (DWT)",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_m_s_i_s___d_w_t.html",tooltip="Type definitions for the Data Watchpoint and Trace (DWT) "];
+  Node5 [label="Core Debug Registers\l (CoreDebug)",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_m_s_i_s___core_debug.html",tooltip="Cortex-M0 Core Debug Registers (DCB registers, SHCSR, and DFSR) are only accessible over DAP and not ..."];
+  Node9 [label="Instrumentation Trace\l Macrocell (ITM)",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_m_s_i_s___i_t_m.html",tooltip="Type definitions for the Instrumentation Trace Macrocell (ITM) "];
+  Node0 [label="Defines and Type Definitions",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node6 [label="Core register bit field\l macros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_m_s_i_s__core__bitfield.html",tooltip="Macros for use with bit field definitions (xxx_Pos, xxx_Msk). "];
+  Node0->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node9 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node10 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node11 [shape=plaintext, dir="back", style="solid"];
+}

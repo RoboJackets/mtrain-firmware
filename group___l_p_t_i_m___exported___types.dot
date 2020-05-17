@@ -1,0 +1,11 @@
+digraph "LPTIM Exported Types"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node2 [label="LPTIM WAKEUP Timer\l EXTI Line",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___l_p_t_i_m___w_a_k_e_u_p_t_i_m_e_r___e_x_t_i_l_i_n_e.html"];
+  Node1 [label="LPTIM",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___l_p_t_i_m.html",tooltip="LPTIM HAL module driver. "];
+  Node0 [label="LPTIM Exported Types",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+}

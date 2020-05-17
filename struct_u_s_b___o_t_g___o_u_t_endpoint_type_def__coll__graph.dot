@@ -1,0 +1,6 @@
+digraph "USB_OTG_OUTEndpointTypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{USB_OTG_OUTEndpointTypeDef\n|+ DOEPCTL\l+ Reserved04\l+ DOEPINT\l+ Reserved0C\l+ DOEPTSIZ\l+ DOEPDMA\l+ Reserved18\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

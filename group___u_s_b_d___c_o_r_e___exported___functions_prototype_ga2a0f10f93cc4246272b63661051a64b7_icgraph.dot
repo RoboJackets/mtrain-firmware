@@ -1,0 +1,13 @@
+digraph "USBD_LL_IsStallEP"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node83 [label="USBD_LL_IsStallEP",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node83 -> Node84 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node84 [label="USBD_StdEPReq",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___r_e_q___private___functions.html#ga46d1a0a4e23e1e8c80167dcdc59b2538",tooltip="USBD_StdEPReq Handle standard usb endpoint requests. "];
+  Node84 -> Node85 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node85 [label="USBD_LL_SetupStage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e___private___functions.html#gabdcdfefaffa1651c77a38d08eb3a82ce",tooltip="USBD_SetupStage Handle the setup stage. "];
+  Node85 -> Node86 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node86 [label="HAL_PCD_SetupStageCallback",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___p_c_d___exported___functions___group2.html#ga9d72aa4d3d984b164047b081d4566f6d",tooltip="SetupStage callback. "];
+}

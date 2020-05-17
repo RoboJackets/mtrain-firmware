@@ -1,0 +1,11 @@
+digraph "arm_split_rfft_q31"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="arm_split_rfft_q31",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="arm_rfft_q31",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___real_f_f_t.html#gabaeab5646aeea9844e6d42ca8c73fe3a",tooltip="Processing function for the Q31 RFFT/RIFFT. "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="arm_dct4_q31",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___d_c_t4___i_d_c_t4.html#gad04d0baab6ed081d8e8afe02538eb80b",tooltip="Processing function for the Q31 DCT4/IDCT4. "];
+}

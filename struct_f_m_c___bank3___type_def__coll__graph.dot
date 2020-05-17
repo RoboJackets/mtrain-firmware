@@ -1,0 +1,6 @@
+digraph "FMC_Bank3_TypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{FMC_Bank3_TypeDef\n|+ PCR\l+ SR\l+ PMEM\l+ PATT\l+ RESERVED0\l+ ECCR\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

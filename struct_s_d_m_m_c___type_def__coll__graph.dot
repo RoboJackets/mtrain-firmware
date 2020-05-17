@@ -1,0 +1,6 @@
+digraph "SDMMC_TypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{SDMMC_TypeDef\n|+ POWER\l+ CLKCR\l+ ARG\l+ CMD\l+ RESPCMD\l+ RESP1\l+ RESP2\l+ RESP3\l+ RESP4\l+ DTIMER\land 10 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

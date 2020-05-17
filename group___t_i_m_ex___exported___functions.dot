@@ -1,0 +1,23 @@
+digraph "TIMEx_Exported_Functions"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="TIMEx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___t_i_m_ex.html",tooltip="TIM Extended HAL module driver. "];
+  Node0 [label="TIMEx_Exported_Functions",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 [label="TIMEx_Exported_Functions\l_Group1",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___t_i_m_ex___exported___functions___group1.html"];
+  Node3 [label="TIMEx_Exported_Functions\l_Group2",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___t_i_m_ex___exported___functions___group2.html"];
+  Node4 [label="TIMEx_Exported_Functions\l_Group3",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___t_i_m_ex___exported___functions___group3.html"];
+  Node5 [label="TIMEx_Exported_Functions\l_Group4",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___t_i_m_ex___exported___functions___group4.html"];
+  Node6 [label="TIMEx_Exported_Functions\l_Group5",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___t_i_m_ex___exported___functions___group5.html"];
+  Node7 [label="TIMEx_Exported_Functions\l_Group6",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___t_i_m_ex___exported___functions___group6.html"];
+  Node8 [label="TIMEx_Exported_Functions\l_Group7",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___t_i_m_ex___exported___functions___group7.html"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node8 [shape=plaintext, dir="back", style="solid"];
+}

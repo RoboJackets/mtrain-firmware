@@ -1,0 +1,19 @@
+digraph "UTILS"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node0 [label="UTILS",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node5 [label="UTILS Exported Constants",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_t_i_l_s___l_l___exported___constants.html"];
+  Node1 [label="STM32F7xx_LL_Driver",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_t_m32_f7xx___l_l___driver.html"];
+  Node6 [label="UTILS Exported Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_t_i_l_s___l_l___exported___functions.html"];
+  Node2 [label="UTILS Private Constants",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_t_i_l_s___l_l___private___constants.html"];
+  Node3 [label="UTILS Private Macros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_t_i_l_s___l_l___private___macros.html"];
+  Node4 [label="UTILS Exported structures",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_t_i_l_s___l_l___e_s___i_n_i_t.html"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+}

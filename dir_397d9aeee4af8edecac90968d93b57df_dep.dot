@@ -1,0 +1,19 @@
+digraph "/home/developer/mtrain-firmware/external" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_397d9aeee4af8edecac90968d93b57df {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_397d9aeee4af8edecac90968d93b57df.html"];
+    dir_397d9aeee4af8edecac90968d93b57df [shape=plaintext label="external"];
+    dir_651c4281f36ab60688d2b827c8ad2c3b [shape=box label="CMSIS" color="red" fillcolor="white" style="filled" URL="dir_651c4281f36ab60688d2b827c8ad2c3b.html"];
+    dir_90f7ee1bf3d9d22e5369ce24d2b55d10 [shape=box label="middleware" color="red" fillcolor="white" style="filled" URL="dir_90f7ee1bf3d9d22e5369ce24d2b55d10.html"];
+    dir_d44dc8085d5faa6a792c35ee8daf1893 [shape=box label="STM32F7xx_HAL_Drivers" color="red" fillcolor="white" style="filled" URL="dir_d44dc8085d5faa6a792c35ee8daf1893.html"];
+  }
+  dir_350c8a3315b9de76597c9530ef31a96a [shape=box label="BSP" fillcolor="white" style="filled" color="red" URL="dir_350c8a3315b9de76597c9530ef31a96a.html"];
+  dir_90f7ee1bf3d9d22e5369ce24d2b55d10->dir_651c4281f36ab60688d2b827c8ad2c3b [headlabel="1", labeldistance=1.5 headhref="dir_000033_000016.html"];
+  dir_90f7ee1bf3d9d22e5369ce24d2b55d10->dir_350c8a3315b9de76597c9530ef31a96a [headlabel="9", labeldistance=1.5 headhref="dir_000033_000009.html"];
+  dir_350c8a3315b9de76597c9530ef31a96a->dir_90f7ee1bf3d9d22e5369ce24d2b55d10 [headlabel="6", labeldistance=1.5 headhref="dir_000009_000033.html"];
+  dir_350c8a3315b9de76597c9530ef31a96a->dir_d44dc8085d5faa6a792c35ee8daf1893 [headlabel="45", labeldistance=1.5 headhref="dir_000009_000079.html"];
+  dir_d44dc8085d5faa6a792c35ee8daf1893->dir_651c4281f36ab60688d2b827c8ad2c3b [headlabel="23", labeldistance=1.5 headhref="dir_000079_000016.html"];
+  dir_d44dc8085d5faa6a792c35ee8daf1893->dir_350c8a3315b9de76597c9530ef31a96a [headlabel="1", labeldistance=1.5 headhref="dir_000079_000009.html"];
+}

@@ -1,0 +1,11 @@
+digraph "SCB_EnableICache"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node19 [label="SCB_EnableICache",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node19 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="CPU_CACHE_Enable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bsp_8c.html#a9f9cb877166b43112529f01c58740b31",tooltip="CPU L1-Cache enable. "];
+  Node20 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="bsp_config",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bsp_8c.html#a1daad6f02d05b6715108e804f68c3d21"];
+}

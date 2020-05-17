@@ -1,0 +1,10 @@
+digraph "DigitalOut"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{DigitalOut\n|# inverted\l|+ DigitalOut()\l+ ~DigitalOut()\l+ write()\l+ toggle()\l+ read()\l+ operator=()\l+ operator bool()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" #pin" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{PinName\n|+ pin\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_pin_name.html"];
+  Node3 -> Node2 [color="grey25",fontsize="10",style="solid",label=" +port" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{GPIO_TypeDef\n|+ MODER\l+ OTYPER\l+ OSPEEDR\l+ PUPDR\l+ IDR\l+ ODR\l+ BSRR\l+ LCKR\l+ AFR\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_g_p_i_o___type_def.html",tooltip="General Purpose I/O. "];
+}

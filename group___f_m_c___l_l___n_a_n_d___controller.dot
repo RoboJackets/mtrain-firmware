@@ -1,0 +1,21 @@
+digraph "FMC NAND Controller"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node0 [label="FMC NAND Controller",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node7 [label="FMC ECC Page Size",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___f_m_c___e_c_c___page___size.html"];
+  Node1 [label="FMC Low Layer Exported\l Constants",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___f_m_c___l_l___exported___constants.html"];
+  Node6 [label="FMC ECC",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___f_m_c___e_c_c.html"];
+  Node4 [label="FMC PCR Memory Type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___f_m_c___p_c_r___memory___type.html"];
+  Node3 [label="FMC Wait feature",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___f_m_c___wait__feature.html"];
+  Node5 [label="FMC NAND Data Width",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___f_m_c___n_a_n_d___data___width.html"];
+  Node2 [label="FMC NAND Bank",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___f_m_c___n_a_n_d___bank.html"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node7 [shape=plaintext, dir="back", style="solid"];
+}

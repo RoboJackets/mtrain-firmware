@@ -1,0 +1,33 @@
+digraph "I2C Exported Constants"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node11 [label="I2C Start or Stop Mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i2_c___s_t_a_r_t___s_t_o_p___m_o_d_e.html"];
+  Node10 [label="I2C Reload End Mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i2_c___r_e_l_o_a_d___e_n_d___m_o_d_e.html"];
+  Node2 [label="I2C Sequential Transfer\l Options",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i2_c___x_f_e_r_o_p_t_i_o_n_s.html"];
+  Node0 [label="I2C Exported Constants",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node4 [label="I2C Dual Addressing Mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i2_c___d_u_a_l___a_d_d_r_e_s_s_i_n_g___m_o_d_e.html"];
+  Node1 [label="I2C",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i2_c.html",tooltip="I2C HAL module driver. "];
+  Node12 [label="I2C Interrupt configuration\l definition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i2_c___interrupt__configuration__definition.html",tooltip="I2C Interrupt definition Elements values convention: 0xXXXXXXXX. "];
+  Node9 [label="I2C Transfer Direction\l Master Point of View",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i2_c___x_f_e_r_d_i_r_e_c_t_i_o_n.html"];
+  Node5 [label="I2C Own Address2 Masks",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i2_c___o_w_n___a_d_d_r_e_s_s2___m_a_s_k_s.html"];
+  Node13 [label="I2C Flag definition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i2_c___flag__definition.html"];
+  Node7 [label="I2C No-Stretch Mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i2_c___n_o_s_t_r_e_t_c_h___m_o_d_e.html"];
+  Node3 [label="I2C Addressing Mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i2_c___a_d_d_r_e_s_s_i_n_g___m_o_d_e.html"];
+  Node8 [label="I2C Memory Address Size",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i2_c___m_e_m_o_r_y___a_d_d_r_e_s_s___s_i_z_e.html"];
+  Node6 [label="I2C General Call Addressing Mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i2_c___g_e_n_e_r_a_l___c_a_l_l___a_d_d_r_e_s_s_i_n_g___m_o_d_e.html"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node9 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node10 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node11 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node12 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node13 [shape=plaintext, dir="back", style="solid"];
+}

@@ -1,0 +1,18 @@
+digraph "/home/developer/mtrain-firmware/external/STM32F7xx_HAL_Drivers/Inc" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_d44dc8085d5faa6a792c35ee8daf1893 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="STM32F7xx_HAL_Drivers" fontname="Helvetica", fontsize="10", URL="dir_d44dc8085d5faa6a792c35ee8daf1893.html"]
+  subgraph clusterdir_ad8ec080499984a8e3c23a7affdafd94 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_ad8ec080499984a8e3c23a7affdafd94.html"];
+    dir_ad8ec080499984a8e3c23a7affdafd94 [shape=plaintext label="Inc"];
+    dir_2ea8cde009dcd5a39a9b064b0369c6aa [shape=box label="Legacy" color="black" fillcolor="white" style="filled" URL="dir_2ea8cde009dcd5a39a9b064b0369c6aa.html"];
+  }
+  }
+  dir_651c4281f36ab60688d2b827c8ad2c3b [shape=box label="CMSIS" fillcolor="white" style="filled" color="red" URL="dir_651c4281f36ab60688d2b827c8ad2c3b.html"];
+  dir_350c8a3315b9de76597c9530ef31a96a [shape=box label="BSP" fillcolor="white" style="filled" color="red" URL="dir_350c8a3315b9de76597c9530ef31a96a.html"];
+  dir_ad8ec080499984a8e3c23a7affdafd94->dir_2ea8cde009dcd5a39a9b064b0369c6aa [headlabel="1", labeldistance=1.5 headhref="dir_000080_000081.html"];
+  dir_ad8ec080499984a8e3c23a7affdafd94->dir_651c4281f36ab60688d2b827c8ad2c3b [headlabel="23", labeldistance=1.5 headhref="dir_000080_000016.html"];
+  dir_ad8ec080499984a8e3c23a7affdafd94->dir_350c8a3315b9de76597c9530ef31a96a [headlabel="1", labeldistance=1.5 headhref="dir_000080_000009.html"];
+}

@@ -1,0 +1,11 @@
+digraph "USBD_CtlContinueRx"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node3 [label="USBD_CtlContinueRx",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="USBD_LL_DataOutStage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e___private___functions.html#ga1ab0439714328647692719a2b1c9e689",tooltip="USBD_DataOutStage Handle data OUT stage. "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="HAL_PCD_DataOutStageCallback",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___p_c_d___exported___functions___group2.html#ga2f1ac834d9677dcae7d8973828f81149",tooltip="DataOut Stage callback. "];
+}

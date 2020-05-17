@@ -1,0 +1,13 @@
+digraph "Stm32f769xx"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="CMSIS_Device",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_m_s_i_s___device.html"];
+  Node3 [label="Peripheral_registers\l_structures",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___peripheral__registers__structures.html"];
+  Node2 [label="Configuration_section\l_for_CMSIS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___configuration__section__for___c_m_s_i_s.html"];
+  Node0 [label="Stm32f769xx",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+}

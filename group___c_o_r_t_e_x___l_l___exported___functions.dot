@@ -1,0 +1,17 @@
+digraph "CORTEX Exported Functions"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node5 [label="MCU INFO",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_o_r_t_e_x___l_l___e_f___m_c_u___i_n_f_o.html"];
+  Node0 [label="CORTEX Exported Functions",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node4 [label="HANDLER",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_o_r_t_e_x___l_l___e_f___h_a_n_d_l_e_r.html"];
+  Node3 [label="LOW POWER MODE",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_o_r_t_e_x___l_l___e_f___l_o_w___p_o_w_e_r___m_o_d_e.html"];
+  Node2 [label="SYSTICK",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_o_r_t_e_x___l_l___e_f___s_y_s_t_i_c_k.html"];
+  Node1 [label="CORTEX",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_o_r_t_e_x___l_l.html"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+}

@@ -1,0 +1,10 @@
+digraph "CRC_HandleTypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{CRC_HandleTypeDef\n|+ Lock\l+ State\l+ InputDataFormat\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +Init" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{CRC_InitTypeDef\n|+ DefaultPolynomialUse\l+ DefaultInitValueUse\l+ GeneratingPolynomial\l+ CRCLength\l+ InitValue\l+ InputDataInversionMode\l+ OutputDataInversionMode\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_c_r_c___init_type_def.html"];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +Instance" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{CRC_TypeDef\n|+ DR\l+ IDR\l+ RESERVED0\l+ RESERVED1\l+ CR\l+ RESERVED2\l+ INIT\l+ POL\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_c_r_c___type_def.html",tooltip="CRC calculation unit. "];
+}

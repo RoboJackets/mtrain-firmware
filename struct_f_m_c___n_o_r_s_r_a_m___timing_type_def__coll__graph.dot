@@ -1,0 +1,6 @@
+digraph "FMC_NORSRAM_TimingTypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{FMC_NORSRAM_TimingTypeDef\n|+ AddressSetupTime\l+ AddressHoldTime\l+ DataSetupTime\l+ BusTurnAroundDuration\l+ CLKDivision\l+ DataLatency\l+ AccessMode\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

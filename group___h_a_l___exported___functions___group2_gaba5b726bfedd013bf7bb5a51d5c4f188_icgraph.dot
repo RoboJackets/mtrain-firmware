@@ -1,0 +1,17 @@
+digraph "HAL_IncTick"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node37 [label="HAL_IncTick",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node37 -> Node38 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node38 [label="SysTick_Handler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interrupt__handlers_8c.html#ab5e09814056d617c521549e542639b7e"];
+  Node38 -> Node39 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node39 [label="Handler_Nothing",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$default__handlers_8c.html#a2cd00d18ed19287a4a27b951a6b239cb"];
+  Node37 -> Node40 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node40 [label="HAL_RTC_AlarmAEventCallback",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___h_a_l___time_base___r_t_c___alarm___template.html#ga11aeff83fd498cddbed3bcddcf017e0a",tooltip="ALARM A Event Callback in non blocking mode. "];
+  Node37 -> Node41 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node41 [label="HAL_RTCEx_WakeUpTimerEvent\lCallback",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___h_a_l___time_base___r_t_c___wake_up___template.html#gac9ed5d6224b5c86f2845a9c1af7d94de",tooltip="Wake Up Timer Event Callback in non blocking mode. "];
+  Node37 -> Node42 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node42 [label="HAL_TIM_PeriodElapsedCallback",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___h_a_l___time_base.html#ga8a3b0ad512a6e6c6157440b68d395eac",tooltip="Period elapsed callback in non blocking mode. "];
+}

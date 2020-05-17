@@ -1,0 +1,11 @@
+digraph "/home/developer/mtrain-firmware/API/c/Inc" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_e2e077455bb86c34d5829af5e6a708cc {
+    graph [ bgcolor="#ddddee", pencolor="black", label="c" fontname="Helvetica", fontsize="10", URL="dir_e2e077455bb86c34d5829af5e6a708cc.html"]
+  dir_0b8b80d2a0f72e6fb2e9bec28573bc04 [shape=box, label="Inc", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_0b8b80d2a0f72e6fb2e9bec28573bc04.html"];
+  }
+  dir_397d9aeee4af8edecac90968d93b57df [shape=box label="external" fillcolor="white" style="filled" color="red" URL="dir_397d9aeee4af8edecac90968d93b57df.html"];
+  dir_0b8b80d2a0f72e6fb2e9bec28573bc04->dir_397d9aeee4af8edecac90968d93b57df [headlabel="1", labeldistance=1.5 headhref="dir_000002_000015.html"];
+}

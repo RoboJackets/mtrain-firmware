@@ -1,0 +1,28 @@
+digraph "arm_fill_q15"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node3 [label="arm_fill_q15",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="arm_conv_fast_opt_q15",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___conv.html#gaf16f490d245391ec18a42adc73d6d749",tooltip="Convolution of Q15 sequences (fast version) for Cortex-M3 and Cortex-M4. "];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="arm_conv_opt_q15",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___conv.html#gac77dbcaef5c754cac27eab96c4753a3c",tooltip="Convolution of Q15 sequences. "];
+  Node3 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="arm_conv_opt_q7",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___conv.html#ga4c7cf073e89d6d57cc4e711f078c3f68",tooltip="Convolution of Q7 sequences. "];
+  Node3 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="arm_conv_partial_fast\l_opt_q15",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___partial_conv.html#ga3de9c4ddcc7886de25b70d875099a8d9",tooltip="Partial convolution of Q15 sequences (fast version) for Cortex-M3 and Cortex-M4. "];
+  Node7 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="arm_conv_partial_opt_q15",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___partial_conv.html#ga834b23b4ade8682beeb55778399101f8",tooltip="Partial convolution of Q15 sequences. "];
+  Node8 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="arm_conv_partial_opt_q7",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___partial_conv.html#ga3707e16af1435b215840006a7ab0c98f",tooltip="Partial convolution of Q7 sequences. "];
+  Node9 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="arm_correlate_fast\l_opt_q15",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___corr.html#ga40a0236b17220e8e22a22b5bc1c53c6b",tooltip="Correlation of Q15 sequences (fast version) for Cortex-M3 and Cortex-M4. "];
+  Node3 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="arm_correlate_opt_q15",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___corr.html#gad71c0ec70ec69edbc48563d9a5f68451",tooltip="Correlation of Q15 sequences. "];
+  Node3 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="arm_correlate_opt_q7",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___corr.html#ga746e8857cafe33ec5d6780729c18c311",tooltip="Correlation of Q7 sequences. "];
+}

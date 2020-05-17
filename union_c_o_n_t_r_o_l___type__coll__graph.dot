@@ -1,0 +1,6 @@
+digraph "CONTROL_Type"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{CONTROL_Type\n|+ _reserved0\l+ SPSEL\l+ _reserved1\l+ b\l+ w\l+ nPRIV\l+ b\l+ b\l+ FPCA\l+ b\l+ b\l+ b\l+ b\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

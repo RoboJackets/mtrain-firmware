@@ -1,0 +1,19 @@
+digraph "/home/developer/mtrain-firmware/BSP/config" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_350c8a3315b9de76597c9530ef31a96a {
+    graph [ bgcolor="#ddddee", pencolor="black", label="BSP" fontname="Helvetica", fontsize="10", URL="dir_350c8a3315b9de76597c9530ef31a96a.html"]
+  subgraph clusterdir_2d1729a287dc608c9a490cc7e0110d19 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_2d1729a287dc608c9a490cc7e0110d19.html"];
+    dir_2d1729a287dc608c9a490cc7e0110d19 [shape=plaintext label="config"];
+    dir_fb89435db4e469025c17daf54f1009ff [shape=box label="hal" color="black" fillcolor="white" style="filled" URL="dir_fb89435db4e469025c17daf54f1009ff.html"];
+    dir_78e6d2f99ff71d4b98c9ff37585e609b [shape=box label="usb" color="black" fillcolor="white" style="filled" URL="dir_78e6d2f99ff71d4b98c9ff37585e609b.html"];
+  }
+  }
+  dir_397d9aeee4af8edecac90968d93b57df [shape=box label="external" fillcolor="white" style="filled" color="red" URL="dir_397d9aeee4af8edecac90968d93b57df.html"];
+  dir_78e6d2f99ff71d4b98c9ff37585e609b->dir_397d9aeee4af8edecac90968d93b57df [headlabel="4", labeldistance=1.5 headhref="dir_000012_000015.html"];
+  dir_397d9aeee4af8edecac90968d93b57df->dir_78e6d2f99ff71d4b98c9ff37585e609b [headlabel="9", labeldistance=1.5 headhref="dir_000015_000012.html"];
+  dir_397d9aeee4af8edecac90968d93b57df->dir_fb89435db4e469025c17daf54f1009ff [headlabel="1", labeldistance=1.5 headhref="dir_000015_000011.html"];
+  dir_fb89435db4e469025c17daf54f1009ff->dir_397d9aeee4af8edecac90968d93b57df [headlabel="42", labeldistance=1.5 headhref="dir_000011_000015.html"];
+}

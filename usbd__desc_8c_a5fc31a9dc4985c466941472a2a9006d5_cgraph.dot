@@ -1,0 +1,9 @@
+digraph "USBD_VCP_InterfaceStrDescriptor"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node5 [label="USBD_VCP_InterfaceStrDescriptor",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="USBD_GetString",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___r_e_q___exported___functions_prototype.html#ga9ad6afa29382920474120306997d83ee",tooltip="USBD_GetString Convert Ascii string into unicode one. "];
+}

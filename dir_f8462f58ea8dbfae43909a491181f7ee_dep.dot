@@ -1,0 +1,13 @@
+digraph "/home/developer/mtrain-firmware/external/middleware/FatFs" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_90f7ee1bf3d9d22e5369ce24d2b55d10 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="middleware" fontname="Helvetica", fontsize="10", URL="dir_90f7ee1bf3d9d22e5369ce24d2b55d10.html"]
+  subgraph clusterdir_f8462f58ea8dbfae43909a491181f7ee {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_f8462f58ea8dbfae43909a491181f7ee.html"];
+    dir_f8462f58ea8dbfae43909a491181f7ee [shape=plaintext label="FatFs"];
+    dir_0a5f479ec9b37f074014b54db89ced3a [shape=box label="src" color="red" fillcolor="white" style="filled" URL="dir_0a5f479ec9b37f074014b54db89ced3a.html"];
+  }
+  }
+}

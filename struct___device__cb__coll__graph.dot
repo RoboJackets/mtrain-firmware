@@ -1,0 +1,6 @@
+digraph "_Device_cb"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{_Device_cb\n|+ Init\l+ DeInit\l+ Setup\l+ EP0_TxSent\l+ EP0_RxReady\l+ DataIn\l+ DataOut\l+ SOF\l+ IsoINIncomplete\l+ IsoOUTIncomplete\l+ GetHSConfigDescriptor\l+ GetFSConfigDescriptor\l+ GetOtherSpeedConfigDescriptor\l+ GetDeviceQualifierDescriptor\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

@@ -1,0 +1,27 @@
+digraph "EventGroup"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node3 [label="xEventGroupWaitBits",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__x_event_group_wait_bits.html",tooltip="event_groups.h "];
+  Node7 [label="xEventGroupSetBitsFromISR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__x_event_group_set_bits_from_i_s_r.html",tooltip="event_groups.h "];
+  Node6 [label="xEventGroupSetBits",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__x_event_group_set_bits.html",tooltip="event_groups.h "];
+  Node1 [label="EventGroupHandle_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___event_group_handle__t.html",tooltip="event_groups.h "];
+  Node8 [label="xEventGroupSync",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__x_event_group_sync.html",tooltip="event_groups.h "];
+  Node4 [label="xEventGroupClearBits",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__x_event_group_clear_bits.html",tooltip="event_groups.h "];
+  Node5 [label="xEventGroupClearBitsFromISR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__x_event_group_clear_bits_from_i_s_r.html",tooltip="event_groups.h "];
+  Node2 [label="xEventGroupCreate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__x_event_group_create.html",tooltip="event_groups.h "];
+  Node9 [label="xEventGroupGetBits",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__x_event_group_get_bits.html",tooltip="event_groups.h "];
+  Node0 [label="EventGroup",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node10 [label="xEventGroupGetBitsFromISR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__x_event_group_get_bits_from_i_s_r.html",tooltip="event_groups.h "];
+  Node0->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node9 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node10 [shape=plaintext, dir="back", style="solid"];
+}

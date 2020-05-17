@@ -1,0 +1,11 @@
+digraph "RTC Private Macros"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="RTC",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_t_c.html",tooltip="RTC HAL module driver. "];
+  Node0 [label="RTC Private Macros",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 [label="RTC Private macros\l to check input parameters",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_t_c___i_s___r_t_c___definitions.html"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+}

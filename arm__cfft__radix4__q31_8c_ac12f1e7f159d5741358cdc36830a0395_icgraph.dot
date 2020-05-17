@@ -1,0 +1,18 @@
+digraph "arm_radix4_butterfly_q31"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node11 [label="arm_radix4_butterfly_q31",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="arm_cfft_q31",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___complex_f_f_t.html#ga5a0008bd997ab6e2e299ef2fb272fb4b",tooltip="Processing function for the fixed-point complex FFT in Q31 format. "];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="arm_rfft_q31",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___real_f_f_t.html#gabaeab5646aeea9844e6d42ca8c73fe3a",tooltip="Processing function for the Q31 RFFT/RIFFT. "];
+  Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="arm_dct4_q31",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___d_c_t4___i_d_c_t4.html#gad04d0baab6ed081d8e8afe02538eb80b",tooltip="Processing function for the Q31 DCT4/IDCT4. "];
+  Node11 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="arm_cfft_radix4by2_q31",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$arm__cfft__q31_8c.html#af6df8bf714c30d44e6b871ea87d22b30",tooltip="end of ComplexFFT group "];
+  Node15 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="arm_cfft_radix4_q31",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___complex_f_f_t.html#gafde3ee1f58cf393b45a9073174fff548",tooltip="Processing function for the Q31 CFFT/CIFFT. "];
+}

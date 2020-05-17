@@ -1,0 +1,19 @@
+digraph "Transform Functions"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node6 [label="RealFFT",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___real_f_f_t.html"];
+  Node1 [label="Complex FFT Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___complex_f_f_t.html"];
+  Node4 [label="Real FFT Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___fast.html"];
+  Node5 [label="Complex FFT Tables",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_f_f_t___c_i_f_f_t.html"];
+  Node3 [label="DCT Type IV Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___d_c_t4___i_d_c_t4.html",tooltip="Representation of signals by minimum number of values is important for storage and transmission..."];
+  Node2 [label="Radix-8 Complex FFT\l Functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___radix8___c_f_f_t___c_i_f_f_t.html"];
+  Node0 [label="Transform Functions",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+}

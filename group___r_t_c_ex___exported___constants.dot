@@ -1,0 +1,47 @@
+digraph "RTCEx Exported Constants"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node11 [label="RTCEx Tamper Filter\l Definitions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_t_c_ex___tamper___filter___definitions.html"];
+  Node8 [label="RTCEx Tamper Trigger\l Definitions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_t_c_ex___tamper___trigger___definitions.html"];
+  Node12 [label="RTCEx Tamper Sampling\l Frequencies Definitions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_t_c_ex___tamper___sampling___frequencies___definitions.html"];
+  Node1 [label="RTCEx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_t_c_ex.html",tooltip="RTC Extended HAL module driver. "];
+  Node18 [label="RTCEx Smooth calib\l Plus pulses Definitions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_t_c_ex___smooth__calib___plus__pulses___definitions.html"];
+  Node19 [label="RTCEx Add 1 Second\l Parameter Definitions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_t_c_ex___add__1___second___parameter___definitions.html"];
+  Node3 [label="RTC Backup Registers\l Definitions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_t_c_ex___backup___registers___definitions.html"];
+  Node2 [label="RTCEx Output selection\l Definitions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_t_c_ex___output__selection___definitions.html"];
+  Node4 [label="RTCEx Time Stamp Edges\l definitions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_t_c_ex___time___stamp___edges__definitions.html"];
+  Node16 [label="RTCEx Wakeup Timer\l Definitions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_t_c_ex___wakeup___timer___definitions.html"];
+  Node20 [label="RTCEx Calib Output\l selection Definitions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_t_c_ex___calib___output__selection___definitions.html"];
+  Node7 [label="RTCEx TimeStamp Pin\l Selection",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_t_c_ex___time_stamp___pin___selection.html"];
+  Node9 [label="RTCEx Tamper EraseBackUp\l Definitions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_t_c_ex___tamper___erase_back_up___definitions.html"];
+  Node15 [label="RTCEx Tamper Pull UP\l Definitions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_t_c_ex___tamper___pull___u_p___definitions.html"];
+  Node6 [label="RTCEx Tamper Interrupt\l Definitions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_t_c_ex___tamper___interrupt___definitions.html"];
+  Node0 [label="RTCEx Exported Constants",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node14 [label="RTCEx Tamper TimeStampOn\lTamperDetection Definitions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_t_c_ex___tamper___time_stamp_on_tamper_detection___definitions.html"];
+  Node10 [label="RTCEx Tamper MaskFlag\l Definitions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_t_c_ex___tamper___mask_flag___definitions.html"];
+  Node5 [label="RTCEx Tamper Pins Definitions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_t_c_ex___tamper___pins___definitions.html"];
+  Node17 [label="RTCEx Smooth calib\l period Definitions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_t_c_ex___smooth__calib__period___definitions.html"];
+  Node13 [label="RTCEx Tamper Pin Precharge\l Duration Definitions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_t_c_ex___tamper___pin___precharge___duration___definitions.html"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node9 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node10 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node11 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node12 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node13 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node14 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node15 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node16 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node17 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node18 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node19 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node20 [shape=plaintext, dir="back", style="solid"];
+}

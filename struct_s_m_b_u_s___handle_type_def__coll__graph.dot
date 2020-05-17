@@ -1,0 +1,10 @@
+digraph "SMBUS_HandleTypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{SMBUS_HandleTypeDef\n|+ pBuffPtr\l+ XferSize\l+ XferCount\l+ XferOptions\l+ PreviousState\l+ Lock\l+ State\l+ ErrorCode\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +Init" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{SMBUS_InitTypeDef\n|+ Timing\l+ AnalogFilter\l+ OwnAddress1\l+ AddressingMode\l+ DualAddressMode\l+ OwnAddress2\l+ OwnAddress2Masks\l+ GeneralCallMode\l+ NoStretchMode\l+ PacketErrorCheckMode\l+ PeripheralMode\l+ SMBusTimeout\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_s_m_b_u_s___init_type_def.html"];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +Instance" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{I2C_TypeDef\n|+ CR1\l+ CR2\l+ OAR1\l+ OAR2\l+ TIMINGR\l+ TIMEOUTR\l+ ISR\l+ ICR\l+ PECR\l+ RXDR\l+ TXDR\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_i2_c___type_def.html",tooltip="Inter-integrated Circuit Interface. "];
+}

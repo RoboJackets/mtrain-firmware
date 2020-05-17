@@ -1,0 +1,6 @@
+digraph "arm_biquad_cascade_df2T_instance_f64"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{arm_biquad_cascade\l_df2T_instance_f64\n|+ numStages\l+ pState\l+ pCoeffs\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

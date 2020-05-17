@@ -1,0 +1,43 @@
+digraph "FMC NOR/SRAM Controller"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node0 [label="FMC NOR/SRAM Controller",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node17 [label="FMC Write FIFO",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___f_m_c___write___f_i_f_o.html"];
+  Node15 [label="FMC Write Burst",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___f_m_c___write___burst.html"];
+  Node16 [label="FMC Continuous Clock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___f_m_c___continous___clock.html"];
+  Node14 [label="FMC Page Size",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___f_m_c___page___size.html"];
+  Node12 [label="FMC Extended Mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___f_m_c___extended___mode.html"];
+  Node3 [label="FMC Data Address Bus\l Multiplexing",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___f_m_c___data___address___bus___multiplexing.html"];
+  Node6 [label="FMC NOR/SRAM Flash\l Access",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___f_m_c___n_o_r_s_r_a_m___flash___access.html"];
+  Node9 [label="FMC Wait Timing",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___f_m_c___wait___timing.html"];
+  Node1 [label="FMC Low Layer Exported\l Constants",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___f_m_c___l_l___exported___constants.html"];
+  Node8 [label="FMC Wait Signal Polarity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___f_m_c___wait___signal___polarity.html"];
+  Node10 [label="FMC Write Operation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___f_m_c___write___operation.html"];
+  Node4 [label="FMC Memory Type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___f_m_c___memory___type.html"];
+  Node7 [label="FMC Burst Access Mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___f_m_c___burst___access___mode.html"];
+  Node2 [label="FMC NOR/SRAM Bank",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___f_m_c___n_o_r_s_r_a_m___bank.html"];
+  Node5 [label="FMC NORSRAM Data Width",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___f_m_c___n_o_r_s_r_a_m___data___width.html"];
+  Node11 [label="FMC Wait Signal",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___f_m_c___wait___signal.html"];
+  Node18 [label="FMC Access Mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___f_m_c___access___mode.html"];
+  Node13 [label="FMC Asynchronous Wait",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___f_m_c___asynchronous_wait.html"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node9 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node10 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node11 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node12 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node13 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node14 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node15 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node16 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node17 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node18 [shape=plaintext, dir="back", style="solid"];
+}

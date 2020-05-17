@@ -1,0 +1,9 @@
+digraph "SMBUS Exported Macros"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="SMBUS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_m_b_u_s.html",tooltip="SMBUS HAL module driver. "];
+  Node0 [label="SMBUS Exported Macros",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+}

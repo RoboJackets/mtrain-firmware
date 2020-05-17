@@ -1,0 +1,6 @@
+digraph "USB_OTG_EPTypeDef"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{USB_OTG_EPTypeDef\n|+ num\l+ is_in\l+ is_stall\l+ type\l+ data_pid_start\l+ even_odd_frame\l+ tx_fifo_num\l+ maxpacket\l+ xfer_buff\l+ dma_addr\l+ xfer_len\l+ xfer_count\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

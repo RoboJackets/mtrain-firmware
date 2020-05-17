@@ -1,0 +1,35 @@
+digraph "USART Exported Constants"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node8 [label="USART Clock Polarity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_a_r_t___clock___polarity.html"];
+  Node5 [label="USART Mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_a_r_t___mode.html"];
+  Node7 [label="USART Clock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_a_r_t___clock.html"];
+  Node10 [label="USART Last Bit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_a_r_t___last___bit.html"];
+  Node4 [label="USART Parity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_a_r_t___parity.html"];
+  Node2 [label="USART Error Code",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_a_r_t___error___code.html",tooltip="USART Error Code. "];
+  Node12 [label="USART Flags",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_a_r_t___flags.html",tooltip="   Elements values convention: 0xXXXX  "];
+  Node6 [label="USART Over Sampling",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_a_r_t___over___sampling.html"];
+  Node14 [label="USART Interruption\l Clear Flags",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_a_r_t___i_t___c_l_e_a_r___flags.html"];
+  Node13 [label="USART Interrupts Definition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_a_r_t___interrupt__definition.html",tooltip="   Elements values convention: 0000ZZZZ0XXYYYYYb  "];
+  Node1 [label="USART",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_a_r_t.html",tooltip="HAL USART Synchronous module driver. "];
+  Node11 [label="USART Request Parameters",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_a_r_t___request___parameters.html"];
+  Node0 [label="USART Exported Constants",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node3 [label="USART Number of Stop Bits",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_a_r_t___stop___bits.html"];
+  Node9 [label="USART Clock Phase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_a_r_t___clock___phase.html"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node9 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node10 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node11 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node12 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node13 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node14 [shape=plaintext, dir="back", style="solid"];
+}

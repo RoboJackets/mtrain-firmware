@@ -1,0 +1,11 @@
+digraph "/home/developer/mtrain-firmware/external/middleware/STM32_USB_Device_Library/Class/HID/Inc" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_15bdb2435714e159d96bdf1053587c5a {
+    graph [ bgcolor="#ddddee", pencolor="black", label="HID" fontname="Helvetica", fontsize="10", URL="dir_15bdb2435714e159d96bdf1053587c5a.html"]
+  dir_126a26500c0c05156f2a99d74b61266b [shape=box, label="Inc", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_126a26500c0c05156f2a99d74b61266b.html"];
+  }
+  dir_19e504b8294315d876b43ba053bc3f8f [shape=box label="Core" fillcolor="white" style="filled" color="red" URL="dir_19e504b8294315d876b43ba053bc3f8f.html"];
+  dir_126a26500c0c05156f2a99d74b61266b->dir_19e504b8294315d876b43ba053bc3f8f [headlabel="1", labeldistance=1.5 headhref="dir_000068_000076.html"];
+}

@@ -1,0 +1,43 @@
+digraph "Handler_Nothing"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node2 [label="Handler_Nothing",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="__attribute__",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___c_m_s_i_s___core___instruction_interface.html#gae84a2733711339c5eefeb0d899506b96",tooltip="Reverse byte order (16 bit) "];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="SysTick_Handler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interrupt__handlers_8c.html#ab5e09814056d617c521549e542639b7e"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="HAL_IncTick",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___h_a_l___exported___functions___group2.html#gaba5b726bfedd013bf7bb5a51d5c4f188",tooltip="This function is called to increment a global variable \"uwTick\" used as application time base..."];
+  Node4 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="osSystickHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interrupt__handlers_8c.html#ab169d629ebefc57e030b324d4cce9eea",tooltip="Handles the tick increment. "];
+  Node2 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="RTC_WKUP_IRQHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___h_a_l___time_base___r_t_c___wake_up___template.html#ga53a3fe340e323e2fec8d851cd2e83554",tooltip="This function handles WAKE UP TIMER interrupt request. "];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="HAL_RTCEx_WakeUpTimerIRQHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_t_c_ex___exported___functions___group2.html#ga5e391424483012fe09827739dc53885f"];
+  Node2 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="EXTI0_IRQHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interrupt__in_8c.html#a17e9789a29a87d2df54f12b94dd1a0b6"];
+  Node2 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="EXTI4_IRQHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interrupt__in_8c.html#a290cb997018c8d85d4b965b4a242842f"];
+  Node2 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="EXTI9_5_IRQHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interrupt__in_8c.html#a7b2096b8b2643286dc3a7e5110e5ae85"];
+  Node2 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="EXTI15_10_IRQHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interrupt__in_8c.html#a738473a5b43f6c92b80ce1d3d6f77ed9"];
+  Node2 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="RTC_Alarm_IRQHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___h_a_l___time_base___r_t_c___alarm___template.html#ga4da4fb52ec579671d337938e78f9a207",tooltip="This function handles RTC ALARM interrupt request. "];
+  Node13 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="HAL_RTC_AlarmIRQHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___r_t_c___exported___functions___group3.html#gac185f2ce34fe566418d0978a48e0c199"];
+  Node2 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="TIM6_DAC_IRQHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___h_a_l___time_base.html#ga0839a45f331c4c067939b9c4533bbf4d",tooltip="This function handles TIM interrupt request. "];
+  Node15 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="HAL_TIM_IRQHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___t_i_m___exported___functions___group7.html#ga2dc3ef34340412aa8a01d734d2ff8f88"];
+  Node2 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="OTG_HS_IRQHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interrupt__handlers_8c.html#af0ae2b65015308b784a8a65c44134f79"];
+  Node17 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="HAL_PCD_IRQHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___p_c_d___exported___functions___group2.html#ga502da86920d2beb8284c4c2d3dbac0c6"];
+  Node2 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="QUADSPI_IRQHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interrupt__handlers_8c.html#a0702d5721ef5079a75ee5799b87293d8"];
+  Node19 -> Node20 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="HAL_QSPI_IRQHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___q_s_p_i___exported___functions___group2.html#ga6fd2cd646c0265c729168a2d93ecfd2c"];
+}

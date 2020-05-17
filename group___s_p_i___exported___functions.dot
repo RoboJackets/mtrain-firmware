@@ -1,0 +1,15 @@
+digraph "SPI_Exported_Functions"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="SPI Exported Constants",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_p_i___exported___constants.html"];
+  Node0 [label="SPI_Exported_Functions",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 [label="Initialization and\l de-initialization functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_p_i___exported___functions___group1.html"];
+  Node3 [label="IO operation functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_p_i___exported___functions___group2.html"];
+  Node4 [label="Peripheral State and\l Errors functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___s_p_i___exported___functions___group3.html"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+}

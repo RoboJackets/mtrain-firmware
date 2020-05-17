@@ -1,0 +1,13 @@
+digraph "HCD Exported Constants"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node2 [label="HCD Speed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___h_c_d___speed.html"];
+  Node1 [label="HCD",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___h_c_d.html",tooltip="HCD HAL module driver. "];
+  Node0 [label="HCD Exported Constants",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node3 [label="HCD PHY Module",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___h_c_d___p_h_y___module.html"];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+}

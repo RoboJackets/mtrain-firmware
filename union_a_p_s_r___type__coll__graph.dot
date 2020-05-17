@@ -1,0 +1,6 @@
+digraph "APSR_Type"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{APSR_Type\n|+ _reserved0\l+ V\l+ C\l+ Z\l+ N\l+ b\l+ w\l+ b\l+ Q\l+ b\land 6 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

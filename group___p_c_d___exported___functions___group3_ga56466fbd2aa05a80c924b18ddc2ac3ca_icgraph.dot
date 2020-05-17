@@ -1,0 +1,15 @@
+digraph "HAL_PCD_EP_ClrStall"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node14 [label="HAL_PCD_EP_ClrStall",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node14 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="USBD_LL_ClearStallEP",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#gad4fa6f2eeefe95d07148c6c53d111eae",tooltip="Clears a Stall condition on an endpoint of the Low Level Driver. "];
+  Node15 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="USBD_StdEPReq",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___r_e_q___private___functions.html#ga46d1a0a4e23e1e8c80167dcdc59b2538",tooltip="USBD_StdEPReq Handle standard usb endpoint requests. "];
+  Node16 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="USBD_LL_SetupStage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___u_s_b_d___c_o_r_e___private___functions.html#gabdcdfefaffa1651c77a38d08eb3a82ce",tooltip="USBD_SetupStage Handle the setup stage. "];
+  Node17 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="HAL_PCD_SetupStageCallback",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___p_c_d___exported___functions___group2.html#ga9d72aa4d3d984b164047b081d4566f6d",tooltip="SetupStage callback. "];
+}

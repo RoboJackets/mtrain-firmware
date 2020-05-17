@@ -1,0 +1,23 @@
+digraph "Matrix Functions"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node7 [label="Matrix Subtraction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___matrix_sub.html",tooltip="Subtract two matrices. "];
+  Node2 [label="Complex Matrix Multiplication",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___cmplx_matrix_mult.html",tooltip="Complex Matrix multiplication is only defined if the number of columns of the first matrix equals the..."];
+  Node5 [label="Matrix Multiplication",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___matrix_mult.html",tooltip="Multiplies two matrices. "];
+  Node4 [label="Matrix Inverse",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___matrix_inv.html",tooltip="Computes the inverse of a matrix. "];
+  Node0 [label="Matrix Functions",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node6 [label="Matrix Scale",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___matrix_scale.html",tooltip="Multiplies a matrix by a scalar. "];
+  Node1 [label="Matrix Addition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___matrix_add.html",tooltip="Adds two matrices. "];
+  Node8 [label="Matrix Transpose",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___matrix_trans.html",tooltip="Tranposes a matrix. "];
+  Node3 [label="Matrix Initialization",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___matrix_init.html",tooltip="Initializes the underlying matrix data structure. "];
+  Node0->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node0->Node8 [shape=plaintext, dir="back", style="solid"];
+}
