@@ -1,0 +1,5 @@
+<map id="MPU_xQueueGenericReceive" name="MPU_xQueueGenericReceive">
+<area shape="rect" id="node2" href="$mpu__wrappers_8c.html#ac42aa31652a6e8158f8ea8a88aad8275" title="xPortRaisePrivilege" alt="" coords="262,5,399,32"/>
+<area shape="rect" id="node3" href="$queue_8h.html#a6a0c9135edf180d270ac0ffb17ec21b4" title="xQueueGenericReceive" alt="" coords="251,56,411,83"/>
+<area shape="rect" id="node4" href="$task_8h.html#a0241000e08a261372186d34825a35979" title="xTaskGetSchedulerState" alt="" coords="459,56,627,83"/>
+</map>

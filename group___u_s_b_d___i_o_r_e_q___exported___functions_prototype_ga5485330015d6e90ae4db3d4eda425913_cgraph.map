@@ -1,0 +1,4 @@
+<map id="USBD_CtlSendData" name="USBD_CtlSendData">
+<area shape="rect" id="node2" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#gab87eb9f3d4d9f8956d2c6b77230f265c" title="Transmits data over an endpoint. " alt="" coords="196,5,335,32"/>
+<area shape="rect" id="node3" href="$group___p_c_d___exported___functions___group3.html#ga116ada543442c8f7a1003c4d4c211618" title="HAL_PCD_EP_Transmit" alt="" coords="383,5,549,32"/>
+</map>

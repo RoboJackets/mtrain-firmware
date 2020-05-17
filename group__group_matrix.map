@@ -1,0 +1,10 @@
+<map id="Matrix Functions" name="Matrix Functions">
+<area shape="rect" id="node1" href="$group___matrix_sub.html" title="Subtract two matrices. " alt="" coords="205,5,333,32"/>
+<area shape="rect" id="node2" href="$group___cmplx_matrix_mult.html" title="Complex Matrix multiplication is only defined if the number of columns of the first matrix equals the..." alt="" coords="172,56,367,83"/>
+<area shape="rect" id="node3" href="$group___matrix_mult.html" title="Multiplies two matrices. " alt="" coords="200,107,339,133"/>
+<area shape="rect" id="node4" href="$group___matrix_inv.html" title="Computes the inverse of a matrix. " alt="" coords="217,157,322,184"/>
+<area shape="rect" id="node6" href="$group___matrix_scale.html" title="Multiplies a matrix by a scalar. " alt="" coords="222,208,317,235"/>
+<area shape="rect" id="node7" href="$group___matrix_add.html" title="Adds two matrices. " alt="" coords="215,259,324,285"/>
+<area shape="rect" id="node8" href="$group___matrix_trans.html" title="Tranposes a matrix. " alt="" coords="208,309,331,336"/>
+<area shape="rect" id="node9" href="$group___matrix_init.html" title="Initializes the underlying matrix data structure. " alt="" coords="204,360,335,387"/>
+</map>

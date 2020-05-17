@@ -1,0 +1,10 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$digital__out_8h.html#a1c308574bdf1795a9d828683cfb02d24" title="Configures GPIO pin for digital out, push pull. " alt="" coords="117,5,215,32"/>
+<area shape="rect" id="node4" href="$interrupt__in_8h.html#a4dfe0ace5ead6ec8ab59d4ce1e20f427" title="Configures GPIO pin for interruptin. " alt="" coords="104,56,228,83"/>
+<area shape="rect" id="node5" href="$blink__interrupt_8c.html#a5664bd38fc668253a0152e6b319aafbb" title="interruptin and digitalout test " alt="" coords="141,107,191,133"/>
+<area shape="rect" id="node6" href="$digital__out_8h.html#a549af9eaff8500d0b994e5461ea0f2df" title="Toggle pin output. " alt="" coords="276,132,392,159"/>
+<area shape="rect" id="node8" href="$group___h_a_l___exported___functions___group2.html#gaef87d3fec667bb34c418f5687e8204c1" title="This function provides accurate delay (in milliseconds) based on variable incremented. " alt="" coords="121,208,211,235"/>
+<area shape="rect" id="node3" href="$group___g_p_i_o___exported___functions___group1.html#ga41bda93b6dd639e4905fdb1454eff98e" title="HAL_GPIO_Init" alt="" coords="277,31,391,57"/>
+<area shape="rect" id="node7" href="$group___g_p_i_o___exported___functions___group2.html#gaf5e0c89f752de5cdedcc30db068133f6" title="HAL_GPIO_TogglePin" alt="" coords="440,132,593,159"/>
+<area shape="rect" id="node9" href="$group___h_a_l___exported___functions___group2.html#gac9b3a85a73735ac840d0dcb59bc0fdd6" title="Provides a tick value in millisecond. " alt="" coords="283,208,385,235"/>
+</map>

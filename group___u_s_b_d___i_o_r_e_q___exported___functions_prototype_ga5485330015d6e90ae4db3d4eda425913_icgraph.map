@@ -1,0 +1,6 @@
+<map id="USBD_CtlSendData" name="USBD_CtlSendData">
+<area shape="rect" id="node2" href="$group___m_s_c___c_o_r_e___private___functions.html#gaf7c2344d42242f52ce4e1f9d68c7b0b9" title="USBD_MSC_Setup Handle the MSC specific requests. " alt="" coords="196,5,335,32"/>
+<area shape="rect" id="node3" href="$group___u_s_b_d___r_e_q___private___functions.html#ga46d1a0a4e23e1e8c80167dcdc59b2538" title="USBD_StdEPReq Handle standard usb endpoint requests. " alt="" coords="201,56,330,83"/>
+<area shape="rect" id="node4" href="$group___u_s_b_d___c_o_r_e___private___functions.html#gabdcdfefaffa1651c77a38d08eb3a82ce" title="USBD_SetupStage Handle the setup stage. " alt="" coords="383,56,539,83"/>
+<area shape="rect" id="node5" href="$group___p_c_d___exported___functions___group2.html#ga9d72aa4d3d984b164047b081d4566f6d" title="SetupStage callback. " alt="" coords="587,56,797,83"/>
+</map>

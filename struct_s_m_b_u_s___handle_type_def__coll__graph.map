@@ -1,0 +1,4 @@
+<map id="SMBUS_HandleTypeDef" name="SMBUS_HandleTypeDef">
+<area shape="rect" id="node2" href="$struct_s_m_b_u_s___init_type_def.html" title="{SMBUS_InitTypeDef\n|+ Timing\l+ AnalogFilter\l+ OwnAddress1\l+ AddressingMode\l+ DualAddressMode\l+ OwnAddress2\l+ OwnAddress2Masks\l+ GeneralCallMode\l+ NoStretchMode\l+ PacketErrorCheckMode\l+ PeripheralMode\l+ SMBusTimeout\l|}" alt="" coords="5,5,179,244"/>
+<area shape="rect" id="node3" href="$struct_i2_c___type_def.html" title="Inter&#45;integrated Circuit Interface. " alt="" coords="203,13,307,237"/>
+</map>

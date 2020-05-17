@@ -1,0 +1,15 @@
+<map id="USBD_CORE" name="USBD_CORE">
+<area shape="rect" id="node1" href="$group___u_s_b_d___c_o_r_e___private___function_prototypes.html" title="USBD_CORE_Private_Function\lPrototypes" alt="" coords="464,5,675,47"/>
+<area shape="rect" id="node2" href="$group___s_t_m32___u_s_b___d_e_v_i_c_e___l_i_b_r_a_r_y.html" title="STM32_USB_DEVICE_LIBRARY" alt="" coords="10,294,233,321"/>
+<area shape="rect" id="node3" href="$group___s_t_m32___u_s_b_d___d_e_v_i_c_e___l_i_b_r_a_r_y.html" title="STM32_USBD_DEVICE_LIBRARY" alt="" coords="5,345,237,371"/>
+<area shape="rect" id="node5" href="$group___u_s_b_d___c_o_r_e___exported___variables.html" title="USBD_CORE_Exported\l_Variables" alt="" coords="487,71,652,112"/>
+<area shape="rect" id="node6" href="$group___u_s_b_d___c_o_r_e___private___functions.html" title="USBD_CORE_Private_Functions" alt="" coords="460,137,679,163"/>
+<area shape="rect" id="node7" href="$group___u_s_b_d___c_o_r_e___exported___defines.html" title="USBD_CORE_Exported\l_Defines" alt="" coords="487,188,652,229"/>
+<area shape="rect" id="node8" href="$group___u_s_b_d___c_o_r_e___exported___types_definitions.html" title="USBD_CORE_Exported\l_TypesDefinitions" alt="" coords="487,253,652,295"/>
+<area shape="rect" id="node9" href="$group___u_s_b_d___c_o_r_e___private___types_definitions.html" title="USBD_CORE_Private_TypesDefinitions" alt="" coords="440,319,699,346"/>
+<area shape="rect" id="node10" href="$group___u_s_b_d___c_o_r_e___private___variables.html" title="USBD_CORE_Private_Variables" alt="" coords="462,370,677,397"/>
+<area shape="rect" id="node11" href="$group___u_s_b_d___c_o_r_e___private___defines.html" title="USBD_CORE_Private_Defines" alt="" coords="466,421,673,447"/>
+<area shape="rect" id="node12" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html" title="USBD_CORE_Exported\l_FunctionsPrototype" alt="" coords="487,472,652,513"/>
+<area shape="rect" id="node13" href="$group___u_s_b_d___c_o_r_e___exported___macros.html" title="USBD_CORE_Exported\l_Macros" alt="" coords="487,537,652,579"/>
+<area shape="rect" id="node14" href="$group___u_s_b_d___c_o_r_e___private___macros.html" title="USBD_CORE_Private_Macros" alt="" coords="467,603,671,630"/>
+</map>

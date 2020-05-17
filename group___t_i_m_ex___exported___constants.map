@@ -1,0 +1,12 @@
+<map id="TIMEx Exported Constants" name="TIMEx Exported Constants">
+<area shape="rect" id="node1" href="$group___t_i_m_ex.html" title="TIM Extended HAL module driver. " alt="" coords="5,253,67,280"/>
+<area shape="rect" id="node2" href="$group___t_i_m_ex___remap.html" title="TIMEx Remap" alt="" coords="390,5,497,32"/>
+<area shape="rect" id="node3" href="$group___t_i_m_ex___group___channel5.html" title="TIMEx Group Channel\l 5 and Channel 1, 2 or 3" alt="" coords="362,57,525,98"/>
+<area shape="rect" id="node4" href="$group___t_i_m_ex___master___mode___selection__2.html" title="TIMEx Master Mode Selection\l 2 (TRGO2)" alt="" coords="344,122,543,163"/>
+<area shape="rect" id="node6" href="$group___t_i_m_ex___break2___input__enable__disable.html" title="TIMEx Break input 2\l Enable" alt="" coords="372,187,515,229"/>
+<area shape="rect" id="node7" href="$group___t_i_m_ex___slave___mode.html" title="TIMEx Slave mode" alt="" coords="376,253,511,280"/>
+<area shape="rect" id="node8" href="$group___t_i_m_ex___channel.html" title="TIMEx Channel" alt="" coords="387,304,500,331"/>
+<area shape="rect" id="node9" href="$group___t_i_m_ex___output___compare__and___p_w_m__modes.html" title="TIMEx Output Compare\l and PWM Modes" alt="" coords="363,355,524,397"/>
+<area shape="rect" id="node10" href="$group___t_i_m_ex___break2___polarity.html" title="TIMEx Break2 Polarity" alt="" coords="366,421,521,448"/>
+<area shape="rect" id="node11" href="$group___t_i_m_ex___clear_input___source.html" title="TIMEx Clear Input Source" alt="" coords="356,472,531,499"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="osSystickHandler" name="osSystickHandler">
+<area shape="rect" id="node2" href="$task_8h.html#a0241000e08a261372186d34825a35979" title="xTaskGetSchedulerState" alt="" coords="179,56,347,83"/>
+<area shape="rect" id="node3" href="$cmsis__os_8c.html#a78100b2d36913d0b45565be8975e5de8" title="xPortSysTickHandler" alt="" coords="189,107,336,133"/>
+<area shape="rect" id="node9" href="$task_8h.html#a954df77397d616484edb7c58c7760b10" title="task. " alt="" coords="207,157,318,184"/>
+<area shape="rect" id="node4" href="$task_8h.html#a978e25460ac35706f9ad30b46d9403d8" title="xTaskIncrementTick" alt="" coords="427,5,569,32"/>
+<area shape="rect" id="node5" href="$_a_r_m___c_m0_2port_8c.html#af9aace1b44b73111e15aa39f06f43456" title="__attribute__" alt="" coords="449,56,547,83"/>
+<area shape="rect" id="node6" href="$_a_r_m___c_m0_2portmacro_8h.html#aefd025907402b0b863d5012673d5036e" title="vPortSuppressTicksAndSleep" alt="" coords="400,107,596,133"/>
+<area shape="rect" id="node7" href="$task_8h.html#ad185d5a451380c4040888620d9a92ec6" title="eTaskConfirmSleepModeStatus" alt="" coords="395,157,601,184"/>
+<area shape="rect" id="node8" href="$task_8h.html#a8dda6cb26bb158dd9636873135e63912" title="vTaskStepTick" alt="" coords="443,208,553,235"/>
+</map>

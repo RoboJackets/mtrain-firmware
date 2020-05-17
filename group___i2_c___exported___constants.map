@@ -1,0 +1,15 @@
+<map id="I2C Exported Constants" name="I2C Exported Constants">
+<area shape="rect" id="node1" href="$group___i2_c___s_t_a_r_t___s_t_o_p___m_o_d_e.html" title="I2C Start or Stop Mode" alt="" coords="340,5,497,32"/>
+<area shape="rect" id="node2" href="$group___i2_c___r_e_l_o_a_d___e_n_d___m_o_d_e.html" title="I2C Reload End Mode" alt="" coords="343,56,494,83"/>
+<area shape="rect" id="node3" href="$group___i2_c___x_f_e_r_o_p_t_i_o_n_s.html" title="I2C Sequential Transfer\l Options" alt="" coords="339,107,499,149"/>
+<area shape="rect" id="node5" href="$group___i2_c___d_u_a_l___a_d_d_r_e_s_s_i_n_g___m_o_d_e.html" title="I2C Dual Addressing Mode" alt="" coords="329,173,508,200"/>
+<area shape="rect" id="node7" href="$group___i2_c___interrupt__configuration__definition.html" title="I2C Interrupt definition Elements values convention: 0xXXXXXXXX. " alt="" coords="332,225,505,266"/>
+<area shape="rect" id="node8" href="$group___i2_c___x_f_e_r_d_i_r_e_c_t_i_o_n.html" title="I2C Transfer Direction\l Master Point of View" alt="" coords="343,290,494,331"/>
+<area shape="rect" id="node9" href="$group___i2_c___o_w_n___a_d_d_r_e_s_s2___m_a_s_k_s.html" title="I2C Own Address2 Masks" alt="" coords="331,356,507,383"/>
+<area shape="rect" id="node10" href="$group___i2_c___flag__definition.html" title="I2C Flag definition" alt="" coords="355,407,483,433"/>
+<area shape="rect" id="node11" href="$group___i2_c___n_o_s_t_r_e_t_c_h___m_o_d_e.html" title="I2C No&#45;Stretch Mode" alt="" coords="345,457,492,484"/>
+<area shape="rect" id="node12" href="$group___i2_c___a_d_d_r_e_s_s_i_n_g___m_o_d_e.html" title="I2C Addressing Mode" alt="" coords="345,508,493,535"/>
+<area shape="rect" id="node13" href="$group___i2_c___m_e_m_o_r_y___a_d_d_r_e_s_s___s_i_z_e.html" title="I2C Memory Address Size" alt="" coords="331,559,507,585"/>
+<area shape="rect" id="node14" href="$group___i2_c___g_e_n_e_r_a_l___c_a_l_l___a_d_d_r_e_s_s_i_n_g___m_o_d_e.html" title="I2C General Call Addressing Mode" alt="" coords="307,609,531,636"/>
+<area shape="rect" id="node6" href="$group___i2_c.html" title="I2C HAL module driver. " alt="" coords="5,327,48,353"/>
+</map>

@@ -1,0 +1,25 @@
+var group___n_a_n_d___private___constants =
+[
+    [ "ADDR_AREA", "group___n_a_n_d___private___constants.html#ga1a0ba21d2ba9b9a66bfbfc024ba3f438", null ],
+    [ "CMD_AREA", "group___n_a_n_d___private___constants.html#ga20b3da41944714f3fedf34f32652c816", null ],
+    [ "NAND_BUSY", "group___n_a_n_d___private___constants.html#gadb07859ec898bdb69f934ed5787688ce", null ],
+    [ "NAND_CMD_AREA_A", "group___n_a_n_d___private___constants.html#ga80f141954ef1c24a997cd5bac56a2ae0", null ],
+    [ "NAND_CMD_AREA_B", "group___n_a_n_d___private___constants.html#gaf4223ac65e3cef1f21cf8c64e2ed5de2", null ],
+    [ "NAND_CMD_AREA_C", "group___n_a_n_d___private___constants.html#gae7cbe6b5bb74a33831aab2133d86ea99", null ],
+    [ "NAND_CMD_AREA_TRUE1", "group___n_a_n_d___private___constants.html#gad2337cbc74d0de7258ab9844bb484af8", null ],
+    [ "NAND_CMD_ERASE0", "group___n_a_n_d___private___constants.html#gaba61450af6f7f29b2832e43b39def19e", null ],
+    [ "NAND_CMD_ERASE1", "group___n_a_n_d___private___constants.html#gab50232a100762cd6d7ed1640dde9c2d3", null ],
+    [ "NAND_CMD_LOCK_STATUS", "group___n_a_n_d___private___constants.html#ga3aeefaae7b55ac738533f529e70fcc59", null ],
+    [ "NAND_CMD_READID", "group___n_a_n_d___private___constants.html#ga8537ed78857564857a50f291cd94333b", null ],
+    [ "NAND_CMD_RESET", "group___n_a_n_d___private___constants.html#ga260dd3577b5c445fa0dbffa7befb0859", null ],
+    [ "NAND_CMD_STATUS", "group___n_a_n_d___private___constants.html#ga70e0c18270e6c4e0a05910e9adab5950", null ],
+    [ "NAND_CMD_WRITE0", "group___n_a_n_d___private___constants.html#ga5b90127120cb0b4cec98505bd520ca53", null ],
+    [ "NAND_CMD_WRITE_TRUE1", "group___n_a_n_d___private___constants.html#ga06a037a9b05a0eabf34180f525af0342", null ],
+    [ "NAND_DEVICE", "group___n_a_n_d___private___constants.html#gaf0793ea7c4cbdb05041d55ff26b60245", null ],
+    [ "NAND_ERROR", "group___n_a_n_d___private___constants.html#ga3cc37dc162405b48d20f810ecef492f9", null ],
+    [ "NAND_INVALID_ADDRESS", "group___n_a_n_d___private___constants.html#ga8c2dcef6d66b6fa22a07d2f3c8a3a89f", null ],
+    [ "NAND_READY", "group___n_a_n_d___private___constants.html#ga7f57b3b5c0e9bada964af77618fe7c36", null ],
+    [ "NAND_TIMEOUT_ERROR", "group___n_a_n_d___private___constants.html#gad312d8ef230a41ea0578ab435e70216a", null ],
+    [ "NAND_VALID_ADDRESS", "group___n_a_n_d___private___constants.html#ga86ce85e34c707f169763b9d5a16febfb", null ],
+    [ "NAND_WRITE_TIMEOUT", "group___n_a_n_d___private___constants.html#gaed1ff59d936b01c7652130440b3eb68e", null ]
+];

@@ -1,0 +1,4 @@
+<map id="uxQueueSpacesAvailable" name="uxQueueSpacesAvailable">
+<area shape="rect" id="node2" href="$cmsis__os_8h.html#a4f80ea3dd0140a782dc3e79fc7d1cba6" title="Get the available space in a message queue. " alt="" coords="239,5,417,32"/>
+<area shape="rect" id="node3" href="$mpu__wrappers_8c.html#af423f8035d982ede94ddbdc4795af8ca" title="MPU_uxQueueSpacesAvailable" alt="" coords="224,56,432,83"/>
+</map>

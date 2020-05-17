@@ -1,0 +1,8 @@
+<map id="MSC_BOT_DataIn" name="MSC_BOT_DataIn">
+<area shape="rect" id="node2" href="$group___u_s_b_d___s_c_s_i___exported___functions_prototype.html#ga72c33cea4eb55910407b6eb7c74f9803" title="SCSI_ProcessCmd Process SCSI commands. " alt="" coords="194,5,331,32"/>
+<area shape="rect" id="node3" href="$group___m_s_c___b_o_t___private___functions.html#gaaa2676ffcc7ca9a34ec85395cd3ead9e" title="MSC_BOT_SendCSW Send the Command Status Wrapper. " alt="" coords="185,56,340,83"/>
+<area shape="rect" id="node4" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#gab87eb9f3d4d9f8956d2c6b77230f265c" title="Transmits data over an endpoint. " alt="" coords="409,31,548,57"/>
+<area shape="rect" id="node6" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#ga259b00707b333065b66be515dd019428" title="Prepares an endpoint for reception. " alt="" coords="388,81,569,108"/>
+<area shape="rect" id="node5" href="$group___p_c_d___exported___functions___group3.html#ga116ada543442c8f7a1003c4d4c211618" title="HAL_PCD_EP_Transmit" alt="" coords="617,31,784,57"/>
+<area shape="rect" id="node7" href="$group___p_c_d___exported___functions___group3.html#ga0029fe7a8d3db91b13637e2507fba60c" title="HAL_PCD_EP_Receive" alt="" coords="619,81,783,108"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="USBD_LL_DataInStage" name="USBD_LL_DataInStage">
+<area shape="rect" id="node2" href="$group___u_s_b_d___i_o_r_e_q___exported___functions_prototype.html#gaf07248d84e87cdf14db392f94b369744" title="USBD_CtlContinueSendData continue sending data on the ctl pipe. " alt="" coords="215,5,409,32"/>
+<area shape="rect" id="node5" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#ga259b00707b333065b66be515dd019428" title="Prepares an endpoint for reception. " alt="" coords="457,81,639,108"/>
+<area shape="rect" id="node7" href="$group___u_s_b_d___i_o_r_e_q___exported___functions_prototype.html#gad5e847f89ca67a6b2154a72d0aa25e9a" title="USBD_CtlReceiveStatus receive zero lzngth packet on the ctl pipe. " alt="" coords="227,107,397,133"/>
+<area shape="rect" id="node8" href="$group___u_s_b_d___c_o_r_e___private___functions.html#ga35f08f4623530af369ab0c326a814512" title="USBD_RunTestMode Launch test mode process. " alt="" coords="237,157,387,184"/>
+<area shape="rect" id="node3" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#gab87eb9f3d4d9f8956d2c6b77230f265c" title="Transmits data over an endpoint. " alt="" coords="479,5,617,32"/>
+<area shape="rect" id="node4" href="$group___p_c_d___exported___functions___group3.html#ga116ada543442c8f7a1003c4d4c211618" title="HAL_PCD_EP_Transmit" alt="" coords="687,5,853,32"/>
+<area shape="rect" id="node6" href="$group___p_c_d___exported___functions___group3.html#ga0029fe7a8d3db91b13637e2507fba60c" title="HAL_PCD_EP_Receive" alt="" coords="688,81,852,108"/>
+</map>

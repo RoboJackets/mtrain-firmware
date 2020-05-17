@@ -1,0 +1,4 @@
+<map id="arm_split_rfft_q31" name="arm_split_rfft_q31">
+<area shape="rect" id="node2" href="$group___real_f_f_t.html#gabaeab5646aeea9844e6d42ca8c73fe3a" title="Processing function for the Q31 RFFT/RIFFT. " alt="" coords="180,5,275,32"/>
+<area shape="rect" id="node3" href="$group___d_c_t4___i_d_c_t4.html#gad04d0baab6ed081d8e8afe02538eb80b" title="Processing function for the Q31 DCT4/IDCT4. " alt="" coords="323,5,427,32"/>
+</map>

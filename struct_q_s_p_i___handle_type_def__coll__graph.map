@@ -1,0 +1,7 @@
+<map id="QSPI_HandleTypeDef" name="QSPI_HandleTypeDef">
+<area shape="rect" id="node2" href="$struct_____d_m_a___handle_type_def.html" title="DMA handle Structure definition. " alt="" coords="88,314,263,553"/>
+<area shape="rect" id="node3" href="$struct_d_m_a___stream___type_def.html" title="DMA Controller. " alt="" coords="5,49,164,200"/>
+<area shape="rect" id="node4" href="$struct_d_m_a___init_type_def.html" title="DMA Configuration Structure definition. " alt="" coords="189,5,346,244"/>
+<area shape="rect" id="node5" href="$struct_q_s_p_i___init_type_def.html" title="QSPI Init structure definition. " alt="" coords="287,343,442,523"/>
+<area shape="rect" id="node6" href="$struct_q_u_a_d_s_p_i___type_def.html" title="QUAD Serial Peripheral Interface. " alt="" coords="467,307,607,560"/>
+</map>

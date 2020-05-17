@@ -1,0 +1,5 @@
+<map id="Fast Math Functions" name="Fast Math Functions">
+<area shape="rect" id="node2" href="$group___s_q_r_t.html" title="Computes the square root of a number. " alt="" coords="196,5,291,32"/>
+<area shape="rect" id="node3" href="$group__sin.html" title="Computes the trigonometric sine function using a combination of table lookup and linear interpolation..." alt="" coords="219,56,267,83"/>
+<area shape="rect" id="node4" href="$group__cos.html" title="Computes the trigonometric cosine function using a combination of table lookup and linear interpolati..." alt="" coords="212,107,275,133"/>
+</map>

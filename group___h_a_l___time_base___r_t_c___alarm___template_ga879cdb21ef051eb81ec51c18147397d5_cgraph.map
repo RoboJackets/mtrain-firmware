@@ -1,0 +1,7 @@
+<map id="HAL_InitTick" name="HAL_InitTick">
+<area shape="rect" id="node2" href="$group___r_c_c___exported___functions___group1.html#ga9c504088722e03830df6caad932ad06b" title="HAL_RCC_OscConfig" alt="" coords="179,5,334,32"/>
+<area shape="rect" id="node3" href="$group___r_c_c_ex___exported___functions___group1.html#ga0c0f61a1e2f47cc81bc43d83ba3e0d95" title="HAL_RCCEx_PeriphCLKConfig" alt="" coords="152,56,361,83"/>
+<area shape="rect" id="node4" href="$group___r_t_c___exported___functions___group1.html#gaa6b53830aa3e2efaf210c0b1d3e5f4a4" title="HAL_RTC_Init" alt="" coords="203,107,311,133"/>
+<area shape="rect" id="node5" href="$group___c_o_r_t_e_x___exported___functions___group1.html#ga8581a82025a4780efd00876a66e3e91b" title="HAL_NVIC_SetPriority" alt="" coords="179,157,335,184"/>
+<area shape="rect" id="node6" href="$group___c_o_r_t_e_x___exported___functions___group1.html#gaaad4492c1b25e006d69948a15790352a" title="HAL_NVIC_EnableIRQ" alt="" coords="177,208,336,235"/>
+</map>

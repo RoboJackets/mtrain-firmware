@@ -1,0 +1,13 @@
+<map id="MSC_BOT" name="MSC_BOT">
+<area shape="rect" id="node1" href="$group___m_s_c___b_o_t___private___defines.html" title="MSC_BOT_Private_Defines" alt="" coords="443,5,629,32"/>
+<area shape="rect" id="node2" href="$group___m_s_c___b_o_t___private___functions.html" title="MSC_BOT_Private_Functions" alt="" coords="437,56,635,83"/>
+<area shape="rect" id="node3" href="$group___s_t_m32___u_s_b___d_e_v_i_c_e___l_i_b_r_a_r_y.html" title="STM32_USB_DEVICE_LIBRARY" alt="" coords="5,264,228,291"/>
+<area shape="rect" id="node4" href="$group___m_s_c___b_o_t___private___types_definitions.html" title="MSC_BOT_Private_TypesDefinitions" alt="" coords="417,107,655,133"/>
+<area shape="rect" id="node6" href="$group___u_s_b_d___c_o_r_e___exported___types.html" title="USBD_CORE_Exported\l_Types" alt="" coords="453,158,619,199"/>
+<area shape="rect" id="node7" href="$group___u_s_b_d___c_o_r_e___exported___defines.html" title="USBD_CORE_Exported\l_Defines" alt="" coords="453,223,619,265"/>
+<area shape="rect" id="node8" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototypes.html" title="USBD_CORE_Exported\l_FunctionsPrototypes" alt="" coords="453,289,619,330"/>
+<area shape="rect" id="node9" href="$group___m_s_c___b_o_t___private___variables.html" title="MSC_BOT_Private_Variables" alt="" coords="439,355,633,381"/>
+<area shape="rect" id="node10" href="$group___m_s_c___b_o_t___private___function_prototypes.html" title="MSC_BOT_Private_Function\lPrototypes" alt="" coords="441,406,631,447"/>
+<area shape="rect" id="node11" href="$group___m_s_c___b_o_t___private___macros.html" title="MSC_BOT_Private_Macros" alt="" coords="444,472,628,499"/>
+<area shape="rect" id="node12" href="$group___m_s_c___c_o_r_e___private___types_definitions.html" title="MSC_CORE_Private_TypesDefinitions" alt="" coords="411,523,661,549"/>
+</map>

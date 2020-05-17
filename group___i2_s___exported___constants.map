@@ -1,0 +1,13 @@
+<map id="I2S Exported Constants" name="I2S Exported Constants">
+<area shape="rect" id="node1" href="$group___i2_s___interrupts___definition.html" title="I2S Interrupts Definition" alt="" coords="307,5,467,32"/>
+<area shape="rect" id="node2" href="$group___i2_s___flags___definition.html" title="I2S Flags Definition" alt="" coords="318,56,455,83"/>
+<area shape="rect" id="node3" href="$group___i2_s___error___defintion.html" title="I2S Error Code. " alt="" coords="319,107,455,133"/>
+<area shape="rect" id="node4" href="$group___i2_s___mode.html" title="I2S Mode" alt="" coords="347,157,426,184"/>
+<area shape="rect" id="node5" href="$group___i2_s___data___format.html" title="I2S Data Format" alt="" coords="327,208,446,235"/>
+<area shape="rect" id="node6" href="$group___i2_s.html" title="I2S HAL module driver. " alt="" coords="5,233,48,260"/>
+<area shape="rect" id="node8" href="$group___i2_s___m_c_l_k___output.html" title="I2S Mclk Output" alt="" coords="328,259,445,285"/>
+<area shape="rect" id="node9" href="$group___i2_s___standard.html" title="I2S Standard" alt="" coords="337,309,436,336"/>
+<area shape="rect" id="node10" href="$group___i2_s___audio___frequency.html" title="I2S Audio Frequency" alt="" coords="315,360,459,387"/>
+<area shape="rect" id="node11" href="$group___i2_s___clock___polarity.html" title="I2S Clock Polarity" alt="" coords="323,411,451,437"/>
+<area shape="rect" id="node12" href="$group___i2_s___clock___source.html" title="I2S Clock Source" alt="" coords="324,461,449,488"/>
+</map>

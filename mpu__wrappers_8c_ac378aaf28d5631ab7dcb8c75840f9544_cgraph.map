@@ -1,0 +1,10 @@
+<map id="MPU_vQueueDelete" name="MPU_vQueueDelete">
+<area shape="rect" id="node2" href="$mpu__wrappers_8c.html#ac42aa31652a6e8158f8ea8a88aad8275" title="xPortRaisePrivilege" alt="" coords="196,56,333,83"/>
+<area shape="rect" id="node3" href="$queue_8h.html#a707cbcfe3aed6b877b6aa6d9d75a3f22" title="vQueueDelete" alt="" coords="212,107,317,133"/>
+<area shape="rect" id="node4" href="$portable_8h.html#a735cd3085bb7ba06ff8e47565bfd7016" title="vPortFree" alt="" coords="431,31,510,57"/>
+<area shape="rect" id="node7" href="$queue_8h.html#a7f7a4d9b75dcfbcefb2384da5df5290e" title="uxQueueGetQueueNumber" alt="" coords="381,81,560,108"/>
+<area shape="rect" id="node8" href="$queue_8h.html#a37c8b0ea8f2e6c5fa5082afb9721f986" title="vQueueSetQueueNumber" alt="" coords="385,132,556,159"/>
+<area shape="rect" id="node9" href="$queue_8h.html#a9730db0a2f63acbf7197fa4150d7fe08" title="ucQueueGetQueueType" alt="" coords="389,183,552,209"/>
+<area shape="rect" id="node5" href="$task_8h.html#a366b302eba79d10b5ee2a3756f0fcc43" title="vTaskSuspendAll" alt="" coords="608,5,732,32"/>
+<area shape="rect" id="node6" href="$task_8h.html#a003f8ae6d649225abd030cc76e1c7d0e" title="xTaskResumeAll" alt="" coords="609,56,731,83"/>
+</map>

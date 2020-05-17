@@ -1,0 +1,4 @@
+<map id="USBD_LL_Delay" name="USBD_LL_Delay">
+<area shape="rect" id="node2" href="$group___h_a_l___exported___functions___group2.html#gaef87d3fec667bb34c418f5687e8204c1" title="This function provides accurate delay (in milliseconds) based on variable incremented. " alt="" coords="176,5,265,32"/>
+<area shape="rect" id="node3" href="$group___h_a_l___exported___functions___group2.html#gac9b3a85a73735ac840d0dcb59bc0fdd6" title="Provides a tick value in millisecond. " alt="" coords="313,5,415,32"/>
+</map>

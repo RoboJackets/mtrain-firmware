@@ -1,0 +1,4 @@
+<map id="DigitalOut::operator bool" name="DigitalOut::operator bool">
+<area shape="rect" id="node2" href="$class_digital_out.html#a07733e2babe0cc5505425cc8d139eed2" title="Read current value of pin. " alt="" coords="216,5,329,32"/>
+<area shape="rect" id="node3" href="$group___g_p_i_o___exported___functions___group2.html#gaf2b819ea6551319ddd5670db318d2e4e" title="HAL_GPIO_ReadPin" alt="" coords="377,5,523,32"/>
+</map>

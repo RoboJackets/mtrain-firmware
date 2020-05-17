@@ -1,0 +1,5 @@
+<map id="arm_sqrt_q15" name="arm_sqrt_q15">
+<area shape="rect" id="node2" href="$group__cmplx__mag.html#ga0a4a8f77a6a51d9b3f3b9d729f85b7a4" title="Q15 complex magnitude. " alt="" coords="155,5,301,32"/>
+<area shape="rect" id="node3" href="$group___r_m_s.html#gaf5b836b72dda9e5dfbbd17c7906fd13f" title="Root Mean Square of the elements of a Q15 vector. " alt="" coords="177,56,279,83"/>
+<area shape="rect" id="node4" href="$group___s_t_d.html#gaf9d27afa9928ff28a63cd98ea9218a72" title="Standard deviation of the elements of a Q15 vector. " alt="" coords="179,107,277,133"/>
+</map>

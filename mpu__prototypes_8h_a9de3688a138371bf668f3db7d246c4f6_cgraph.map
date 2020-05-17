@@ -1,0 +1,6 @@
+<map id="MPU_xEventGroupWaitBits" name="MPU_xEventGroupWaitBits">
+<area shape="rect" id="node2" href="$mpu__wrappers_8c.html#ac42aa31652a6e8158f8ea8a88aad8275" title="xPortRaisePrivilege" alt="" coords="244,5,381,32"/>
+<area shape="rect" id="node3" href="$event__groups_8c.html#a379c5cca4552d3d8acd4c51e8220a6c3" title="xEventGroupWaitBits" alt="" coords="239,56,387,83"/>
+<area shape="rect" id="node4" href="$task_8h.html#a0241000e08a261372186d34825a35979" title="xTaskGetSchedulerState" alt="" coords="435,31,603,57"/>
+<area shape="rect" id="node5" href="$task_8h.html#a366b302eba79d10b5ee2a3756f0fcc43" title="vTaskSuspendAll" alt="" coords="457,81,581,108"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="HAL_RTC_AlarmIRQHandler" name="HAL_RTC_AlarmIRQHandler">
+<area shape="rect" id="node2" href="$group___h_a_l___time_base___r_t_c___alarm___template.html#ga4da4fb52ec579671d337938e78f9a207" title="This function handles RTC ALARM interrupt request. " alt="" coords="247,5,413,32"/>
+<area shape="rect" id="node3" href="$default__handlers_8c.html#a2cd00d18ed19287a4a27b951a6b239cb" title="Handler_Nothing" alt="" coords="461,5,580,32"/>
+</map>

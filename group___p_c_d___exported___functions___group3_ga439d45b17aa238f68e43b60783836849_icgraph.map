@@ -1,0 +1,5 @@
+<map id="HAL_PCD_EP_Close" name="HAL_PCD_EP_Close">
+<area shape="rect" id="node2" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#gae12e7de3c398d5663976bf11faa63572" title="Closes an endpoint of the Low Level Driver. " alt="" coords="204,31,344,57"/>
+<area shape="rect" id="node3" href="$group___m_s_c___c_o_r_e___private___functions.html#gabb643a5bc10a2900666b2f4b5d6582e2" title="USBD_MSC_DeInit DeInitilaize the mass storage configuration. " alt="" coords="392,5,531,32"/>
+<area shape="rect" id="node4" href="$group___m_s_c___c_o_r_e___private___functions.html#gaf7c2344d42242f52ce4e1f9d68c7b0b9" title="USBD_MSC_Setup Handle the MSC specific requests. " alt="" coords="392,56,531,83"/>
+</map>

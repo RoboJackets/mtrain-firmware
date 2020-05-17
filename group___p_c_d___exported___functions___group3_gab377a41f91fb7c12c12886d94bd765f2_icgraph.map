@@ -1,0 +1,7 @@
+<map id="HAL_PCD_EP_Open" name="HAL_PCD_EP_Open">
+<area shape="rect" id="node2" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#gad96254d74d95496ffb5f6f2248585cb0" title="Opens an endpoint of the Low Level Driver. " alt="" coords="200,56,337,83"/>
+<area shape="rect" id="node3" href="$group___m_s_c___c_o_r_e___private___functions.html#gafe6062fbb86344c0d4339601d2fe0de1" title="USBD_MSC_Init Initialize the mass storage configuration. " alt="" coords="393,5,516,32"/>
+<area shape="rect" id="node4" href="$group___m_s_c___c_o_r_e___private___functions.html#gaf7c2344d42242f52ce4e1f9d68c7b0b9" title="USBD_MSC_Setup Handle the MSC specific requests. " alt="" coords="385,56,524,83"/>
+<area shape="rect" id="node5" href="$group___u_s_b_d___c_o_r_e___private___functions.html#ga9cd02ae070a18ea3395346c56639412b" title="USBD_LL_Reset Handle Reset event. " alt="" coords="393,107,516,133"/>
+<area shape="rect" id="node6" href="$group___p_c_d___exported___functions___group2.html#gaf4fbef977092aa525c6b1668ffbec77b" title="Reset callback. " alt="" coords="572,107,749,133"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="FMC NAND Controller" name="FMC NAND Controller">
+<area shape="rect" id="node2" href="$group___f_m_c___e_c_c___page___size.html" title="FMC ECC Page Size" alt="" coords="437,5,585,32"/>
+<area shape="rect" id="node4" href="$group___f_m_c___e_c_c.html" title="FMC ECC" alt="" coords="469,56,553,83"/>
+<area shape="rect" id="node5" href="$group___f_m_c___p_c_r___memory___type.html" title="FMC PCR Memory Type" alt="" coords="427,107,595,133"/>
+<area shape="rect" id="node6" href="$group___f_m_c___wait__feature.html" title="FMC Wait feature" alt="" coords="447,157,574,184"/>
+<area shape="rect" id="node7" href="$group___f_m_c___n_a_n_d___data___width.html" title="FMC NAND Data Width" alt="" coords="429,208,593,235"/>
+<area shape="rect" id="node8" href="$group___f_m_c___n_a_n_d___bank.html" title="FMC NAND Bank" alt="" coords="447,259,575,285"/>
+<area shape="rect" id="node3" href="$group___f_m_c___l_l___exported___constants.html" title="FMC Low Layer Exported\l Constants" alt="" coords="5,125,176,166"/>
+</map>

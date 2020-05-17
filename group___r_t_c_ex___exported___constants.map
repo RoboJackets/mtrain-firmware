@@ -1,0 +1,22 @@
+<map id="RTCEx Exported Constants" name="RTCEx Exported Constants">
+<area shape="rect" id="node1" href="$group___r_t_c_ex___tamper___filter___definitions.html" title="RTCEx Tamper Filter\l Definitions" alt="" coords="387,5,533,47"/>
+<area shape="rect" id="node2" href="$group___r_t_c_ex___tamper___trigger___definitions.html" title="RTCEx Tamper Trigger\l Definitions" alt="" coords="381,71,539,112"/>
+<area shape="rect" id="node3" href="$group___r_t_c_ex___tamper___sampling___frequencies___definitions.html" title="RTCEx Tamper Sampling\l Frequencies Definitions" alt="" coords="374,136,546,177"/>
+<area shape="rect" id="node4" href="$group___r_t_c_ex.html" title="RTC Extended HAL module driver. " alt="" coords="5,601,72,627"/>
+<area shape="rect" id="node5" href="$group___r_t_c_ex___smooth__calib___plus__pulses___definitions.html" title="RTCEx Smooth calib\l Plus pulses Definitions" alt="" coords="380,201,540,243"/>
+<area shape="rect" id="node6" href="$group___r_t_c_ex___add__1___second___parameter___definitions.html" title="RTCEx Add 1 Second\l Parameter Definitions" alt="" coords="384,267,536,308"/>
+<area shape="rect" id="node7" href="$group___r_t_c_ex___backup___registers___definitions.html" title="RTC Backup Registers\l Definitions" alt="" coords="381,332,539,373"/>
+<area shape="rect" id="node8" href="$group___r_t_c_ex___output__selection___definitions.html" title="RTCEx Output selection\l Definitions" alt="" coords="377,397,543,439"/>
+<area shape="rect" id="node9" href="$group___r_t_c_ex___time___stamp___edges__definitions.html" title="RTCEx Time Stamp Edges\l definitions" alt="" coords="369,463,551,504"/>
+<area shape="rect" id="node10" href="$group___r_t_c_ex___wakeup___timer___definitions.html" title="RTCEx Wakeup Timer\l Definitions" alt="" coords="383,528,537,569"/>
+<area shape="rect" id="node11" href="$group___r_t_c_ex___calib___output__selection___definitions.html" title="RTCEx Calib Output\l selection Definitions" alt="" coords="388,593,532,635"/>
+<area shape="rect" id="node12" href="$group___r_t_c_ex___time_stamp___pin___selection.html" title="RTCEx TimeStamp Pin\l Selection" alt="" coords="380,659,540,700"/>
+<area shape="rect" id="node13" href="$group___r_t_c_ex___tamper___erase_back_up___definitions.html" title="RTCEx Tamper EraseBackUp\l Definitions" alt="" coords="361,724,559,765"/>
+<area shape="rect" id="node14" href="$group___r_t_c_ex___tamper___pull___u_p___definitions.html" title="RTCEx Tamper Pull UP\l Definitions" alt="" coords="379,789,541,831"/>
+<area shape="rect" id="node15" href="$group___r_t_c_ex___tamper___interrupt___definitions.html" title="RTCEx Tamper Interrupt\l Definitions" alt="" coords="377,855,543,896"/>
+<area shape="rect" id="node17" href="$group___r_t_c_ex___tamper___time_stamp_on_tamper_detection___definitions.html" title="RTCEx Tamper TimeStampOn\lTamperDetection Definitions" alt="" coords="359,920,561,961"/>
+<area shape="rect" id="node18" href="$group___r_t_c_ex___tamper___mask_flag___definitions.html" title="RTCEx Tamper MaskFlag\l Definitions" alt="" coords="373,985,547,1027"/>
+<area shape="rect" id="node19" href="$group___r_t_c_ex___tamper___pins___definitions.html" title="RTCEx Tamper Pins Definitions" alt="" coords="355,1051,565,1078"/>
+<area shape="rect" id="node20" href="$group___r_t_c_ex___smooth__calib__period___definitions.html" title="RTCEx Smooth calib\l period Definitions" alt="" coords="387,1103,533,1144"/>
+<area shape="rect" id="node21" href="$group___r_t_c_ex___tamper___pin___precharge___duration___definitions.html" title="RTCEx Tamper Pin Precharge\l Duration Definitions" alt="" coords="360,1168,560,1209"/>
+</map>

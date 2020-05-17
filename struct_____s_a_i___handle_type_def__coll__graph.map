@@ -1,0 +1,9 @@
+<map id="__SAI_HandleTypeDef" name="__SAI_HandleTypeDef">
+<area shape="rect" id="node2" href="$struct_____d_m_a___handle_type_def.html" title="DMA handle Structure definition. " alt="" coords="88,329,263,567"/>
+<area shape="rect" id="node3" href="$struct_d_m_a___stream___type_def.html" title="DMA Controller. " alt="" coords="5,49,164,200"/>
+<area shape="rect" id="node4" href="$struct_d_m_a___init_type_def.html" title="DMA Configuration Structure definition. " alt="" coords="189,5,346,244"/>
+<area shape="rect" id="node5" href="$struct_s_a_i___init_type_def.html" title="{SAI_InitTypeDef\n|+ AudioMode\l+ Synchro\l+ SynchroExt\l+ OutputDrive\l+ NoDivider\l+ FIFOThreshold\l+ AudioFrequency\l+ Mckdiv\l+ MonoStereoMode\l+ CompandingMode\l+ TriState\l+ Protocol\l+ DataSize\l+ FirstBit\l+ ClockStrobing\l|}" alt="" coords="287,307,426,589"/>
+<area shape="rect" id="node6" href="$struct_s_a_i___frame_init_type_def.html" title="{SAI_FrameInitTypeDef\n|+ FrameLength\l+ ActiveFrameLength\l+ FSDefinition\l+ FSPolarity\l+ FSOffset\l|}" alt="" coords="451,380,607,516"/>
+<area shape="rect" id="node7" href="$struct_s_a_i___slot_init_type_def.html" title="{SAI_SlotInitTypeDef\n|+ FirstBitOffset\l+ SlotSize\l+ SlotNumber\l+ SlotActive\l|}" alt="" coords="631,387,773,509"/>
+<area shape="rect" id="node8" href="$struct_s_a_i___block___type_def.html" title="{SAI_Block_TypeDef\n|+ CR1\l+ CR2\l+ FRCR\l+ SLOTR\l+ IMR\l+ SR\l+ CLRFR\l+ DR\l|}" alt="" coords="798,358,939,538"/>
+</map>

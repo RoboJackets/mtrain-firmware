@@ -1,0 +1,7 @@
+<map id="HAL_IncTick" name="HAL_IncTick">
+<area shape="rect" id="node2" href="$interrupt__handlers_8c.html#ab5e09814056d617c521549e542639b7e" title="SysTick_Handler" alt="" coords="203,5,325,32"/>
+<area shape="rect" id="node4" href="$group___h_a_l___time_base___r_t_c___alarm___template.html#ga11aeff83fd498cddbed3bcddcf017e0a" title="ALARM A Event Callback in non blocking mode. " alt="" coords="155,56,373,83"/>
+<area shape="rect" id="node5" href="$group___h_a_l___time_base___r_t_c___wake_up___template.html#gac9ed5d6224b5c86f2845a9c1af7d94de" title="Wake Up Timer Event Callback in non blocking mode. " alt="" coords="152,107,376,149"/>
+<area shape="rect" id="node6" href="$group___h_a_l___time_base.html#ga8a3b0ad512a6e6c6157440b68d395eac" title="Period elapsed callback in non blocking mode. " alt="" coords="154,173,374,200"/>
+<area shape="rect" id="node3" href="$default__handlers_8c.html#a2cd00d18ed19287a4a27b951a6b239cb" title="Handler_Nothing" alt="" coords="424,5,543,32"/>
+</map>

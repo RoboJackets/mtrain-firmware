@@ -1,0 +1,4 @@
+<map id="USBD_CtlError" name="USBD_CtlError">
+<area shape="rect" id="node2" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#gabc2b4a7c8307e04955b015fd32057ec7" title="Sets a Stall condition on an endpoint of the Low Level Driver. " alt="" coords="165,5,297,32"/>
+<area shape="rect" id="node3" href="$group___p_c_d___exported___functions___group3.html#gaecee197a59aacc015742c62b74881b6f" title="HAL_PCD_EP_SetStall" alt="" coords="345,5,508,32"/>
+</map>

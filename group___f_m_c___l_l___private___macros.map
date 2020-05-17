@@ -1,0 +1,33 @@
+<map id="FMC_LL &#160;Private Macros" name="FMC_LL &#160;Private Macros">
+<area shape="rect" id="node1" href="$group___f_m_c___s_d_r_a_m___write___recovery___time.html" title="FMC SDRAM Write Recovery Time" alt="" coords="433,5,665,32"/>
+<area shape="rect" id="node2" href="$group___f_m_c___n_o_r_s_r_a_m___device___instance.html" title="FMC NORSRAM Device\l Instance" alt="" coords="465,57,634,98"/>
+<area shape="rect" id="node3" href="$group___f_m_c___bus___turn__around___duration.html" title="FMC Bus Turn around\l Duration" alt="" coords="474,122,625,163"/>
+<area shape="rect" id="node6" href="$group___f_m_c___address___setup___time.html" title="FMC Address Setup Time" alt="" coords="462,188,637,215"/>
+<area shape="rect" id="node7" href="$group___f_m_c___s_d_r_a_m___self_refresh___time.html" title="FMC SDRAM SelfRefresh Time" alt="" coords="444,239,655,265"/>
+<area shape="rect" id="node8" href="$group___f_m_c___t_c_l_r___setup___time.html" title="FMC TCLR Setup Time" alt="" coords="469,289,630,316"/>
+<area shape="rect" id="node9" href="$group___f_m_c___n_a_n_d___device___instance.html" title="FMC NAND Device Instance" alt="" coords="453,340,646,367"/>
+<area shape="rect" id="node10" href="$group___f_m_c___interrupt.html" title="macros to handle FMC interrupts " alt="" coords="498,391,601,417"/>
+<area shape="rect" id="node11" href="$group___f_m_c___s_d_r_a_m___r_c_d___delay.html" title="FMC SDRAM RCD Delay" alt="" coords="461,441,637,468"/>
+<area shape="rect" id="node12" href="$group___f_m_c___data___latency.html" title="FMC Data Latency" alt="" coords="483,492,616,519"/>
+<area shape="rect" id="node13" href="$group___f_m_c___c_l_k___division.html" title="FMC CLK Division" alt="" coords="483,543,615,569"/>
+<area shape="rect" id="node14" href="$group___f_m_c___s_d_r_a_m___load_to_active___delay.html" title="FMC SDRAM LoadToActive\l Delay" alt="" coords="455,594,643,635"/>
+<area shape="rect" id="node16" href="$group___f_m_c___s_d_r_a_m___row_cycle___delay.html" title="FMC SDRAM RowCycle\l Delay" alt="" coords="465,659,634,701"/>
+<area shape="rect" id="node17" href="$group___f_m_c___l_l___n_o_r___macros.html" title="macros to handle NOR device enable/disable and read/write operations " alt="" coords="462,725,637,752"/>
+<area shape="rect" id="node18" href="$group___f_m_c___hi_z___setup___time.html" title="FMC HiZ Setup Time" alt="" coords="476,776,623,803"/>
+<area shape="rect" id="node19" href="$group___f_m_c___t_a_r___setup___time.html" title="FMC TAR Setup Time" alt="" coords="473,827,626,853"/>
+<area shape="rect" id="node20" href="$group___f_m_c___setup___time.html" title="FMC Setup Time" alt="" coords="488,877,611,904"/>
+<area shape="rect" id="node21" href="$group___f_m_c___address___hold___time.html" title="FMC Address Hold Time" alt="" coords="466,928,633,955"/>
+<area shape="rect" id="node22" href="$group___f_m_c___s_d_r_a_m___r_p___delay.html" title="FMC SDRAM RP Delay" alt="" coords="467,979,632,1005"/>
+<area shape="rect" id="node23" href="$group___f_m_c___data___setup___time.html" title="FMC Data Setup Time" alt="" coords="472,1029,627,1056"/>
+<area shape="rect" id="node24" href="$group___f_m_c___s_d_r_a_m___refresh__rate.html" title="FMC SDRAM Refresh rate" alt="" coords="459,1080,639,1107"/>
+<area shape="rect" id="node25" href="$group___f_m_c___s_d_r_a_m___mode_register___definition.html" title="FMC SDRAM ModeRegister\l Definition" alt="" coords="455,1131,644,1173"/>
+<area shape="rect" id="node26" href="$group___f_m_c___n_o_r_s_r_a_m___e_x_t_e_n_d_e_d___device___instance.html" title="FMC NORSRAM EXTENDED\l Device Instance" alt="" coords="448,1197,651,1238"/>
+<area shape="rect" id="node27" href="$group___f_m_c___hold___setup___time.html" title="FMC Hold Setup Time" alt="" coords="473,1263,626,1289"/>
+<area shape="rect" id="node28" href="$group___f_m_c___s_d_r_a_m___device___instance.html" title="FMC SDRAM Device Instance" alt="" coords="448,1313,651,1340"/>
+<area shape="rect" id="node29" href="$group___f_m_c___s_d_r_a_m___exit_self_refresh___delay.html" title="FMC SDRAM ExitSelfRefresh\l Delay" alt="" coords="449,1365,649,1406"/>
+<area shape="rect" id="node30" href="$group___f_m_c___wait___setup___time.html" title="FMC Wait Setup Time" alt="" coords="473,1431,626,1457"/>
+<area shape="rect" id="node31" href="$group___f_m_c___l_l___n_a_n_d___macros.html" title="macros to handle NAND device enable/disable " alt="" coords="479,1481,620,1508"/>
+<area shape="rect" id="node32" href="$group___f_m_c___s_d_r_a_m___auto_refresh___number.html" title="FMC SDRAM AutoRefresh\l Number" alt="" coords="459,1533,640,1574"/>
+<area shape="rect" id="node5" href="$group___f_m_c___l_l.html" title="FMC driver modules. " alt="" coords="32,751,147,777"/>
+<area shape="rect" id="node15" href="$group___s_t_m32_f7xx___h_a_l___driver.html" title="STM32F7xx_HAL_Driver" alt="" coords="5,801,173,828"/>
+</map>

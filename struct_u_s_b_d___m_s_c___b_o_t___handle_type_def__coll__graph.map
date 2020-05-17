@@ -1,0 +1,5 @@
+<map id="USBD_MSC_BOT_HandleTypeDef" name="USBD_MSC_BOT_HandleTypeDef">
+<area shape="rect" id="node2" href="$struct_u_s_b_d___m_s_c___b_o_t___c_s_w_type_def.html" title="{USBD_MSC_BOT_CSWTypeDef\n|+ dSignature\l+ dTag\l+ dDataResidue\l+ bStatus\l+ ReservedForAlign\l|}" alt="" coords="5,27,225,163"/>
+<area shape="rect" id="node3" href="$struct___s_e_n_s_e___i_t_e_m.html" title="{_SENSE_ITEM\n|+ Skey\l+ ASC\l+ ASCQ\l+ b\l+ ASC\l+ pData\l+ w\l|}" alt="" coords="250,13,365,178"/>
+<area shape="rect" id="node4" href="$struct_u_s_b_d___m_s_c___b_o_t___c_b_w_type_def.html" title="{USBD_MSC_BOT_CBWTypeDef\n|+ dSignature\l+ dTag\l+ dDataLength\l+ bmFlags\l+ bLUN\l+ bCBLength\l+ CB\l+ ReservedForAlign\l|}" alt="" coords="389,5,609,185"/>
+</map>

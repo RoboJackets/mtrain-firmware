@@ -1,0 +1,4 @@
+<map id="MPU_vTaskSuspendAll" name="MPU_vTaskSuspendAll">
+<area shape="rect" id="node2" href="$mpu__wrappers_8c.html#ac42aa31652a6e8158f8ea8a88aad8275" title="xPortRaisePrivilege" alt="" coords="215,5,352,32"/>
+<area shape="rect" id="node3" href="$task_8h.html#a366b302eba79d10b5ee2a3756f0fcc43" title="vTaskSuspendAll" alt="" coords="221,56,345,83"/>
+</map>

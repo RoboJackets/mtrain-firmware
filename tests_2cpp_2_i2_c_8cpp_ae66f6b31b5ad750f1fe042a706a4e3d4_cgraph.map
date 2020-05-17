@@ -1,0 +1,13 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$class_i2_c.html#a687c0929c22d41e5b4428d24e1208f51" title="I2C::receive" alt="" coords="107,81,200,108"/>
+<area shape="rect" id="node9" href="$class_i2_c.html#a329bd3c0d083593f1dd72525ec75d713" title="I2C::transmit" alt="" coords="104,132,203,159"/>
+<area shape="rect" id="node11" href="$group___h_a_l___exported___functions___group2.html#gaef87d3fec667bb34c418f5687e8204c1" title="This function provides accurate delay (in milliseconds) based on variable incremented. " alt="" coords="109,183,198,209"/>
+<area shape="rect" id="node3" href="$group___i2_c___exported___functions___group2.html#ga7b593a1b85bd989dd002ee209eae4ad2" title="HAL_I2C_Mem_Read" alt="" coords="251,31,401,57"/>
+<area shape="rect" id="node4" href="$class_i2_c.html#a11722e4027650574e7d74ee9b5509097" title="I2C::recover_bus" alt="" coords="265,81,387,108"/>
+<area shape="rect" id="node5" href="$group___g_p_i_o___exported___functions___group1.html#gafe9c756b5aa18961032a3f8aa572959b" title="HAL_GPIO_DeInit" alt="" coords="457,5,587,32"/>
+<area shape="rect" id="node6" href="$group___g_p_i_o___exported___functions___group1.html#ga41bda93b6dd639e4905fdb1454eff98e" title="HAL_GPIO_Init" alt="" coords="465,56,579,83"/>
+<area shape="rect" id="node7" href="$group___g_p_i_o___exported___functions___group2.html#gaf4b97bdf533a02f51ef696d43b6da5c4" title="HAL_GPIO_WritePin" alt="" coords="449,107,595,133"/>
+<area shape="rect" id="node8" href="$delay_8h.html#ac2a53b2530a71f3e19b29343d2566c14" title="Delay routine itself. " alt="" coords="475,157,569,184"/>
+<area shape="rect" id="node10" href="$group___i2_c___exported___functions___group2.html#ga33e725a824eb672f9f999d9d5ce088fb" title="HAL_I2C_Mem_Write" alt="" coords="251,132,401,159"/>
+<area shape="rect" id="node12" href="$group___h_a_l___exported___functions___group2.html#gac9b3a85a73735ac840d0dcb59bc0fdd6" title="Provides a tick value in millisecond. " alt="" coords="275,183,377,209"/>
+</map>

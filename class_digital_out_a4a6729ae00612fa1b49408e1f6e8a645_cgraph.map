@@ -1,0 +1,4 @@
+<map id="DigitalOut::operator=" name="DigitalOut::operator=">
+<area shape="rect" id="node2" href="$class_digital_out.html#a5024fc359149512302f5532616b84f89" title="Change output state of pin. " alt="" coords="196,5,312,32"/>
+<area shape="rect" id="node3" href="$group___g_p_i_o___exported___functions___group2.html#gaf4b97bdf533a02f51ef696d43b6da5c4" title="HAL_GPIO_WritePin" alt="" coords="360,5,505,32"/>
+</map>

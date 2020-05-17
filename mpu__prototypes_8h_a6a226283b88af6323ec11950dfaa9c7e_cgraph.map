@@ -1,0 +1,13 @@
+<map id="MPU_xEventGroupSync" name="MPU_xEventGroupSync">
+<area shape="rect" id="node2" href="$mpu__wrappers_8c.html#ac42aa31652a6e8158f8ea8a88aad8275" title="xPortRaisePrivilege" alt="" coords="219,81,356,108"/>
+<area shape="rect" id="node3" href="$event__groups_8c.html#ac38db316f0928c7ddaacb677a75dbc03" title="xEventGroupSync" alt="" coords="223,132,351,159"/>
+<area shape="rect" id="node4" href="$task_8h.html#a0241000e08a261372186d34825a35979" title="xTaskGetSchedulerState" alt="" coords="431,5,599,32"/>
+<area shape="rect" id="node5" href="$task_8h.html#a366b302eba79d10b5ee2a3756f0fcc43" title="vTaskSuspendAll" alt="" coords="711,48,835,75"/>
+<area shape="rect" id="node6" href="$event__groups_8c.html#a9ac7cd970f50e2e50a494b656e0eb239" title="xEventGroupSetBits" alt="" coords="445,107,586,133"/>
+<area shape="rect" id="node8" href="$task_8h.html#a003f8ae6d649225abd030cc76e1c7d0e" title="xTaskResumeAll" alt="" coords="712,165,835,192"/>
+<area shape="rect" id="node9" href="$task_8h.html#a9d52fa7b60cc6a7b4fd0846700d7834c" title="vTaskPlaceOnUnorderedEventList" alt="" coords="404,208,627,235"/>
+<area shape="rect" id="node10" href="$task_8h.html#a7793b4bbe45c10d4c5104c126b89e87c" title="uxTaskResetEventItemValue" alt="" coords="419,259,612,285"/>
+<area shape="rect" id="node7" href="$task_8h.html#aca64fad00201055cbaf9fff74f181b85" title="xTaskRemoveFromUnordered\lEventList" alt="" coords="675,99,872,141"/>
+<area shape="rect" id="node11" href="$task_8h.html#aa1a0ae86baba1a7edda940a6ecd4cfb4" title="pvTaskIncrementMutexHeld\lCount" alt="" coords="680,234,867,275"/>
+<area shape="rect" id="node12" href="$task_8h.html#a66540bef602522a01a519f776e4c07d8" title="ulTaskNotifyTake" alt="" coords="711,300,836,327"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="USBD_LL_Reset" name="USBD_LL_Reset">
+<area shape="rect" id="node2" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#gad96254d74d95496ffb5f6f2248585cb0" title="Opens an endpoint of the Low Level Driver. " alt="" coords="176,5,313,32"/>
+<area shape="rect" id="node3" href="$group___p_c_d___exported___functions___group3.html#gab377a41f91fb7c12c12886d94bd765f2" title="HAL_PCD_EP_Open" alt="" coords="361,5,508,32"/>
+</map>

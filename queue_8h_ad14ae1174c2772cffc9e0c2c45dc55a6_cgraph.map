@@ -1,0 +1,4 @@
+<map id="xQueueGiveFromISR" name="xQueueGiveFromISR">
+<area shape="rect" id="node2" href="$task_8h.html#a14513b7dd36055f73fba3c5ebbdc1b06" title="xTaskRemoveFromEventList" alt="" coords="200,5,392,32"/>
+<area shape="rect" id="node3" href="$list_8h.html#a2eb1558482076fff8cafc63419c2d34a" title="uxListRemove" alt="" coords="440,5,547,32"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="HAL_PCD_EP_GetRxCount" name="HAL_PCD_EP_GetRxCount">
+<area shape="rect" id="node2" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#gaeb80f50482e04c046ba41f5ea58a1b2b" title="Returns the last transferred packet size. " alt="" coords="243,5,423,32"/>
+<area shape="rect" id="node3" href="$group___u_s_b_d___i_o_r_e_q___private___functions.html#ga9281759cd83c4a975fae5938b32c909f" title="USBD_GetRxCount returns the received data length. " alt="" coords="471,5,611,32"/>
+</map>

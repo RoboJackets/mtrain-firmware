@@ -1,0 +1,27 @@
+var group___s_m_b_u_s___private___macro =
+[
+    [ "IS_SMBUS_ADDRESSING_MODE", "group___s_m_b_u_s___private___macro.html#gade5a88e460e4fcc41f517280a728dcc7", null ],
+    [ "IS_SMBUS_ANALOG_FILTER", "group___s_m_b_u_s___private___macro.html#ga38f500d50388d83fdea98799d25921fb", null ],
+    [ "IS_SMBUS_DUAL_ADDRESS", "group___s_m_b_u_s___private___macro.html#ga528d258bd78d1611f8dc0bfd0f2bb101", null ],
+    [ "IS_SMBUS_GENERAL_CALL", "group___s_m_b_u_s___private___macro.html#gaff5ae33b521f066e20f1eb17d221f7b8", null ],
+    [ "IS_SMBUS_NO_STRETCH", "group___s_m_b_u_s___private___macro.html#ga9e77fe3d030deebdb78e3b85e317d5fc", null ],
+    [ "IS_SMBUS_OWN_ADDRESS1", "group___s_m_b_u_s___private___macro.html#gab1fbff33c918c2407b3769b628a161c9", null ],
+    [ "IS_SMBUS_OWN_ADDRESS2", "group___s_m_b_u_s___private___macro.html#ga266f3c09ab35cd751c0f62ee05d63026", null ],
+    [ "IS_SMBUS_OWN_ADDRESS2_MASK", "group___s_m_b_u_s___private___macro.html#gae6a81a2e050ba0269af3e2900b5c07e8", null ],
+    [ "IS_SMBUS_PEC", "group___s_m_b_u_s___private___macro.html#ga0e2e9199406f853bc0cc5894e7acefae", null ],
+    [ "IS_SMBUS_PERIPHERAL_MODE", "group___s_m_b_u_s___private___macro.html#ga162341992c94027465de5b1bd0d18a9a", null ],
+    [ "IS_SMBUS_TRANSFER_MODE", "group___s_m_b_u_s___private___macro.html#ga8228656e9094f3b81c117695fb3f7a74", null ],
+    [ "IS_SMBUS_TRANSFER_OPTIONS_REQUEST", "group___s_m_b_u_s___private___macro.html#gabb6675e795c2cfefae3145eb55d02b19", null ],
+    [ "IS_SMBUS_TRANSFER_OTHER_OPTIONS_REQUEST", "group___s_m_b_u_s___private___macro.html#ga529d75dc16c3a6e446eaa052dd6aa53c", null ],
+    [ "IS_SMBUS_TRANSFER_REQUEST", "group___s_m_b_u_s___private___macro.html#gab1e6b5ae128b4e02b2db386333c607c8", null ],
+    [ "SMBUS_CHECK_FLAG", "group___s_m_b_u_s___private___macro.html#ga9f1a4a7fe3ecdfd8bdcc798ffd6c3c63", null ],
+    [ "SMBUS_GENERATE_START", "group___s_m_b_u_s___private___macro.html#ga2025dd246559f8e3d6185b87e66399c9", null ],
+    [ "SMBUS_GET_ADDR_MATCH", "group___s_m_b_u_s___private___macro.html#gafca9d4e7bba6554b8160a5961e8ed54e", null ],
+    [ "SMBUS_GET_ALERT_ENABLED", "group___s_m_b_u_s___private___macro.html#ga565aacbe2b3f0c3f529016073d6ef038", null ],
+    [ "SMBUS_GET_DIR", "group___s_m_b_u_s___private___macro.html#gacdf273ea8be3280dd1655ac8fa9bd95f", null ],
+    [ "SMBUS_GET_ISR_REG", "group___s_m_b_u_s___private___macro.html#gab5da227a6597507c24cd42e382e759a6", null ],
+    [ "SMBUS_GET_PEC_MODE", "group___s_m_b_u_s___private___macro.html#ga588cb2d814790d4a375f9dbcfff22647", null ],
+    [ "SMBUS_GET_STOP_MODE", "group___s_m_b_u_s___private___macro.html#ga76009d83692a1ce38ccb2f9e40b3f61d", null ],
+    [ "SMBUS_RESET_CR1", "group___s_m_b_u_s___private___macro.html#ga9e6d8b9744c2937be20c71ec689bf957", null ],
+    [ "SMBUS_RESET_CR2", "group___s_m_b_u_s___private___macro.html#ga589cc1dee6b1f64f6026add38afdb106", null ]
+];

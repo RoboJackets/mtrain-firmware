@@ -1,0 +1,5 @@
+<map id="/home/collin/documents/robojackets/mtrain&#45;firmware/external/middleware/STM32_USB_Device_Library/Class/CustomHID/Inc/usbd_customhid.h" name="/home/collin/documents/robojackets/mtrain&#45;firmware/external/middleware/STM32_USB_Device_Library/Class/CustomHID/Inc/usbd_customhid.h">
+<area shape="rect" id="node2" href="$usbd__customhid__if__template_8h.html" title="Header for usbd_customhid_if_template.c file. " alt="" coords="5,139,268,224"/>
+<area shape="rect" id="node4" href="$usbd__customhid_8c.html" title="This file provides the CUSTOM_HID core functions. " alt="" coords="292,139,555,224"/>
+<area shape="rect" id="node3" href="$usbd__customhid__if__template_8c.html" title="USB Device Custom HID interface file. This template should be copied to the user folder, renamed and customized following user needs. " alt="" coords="5,272,268,357"/>
+</map>

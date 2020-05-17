@@ -1,0 +1,9 @@
+<map id="USBD_LL_StallEP" name="USBD_LL_StallEP">
+<area shape="rect" id="node2" href="$group___m_s_c___b_o_t___private___functions.html#gae59234b7fe768ccdf5294ddfc5abc757" title="MSC_BOT_CplClrFeature Complete the clear feature request. " alt="" coords="185,5,360,32"/>
+<area shape="rect" id="node4" href="$group___u_s_b_d___c_o_r_e___private___functions.html#gabdcdfefaffa1651c77a38d08eb3a82ce" title="USBD_SetupStage Handle the setup stage. " alt="" coords="595,107,751,133"/>
+<area shape="rect" id="node6" href="$group___u_s_b_d___r_e_q___private___functions.html#ga46d1a0a4e23e1e8c80167dcdc59b2538" title="USBD_StdEPReq Handle standard usb endpoint requests. " alt="" coords="413,107,542,133"/>
+<area shape="rect" id="node7" href="$group___u_s_b_d___r_e_q___private___functions.html#ga48795256b00d45158aa8036e843d300a" title="USBD_CtlError Handle USB low level Error. " alt="" coords="217,56,329,83"/>
+<area shape="rect" id="node3" href="$group___m_s_c___c_o_r_e___private___functions.html#gaf7c2344d42242f52ce4e1f9d68c7b0b9" title="USBD_MSC_Setup Handle the MSC specific requests. " alt="" coords="408,5,547,32"/>
+<area shape="rect" id="node5" href="$group___p_c_d___exported___functions___group2.html#ga9d72aa4d3d984b164047b081d4566f6d" title="SetupStage callback. " alt="" coords="799,107,1009,133"/>
+<area shape="rect" id="node8" href="$group___u_s_b_d___r_e_q___private___functions.html#gac1c8cd8a59f1c99887f131a4299f31b1" title="USBD_StdItfReq Handle standard usb interface requests. " alt="" coords="416,56,539,83"/>
+</map>

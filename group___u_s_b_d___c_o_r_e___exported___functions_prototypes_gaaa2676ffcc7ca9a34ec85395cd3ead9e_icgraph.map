@@ -1,0 +1,6 @@
+<map id="MSC_BOT_SendCSW" name="MSC_BOT_SendCSW">
+<area shape="rect" id="node2" href="$group___m_s_c___b_o_t___private___functions.html#ga6e6e6d34395fe9d5bb1438e38aa88ae5" title="MSC_BOT_DataIn Handle BOT IN data stage. " alt="" coords="229,5,361,32"/>
+<area shape="rect" id="node4" href="$group___m_s_c___b_o_t___private___functions.html#gae59234b7fe768ccdf5294ddfc5abc757" title="MSC_BOT_CplClrFeature Complete the clear feature request. " alt="" coords="208,56,383,83"/>
+<area shape="rect" id="node3" href="$group___m_s_c___c_o_r_e___private___functions.html#ga5e8efa4e702c828c2c4f9af58d0447fd" title="USBD_MSC_DataIn handle data IN Stage. " alt="" coords="431,5,573,32"/>
+<area shape="rect" id="node5" href="$group___m_s_c___c_o_r_e___private___functions.html#gaf7c2344d42242f52ce4e1f9d68c7b0b9" title="USBD_MSC_Setup Handle the MSC specific requests. " alt="" coords="433,56,571,83"/>
+</map>

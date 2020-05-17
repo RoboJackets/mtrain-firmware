@@ -1,0 +1,8 @@
+<map id="HAL_InitTick" name="HAL_InitTick">
+<area shape="rect" id="node2" href="$group___c_o_r_t_e_x___exported___functions___group1.html#ga8581a82025a4780efd00876a66e3e91b" title="HAL_NVIC_SetPriority" alt="" coords="167,5,323,32"/>
+<area shape="rect" id="node3" href="$group___c_o_r_t_e_x___exported___functions___group1.html#gaaad4492c1b25e006d69948a15790352a" title="HAL_NVIC_EnableIRQ" alt="" coords="165,56,324,83"/>
+<area shape="rect" id="node4" href="$group___r_c_c___exported___functions___group2.html#gabc95375dfca279d88b9ded9d063d2323" title="HAL_RCC_GetClockConfig" alt="" coords="152,107,337,133"/>
+<area shape="rect" id="node5" href="$group___r_c_c___exported___functions___group2.html#gab3042d8ac5703ac696cabf0ee461c599" title="HAL_RCC_GetPCLK1Freq" alt="" coords="154,157,335,184"/>
+<area shape="rect" id="node6" href="$group___t_i_m___exported___functions___group1.html#ga1b288eb68eb52c97b8d187cdd6e9088f" title="HAL_TIM_Base_Init" alt="" coords="175,208,315,235"/>
+<area shape="rect" id="node7" href="$group___t_i_m___exported___functions___group1.html#gae517d80e2ac713069767df8e8915971e" title="HAL_TIM_Base_Start_IT" alt="" coords="160,259,329,285"/>
+</map>

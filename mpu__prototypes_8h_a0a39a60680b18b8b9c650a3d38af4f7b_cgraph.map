@@ -1,0 +1,6 @@
+<map id="MPU_pcTaskGetName" name="MPU_pcTaskGetName">
+<area shape="rect" id="node2" href="$mpu__wrappers_8c.html#ac42aa31652a6e8158f8ea8a88aad8275" title="xPortRaisePrivilege" alt="" coords="212,5,349,32"/>
+<area shape="rect" id="node3" href="$task_8h.html#ae2ffb6a591fef808cf10353059b1c2bd" title="pcTaskGetName" alt="" coords="220,56,341,83"/>
+<area shape="rect" id="node4" href="$task_8h.html#a45b3b1cd0227269609499beeeb8c5c26" title="xTaskGetHandle" alt="" coords="399,31,519,57"/>
+<area shape="rect" id="node5" href="$tasks_8c.html#a084d232640bd1d04bcac0b8784417015" title="vTaskSuspendAll" alt="" coords="397,81,521,108"/>
+</map>

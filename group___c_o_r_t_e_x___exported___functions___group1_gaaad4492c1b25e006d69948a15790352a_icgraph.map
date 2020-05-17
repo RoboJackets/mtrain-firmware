@@ -1,0 +1,6 @@
+<map id="HAL_NVIC_EnableIRQ" name="HAL_NVIC_EnableIRQ">
+<area shape="rect" id="node2" href="$class_s_p_i.html#a7fe5d5885824c3107bd0263b4e407e6f" title="SPI::SPI" alt="" coords="243,5,318,32"/>
+<area shape="rect" id="node3" href="$group___p_c_d___exported___functions___group1.html#ga73af972b44ba2890202363cd8b197dad" title="Initializes the PCD MSP. " alt="" coords="213,56,348,83"/>
+<area shape="rect" id="node4" href="$group___q_s_p_i___exported___functions___group1.html#gade8059377d8637fabb9a22fa1d50b558" title="HAL_QSPI_MspInit" alt="" coords="212,107,349,133"/>
+<area shape="rect" id="node5" href="$group___h_a_l___time_base___r_t_c___alarm___template.html#ga879cdb21ef051eb81ec51c18147397d5" title="This function configures the RTC_ALARMA as a time base source. " alt="" coords="231,157,330,184"/>
+</map>

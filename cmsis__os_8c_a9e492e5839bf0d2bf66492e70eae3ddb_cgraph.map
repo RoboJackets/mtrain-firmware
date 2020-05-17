@@ -1,0 +1,4 @@
+<map id="osMailCAlloc" name="osMailCAlloc">
+<area shape="rect" id="node2" href="$cmsis__os_8c.html#ac985d7f260b80d7891157697b760aa02" title="Allocate a memory block from a mail. " alt="" coords="152,5,241,32"/>
+<area shape="rect" id="node3" href="$cmsis__os_8c.html#ab4bc93bf17f94ca99363e53e1a763fb5" title="Allocate a memory block from a memory pool. " alt="" coords="289,5,380,32"/>
+</map>

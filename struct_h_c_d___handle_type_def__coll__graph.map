@@ -1,0 +1,5 @@
+<map id="HCD_HandleTypeDef" name="HCD_HandleTypeDef">
+<area shape="rect" id="node2" href="$struct_u_s_b___o_t_g___global_type_def.html" title="USB_OTG_Core_Registers. " alt="" coords="5,20,184,244"/>
+<area shape="rect" id="node3" href="$struct_u_s_b___o_t_g___h_c_type_def.html" title="{USB_OTG_HCTypeDef\n|+ dev_addr\l+ ch_num\l+ ep_num\l+ ep_is_in\l+ speed\l+ do_ping\l+ process_ping\l+ ep_type\l+ max_packet\l+ data_pid\land 9 more...\l|}" alt="" coords="208,20,371,244"/>
+<area shape="rect" id="node4" href="$struct_u_s_b___o_t_g___cfg_type_def.html" title="PCD Initialization Structure definition. " alt="" coords="395,5,570,259"/>
+</map>

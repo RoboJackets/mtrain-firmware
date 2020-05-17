@@ -1,0 +1,10 @@
+<map id="IRDA" name="IRDA">
+<area shape="rect" id="node1" href="$group___i_r_d_a___private___macros.html" title="IRDA Private Macros" alt="" coords="337,5,483,32"/>
+<area shape="rect" id="node2" href="$group___i_r_d_a___private___constants.html" title="IRDA Private Constants" alt="" coords="328,56,492,83"/>
+<area shape="rect" id="node4" href="$group___i_r_d_a___exported___constants.html" title="IRDA Configuration enumeration values definition. " alt="" coords="324,107,496,133"/>
+<area shape="rect" id="node6" href="$group___i_r_d_a___private___functions.html" title="IRDA Private Functions" alt="" coords="329,157,491,184"/>
+<area shape="rect" id="node7" href="$group___i_r_d_a___exported___macros.html" title="IRDA Exported Macros" alt="" coords="331,208,489,235"/>
+<area shape="rect" id="node8" href="$group___i_r_d_a___exported___types.html" title="IRDA Exported Types" alt="" coords="335,259,485,285"/>
+<area shape="rect" id="node9" href="$group___i_r_d_a___exported___functions.html" title="IRDA Exported Functions" alt="" coords="324,309,496,336"/>
+<area shape="rect" id="node5" href="$group___s_t_m32_f7xx___h_a_l___driver.html" title="STM32F7xx_HAL_Driver" alt="" coords="5,157,173,184"/>
+</map>

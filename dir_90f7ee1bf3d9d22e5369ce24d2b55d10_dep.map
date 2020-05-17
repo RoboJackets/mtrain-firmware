@@ -1,0 +1,12 @@
+<map id="/home/collin/documents/robojackets/mtrain&#45;firmware/external/middleware" name="/home/collin/documents/robojackets/mtrain&#45;firmware/external/middleware">
+<area shape="rect" id="node2" href="dir_f8462f58ea8dbfae43909a491181f7ee.html" title="FatFs" alt="" coords="365,63,437,111"/>
+<area shape="rect" id="node3" href="dir_7a5ec2e9869ac10f986bf4267c867bff.html" title="FreeRTOS" alt="" coords="37,63,123,111"/>
+<area shape="rect" id="node5" href="dir_651c4281f36ab60688d2b827c8ad2c3b.html" title="CMSIS" alt="" coords="44,159,116,207"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000038_000016.html" title="1" alt="" coords="84,133,92,147"/>
+<area shape="rect" id="node4" href="dir_da8cd739d3a8dc42ecb2bee48a61c696.html" title="STM32_USB_Device_Library" alt="" coords="147,63,341,111"/>
+<area shape="rect" id="node6" href="dir_350c8a3315b9de76597c9530ef31a96a.html" title="BSP" alt="" coords="208,159,280,207"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000053_000009.html" title="9" alt="" coords="239,132,247,147"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000009_000053.html" title="6" alt="" coords="241,122,249,137"/>
+<area shape="rect" id="clust2" href="dir_90f7ee1bf3d9d22e5369ce24d2b55d10.html" alt="" coords="27,52,560,121"/>
+<area shape="rect" id="clust1" href="dir_397d9aeee4af8edecac90968d93b57df.html" title="external" alt="" coords="16,16,571,132"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="MSC_BOT_SendCSW" name="MSC_BOT_SendCSW">
+<area shape="rect" id="node2" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#gab87eb9f3d4d9f8956d2c6b77230f265c" title="Transmits data over an endpoint. " alt="" coords="229,5,368,32"/>
+<area shape="rect" id="node4" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#ga259b00707b333065b66be515dd019428" title="Prepares an endpoint for reception. " alt="" coords="208,56,389,83"/>
+<area shape="rect" id="node3" href="$group___p_c_d___exported___functions___group3.html#ga116ada543442c8f7a1003c4d4c211618" title="HAL_PCD_EP_Transmit" alt="" coords="437,5,604,32"/>
+<area shape="rect" id="node5" href="$group___p_c_d___exported___functions___group3.html#ga0029fe7a8d3db91b13637e2507fba60c" title="HAL_PCD_EP_Receive" alt="" coords="439,56,603,83"/>
+</map>

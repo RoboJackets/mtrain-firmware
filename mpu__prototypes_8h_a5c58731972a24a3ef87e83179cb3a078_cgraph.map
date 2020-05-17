@@ -1,0 +1,8 @@
+<map id="MPU_vEventGroupDelete" name="MPU_vEventGroupDelete">
+<area shape="rect" id="node2" href="$mpu__wrappers_8c.html#ac42aa31652a6e8158f8ea8a88aad8275" title="xPortRaisePrivilege" alt="" coords="227,20,364,47"/>
+<area shape="rect" id="node3" href="$event__groups_8c.html#a6939faca89fc4ba52fa8288527042464" title="event_groups.h " alt="" coords="227,71,363,97"/>
+<area shape="rect" id="node4" href="$task_8h.html#a366b302eba79d10b5ee2a3756f0fcc43" title="vTaskSuspendAll" alt="" coords="657,29,781,56"/>
+<area shape="rect" id="node5" href="$task_8h.html#aca64fad00201055cbaf9fff74f181b85" title="xTaskRemoveFromUnordered\lEventList" alt="" coords="412,34,609,75"/>
+<area shape="rect" id="node6" href="$portable_8h.html#a735cd3085bb7ba06ff8e47565bfd7016" title="vPortFree" alt="" coords="471,100,550,127"/>
+<area shape="rect" id="node7" href="$task_8h.html#a003f8ae6d649225abd030cc76e1c7d0e" title="xTaskResumeAll" alt="" coords="658,125,781,152"/>
+</map>

@@ -1,0 +1,22 @@
+<map id="USBD_LL_Transmit" name="USBD_LL_Transmit">
+<area shape="rect" id="node2" href="$group___u_s_b_d___c_d_c___private___functions.html#gac6132b25e4ac00c4d918d3d73a3be5c7" title="USBD_CDC_DataOut Data received on non&#45;control Out endpoint. " alt="" coords="210,5,406,32"/>
+<area shape="rect" id="node4" href="$group___u_s_b_d___c_u_s_t_o_m___h_i_d___private___functions.html#ga568311e7fa670a8fc270beea29559ddf" title="USBD_CUSTOM_HID_SendReport Send CUSTOM_HID Report. " alt="" coords="192,56,424,83"/>
+<area shape="rect" id="node5" href="$group___u_s_b_d___h_i_d___private___functions.html#ga31060221c659672fdb3dcc2ff1c4a037" title="USBD_HID_SendReport Send HID Report. " alt="" coords="225,107,391,133"/>
+<area shape="rect" id="node6" href="$group___m_s_c___b_o_t___private___functions.html#gaaa2676ffcc7ca9a34ec85395cd3ead9e" title="MSC_BOT_SendCSW Send the Command Status Wrapper. " alt="" coords="231,157,385,184"/>
+<area shape="rect" id="node11" href="$group___u_s_b_d___i_o_r_e_q___private___functions.html#gae66e8dc0e24f9d7d23930f6c87605e75" title="USBD_CtlSendData send data on the ctl pipe. " alt="" coords="237,208,379,235"/>
+<area shape="rect" id="node15" href="$group___u_s_b_d___i_o_r_e_q___private___functions.html#gaf07248d84e87cdf14db392f94b369744" title="USBD_CtlContinueSendData continue sending data on the ctl pipe. " alt="" coords="211,335,405,361"/>
+<area shape="rect" id="node18" href="$group___u_s_b_d___i_o_r_e_q___private___functions.html#ga19e53947fc912c43bcee2c7d7429e8ee" title="USBD_CtlSendStatus send zero lzngth packet on the ctl pipe. " alt="" coords="232,259,384,285"/>
+<area shape="rect" id="node3" href="$bsp_8c.html#a92830f7410339c4be8b469045686e10b" title="_write" alt="" coords="531,5,588,32"/>
+<area shape="rect" id="node7" href="$group___m_s_c___b_o_t___private___functions.html#ga6e6e6d34395fe9d5bb1438e38aa88ae5" title="MSC_BOT_DataIn Handle BOT IN data stage. " alt="" coords="493,81,625,108"/>
+<area shape="rect" id="node9" href="$group___m_s_c___b_o_t___private___functions.html#gae59234b7fe768ccdf5294ddfc5abc757" title="MSC_BOT_CplClrFeature Complete the clear feature request. " alt="" coords="472,132,647,159"/>
+<area shape="rect" id="node8" href="$group___m_s_c___c_o_r_e___private___functions.html#ga5e8efa4e702c828c2c4f9af58d0447fd" title="USBD_MSC_DataIn handle data IN Stage. " alt="" coords="736,81,879,108"/>
+<area shape="rect" id="node10" href="$group___m_s_c___c_o_r_e___private___functions.html#gaf7c2344d42242f52ce4e1f9d68c7b0b9" title="USBD_MSC_Setup Handle the MSC specific requests. " alt="" coords="738,157,877,184"/>
+<area shape="rect" id="node12" href="$group___u_s_b_d___r_e_q___private___functions.html#ga46d1a0a4e23e1e8c80167dcdc59b2538" title="USBD_StdEPReq Handle standard usb endpoint requests. " alt="" coords="495,233,624,260"/>
+<area shape="rect" id="node13" href="$group___u_s_b_d___c_o_r_e___private___functions.html#gabdcdfefaffa1651c77a38d08eb3a82ce" title="USBD_SetupStage Handle the setup stage. " alt="" coords="729,259,885,285"/>
+<area shape="rect" id="node14" href="$group___p_c_d___exported___functions___group2.html#ga9d72aa4d3d984b164047b081d4566f6d" title="SetupStage callback. " alt="" coords="968,259,1179,285"/>
+<area shape="rect" id="node16" href="$group___u_s_b_d___c_o_r_e___private___functions.html#ga09597f0a303e0148d9f291477f7c4439" title="USBD_DataInStage Handle data in stage. " alt="" coords="479,385,640,412"/>
+<area shape="rect" id="node17" href="$group___p_c_d___exported___functions___group2.html#ga1679f5c50539a3dfca1391557e7a757b" title="DataIn Stage callback. " alt="" coords="700,385,915,412"/>
+<area shape="rect" id="node19" href="$group___u_s_b_d___c_o_r_e___private___functions.html#ga1ab0439714328647692719a2b1c9e689" title="USBD_DataOutStage Handle data OUT stage. " alt="" coords="474,335,645,361"/>
+<area shape="rect" id="node21" href="$group___u_s_b_d___r_e_q___private___functions.html#gac1c8cd8a59f1c99887f131a4299f31b1" title="USBD_StdItfReq Handle standard usb interface requests. " alt="" coords="498,284,621,311"/>
+<area shape="rect" id="node20" href="$group___p_c_d___exported___functions___group2.html#ga2f1ac834d9677dcae7d8973828f81149" title="DataOut Stage callback. " alt="" coords="695,335,920,361"/>
+</map>

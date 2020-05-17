@@ -1,0 +1,4 @@
+<map id="SPI::transmit" name="SPI::transmit">
+<area shape="rect" id="node2" href="$class_s_p_i.html#a0c205413a76d117b835acdd2f6be08b3" title="SPI::transmitReceive" alt="" coords="152,5,299,32"/>
+<area shape="rect" id="node3" href="$group___g_p_i_o___exported___functions___group2.html#gaf4b97bdf533a02f51ef696d43b6da5c4" title="HAL_GPIO_WritePin" alt="" coords="347,5,492,32"/>
+</map>

@@ -1,0 +1,27 @@
+var group___d_a_c_ex__lfsrunmask__triangleamplitude =
+[
+    [ "DAC_LFSRUNMASK_BIT0", "group___d_a_c_ex__lfsrunmask__triangleamplitude.html#ga7a003ed3e05458a7d00a06c1ef16865b", null ],
+    [ "DAC_LFSRUNMASK_BITS10_0", "group___d_a_c_ex__lfsrunmask__triangleamplitude.html#gac795f6628d7f47337f7c8361b4c39309", null ],
+    [ "DAC_LFSRUNMASK_BITS11_0", "group___d_a_c_ex__lfsrunmask__triangleamplitude.html#ga91b57e42ac27ef9cae7c728d4124e75b", null ],
+    [ "DAC_LFSRUNMASK_BITS1_0", "group___d_a_c_ex__lfsrunmask__triangleamplitude.html#ga3a40c4b7ef3a0a98ddc5f7f577b2afb4", null ],
+    [ "DAC_LFSRUNMASK_BITS2_0", "group___d_a_c_ex__lfsrunmask__triangleamplitude.html#ga0f397695773c89e31930f9909a4668a6", null ],
+    [ "DAC_LFSRUNMASK_BITS3_0", "group___d_a_c_ex__lfsrunmask__triangleamplitude.html#ga1a790464fa765ebd57b47385be54b136", null ],
+    [ "DAC_LFSRUNMASK_BITS4_0", "group___d_a_c_ex__lfsrunmask__triangleamplitude.html#ga15f06fc14c8931cecea96186edcc4cfc", null ],
+    [ "DAC_LFSRUNMASK_BITS5_0", "group___d_a_c_ex__lfsrunmask__triangleamplitude.html#gaf4ddf68e1ca3ff46f9dadc559ac3e16b", null ],
+    [ "DAC_LFSRUNMASK_BITS6_0", "group___d_a_c_ex__lfsrunmask__triangleamplitude.html#ga17ee7ec51f948f30e8ff1779033de0a8", null ],
+    [ "DAC_LFSRUNMASK_BITS7_0", "group___d_a_c_ex__lfsrunmask__triangleamplitude.html#ga5ec6464589b3c0d11fff052fbccc6fde", null ],
+    [ "DAC_LFSRUNMASK_BITS8_0", "group___d_a_c_ex__lfsrunmask__triangleamplitude.html#gab70bea148433b9f831806e7f952f6436", null ],
+    [ "DAC_LFSRUNMASK_BITS9_0", "group___d_a_c_ex__lfsrunmask__triangleamplitude.html#ga06a92bab781b83f69c86e5692f8b175e", null ],
+    [ "DAC_TRIANGLEAMPLITUDE_1", "group___d_a_c_ex__lfsrunmask__triangleamplitude.html#ga3d049906f04fabaf9508c7172d2c125d", null ],
+    [ "DAC_TRIANGLEAMPLITUDE_1023", "group___d_a_c_ex__lfsrunmask__triangleamplitude.html#ga0302e3294e47d56bd8ccf3c1f9666b67", null ],
+    [ "DAC_TRIANGLEAMPLITUDE_127", "group___d_a_c_ex__lfsrunmask__triangleamplitude.html#ga9592f254a8231d140002c513797a4010", null ],
+    [ "DAC_TRIANGLEAMPLITUDE_15", "group___d_a_c_ex__lfsrunmask__triangleamplitude.html#ga1edcf3cccdfcb11c0ca32d8f18abdffd", null ],
+    [ "DAC_TRIANGLEAMPLITUDE_2047", "group___d_a_c_ex__lfsrunmask__triangleamplitude.html#ga23eb0e66c25fb8ba56b4a6fe8cc2686a", null ],
+    [ "DAC_TRIANGLEAMPLITUDE_255", "group___d_a_c_ex__lfsrunmask__triangleamplitude.html#ga9b278ba3c4d0ff08f1a4f0477d66e975", null ],
+    [ "DAC_TRIANGLEAMPLITUDE_3", "group___d_a_c_ex__lfsrunmask__triangleamplitude.html#gaa334aae5c5295ac13a5f4c0c93a95eac", null ],
+    [ "DAC_TRIANGLEAMPLITUDE_31", "group___d_a_c_ex__lfsrunmask__triangleamplitude.html#ga900e918a12aa0542e8ba9ab6fe821f53", null ],
+    [ "DAC_TRIANGLEAMPLITUDE_4095", "group___d_a_c_ex__lfsrunmask__triangleamplitude.html#ga5dfccaa15e2e0df626aa6bd649b9fb20", null ],
+    [ "DAC_TRIANGLEAMPLITUDE_511", "group___d_a_c_ex__lfsrunmask__triangleamplitude.html#ga5db79e666fa79f6a8699c276a57703e7", null ],
+    [ "DAC_TRIANGLEAMPLITUDE_63", "group___d_a_c_ex__lfsrunmask__triangleamplitude.html#gac6ef2005ddc7472e565ba021b37ef301", null ],
+    [ "DAC_TRIANGLEAMPLITUDE_7", "group___d_a_c_ex__lfsrunmask__triangleamplitude.html#ga27c799055d0d9ddc50b73223ab5563d2", null ]
+];

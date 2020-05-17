@@ -1,0 +1,8 @@
+<map id="USBD_LL_DataOutStage" name="USBD_LL_DataOutStage">
+<area shape="rect" id="node2" href="$group___u_s_b_d___i_o_r_e_q___exported___functions_prototype.html#gaf6cabd5a8d9d527cf6aa64915abb7f2b" title="USBD_CtlContinueRx continue receive data on the ctl pipe. " alt="" coords="224,5,377,32"/>
+<area shape="rect" id="node5" href="$group___u_s_b_d___i_o_r_e_q___exported___functions_prototype.html#ga19e53947fc912c43bcee2c7d7429e8ee" title="USBD_CtlSendStatus send zero lzngth packet on the ctl pipe. " alt="" coords="225,56,377,83"/>
+<area shape="rect" id="node3" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#ga259b00707b333065b66be515dd019428" title="Prepares an endpoint for reception. " alt="" coords="425,5,607,32"/>
+<area shape="rect" id="node4" href="$group___p_c_d___exported___functions___group3.html#ga0029fe7a8d3db91b13637e2507fba60c" title="HAL_PCD_EP_Receive" alt="" coords="656,5,820,32"/>
+<area shape="rect" id="node6" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#gab87eb9f3d4d9f8956d2c6b77230f265c" title="Transmits data over an endpoint. " alt="" coords="447,56,585,83"/>
+<area shape="rect" id="node7" href="$group___p_c_d___exported___functions___group3.html#ga116ada543442c8f7a1003c4d4c211618" title="HAL_PCD_EP_Transmit" alt="" coords="655,56,821,83"/>
+</map>

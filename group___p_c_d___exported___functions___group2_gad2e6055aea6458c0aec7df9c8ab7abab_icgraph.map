@@ -1,0 +1,5 @@
+<map id="HAL_PCD_Stop" name="HAL_PCD_Stop">
+<area shape="rect" id="node2" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#gac522b28139c1868a2e24d044fc8288fd" title="Stops the Low Level portion of the Device driver. " alt="" coords="172,31,287,57"/>
+<area shape="rect" id="node3" href="$group___u_s_b_d___c_o_r_e___private___functions.html#ga9d0ee86f2309eef71d3233080752dea2" title="USBD_DeInit Re&#45;Initialize th device library. " alt="" coords="335,5,437,32"/>
+<area shape="rect" id="node4" href="$group___u_s_b_d___c_o_r_e___private___functions.html#ga589cc62baf6dcff5612ec1f51422d28e" title="USBD_Stop Stop the USB Device Core. " alt="" coords="339,56,433,83"/>
+</map>

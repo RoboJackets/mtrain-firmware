@@ -1,0 +1,4 @@
+<map id="HAL_InitTick" name="HAL_InitTick">
+<area shape="rect" id="node2" href="$group___c_o_r_t_e_x___exported___functions___group1.html#gac3a3f0d53c315523a8e6e7bcac1940cf" title="HAL_SYSTICK_Config" alt="" coords="152,5,311,32"/>
+<area shape="rect" id="node3" href="$group___c_o_r_t_e_x___exported___functions___group1.html#ga8581a82025a4780efd00876a66e3e91b" title="HAL_NVIC_SetPriority" alt="" coords="153,56,309,83"/>
+</map>

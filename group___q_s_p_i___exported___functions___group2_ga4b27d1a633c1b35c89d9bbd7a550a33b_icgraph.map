@@ -1,0 +1,5 @@
+<map id="HAL_QSPI_Receive" name="HAL_QSPI_Receive">
+<area shape="rect" id="node2" href="$qspi_8c.html#afd24188012ad168d89a49354fed1c073" title="BSP_QSPI_Read" alt="" coords="196,5,323,32"/>
+<area shape="rect" id="node4" href="$qspi_8c.html#ad40e4c912d6976ca9490b8c64d81fa30" title="BSP_print_regs" alt="" coords="203,56,316,83"/>
+<area shape="rect" id="node3" href="$flash_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="371,31,421,57"/>
+</map>

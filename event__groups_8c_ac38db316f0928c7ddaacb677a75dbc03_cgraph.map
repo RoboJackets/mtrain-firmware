@@ -1,0 +1,11 @@
+<map id="xEventGroupSync" name="xEventGroupSync">
+<area shape="rect" id="node2" href="$task_8h.html#a0241000e08a261372186d34825a35979" title="xTaskGetSchedulerState" alt="" coords="209,5,377,32"/>
+<area shape="rect" id="node3" href="$task_8h.html#a366b302eba79d10b5ee2a3756f0fcc43" title="vTaskSuspendAll" alt="" coords="489,48,613,75"/>
+<area shape="rect" id="node4" href="$event__groups_8c.html#a9ac7cd970f50e2e50a494b656e0eb239" title="xEventGroupSetBits" alt="" coords="222,107,363,133"/>
+<area shape="rect" id="node6" href="$task_8h.html#a003f8ae6d649225abd030cc76e1c7d0e" title="xTaskResumeAll" alt="" coords="489,165,612,192"/>
+<area shape="rect" id="node7" href="$task_8h.html#a9d52fa7b60cc6a7b4fd0846700d7834c" title="vTaskPlaceOnUnorderedEventList" alt="" coords="181,208,404,235"/>
+<area shape="rect" id="node8" href="$task_8h.html#a7793b4bbe45c10d4c5104c126b89e87c" title="uxTaskResetEventItemValue" alt="" coords="196,259,389,285"/>
+<area shape="rect" id="node5" href="$task_8h.html#aca64fad00201055cbaf9fff74f181b85" title="xTaskRemoveFromUnordered\lEventList" alt="" coords="452,99,649,141"/>
+<area shape="rect" id="node9" href="$task_8h.html#aa1a0ae86baba1a7edda940a6ecd4cfb4" title="pvTaskIncrementMutexHeld\lCount" alt="" coords="457,234,644,275"/>
+<area shape="rect" id="node10" href="$task_8h.html#a66540bef602522a01a519f776e4c07d8" title="ulTaskNotifyTake" alt="" coords="488,300,613,327"/>
+</map>

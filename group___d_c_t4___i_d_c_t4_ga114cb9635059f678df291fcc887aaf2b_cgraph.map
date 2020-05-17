@@ -1,0 +1,4 @@
+<map id="arm_dct4_q15" name="arm_dct4_q15">
+<area shape="rect" id="node2" href="$group___basic_mult.html#gafb0778d27ed98a2a6f2ecb7d48cc8c75" title="Q15 vector multiplication. " alt="" coords="157,5,261,32"/>
+<area shape="rect" id="node3" href="$group__shift.html#gaa1757e53279780107acc92cf100adb61" title="Shifts the elements of a Q15 vector a specified number of bits. " alt="" coords="157,56,261,83"/>
+</map>

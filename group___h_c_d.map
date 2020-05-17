@@ -1,0 +1,10 @@
+<map id="HCD" name="HCD">
+<area shape="rect" id="node1" href="$group___h_c_d___exported___functions.html" title="HCD Exported Functions" alt="" coords="323,5,492,32"/>
+<area shape="rect" id="node4" href="$group___h_c_d___exported___constants.html" title="HCD Exported Constants" alt="" coords="321,56,493,83"/>
+<area shape="rect" id="node5" href="$group___h_c_d___private___functions.html" title="HCD Private Functions" alt="" coords="328,107,487,133"/>
+<area shape="rect" id="node6" href="$group___h_c_d___private___functions___prototypes.html" title="HCD Private Functions\l Prototypes" alt="" coords="328,158,487,199"/>
+<area shape="rect" id="node7" href="$group___h_c_d___private___macros.html" title="HCD Private Macros" alt="" coords="335,224,479,251"/>
+<area shape="rect" id="node8" href="$group___h_c_d___exported___types.html" title="HCD Exported Types" alt="" coords="333,275,481,301"/>
+<area shape="rect" id="node9" href="$group___h_c_d___exported___macros.html" title="macros to handle interrupts and specific clock configurations " alt="" coords="330,325,485,352"/>
+<area shape="rect" id="node3" href="$group___s_t_m32_f7xx___h_a_l___driver.html" title="STM32F7xx_HAL_Driver" alt="" coords="5,165,173,192"/>
+</map>

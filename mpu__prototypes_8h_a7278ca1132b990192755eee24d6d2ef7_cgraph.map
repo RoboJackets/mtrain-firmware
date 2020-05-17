@@ -1,0 +1,4 @@
+<map id="MPU_xQueueGetMutexHolder" name="MPU_xQueueGetMutexHolder">
+<area shape="rect" id="node2" href="$mpu__wrappers_8c.html#ac42aa31652a6e8158f8ea8a88aad8275" title="xPortRaisePrivilege" alt="" coords="265,5,402,32"/>
+<area shape="rect" id="node3" href="$queue_8h.html#ac0db78cd3f300adcf29d618d7a0ec6fa" title="xQueueGetMutexHolder" alt="" coords="252,56,415,83"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="HAL_NVIC_DisableIRQ" name="HAL_NVIC_DisableIRQ">
+<area shape="rect" id="node2" href="$class_s_p_i.html#a6babebf1ea3e8ff0330f43a3e2312ac4" title="SPI::~SPI" alt="" coords="252,5,335,32"/>
+<area shape="rect" id="node3" href="$group___q_s_p_i___exported___functions___group1.html#gaef70fea205effccab34a1ade5ba93510" title="HAL_QSPI_MspDeInit" alt="" coords="216,56,371,83"/>
+</map>

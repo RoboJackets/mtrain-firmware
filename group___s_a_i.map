@@ -1,0 +1,9 @@
+<map id="SAI" name="SAI">
+<area shape="rect" id="node2" href="$group___s_a_i___exported___constants.html" title="SAI Exported Constants" alt="" coords="315,5,479,32"/>
+<area shape="rect" id="node3" href="$group___s_a_i___exported___macros.html" title="macros to handle interrupts and specific configurations " alt="" coords="323,56,470,83"/>
+<area shape="rect" id="node5" href="$group___s_a_i___exported___types.html" title="SAI Exported Types" alt="" coords="327,107,467,133"/>
+<area shape="rect" id="node6" href="$group___s_a_i___exported___functions.html" title="SAI_Exported_Functions" alt="" coords="313,157,480,184"/>
+<area shape="rect" id="node7" href="$group___s_a_i___private___functions.html" title="SAI Private Functions" alt="" coords="321,208,472,235"/>
+<area shape="rect" id="node8" href="$group___s_a_i___private___macros.html" title="SAI_Private_Macros" alt="" coords="325,259,468,285"/>
+<area shape="rect" id="node4" href="$group___s_t_m32_f7xx___h_a_l___driver.html" title="STM32F7xx_HAL_Driver" alt="" coords="5,132,173,159"/>
+</map>

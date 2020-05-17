@@ -1,0 +1,6 @@
+<map id="USBD_GetString" name="USBD_GetString">
+<area shape="rect" id="node2" href="$usbd__desc_8c.html#a3bb26f882f427b6f5e73a0512c339646" title="Returns the product string descriptor. " alt="" coords="179,5,403,32"/>
+<area shape="rect" id="node3" href="$usbd__desc_8c.html#a8f2e7551422558d3c52c79806b6ad862" title="Returns the manufacturer string descriptor. " alt="" coords="194,57,389,98"/>
+<area shape="rect" id="node4" href="$usbd__desc_8c.html#a1e6dcf1676b3d590a459137eb0de83e6" title="Returns the configuration string descriptor. " alt="" coords="183,123,400,149"/>
+<area shape="rect" id="node5" href="$usbd__desc_8c.html#a5fc31a9dc4985c466941472a2a9006d5" title="Returns the interface string descriptor. " alt="" coords="176,173,407,200"/>
+</map>

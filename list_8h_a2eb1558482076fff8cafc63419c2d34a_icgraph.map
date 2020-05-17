@@ -1,0 +1,6 @@
+<map id="uxListRemove" name="uxListRemove">
+<area shape="rect" id="node2" href="$tasks_8c.html#a6d21c9054b62d8bc1bfb2724e11578d9" title="xTaskRemoveFromEventList" alt="" coords="160,31,352,57"/>
+<area shape="rect" id="node3" href="$queue_8c.html#a5e54273dbe3f56b8bdc8f7abee67a871" title="xQueueGenericReset" alt="" coords="400,5,547,32"/>
+<area shape="rect" id="node5" href="$queue_8c.html#a4df49fafb6ba4400ede6f2d07a40865f" title="xQueueGiveFromISR" alt="" coords="400,56,547,83"/>
+<area shape="rect" id="node4" href="$mpu__wrappers_8c.html#ac7dccb1862fd656e1aedff73bd7c3433" title="MPU_xQueueGenericReset" alt="" coords="595,5,779,32"/>
+</map>

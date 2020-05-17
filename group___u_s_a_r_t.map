@@ -1,0 +1,10 @@
+<map id="USART" name="USART">
+<area shape="rect" id="node1" href="$group___u_s_a_r_t___private___constants.html" title="USART Private Constants" alt="" coords="344,5,521,32"/>
+<area shape="rect" id="node2" href="$group___u_s_a_r_t___exported___functions.html" title="USART_Exported_Functions" alt="" coords="337,56,528,83"/>
+<area shape="rect" id="node3" href="$group___u_s_a_r_t___private___macros.html" title="USART Private Macros" alt="" coords="353,107,513,133"/>
+<area shape="rect" id="node4" href="$group___u_s_a_r_t___exported___types.html" title="USART Exported Types" alt="" coords="351,157,515,184"/>
+<area shape="rect" id="node5" href="$group___s_t_m32_f7xx___h_a_l___driver.html" title="STM32F7xx_HAL_Driver" alt="" coords="5,157,173,184"/>
+<area shape="rect" id="node6" href="$group___u_s_a_r_t___private___functions.html" title="USART Private Functions" alt="" coords="345,208,520,235"/>
+<area shape="rect" id="node8" href="$group___u_s_a_r_t___exported___constants.html" title="USART Exported Constants" alt="" coords="339,259,527,285"/>
+<area shape="rect" id="node9" href="$group___u_s_a_r_t___exported___macros.html" title="USART Exported Macros" alt="" coords="347,309,518,336"/>
+</map>

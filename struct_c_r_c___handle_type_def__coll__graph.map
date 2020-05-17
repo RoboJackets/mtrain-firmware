@@ -1,0 +1,4 @@
+<map id="CRC_HandleTypeDef" name="CRC_HandleTypeDef">
+<area shape="rect" id="node2" href="$struct_c_r_c___init_type_def.html" title="{CRC_InitTypeDef\n|+ DefaultPolynomialUse\l+ DefaultInitValueUse\l+ GeneratingPolynomial\l+ CRCLength\l+ InitValue\l+ InputDataInversionMode\l+ OutputDataInversionMode\l|}" alt="" coords="5,13,192,178"/>
+<area shape="rect" id="node3" href="$struct_c_r_c___type_def.html" title="CRC calculation unit. " alt="" coords="217,5,333,185"/>
+</map>

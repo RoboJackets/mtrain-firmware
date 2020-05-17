@@ -1,0 +1,8 @@
+<map id="RCCEx Exported Macros" name="RCCEx Exported Macros">
+<area shape="rect" id="node1" href="$group___r_c_c_ex___peripheral___clock___enable___disable___status.html" title="Get the enable or disable status of the AHB/APB peripheral clock. " alt="" coords="346,5,509,47"/>
+<area shape="rect" id="node3" href="$group___r_c_c_ex___peripheral___clock___enable___disable.html" title="Enables or disables the AHB/APB peripheral clock. " alt="" coords="340,71,515,112"/>
+<area shape="rect" id="node5" href="$group___r_c_c___clock___sleep___enable___disable___status.html" title="Get the enable or disable status of the AHB/APB peripheral clock during Low Power (Sleep) mode..." alt="" coords="356,137,499,193"/>
+<area shape="rect" id="node6" href="$group___r_c_c_ex___force___release___peripheral___reset.html" title="Forces or releases AHB/APB peripheral reset. " alt="" coords="349,217,506,259"/>
+<area shape="rect" id="node7" href="$group___r_c_c_ex___peripheral___clock___sleep___enable___disable.html" title="Enables or disables the AHB/APB peripheral clock during Low Power (Sleep) mode. " alt="" coords="343,283,511,324"/>
+<area shape="rect" id="node4" href="$group___r_c_c_ex.html" title="RCCEx HAL module driver. " alt="" coords="5,151,73,178"/>
+</map>

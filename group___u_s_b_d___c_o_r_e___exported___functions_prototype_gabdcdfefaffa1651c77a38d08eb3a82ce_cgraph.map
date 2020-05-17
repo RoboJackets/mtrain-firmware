@@ -1,0 +1,16 @@
+<map id="USBD_LL_SetupStage" name="USBD_LL_SetupStage">
+<area shape="rect" id="node2" href="$group___u_s_b_d___r_e_q___exported___functions_prototype.html#ga54a17c9993f3422dce6dce7e9d8614b9" title="USBD_ParseSetupRequest Copy buffer into setup structure. " alt="" coords="209,5,393,32"/>
+<area shape="rect" id="node3" href="$group___u_s_b_d___r_e_q___exported___functions_prototype.html#gac40d4171a55983d25bbbb7b8c3fce95e" title="USBD_StdDevReq Handle standard usb device requests. " alt="" coords="234,56,369,83"/>
+<area shape="rect" id="node4" href="$group___u_s_b_d___r_e_q___exported___functions_prototype.html#gac1c8cd8a59f1c99887f131a4299f31b1" title="USBD_StdItfReq Handle standard usb interface requests. " alt="" coords="240,157,363,184"/>
+<area shape="rect" id="node9" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#gabc2b4a7c8307e04955b015fd32057ec7" title="Sets a Stall condition on an endpoint of the Low Level Driver. " alt="" coords="665,157,797,184"/>
+<area shape="rect" id="node11" href="$group___u_s_b_d___r_e_q___exported___functions_prototype.html#ga46d1a0a4e23e1e8c80167dcdc59b2538" title="USBD_StdEPReq Handle standard usb endpoint requests. " alt="" coords="237,259,366,285"/>
+<area shape="rect" id="node5" href="$group___u_s_b_d___i_o_r_e_q___exported___functions_prototype.html#ga19e53947fc912c43bcee2c7d7429e8ee" title="USBD_CtlSendStatus send zero lzngth packet on the ctl pipe. " alt="" coords="447,208,599,235"/>
+<area shape="rect" id="node8" href="$group___u_s_b_d___r_e_q___private___functions.html#ga48795256b00d45158aa8036e843d300a" title="USBD_CtlError Handle USB low level Error. " alt="" coords="467,157,579,184"/>
+<area shape="rect" id="node6" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#gab87eb9f3d4d9f8956d2c6b77230f265c" title="Transmits data over an endpoint. " alt="" coords="662,284,801,311"/>
+<area shape="rect" id="node7" href="$group___p_c_d___exported___functions___group3.html#ga116ada543442c8f7a1003c4d4c211618" title="HAL_PCD_EP_Transmit" alt="" coords="859,284,1025,311"/>
+<area shape="rect" id="node10" href="$group___p_c_d___exported___functions___group3.html#gaecee197a59aacc015742c62b74881b6f" title="HAL_PCD_EP_SetStall" alt="" coords="861,157,1023,184"/>
+<area shape="rect" id="node12" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#gad4fa6f2eeefe95d07148c6c53d111eae" title="Clears a Stall condition on an endpoint of the Low Level Driver. " alt="" coords="441,411,604,437"/>
+<area shape="rect" id="node14" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#ga2a0f10f93cc4246272b63661051a64b7" title="Returns Stall condition. " alt="" coords="451,309,594,336"/>
+<area shape="rect" id="node15" href="$group___u_s_b_d___i_o_r_e_q___exported___functions_prototype.html#ga5485330015d6e90ae4db3d4eda425913" title="USBD_CtlSendData send data on the ctl pipe. " alt="" coords="451,360,594,387"/>
+<area shape="rect" id="node13" href="$group___p_c_d___exported___functions___group3.html#ga56466fbd2aa05a80c924b18ddc2ac3ca" title="HAL_PCD_EP_ClrStall" alt="" coords="652,411,811,437"/>
+</map>

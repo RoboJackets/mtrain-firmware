@@ -1,0 +1,23 @@
+<map id="HAL_GPIO_Init" name="HAL_GPIO_Init">
+<area shape="rect" id="node2" href="$digital__in_8c.html#aea68144008e97b3548062c5f5cdb544b" title="Configures GPIO pin for digital in. " alt="" coords="195,5,285,32"/>
+<area shape="rect" id="node3" href="$digital__in_8c.html#a8d1b809f341bf44f0e5d4b8d6fa0f7cf" title="Configures GPIO pin for digital in. " alt="" coords="185,56,295,83"/>
+<area shape="rect" id="node5" href="$digital__out_8c.html#a1c308574bdf1795a9d828683cfb02d24" title="Configures GPIO pin for digital out, push pull. " alt="" coords="191,107,289,133"/>
+<area shape="rect" id="node7" href="$digital__out_8c.html#a6e802ebb28a370a207845d8ee816dad1" title="Configures GPIO pin for digital out. " alt="" coords="181,157,299,184"/>
+<area shape="rect" id="node8" href="$interrupt__in_8c.html#abfd73347b96b76899b2a086485322a51" title="Configures GPIO pin for interruptin. " alt="" coords="189,208,291,235"/>
+<area shape="rect" id="node9" href="$interrupt__in_8c.html#a4dfe0ace5ead6ec8ab59d4ce1e20f427" title="Configures GPIO pin for interruptin. " alt="" coords="178,259,302,285"/>
+<area shape="rect" id="node11" href="$class_digital_in.html#a32fd0e44d3d8b488b2838e21b31ae479" title="Configures GPIO pin for digital in. " alt="" coords="177,309,303,336"/>
+<area shape="rect" id="node12" href="$class_digital_out.html#a2920b6c8b2fe1b78bf7770f48d0458c9" title="Configures GPIO pin for digital in. " alt="" coords="167,360,313,387"/>
+<area shape="rect" id="node13" href="$class_i2_c.html#af873a848403e133a5a6414b677ec3c86" title="I2C::I2C" alt="" coords="204,411,276,437"/>
+<area shape="rect" id="node14" href="$class_i2_c.html#a11722e4027650574e7d74ee9b5509097" title="I2C::recover_bus" alt="" coords="179,461,301,488"/>
+<area shape="rect" id="node19" href="$class_s_p_i.html#a7fe5d5885824c3107bd0263b4e407e6f" title="SPI::SPI" alt="" coords="203,512,277,539"/>
+<area shape="rect" id="node20" href="$group___p_c_d___exported___functions___group1.html#ga73af972b44ba2890202363cd8b197dad" title="Initializes the PCD MSP. " alt="" coords="173,563,307,589"/>
+<area shape="rect" id="node21" href="$group___q_s_p_i___exported___functions___group1.html#gade8059377d8637fabb9a22fa1d50b558" title="HAL_QSPI_MspInit" alt="" coords="171,613,309,640"/>
+<area shape="rect" id="node22" href="$flash_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="215,664,265,691"/>
+<area shape="rect" id="node4" href="$gpio_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="digitalout and digitalin test " alt="" coords="385,56,436,83"/>
+<area shape="rect" id="node6" href="$blink_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Blink LEDs back and forth. " alt="" coords="385,107,436,133"/>
+<area shape="rect" id="node10" href="$blink__interrupt_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="385,259,436,285"/>
+<area shape="rect" id="node15" href="$class_i2_c.html#a329bd3c0d083593f1dd72525ec75d713" title="I2C::transmit" alt="" coords="361,411,460,437"/>
+<area shape="rect" id="node17" href="$class_i2_c.html#a687c0929c22d41e5b4428d24e1208f51" title="I2C::receive" alt="" coords="364,461,457,488"/>
+<area shape="rect" id="node18" href="$i2c__bus__recovery_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="385,512,436,539"/>
+<area shape="rect" id="node16" href="$tests_2cpp_2_i2_c_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="508,436,559,463"/>
+</map>

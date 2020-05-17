@@ -1,0 +1,5 @@
+<map id="HAL_PCDEx_SetRxFiFo" name="HAL_PCDEx_SetRxFiFo">
+<area shape="rect" id="node2" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#ga24b61e95db7e4c7ad30a835e8d905943" title="Initializes the Low Level portion of the Device driver. " alt="" coords="224,5,331,32"/>
+<area shape="rect" id="node3" href="$group___u_s_b_d___c_o_r_e___private___functions.html#gad35f19488381872e83fa7b23d96589e7" title="USBD_Init Initializes the device stack and load the class driver. " alt="" coords="379,5,464,32"/>
+<area shape="rect" id="node4" href="$bsp_8c.html#a1daad6f02d05b6715108e804f68c3d21" title="bsp_config" alt="" coords="512,5,597,32"/>
+</map>

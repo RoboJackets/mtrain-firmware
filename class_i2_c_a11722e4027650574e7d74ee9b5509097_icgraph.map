@@ -1,0 +1,6 @@
+<map id="I2C::recover_bus" name="I2C::recover_bus">
+<area shape="rect" id="node2" href="$class_i2_c.html#a329bd3c0d083593f1dd72525ec75d713" title="I2C::transmit" alt="" coords="176,5,275,32"/>
+<area shape="rect" id="node4" href="$class_i2_c.html#a687c0929c22d41e5b4428d24e1208f51" title="I2C::receive" alt="" coords="179,56,272,83"/>
+<area shape="rect" id="node5" href="$i2c__bus__recovery_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="200,107,251,133"/>
+<area shape="rect" id="node3" href="$tests_2cpp_2_i2_c_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="323,31,373,57"/>
+</map>

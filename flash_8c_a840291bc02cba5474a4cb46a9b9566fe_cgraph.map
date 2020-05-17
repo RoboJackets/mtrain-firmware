@@ -1,0 +1,15 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$group___g_p_i_o___exported___functions___group1.html#ga41bda93b6dd639e4905fdb1454eff98e" title="HAL_GPIO_Init" alt="" coords="135,5,248,32"/>
+<area shape="rect" id="node3" href="$group___h_a_l___exported___functions___group2.html#gaef87d3fec667bb34c418f5687e8204c1" title="This function provides accurate delay (in milliseconds) based on variable incremented. " alt="" coords="147,56,236,83"/>
+<area shape="rect" id="node5" href="$qspi_8h.html#a16bfb007537138503575b1eca186766e" title="BSP_QSPI_Init" alt="" coords="135,107,248,133"/>
+<area shape="rect" id="node8" href="$qspi_8h.html#ad40e4c912d6976ca9490b8c64d81fa30" title="BSP_print_regs" alt="" coords="135,157,248,184"/>
+<area shape="rect" id="node11" href="$qspi_8h.html#afd24188012ad168d89a49354fed1c073" title="BSP_QSPI_Read" alt="" coords="128,208,255,235"/>
+<area shape="rect" id="node12" href="$qspi_8h.html#a9b8887ff40533623ddb894b271280540" title="BSP_QSPI_Erase_Sector" alt="" coords="104,259,279,285"/>
+<area shape="rect" id="node13" href="$qspi_8h.html#a2db5e1ee5203ab750531a7fe5e9e3547" title="BSP_QSPI_Write" alt="" coords="128,309,255,336"/>
+<area shape="rect" id="node14" href="$group___g_p_i_o___exported___functions___group2.html#gaf4b97bdf533a02f51ef696d43b6da5c4" title="HAL_GPIO_WritePin" alt="" coords="119,360,264,387"/>
+<area shape="rect" id="node4" href="$group___h_a_l___exported___functions___group2.html#gac9b3a85a73735ac840d0dcb59bc0fdd6" title="Provides a tick value in millisecond. " alt="" coords="353,5,455,32"/>
+<area shape="rect" id="node6" href="$group___q_s_p_i___exported___functions___group1.html#gab96517c5b1e1b6bf74ad60fe5026cfd2" title="HAL_QSPI_DeInit" alt="" coords="339,107,469,133"/>
+<area shape="rect" id="node7" href="$group___q_s_p_i___exported___functions___group1.html#ga28f82dc9fcdbf535451c82852b2802f4" title="HAL_QSPI_Init" alt="" coords="348,56,460,83"/>
+<area shape="rect" id="node9" href="$group___q_s_p_i___exported___functions___group2.html#ga085c4e2ed3350a34b7ebd94fd7fff022" title="HAL_QSPI_Command" alt="" coords="327,208,481,235"/>
+<area shape="rect" id="node10" href="$group___q_s_p_i___exported___functions___group2.html#ga4b27d1a633c1b35c89d9bbd7a550a33b" title="HAL_QSPI_Receive" alt="" coords="333,157,475,184"/>
+</map>

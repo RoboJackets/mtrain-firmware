@@ -1,0 +1,8 @@
+<map id="MMC Exported Types" name="MMC Exported Types">
+<area shape="rect" id="node1" href="$group___m_m_c.html" title="MMC HAL module driver. " alt="" coords="5,143,60,170"/>
+<area shape="rect" id="node3" href="$group___m_m_c___exported___types___group1.html" title="MMC State enumeration\l structure" alt="" coords="323,5,487,47"/>
+<area shape="rect" id="node4" href="$group___m_m_c___exported___types___group2.html" title="MMC Card State enumeration\l structure" alt="" coords="307,71,503,112"/>
+<area shape="rect" id="node5" href="$group___m_m_c___exported___types___group3.html" title="MMC Handle Structure\l definition" alt="" coords="327,136,483,177"/>
+<area shape="rect" id="node6" href="$group___m_m_c___exported___types___group4.html" title="Card Specific Data\l: CSD Register" alt="" coords="338,201,471,243"/>
+<area shape="rect" id="node7" href="$group___m_m_c___exported___types___group5.html" title="Card Identification\l Data: CID Register" alt="" coords="335,267,474,308"/>
+</map>

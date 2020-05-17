@@ -1,0 +1,14 @@
+<map id="USBD_AUDIO" name="USBD_AUDIO">
+<area shape="rect" id="node1" href="$group___s_t_m32___u_s_b___d_e_v_i_c_e___l_i_b_r_a_r_y.html" title="STM32_USB_DEVICE_LIBRARY" alt="" coords="5,339,228,366"/>
+<area shape="rect" id="node2" href="$group___u_s_b_d___a_u_d_i_o___private___functions.html" title="USBD_AUDIO_Private\l_Functions" alt="" coords="465,5,623,47"/>
+<area shape="rect" id="node3" href="$group___u_s_b_d___c_o_r_e___exported___variables.html" title="USBD_CORE_Exported\l_Variables" alt="" coords="461,71,627,112"/>
+<area shape="rect" id="node4" href="$group___u_s_b_d___c_o_r_e___exported___types_definitions.html" title="USBD_CORE_Exported\l_TypesDefinitions" alt="" coords="461,136,627,177"/>
+<area shape="rect" id="node6" href="$group___u_s_b_d___a_u_d_i_o___private___types_definitions.html" title="USBD_AUDIO_Private\l_TypesDefinitions" alt="" coords="465,201,623,243"/>
+<area shape="rect" id="node7" href="$group___u_s_b_d___a_u_d_i_o___private___function_prototypes.html" title="USBD_AUDIO_Private\l_FunctionPrototypes" alt="" coords="465,267,623,308"/>
+<area shape="rect" id="node8" href="$group___u_s_b_d___a_u_d_i_o___private___defines.html" title="USBD_AUDIO_Private\l_Defines" alt="" coords="465,332,623,373"/>
+<area shape="rect" id="node9" href="$group___u_s_b_d___c_o_r_e___exported___macros.html" title="USBD_CORE_Exported\l_Macros" alt="" coords="461,397,627,439"/>
+<area shape="rect" id="node10" href="$group___u_s_b___c_o_r_e___exported___functions.html" title="USB_CORE_Exported_Functions" alt="" coords="435,463,653,490"/>
+<area shape="rect" id="node11" href="$group___u_s_b_d___a_u_d_i_o___exported___defines.html" title="USBD_AUDIO_Exported\l_Defines" alt="" coords="459,515,629,556"/>
+<area shape="rect" id="node12" href="$group___u_s_b_d___a_u_d_i_o___private___variables.html" title="USBD_AUDIO_Private\l_Variables" alt="" coords="465,580,623,621"/>
+<area shape="rect" id="node13" href="$group___u_s_b_d___a_u_d_i_o___private___macros.html" title="USBD_AUDIO_Private\l_Macros" alt="" coords="465,645,623,687"/>
+</map>

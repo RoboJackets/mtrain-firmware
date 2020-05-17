@@ -1,0 +1,8 @@
+<map id="vQueueDelete" name="vQueueDelete">
+<area shape="rect" id="node2" href="$portable_8h.html#a735cd3085bb7ba06ff8e47565bfd7016" title="vPortFree" alt="" coords="209,31,287,57"/>
+<area shape="rect" id="node5" href="$queue_8h.html#a7f7a4d9b75dcfbcefb2384da5df5290e" title="uxQueueGetQueueNumber" alt="" coords="159,81,337,108"/>
+<area shape="rect" id="node6" href="$queue_8h.html#a37c8b0ea8f2e6c5fa5082afb9721f986" title="vQueueSetQueueNumber" alt="" coords="163,132,333,159"/>
+<area shape="rect" id="node7" href="$queue_8h.html#a9730db0a2f63acbf7197fa4150d7fe08" title="ucQueueGetQueueType" alt="" coords="167,183,329,209"/>
+<area shape="rect" id="node3" href="$task_8h.html#a366b302eba79d10b5ee2a3756f0fcc43" title="vTaskSuspendAll" alt="" coords="385,5,509,32"/>
+<area shape="rect" id="node4" href="$task_8h.html#a003f8ae6d649225abd030cc76e1c7d0e" title="xTaskResumeAll" alt="" coords="386,56,509,83"/>
+</map>

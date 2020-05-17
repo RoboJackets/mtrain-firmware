@@ -1,0 +1,4 @@
+<map id="MPU_xTaskGetTickCount" name="MPU_xTaskGetTickCount">
+<area shape="rect" id="node2" href="$mpu__wrappers_8c.html#ac42aa31652a6e8158f8ea8a88aad8275" title="xPortRaisePrivilege" alt="" coords="230,5,367,32"/>
+<area shape="rect" id="node3" href="$task_8h.html#a753ecfe23e7386066ecccad5d16422f7" title="xTaskGetTickCount" alt="" coords="229,56,368,83"/>
+</map>

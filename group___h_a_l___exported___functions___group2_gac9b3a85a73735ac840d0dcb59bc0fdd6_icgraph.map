@@ -1,0 +1,5 @@
+<map id="HAL_GetTick" name="HAL_GetTick">
+<area shape="rect" id="node2" href="$group___h_a_l___exported___functions___group2.html#gaef87d3fec667bb34c418f5687e8204c1" title="This function provides accurate delay (in milliseconds) based on variable incremented. " alt="" coords="155,31,244,57"/>
+<area shape="rect" id="node3" href="$tests_2cpp_2_i2_c_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="328,5,379,32"/>
+<area shape="rect" id="node4" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#ga383d9a41089cf426cdc61b5b24e2ca0a" title="Delays routine for the USB Device Library. " alt="" coords="292,56,415,83"/>
+</map>

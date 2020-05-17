@@ -1,0 +1,4 @@
+<map id="arm_conv_partial_opt_q15" name="arm_conv_partial_opt_q15">
+<area shape="rect" id="node2" href="$group___fill.html#ga76b21c32a3783a2b3334d930a646e5d8" title="Fills a constant value into a Q15 vector. " alt="" coords="235,5,327,32"/>
+<area shape="rect" id="node3" href="$group__copy.html#ga872ca4cfc18c680b8991ccd569a5fda0" title="Copies the elements of a Q15 vector. " alt="" coords="228,56,335,83"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="MPU_vPortInitialiseBlocks" name="MPU_vPortInitialiseBlocks">
+<area shape="rect" id="node2" href="$mpu__wrappers_8c.html#ac42aa31652a6e8158f8ea8a88aad8275" title="xPortRaisePrivilege" alt="" coords="234,5,371,32"/>
+<area shape="rect" id="node3" href="$portable_8h.html#a846b5ebdaf2b51fe707efb4a0974f676" title="vPortInitialiseBlocks" alt="" coords="232,56,373,83"/>
+</map>

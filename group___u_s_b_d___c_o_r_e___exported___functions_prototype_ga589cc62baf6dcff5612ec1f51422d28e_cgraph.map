@@ -1,0 +1,4 @@
+<map id="USBD_Stop" name="USBD_Stop">
+<area shape="rect" id="node2" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#gac522b28139c1868a2e24d044fc8288fd" title="Stops the Low Level portion of the Device driver. " alt="" coords="148,5,263,32"/>
+<area shape="rect" id="node3" href="$group___p_c_d___exported___functions___group2.html#gad2e6055aea6458c0aec7df9c8ab7abab" title="HAL_PCD_Stop" alt="" coords="311,5,429,32"/>
+</map>

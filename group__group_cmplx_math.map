@@ -1,0 +1,8 @@
+<map id="Complex Math Functions" name="Complex Math Functions">
+<area shape="rect" id="node1" href="$group___cmplx_by_real_mult.html" title="Multiplies a complex vector by a real vector and generates a complex result. " alt="" coords="221,5,424,32"/>
+<area shape="rect" id="node2" href="$group___cmplx_by_cmplx_mult.html" title="Multiplies a complex vector by another complex vector and generates a complex result. " alt="" coords="249,57,397,98"/>
+<area shape="rect" id="node4" href="$group__cmplx__conj.html" title="Conjugates the elements of a complex data vector. " alt="" coords="254,123,391,149"/>
+<area shape="rect" id="node5" href="$group__cmplx__mag.html" title="Computes the magnitude of the elements of a complex data vector. " alt="" coords="253,173,392,200"/>
+<area shape="rect" id="node6" href="$group__cmplx__mag__squared.html" title="Computes the magnitude squared of the elements of a complex data vector. " alt="" coords="227,224,418,251"/>
+<area shape="rect" id="node7" href="$group__cmplx__dot__prod.html" title="Computes the dot product of two complex vectors. " alt="" coords="249,275,397,301"/>
+</map>

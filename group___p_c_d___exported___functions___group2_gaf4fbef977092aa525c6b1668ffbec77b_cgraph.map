@@ -1,0 +1,6 @@
+<map id="HAL_PCD_ResetCallback" name="HAL_PCD_ResetCallback">
+<area shape="rect" id="node2" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#ga9cd02ae070a18ea3395346c56639412b" title="USBD_LL_Reset Handle Reset event. " alt="" coords="242,5,365,32"/>
+<area shape="rect" id="node5" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#gaaf2f9695af26bad9d0f66746fcca3243" title="USBD_LL_Reset Handle Reset event. " alt="" coords="231,56,376,83"/>
+<area shape="rect" id="node3" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#gad96254d74d95496ffb5f6f2248585cb0" title="Opens an endpoint of the Low Level Driver. " alt="" coords="424,5,561,32"/>
+<area shape="rect" id="node4" href="$group___p_c_d___exported___functions___group3.html#gab377a41f91fb7c12c12886d94bd765f2" title="HAL_PCD_EP_Open" alt="" coords="609,5,756,32"/>
+</map>

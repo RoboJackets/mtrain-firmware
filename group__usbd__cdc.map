@@ -1,0 +1,8 @@
+<map id="Usbd_cdc" name="Usbd_cdc">
+<area shape="rect" id="node1" href="$group___s_t_m32___u_s_b___d_e_v_i_c_e___l_i_b_r_a_r_y.html" title="STM32_USB_DEVICE_LIBRARY" alt="" coords="5,129,228,156"/>
+<area shape="rect" id="node2" href="$group__usbd__cdc___exported___defines.html" title="Usbd_cdc_Exported_Defines" alt="" coords="419,5,611,32"/>
+<area shape="rect" id="node3" href="$group___u_s_b_d___c_o_r_e___exported___variables.html" title="USBD_CORE_Exported\l_Variables" alt="" coords="432,57,597,98"/>
+<area shape="rect" id="node4" href="$group___u_s_b_d___c_o_r_e___exported___types_definitions.html" title="USBD_CORE_Exported\l_TypesDefinitions" alt="" coords="432,122,597,163"/>
+<area shape="rect" id="node6" href="$group___u_s_b_d___c_o_r_e___exported___macros.html" title="USBD_CORE_Exported\l_Macros" alt="" coords="432,187,597,229"/>
+<area shape="rect" id="node7" href="$group___u_s_b___c_o_r_e___exported___functions.html" title="USB_CORE_Exported_Functions" alt="" coords="405,253,624,280"/>
+</map>

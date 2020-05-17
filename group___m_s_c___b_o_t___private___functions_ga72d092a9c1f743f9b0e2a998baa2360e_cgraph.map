@@ -1,0 +1,6 @@
+<map id="MSC_BOT_Init" name="MSC_BOT_Init">
+<area shape="rect" id="node2" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#ga10080ed9555110afba809de968314985" title="Flushes an endpoint of the Low Level Driver. " alt="" coords="185,5,324,32"/>
+<area shape="rect" id="node4" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#ga259b00707b333065b66be515dd019428" title="Prepares an endpoint for reception. " alt="" coords="164,56,345,83"/>
+<area shape="rect" id="node3" href="$group___p_c_d___exported___functions___group3.html#gaf245d7a10c697f4591c144596cb2df0f" title="HAL_PCD_EP_Flush" alt="" coords="401,5,549,32"/>
+<area shape="rect" id="node5" href="$group___p_c_d___exported___functions___group3.html#ga0029fe7a8d3db91b13637e2507fba60c" title="HAL_PCD_EP_Receive" alt="" coords="393,56,557,83"/>
+</map>

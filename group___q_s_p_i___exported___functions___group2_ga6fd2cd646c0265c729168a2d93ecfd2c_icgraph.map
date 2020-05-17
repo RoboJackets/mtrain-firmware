@@ -1,0 +1,4 @@
+<map id="HAL_QSPI_IRQHandler" name="HAL_QSPI_IRQHandler">
+<area shape="rect" id="node2" href="$interrupt__handlers_8c.html#a0702d5721ef5079a75ee5799b87293d8" title="QUADSPI_IRQHandler" alt="" coords="216,5,375,32"/>
+<area shape="rect" id="node3" href="$default__handlers_8c.html#a2cd00d18ed19287a4a27b951a6b239cb" title="Handler_Nothing" alt="" coords="423,5,541,32"/>
+</map>

@@ -1,0 +1,47 @@
+<map id="TIM Exported Constants" name="TIM Exported Constants">
+<area shape="rect" id="node1" href="$group___t_i_m___interrupt__definition.html" title="TIM Interrupt definition" alt="" coords="335,5,488,32"/>
+<area shape="rect" id="node2" href="$group___t_i_m___master___mode___selection.html" title="TIM Master Mode Selection" alt="" coords="320,56,503,83"/>
+<area shape="rect" id="node3" href="$group___t_i_m___flag__definition.html" title="TIM Flag definition" alt="" coords="346,107,477,133"/>
+<area shape="rect" id="node4" href="$group___t_i_m___trigger___selection.html" title="TIM Trigger Selection" alt="" coords="338,157,485,184"/>
+<area shape="rect" id="node5" href="$group___t_i_m___input___capture___polarity.html" title="TIM Input Capture Polarity" alt="" coords="323,208,499,235"/>
+<area shape="rect" id="node6" href="$group___t_i_m___commutation___source.html" title="TIM Commutation Source" alt="" coords="325,259,497,285"/>
+<area shape="rect" id="node7" href="$group___t_i_m___d_m_a___base__address.html" title="TIM DMA Base address" alt="" coords="330,309,493,336"/>
+<area shape="rect" id="node8" href="$group___t_i_m___o_s_s_i___off___state___selection__for___idle__mode__state.html" title="TIM OSSI OffState Selection\l for Idle mode state" alt="" coords="315,361,507,402"/>
+<area shape="rect" id="node9" href="$group___t_i_m___input___capture___prescaler.html" title="TIM Input Capture Prescaler" alt="" coords="318,427,505,453"/>
+<area shape="rect" id="node10" href="$group___t_i_m___o_s_s_r___off___state___selection__for___run__mode__state.html" title="TIM OSSR OffState Selection\l for Run mode state" alt="" coords="312,478,511,519"/>
+<area shape="rect" id="node11" href="$group___t_i_m___auto_reload_preload.html" title="TIM Auto&#45;Reload Preload" alt="" coords="327,544,496,571"/>
+<area shape="rect" id="node12" href="$group___t_i_m___output___compare___polarity.html" title="TIM Output Compare\l Polarity" alt="" coords="339,595,484,637"/>
+<area shape="rect" id="node13" href="$group___t_i_m___one___pulse___mode.html" title="TIM One Pulse Mode" alt="" coords="338,661,485,688"/>
+<area shape="rect" id="node14" href="$group___t_i_m___clock___prescaler.html" title="TIM Clock Prescaler" alt="" coords="340,712,483,739"/>
+<area shape="rect" id="node15" href="$group___channel___c_c___state.html" title="Channel CC State" alt="" coords="347,763,476,789"/>
+<area shape="rect" id="node16" href="$group___t_i_m___break___polarity.html" title="TIM Break Polarity" alt="" coords="346,813,477,840"/>
+<area shape="rect" id="node17" href="$group___t_i_m___t_i1___selection.html" title="TIM TI1 Selection" alt="" coords="348,864,475,891"/>
+<area shape="rect" id="node18" href="$group___t_i_m___clock_division.html" title="TIM Clock Division" alt="" coords="344,915,479,941"/>
+<area shape="rect" id="node19" href="$group___t_i_m___output___fast___state.html" title="TIM Output Fast State" alt="" coords="335,965,488,992"/>
+<area shape="rect" id="node20" href="$group___t_i_m___input___capture___selection.html" title="TIM Input Capture Selection" alt="" coords="318,1016,505,1043"/>
+<area shape="rect" id="node21" href="$group___t_i_m___e_t_r___prescaler.html" title="TIM ETR Prescaler" alt="" coords="344,1067,479,1093"/>
+<area shape="rect" id="node22" href="$group___t_i_m___break___input__enable__disable.html" title="TIM Break Input State" alt="" coords="336,1117,487,1144"/>
+<area shape="rect" id="node23" href="$group___t_i_m___output___compare___idle___state.html" title="TIM Output Compare\l Idle State" alt="" coords="339,1169,484,1210"/>
+<area shape="rect" id="node24" href="$group___t_i_m___d_m_a__sources.html" title="TIM DMA sources" alt="" coords="347,1235,476,1261"/>
+<area shape="rect" id="node25" href="$group___t_i_m___clear_input___polarity.html" title="TIM Clear Input Polarity" alt="" coords="331,1285,492,1312"/>
+<area shape="rect" id="node26" href="$group___t_i_m___trigger___polarity.html" title="TIM Trigger Polarity" alt="" coords="343,1336,480,1363"/>
+<area shape="rect" id="node28" href="$group___t_i_m___input___channel___polarity.html" title="TIM Input Channel Polarity" alt="" coords="322,1387,501,1413"/>
+<area shape="rect" id="node29" href="$group___t_i_m___clock___source.html" title="TIM Clock Source" alt="" coords="347,1437,475,1464"/>
+<area shape="rect" id="node30" href="$group___t_i_m___output___compare___n___state.html" title="TIM Complementary Output\l Compare State" alt="" coords="319,1489,503,1530"/>
+<area shape="rect" id="node31" href="$group___t_i_m___d_m_a___burst___length.html" title="TIM DMA Burst Length" alt="" coords="333,1555,490,1581"/>
+<area shape="rect" id="node32" href="$group___t_i_m___output___compare___n___polarity.html" title="TIM Complementary Output\l Compare Polarity" alt="" coords="319,1606,503,1647"/>
+<area shape="rect" id="node34" href="$group___t_i_m___clear_input___prescaler.html" title="TIM Clear Input Prescaler" alt="" coords="325,1672,497,1699"/>
+<area shape="rect" id="node35" href="$group___t_i_m___master___slave___mode.html" title="TIM Master Slave Mode" alt="" coords="330,1723,493,1749"/>
+<area shape="rect" id="node36" href="$group___t_i_m___counter___mode.html" title="TIM Counter Mode" alt="" coords="346,1773,477,1800"/>
+<area shape="rect" id="node37" href="$group___t_i_m___trigger___prescaler.html" title="TIM Trigger Prescaler" alt="" coords="337,1824,485,1851"/>
+<area shape="rect" id="node38" href="$group___t_i_m___output___compare___n___idle___state.html" title="TIM Output Compare\l N Idle State" alt="" coords="339,1875,484,1917"/>
+<area shape="rect" id="node39" href="$group___d_m_a___handle__index.html" title="DMA Handle index" alt="" coords="345,1941,477,1968"/>
+<area shape="rect" id="node40" href="$group___t_i_m___encoder___mode.html" title="TIM Encoder Mode" alt="" coords="345,1992,478,2019"/>
+<area shape="rect" id="node41" href="$group___t_i_m___e_t_r___polarity.html" title="TIM ETR Polarity" alt="" coords="349,2043,473,2069"/>
+<area shape="rect" id="node42" href="$group___t_i_m___a_o_e___bit___set___reset.html" title="TIM AOE Bit State" alt="" coords="345,2093,477,2120"/>
+<area shape="rect" id="node43" href="$group___t_i_m___event___source.html" title="TIM Event Source" alt="" coords="347,2144,475,2171"/>
+<area shape="rect" id="node44" href="$group___t_i_m___lock__level.html" title="TIM Lock level" alt="" coords="357,2195,465,2221"/>
+<area shape="rect" id="node45" href="$group___t_i_m___clock___polarity.html" title="TIM Clock Polarity" alt="" coords="346,2245,477,2272"/>
+<area shape="rect" id="node46" href="$group___t_i_m___output___compare___state.html" title="TIM Output Compare\l State" alt="" coords="339,2297,484,2338"/>
+<area shape="rect" id="node33" href="$group___t_i_m.html" title="TIM HAL module driver. " alt="" coords="5,1147,51,1173"/>
+</map>

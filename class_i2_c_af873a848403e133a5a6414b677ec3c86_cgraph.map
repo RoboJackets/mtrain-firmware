@@ -1,0 +1,6 @@
+<map id="I2C::I2C" name="I2C::I2C">
+<area shape="rect" id="node2" href="$group___r_c_c_ex___exported___functions___group1.html#ga0c0f61a1e2f47cc81bc43d83ba3e0d95" title="HAL_RCCEx_PeriphCLKConfig" alt="" coords="125,5,335,32"/>
+<area shape="rect" id="node3" href="$group___g_p_i_o___exported___functions___group1.html#ga41bda93b6dd639e4905fdb1454eff98e" title="HAL_GPIO_Init" alt="" coords="173,56,287,83"/>
+<area shape="rect" id="node4" href="$group___i2_c___exported___functions___group1.html#ga9d29159a6da072287fff73743fd93260" title="HAL_I2C_Init" alt="" coords="179,107,281,133"/>
+<area shape="rect" id="node5" href="$group___i2_c_ex___exported___functions___group1.html#ga2f0b5fc42fca412214f3968e528e2b9e" title="HAL_I2CEx_ConfigAnalogFilter" alt="" coords="127,157,333,184"/>
+</map>

@@ -1,0 +1,25 @@
+var group___r_t_c_ex___i_s___r_t_c___definitions =
+[
+    [ "IS_RTC_BKP", "group___r_t_c_ex___i_s___r_t_c___definitions.html#ga81f2e5d17d75bd5e4d99d463a109dcf3", null ],
+    [ "IS_RTC_CALIB_OUTPUT", "group___r_t_c_ex___i_s___r_t_c___definitions.html#ga7bedbb1c71f70406f3ad31028f604c30", null ],
+    [ "IS_RTC_OUTPUT", "group___r_t_c_ex___i_s___r_t_c___definitions.html#gaa7f82419e73e4b4cc678ee57e85e00fc", null ],
+    [ "IS_RTC_SHIFT_ADD1S", "group___r_t_c_ex___i_s___r_t_c___definitions.html#gaf0b023d34c419905b01807e0c9562bc5", null ],
+    [ "IS_RTC_SHIFT_SUBFS", "group___r_t_c_ex___i_s___r_t_c___definitions.html#gac195662842bb895c130552e865578d10", null ],
+    [ "IS_RTC_SMOOTH_CALIB_MINUS", "group___r_t_c_ex___i_s___r_t_c___definitions.html#ga509308a28a9fc1addfeb21b5b0eb5604", null ],
+    [ "IS_RTC_SMOOTH_CALIB_PERIOD", "group___r_t_c_ex___i_s___r_t_c___definitions.html#gac6690da6c4c41adda07224b3e4d51524", null ],
+    [ "IS_RTC_SMOOTH_CALIB_PLUS", "group___r_t_c_ex___i_s___r_t_c___definitions.html#ga6b28009f239f73ea4c6ab9b8ea65799d", null ],
+    [ "IS_RTC_TAMPER", "group___r_t_c_ex___i_s___r_t_c___definitions.html#ga01051baf88be14af5376479b497fd627", null ],
+    [ "IS_RTC_TAMPER_ERASE_MODE", "group___r_t_c_ex___i_s___r_t_c___definitions.html#ga07007f6e25728e0f8421e9908b077c8b", null ],
+    [ "IS_RTC_TAMPER_FILTER", "group___r_t_c_ex___i_s___r_t_c___definitions.html#ga7db46ad4323b3ae7f609a3fe743125f9", null ],
+    [ "IS_RTC_TAMPER_INTERRUPT", "group___r_t_c_ex___i_s___r_t_c___definitions.html#ga7d488cf9c303cf068465156ac5f7b5db", null ],
+    [ "IS_RTC_TAMPER_MASKFLAG_STATE", "group___r_t_c_ex___i_s___r_t_c___definitions.html#gacacfedfa85dfd318c7c65b8d46144c29", null ],
+    [ "IS_RTC_TAMPER_PRECHARGE_DURATION", "group___r_t_c_ex___i_s___r_t_c___definitions.html#ga5f828e43a645fd6e50f458165e5b67c7", null ],
+    [ "IS_RTC_TAMPER_PULLUP_STATE", "group___r_t_c_ex___i_s___r_t_c___definitions.html#gaec1daecdd7a4617520a2bbed645860d1", null ],
+    [ "IS_RTC_TAMPER_SAMPLING_FREQ", "group___r_t_c_ex___i_s___r_t_c___definitions.html#ga35dbdb54e291fea84c445060666c3cd6", null ],
+    [ "IS_RTC_TAMPER_TIMESTAMPONTAMPER_DETECTION", "group___r_t_c_ex___i_s___r_t_c___definitions.html#gaa63bb55188dc6740cbb8ebd4186fbce0", null ],
+    [ "IS_RTC_TAMPER_TRIGGER", "group___r_t_c_ex___i_s___r_t_c___definitions.html#gaad0e1dc3705f06f38978dc8f7d11bde6", null ],
+    [ "IS_RTC_TIMESTAMP_PIN", "group___r_t_c_ex___i_s___r_t_c___definitions.html#ga0cee3dba2af9ce4d0e43c1b166fd1804", null ],
+    [ "IS_RTC_WAKEUP_CLOCK", "group___r_t_c_ex___i_s___r_t_c___definitions.html#ga646a6e61dc36b5c5cea18ae83c7f347f", null ],
+    [ "IS_RTC_WAKEUP_COUNTER", "group___r_t_c_ex___i_s___r_t_c___definitions.html#gaa063aaffff3b8a832169d580652438e8", null ],
+    [ "IS_TIMESTAMP_EDGE", "group___r_t_c_ex___i_s___r_t_c___definitions.html#ga6ac93bdee6be9ef17e541f8cee085160", null ]
+];

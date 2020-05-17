@@ -1,0 +1,7 @@
+<map id="_write" name="_write">
+<area shape="rect" id="node2" href="$group___u_s_b___c_o_r_e___exported___functions.html#gaae40b75b0ccc21281f4aa1e2fbdc0d4f" title="USBD_CDC_SetTxBuffer. " alt="" coords="121,5,296,32"/>
+<area shape="rect" id="node3" href="$group___u_s_b___c_o_r_e___exported___functions.html#gac6132b25e4ac00c4d918d3d73a3be5c7" title="USBD_CDC_DataOut Data received on non&#45;control Out endpoint. " alt="" coords="111,56,307,83"/>
+<area shape="rect" id="node6" href="$delay_8h.html#ac2a53b2530a71f3e19b29343d2566c14" title="Delay routine itself. " alt="" coords="161,107,256,133"/>
+<area shape="rect" id="node4" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#gab87eb9f3d4d9f8956d2c6b77230f265c" title="Transmits data over an endpoint. " alt="" coords="355,56,493,83"/>
+<area shape="rect" id="node5" href="$group___p_c_d___exported___functions___group3.html#ga116ada543442c8f7a1003c4d4c211618" title="HAL_PCD_EP_Transmit" alt="" coords="541,56,708,83"/>
+</map>

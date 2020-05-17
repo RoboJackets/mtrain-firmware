@@ -1,0 +1,6 @@
+<map id="HAL_PCD_EP_ClrStall" name="HAL_PCD_EP_ClrStall">
+<area shape="rect" id="node2" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#gad4fa6f2eeefe95d07148c6c53d111eae" title="Clears a Stall condition on an endpoint of the Low Level Driver. " alt="" coords="212,5,375,32"/>
+<area shape="rect" id="node3" href="$group___u_s_b_d___r_e_q___private___functions.html#ga46d1a0a4e23e1e8c80167dcdc59b2538" title="USBD_StdEPReq Handle standard usb endpoint requests. " alt="" coords="423,5,552,32"/>
+<area shape="rect" id="node4" href="$group___u_s_b_d___c_o_r_e___private___functions.html#gabdcdfefaffa1651c77a38d08eb3a82ce" title="USBD_SetupStage Handle the setup stage. " alt="" coords="600,5,756,32"/>
+<area shape="rect" id="node5" href="$group___p_c_d___exported___functions___group2.html#ga9d72aa4d3d984b164047b081d4566f6d" title="SetupStage callback. " alt="" coords="804,5,1015,32"/>
+</map>

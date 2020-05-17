@@ -1,0 +1,27 @@
+var group___r_t_c___i_s___r_t_c___definitions =
+[
+    [ "IS_RTC_ALARM", "group___r_t_c___i_s___r_t_c___definitions.html#gafbbba2d71aa318ea80ecb84f9ad4d6d9", null ],
+    [ "IS_RTC_ALARM_DATE_WEEKDAY_DATE", "group___r_t_c___i_s___r_t_c___definitions.html#gafac399a026c27d686fea408513c189ad", null ],
+    [ "IS_RTC_ALARM_DATE_WEEKDAY_SEL", "group___r_t_c___i_s___r_t_c___definitions.html#gab588719faae0cbfb44189af2b7f4b9f3", null ],
+    [ "IS_RTC_ALARM_DATE_WEEKDAY_WEEKDAY", "group___r_t_c___i_s___r_t_c___definitions.html#ga124bd88080d3e2287e305302584816d5", null ],
+    [ "IS_RTC_ALARM_MASK", "group___r_t_c___i_s___r_t_c___definitions.html#gadcf6f2db5d057743676003deec6387cb", null ],
+    [ "IS_RTC_ALARM_SUB_SECOND_MASK", "group___r_t_c___i_s___r_t_c___definitions.html#gabd813ab20f7d1be62b2d984b33dd1435", null ],
+    [ "IS_RTC_ALARM_SUB_SECOND_VALUE", "group___r_t_c___i_s___r_t_c___definitions.html#ga575dabdc057102cdecafba156c6282f8", null ],
+    [ "IS_RTC_ASYNCH_PREDIV", "group___r_t_c___i_s___r_t_c___definitions.html#ga52ed44c6c577763dd542fc313b5eb375", null ],
+    [ "IS_RTC_DATE", "group___r_t_c___i_s___r_t_c___definitions.html#ga58a8b72ae223dd18880fdc5fba88cf77", null ],
+    [ "IS_RTC_DAYLIGHT_SAVING", "group___r_t_c___i_s___r_t_c___definitions.html#ga81234d272092c289c3eadcc068f0a669", null ],
+    [ "IS_RTC_FORMAT", "group___r_t_c___i_s___r_t_c___definitions.html#ga1aba1581310383b4aebd9cdf1efb1b91", null ],
+    [ "IS_RTC_HOUR12", "group___r_t_c___i_s___r_t_c___definitions.html#ga6c5cf5309b76b1cb6d7526f5e821195f", null ],
+    [ "IS_RTC_HOUR24", "group___r_t_c___i_s___r_t_c___definitions.html#gab802f0e908e1a4eae952895c1f8ecb23", null ],
+    [ "IS_RTC_HOUR_FORMAT", "group___r_t_c___i_s___r_t_c___definitions.html#gab4abdcda693a152d3034a4a137c7f779", null ],
+    [ "IS_RTC_HOURFORMAT12", "group___r_t_c___i_s___r_t_c___definitions.html#ga7a96e9a0106f22213e84ed5963b89a2c", null ],
+    [ "IS_RTC_MINUTES", "group___r_t_c___i_s___r_t_c___definitions.html#ga591d46e773d6735d179fa513f7a9baee", null ],
+    [ "IS_RTC_MONTH", "group___r_t_c___i_s___r_t_c___definitions.html#gaeef41938cc768a4bafc49f4b3b45dc05", null ],
+    [ "IS_RTC_OUTPUT_POL", "group___r_t_c___i_s___r_t_c___definitions.html#gaa00ff8798eb7aeeb5e3d08dd794cdc92", null ],
+    [ "IS_RTC_OUTPUT_TYPE", "group___r_t_c___i_s___r_t_c___definitions.html#ga5329088b058d2d99ebcd3e411b401be5", null ],
+    [ "IS_RTC_SECONDS", "group___r_t_c___i_s___r_t_c___definitions.html#ga9be8d568345531cd8eb3e193e8731612", null ],
+    [ "IS_RTC_STORE_OPERATION", "group___r_t_c___i_s___r_t_c___definitions.html#gaedf2ad8f0e9cb78e4a1fd51e0772f935", null ],
+    [ "IS_RTC_SYNCH_PREDIV", "group___r_t_c___i_s___r_t_c___definitions.html#gaa6ea4dcae4860f4abd518edc1ef99073", null ],
+    [ "IS_RTC_WEEKDAY", "group___r_t_c___i_s___r_t_c___definitions.html#gac94eb0d50ab6ff28a7fd43d85ea20511", null ],
+    [ "IS_RTC_YEAR", "group___r_t_c___i_s___r_t_c___definitions.html#ga8dd0af84e5a2f5cc14445a787790ab40", null ]
+];

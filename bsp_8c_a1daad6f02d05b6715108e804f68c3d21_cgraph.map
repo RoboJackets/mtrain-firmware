@@ -1,0 +1,28 @@
+<map id="bsp_config" name="bsp_config">
+<area shape="rect" id="node2" href="$bsp_8c.html#a93ce41942d08d309203e0188cad7e54e" title="Configure the MPU attributes as Write Through for Internal SRAM1/2. " alt="" coords="192,44,289,71"/>
+<area shape="rect" id="node3" href="$bsp_8c.html#a9f9cb877166b43112529f01c58740b31" title="CPU L1&#45;Cache enable. " alt="" coords="164,95,317,121"/>
+<area shape="rect" id="node6" href="$group___h_a_l___exported___functions___group1.html#gaecac54d350c3730e6831eb404e557dc4" title="This function is used to initialize the HAL Library; it must be the first instruction to be executed ..." alt="" coords="204,183,277,209"/>
+<area shape="rect" id="node12" href="$bsp_8c.html#a70af21c671abfcc773614a9a4f63d920" title="System Clock Configuration The system Clock is configured as follow : System Clock source = PLL (HSE)..." alt="" coords="167,309,314,336"/>
+<area shape="rect" id="node17" href="$bsp_8c.html#a82506e4d41bd9e3f980fea6529ecc1bd" title="DWT_Config" alt="" coords="191,360,290,387"/>
+<area shape="rect" id="node18" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#gad35f19488381872e83fa7b23d96589e7" title="USBD_Init Initializes the device stack and load the class driver. " alt="" coords="198,411,283,437"/>
+<area shape="rect" id="node23" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#ga392f73829f6127b9f42f03dd1401a1ef" title="USBD_RegisterClass Link class driver to Device Core. " alt="" coords="165,461,316,488"/>
+<area shape="rect" id="node24" href="$group___u_s_b___c_o_r_e___exported___functions.html#ga41e2c9c5138449916310eb508a500752" title="USBD_CDC_RegisterInterface. " alt="" coords="139,512,343,539"/>
+<area shape="rect" id="node25" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#ga47396105b10467da14d07d21b60cc5f9" title="USBD_Start Start the USB Device Core. " alt="" coords="193,563,288,589"/>
+<area shape="rect" id="node4" href="$group___c_m_s_i_s___core___cache_functions.html#gaf9e7c6c8e16ada1f95e5bf5a03505b68" title="Enable I&#45;Cache. " alt="" coords="426,5,565,32"/>
+<area shape="rect" id="node5" href="$group___c_m_s_i_s___core___cache_functions.html#ga63aa640d9006021a796a5dcf9c7180b6" title="Enable D&#45;Cache. " alt="" coords="423,56,568,83"/>
+<area shape="rect" id="node7" href="$group___c_o_r_t_e_x___exported___functions___group1.html#gad9be53e08b1498adea006e5e037f238f" title="HAL_NVIC_SetPriorityGrouping" alt="" coords="391,107,599,133"/>
+<area shape="rect" id="node8" href="$group___h_a_l___exported___functions___group1.html#ga44d1542f9985b2243b14a41070cc41cc" title="This function configures the source of the time base. " alt="" coords="446,157,545,184"/>
+<area shape="rect" id="node11" href="$stm32f7xx__hal__msp_8c.html#gae4fb8e66865c87d0ebab74a726a6891f" title="Initializes the MSP. " alt="" coords="446,208,545,235"/>
+<area shape="rect" id="node9" href="$group___c_o_r_t_e_x___exported___functions___group1.html#gac3a3f0d53c315523a8e6e7bcac1940cf" title="HAL_SYSTICK_Config" alt="" coords="654,132,813,159"/>
+<area shape="rect" id="node10" href="$group___c_o_r_t_e_x___exported___functions___group1.html#ga8581a82025a4780efd00876a66e3e91b" title="HAL_NVIC_SetPriority" alt="" coords="655,183,811,209"/>
+<area shape="rect" id="node13" href="$group___r_c_c___exported___functions___group1.html#ga9c504088722e03830df6caad932ad06b" title="HAL_RCC_OscConfig" alt="" coords="418,259,573,285"/>
+<area shape="rect" id="node14" href="$bsp_8c.html#a1730ffe1e560465665eb47d9264826f9" title="This function is executed in case of error occurrence. " alt="" coords="444,309,547,336"/>
+<area shape="rect" id="node15" href="$group___p_w_r_ex___exported___functions___group1.html#gaaf092495bffd53ad2fe6a91f90f87032" title="HAL_PWREx_EnableOverDrive" alt="" coords="391,360,600,387"/>
+<area shape="rect" id="node16" href="$group___r_c_c___exported___functions___group1.html#gad0a4b5c7459219fafc15f3f867563ef3" title="HAL_RCC_ClockConfig" alt="" coords="413,411,577,437"/>
+<area shape="rect" id="node19" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#ga24b61e95db7e4c7ad30a835e8d905943" title="Initializes the Low Level portion of the Device driver. " alt="" coords="442,461,549,488"/>
+<area shape="rect" id="node20" href="$group___p_c_d___exported___functions___group1.html#gae9ae02615c7a4badf2357e392ec66cd9" title="HAL_PCD_Init" alt="" coords="679,411,788,437"/>
+<area shape="rect" id="node21" href="$group___p_c_d_ex___exported___functions___group1.html#ga6c185a9e906e0904669bc95af5488fdc" title="HAL_PCDEx_SetRxFiFo" alt="" coords="648,461,819,488"/>
+<area shape="rect" id="node22" href="$group___p_c_d_ex___exported___functions___group1.html#gae2a80a7ebfa0a6357afab69b4a9baa39" title="HAL_PCDEx_SetTxFiFo" alt="" coords="649,512,817,539"/>
+<area shape="rect" id="node26" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#ga43e53e424e9850d8261e1f9a1be53348" title="Starts the Low Level portion of the Device driver. " alt="" coords="437,563,553,589"/>
+<area shape="rect" id="node27" href="$group___p_c_d___exported___functions___group2.html#gaed7a0a21ca81a2fcdd4db87606dee381" title="HAL_PCD_Start" alt="" coords="674,563,793,589"/>
+</map>

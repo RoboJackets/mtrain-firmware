@@ -1,0 +1,7 @@
+<map id="osMailCreate" name="osMailCreate">
+<area shape="rect" id="node2" href="$portable_8h.html#a237d63f90b28e0950bd86f76815cd6e3" title="pvPortMalloc" alt="" coords="301,5,400,32"/>
+<area shape="rect" id="node5" href="$portable_8h.html#a735cd3085bb7ba06ff8e47565bfd7016" title="vPortFree" alt="" coords="311,56,390,83"/>
+<area shape="rect" id="node6" href="$cmsis__os_8c.html#a34af5c4f4ab38f4138ea7f1f9ece3a1a" title="Create and Initialize a memory pool. " alt="" coords="152,31,253,57"/>
+<area shape="rect" id="node3" href="$task_8h.html#a366b302eba79d10b5ee2a3756f0fcc43" title="vTaskSuspendAll" alt="" coords="448,5,572,32"/>
+<area shape="rect" id="node4" href="$task_8h.html#a003f8ae6d649225abd030cc76e1c7d0e" title="xTaskResumeAll" alt="" coords="449,56,571,83"/>
+</map>

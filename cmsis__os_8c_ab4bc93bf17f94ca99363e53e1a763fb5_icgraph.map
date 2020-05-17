@@ -1,0 +1,5 @@
+<map id="osPoolAlloc" name="osPoolAlloc">
+<area shape="rect" id="node2" href="$cmsis__os_8h.html#ab22c2f194e0f0b05494aa0e9c97d7a51" title="Allocate a memory block from a memory pool and set memory block to zero. " alt="" coords="144,5,245,32"/>
+<area shape="rect" id="node3" href="$cmsis__os_8h.html#ac985d7f260b80d7891157697b760aa02" title="Allocate a memory block from a mail. " alt="" coords="150,56,239,83"/>
+<area shape="rect" id="node4" href="$cmsis__os_8h.html#a9e492e5839bf0d2bf66492e70eae3ddb" title="Allocate a memory block from a mail and set memory block to zero. " alt="" coords="293,56,392,83"/>
+</map>

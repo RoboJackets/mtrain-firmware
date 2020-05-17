@@ -1,0 +1,4 @@
+<map id="MPU_uxTaskGetNumberOfTasks" name="MPU_uxTaskGetNumberOfTasks">
+<area shape="rect" id="node2" href="$mpu__wrappers_8c.html#ac42aa31652a6e8158f8ea8a88aad8275" title="xPortRaisePrivilege" alt="" coords="295,5,432,32"/>
+<area shape="rect" id="node3" href="$task_8h.html#a70a89a0f07c7db5d695707d1f6f44a4a" title="uxTaskGetNumberOfTasks" alt="" coords="272,56,455,83"/>
+</map>

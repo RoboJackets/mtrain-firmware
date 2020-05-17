@@ -1,0 +1,20 @@
+<map id="FMC NOR/SRAM Controller" name="FMC NOR/SRAM Controller">
+<area shape="rect" id="node2" href="$group___f_m_c___write___f_i_f_o.html" title="FMC Write FIFO" alt="" coords="497,5,617,32"/>
+<area shape="rect" id="node3" href="$group___f_m_c___write___burst.html" title="FMC Write Burst" alt="" coords="497,56,618,83"/>
+<area shape="rect" id="node4" href="$group___f_m_c___continous___clock.html" title="FMC Continuous Clock" alt="" coords="478,107,637,133"/>
+<area shape="rect" id="node5" href="$group___f_m_c___page___size.html" title="FMC Page Size" alt="" coords="500,157,615,184"/>
+<area shape="rect" id="node6" href="$group___f_m_c___extended___mode.html" title="FMC Extended Mode" alt="" coords="484,208,631,235"/>
+<area shape="rect" id="node7" href="$group___f_m_c___data___address___bus___multiplexing.html" title="FMC Data Address Bus\l Multiplexing" alt="" coords="476,259,639,301"/>
+<area shape="rect" id="node8" href="$group___f_m_c___n_o_r_s_r_a_m___flash___access.html" title="FMC NOR/SRAM Flash\l Access" alt="" coords="475,325,639,366"/>
+<area shape="rect" id="node9" href="$group___f_m_c___wait___timing.html" title="FMC Wait Timing" alt="" coords="495,391,620,417"/>
+<area shape="rect" id="node11" href="$group___f_m_c___wait___signal___polarity.html" title="FMC Wait Signal Polarity" alt="" coords="472,441,643,468"/>
+<area shape="rect" id="node12" href="$group___f_m_c___write___operation.html" title="FMC Write Operation" alt="" coords="484,492,631,519"/>
+<area shape="rect" id="node13" href="$group___f_m_c___memory___type.html" title="FMC Memory Type" alt="" coords="490,543,625,569"/>
+<area shape="rect" id="node14" href="$group___f_m_c___burst___access___mode.html" title="FMC Burst Access Mode" alt="" coords="472,593,643,620"/>
+<area shape="rect" id="node15" href="$group___f_m_c___n_o_r_s_r_a_m___bank.html" title="FMC NOR/SRAM Bank" alt="" coords="476,644,639,671"/>
+<area shape="rect" id="node16" href="$group___f_m_c___n_o_r_s_r_a_m___data___width.html" title="FMC NORSRAM Data Width" alt="" coords="460,695,655,721"/>
+<area shape="rect" id="node17" href="$group___f_m_c___wait___signal.html" title="FMC Wait Signal" alt="" coords="496,745,619,772"/>
+<area shape="rect" id="node18" href="$group___f_m_c___access___mode.html" title="FMC Access Mode" alt="" coords="490,796,625,823"/>
+<area shape="rect" id="node19" href="$group___f_m_c___asynchronous_wait.html" title="FMC Asynchronous Wait" alt="" coords="473,847,642,873"/>
+<area shape="rect" id="node10" href="$group___f_m_c___l_l___exported___constants.html" title="FMC Low Layer Exported\l Constants" alt="" coords="5,434,176,475"/>
+</map>

@@ -1,0 +1,18 @@
+<map id="RTC Exported Constants" name="RTC Exported Constants">
+<area shape="rect" id="node1" href="$group___r_t_c___alarm___sub___seconds___masks___definitions.html" title="RTC Alarm Sub Seconds\l Masks Definitions" alt="" coords="341,5,512,47"/>
+<area shape="rect" id="node2" href="$group___r_t_c___alarm_date_week_day___definitions.html" title="RTC Alarm Date WeekDay\l Definitions" alt="" coords="335,71,518,112"/>
+<area shape="rect" id="node3" href="$group___r_t_c___month___date___definitions.html" title="RTC Month Date Definitions" alt="" coords="333,137,521,163"/>
+<area shape="rect" id="node4" href="$group___r_t_c___day_light_saving___definitions.html" title="RTC DayLight Saving\l Definitions" alt="" coords="351,188,502,229"/>
+<area shape="rect" id="node5" href="$group___r_t_c___input__parameter__format__definitions.html" title="RTC Input Parameter\l Format Definitions" alt="" coords="353,253,500,295"/>
+<area shape="rect" id="node6" href="$group___r_t_c.html" title="RTC HAL module driver. " alt="" coords="5,421,56,447"/>
+<area shape="rect" id="node7" href="$group___r_t_c___alarm_mask___definitions.html" title="RTC Alarm Mask Definitions" alt="" coords="331,319,522,346"/>
+<area shape="rect" id="node8" href="$group___r_t_c___interrupts___definitions.html" title="RTC Interrupts Definitions" alt="" coords="339,370,514,397"/>
+<area shape="rect" id="node9" href="$group___r_t_c___alarms___definitions.html" title="RTC Alarms Definitions" alt="" coords="346,421,507,447"/>
+<area shape="rect" id="node10" href="$group___r_t_c___hour___formats.html" title="RTC Hour Formats" alt="" coords="359,471,494,498"/>
+<area shape="rect" id="node11" href="$group___r_t_c___flags___definitions.html" title="RTC Flags Definitions" alt="" coords="351,522,503,549"/>
+<area shape="rect" id="node12" href="$group___r_t_c___a_m___p_m___definitions.html" title="RTC AM PM Definitions" alt="" coords="345,573,509,599"/>
+<area shape="rect" id="node13" href="$group___r_t_c___output___type___a_l_a_r_m___o_u_t.html" title="RTC Output Type ALARM OUT" alt="" coords="323,623,531,650"/>
+<area shape="rect" id="node14" href="$group___r_t_c___output___polarity___definitions.html" title="RTC Output Polarity\l Definitions" alt="" coords="356,675,497,716"/>
+<area shape="rect" id="node15" href="$group___r_t_c___store_operation___definitions.html" title="RTC Store Operation\l Definitions" alt="" coords="354,740,499,781"/>
+<area shape="rect" id="node16" href="$group___r_t_c___week_day___definitions.html" title="RTC WeekDay Definitions" alt="" coords="337,806,516,833"/>
+</map>

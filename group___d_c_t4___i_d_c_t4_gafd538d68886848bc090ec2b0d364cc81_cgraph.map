@@ -1,0 +1,4 @@
+<map id="arm_dct4_f32" name="arm_dct4_f32">
+<area shape="rect" id="node2" href="$group__scale.html#ga3487af88b112f682ee90589cd419e123" title="Multiplies a floating&#45;point vector by a scalar. " alt="" coords="155,5,261,32"/>
+<area shape="rect" id="node3" href="$group___basic_mult.html#gaca3f0b8227da431ab29225b88888aa32" title="Floating&#45;point vector multiplication. " alt="" coords="157,56,259,83"/>
+</map>

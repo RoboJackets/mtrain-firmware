@@ -1,0 +1,4 @@
+<map id="blink" name="blink">
+<area shape="rect" id="node2" href="$digital__out_8h.html#a549af9eaff8500d0b994e5461ea0f2df" title="Toggle pin output. " alt="" coords="103,5,219,32"/>
+<area shape="rect" id="node3" href="$group___g_p_i_o___exported___functions___group2.html#gaf5e0c89f752de5cdedcc30db068133f6" title="HAL_GPIO_TogglePin" alt="" coords="267,5,420,32"/>
+</map>

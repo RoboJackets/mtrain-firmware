@@ -1,0 +1,9 @@
+<map id="USBD_MSC_Init" name="USBD_MSC_Init">
+<area shape="rect" id="node2" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#gad96254d74d95496ffb5f6f2248585cb0" title="Opens an endpoint of the Low Level Driver. " alt="" coords="176,5,313,32"/>
+<area shape="rect" id="node4" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototypes.html#ga72d092a9c1f743f9b0e2a998baa2360e" title="MSC_BOT_Init Initialize the BOT Process. " alt="" coords="189,56,300,83"/>
+<area shape="rect" id="node3" href="$group___p_c_d___exported___functions___group3.html#gab377a41f91fb7c12c12886d94bd765f2" title="HAL_PCD_EP_Open" alt="" coords="379,5,525,32"/>
+<area shape="rect" id="node5" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#ga10080ed9555110afba809de968314985" title="Flushes an endpoint of the Low Level Driver. " alt="" coords="383,56,521,83"/>
+<area shape="rect" id="node7" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#ga259b00707b333065b66be515dd019428" title="Prepares an endpoint for reception. " alt="" coords="361,107,543,133"/>
+<area shape="rect" id="node6" href="$group___p_c_d___exported___functions___group3.html#gaf245d7a10c697f4591c144596cb2df0f" title="HAL_PCD_EP_Flush" alt="" coords="599,56,747,83"/>
+<area shape="rect" id="node8" href="$group___p_c_d___exported___functions___group3.html#ga0029fe7a8d3db91b13637e2507fba60c" title="HAL_PCD_EP_Receive" alt="" coords="591,107,755,133"/>
+</map>

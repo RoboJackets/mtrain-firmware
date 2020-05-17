@@ -1,0 +1,7 @@
+<map id="I2C_Exported_Functions" name="I2C_Exported_Functions">
+<area shape="rect" id="node1" href="$group___i2_c___i_r_q___handler__and___callbacks.html" title="IRQ Handler and Callbacks" alt="" coords="311,5,493,32"/>
+<area shape="rect" id="node2" href="$group___i2_c.html" title="I2C HAL module driver. " alt="" coords="5,97,48,124"/>
+<area shape="rect" id="node3" href="$group___i2_c___exported___functions___group1.html" title="Initialization and\l de&#45;initialization functions" alt="" coords="317,57,487,98"/>
+<area shape="rect" id="node4" href="$group___i2_c___exported___functions___group2.html" title="Input and Output operation\l functions" alt="" coords="314,122,490,163"/>
+<area shape="rect" id="node5" href="$group___i2_c___exported___functions___group3.html" title="Peripheral State, Mode\l and Error functions" alt="" coords="325,187,479,229"/>
+</map>

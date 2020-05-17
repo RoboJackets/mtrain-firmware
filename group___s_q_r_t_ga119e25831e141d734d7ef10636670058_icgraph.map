@@ -1,0 +1,5 @@
+<map id="arm_sqrt_q31" name="arm_sqrt_q31">
+<area shape="rect" id="node2" href="$group__cmplx__mag.html#ga14f82f9230e9d96d5b9774e2fefcb7be" title="Q31 complex magnitude. " alt="" coords="155,5,301,32"/>
+<area shape="rect" id="node3" href="$group___r_m_s.html#gae33015fda23fc44e7ead5e5ed7e8d314" title="Root Mean Square of the elements of a Q31 vector. " alt="" coords="177,56,279,83"/>
+<area shape="rect" id="node4" href="$group___s_t_d.html#ga39495e74f96116178be085c9dc7742f5" title="Standard deviation of the elements of a Q31 vector. " alt="" coords="179,107,277,133"/>
+</map>

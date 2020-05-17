@@ -1,0 +1,7 @@
+<map id="/home/collin/documents/robojackets/mtrain&#45;firmware/external/middleware/STM32_USB_Device_Library/Class/MSC/Inc/usbd_msc.h" name="/home/collin/documents/robojackets/mtrain&#45;firmware/external/middleware/STM32_USB_Device_Library/Class/MSC/Inc/usbd_msc.h">
+<area shape="rect" id="node2" href="$usbd__msc__storage__template_8h.html" title="/home/collin/documents\l/robojackets/mtrain&#45;firmware\l/external/middleware/STM32\l_USB_Device_Library/Class/MSC\l/Inc/usbd_msc_storage_template.h" alt="" coords="6,139,233,224"/>
+<area shape="rect" id="node4" href="$usbd__msc_8c.html" title="This file provides all the MSC core functions. " alt="" coords="257,139,480,224"/>
+<area shape="rect" id="node5" href="$usbd__msc__bot_8c.html" title="This file provides all the BOT protocol core functions. " alt="" coords="504,139,727,224"/>
+<area shape="rect" id="node6" href="$usbd__msc__scsi_8c.html" title="This file provides all the USBD SCSI layer functions. " alt="" coords="751,139,973,224"/>
+<area shape="rect" id="node3" href="$usbd__msc__storage__template_8c.html" title="Memory management layer. " alt="" coords="5,272,233,357"/>
+</map>

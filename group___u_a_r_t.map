@@ -1,0 +1,9 @@
+<map id="UART" name="UART">
+<area shape="rect" id="node1" href="$group___u_a_r_t___private___macros.html" title="UART Private Macros" alt="" coords="342,5,493,32"/>
+<area shape="rect" id="node2" href="$group___u_a_r_t___exported___macros.html" title="UART Exported Macros" alt="" coords="336,56,499,83"/>
+<area shape="rect" id="node3" href="$group___s_t_m32_f7xx___h_a_l___driver.html" title="STM32F7xx_HAL_Driver" alt="" coords="5,132,173,159"/>
+<area shape="rect" id="node4" href="$group___u_a_r_t___exported___functions.html" title="UART Exported Functions" alt="" coords="329,107,505,133"/>
+<area shape="rect" id="node5" href="$group___u_a_r_t___exported___types.html" title="UART Exported Types" alt="" coords="340,157,495,184"/>
+<area shape="rect" id="node6" href="$group___u_a_r_t___private___functions.html" title="UART Private Functions" alt="" coords="335,208,500,235"/>
+<area shape="rect" id="node8" href="$group___u_a_r_t___exported___constants.html" title="UART Exported Constants" alt="" coords="328,259,507,285"/>
+</map>

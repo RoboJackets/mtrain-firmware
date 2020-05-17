@@ -1,0 +1,11 @@
+<map id="arm_fill_q15" name="arm_fill_q15">
+<area shape="rect" id="node2" href="$group___conv.html#gaf16f490d245391ec18a42adc73d6d749" title="Convolution of Q15 sequences (fast version) for Cortex&#45;M3 and Cortex&#45;M4. " alt="" coords="152,5,313,32"/>
+<area shape="rect" id="node3" href="$group___conv.html#gac77dbcaef5c754cac27eab96c4753a3c" title="Convolution of Q15 sequences. " alt="" coords="167,56,299,83"/>
+<area shape="rect" id="node4" href="$group___conv.html#ga4c7cf073e89d6d57cc4e711f078c3f68" title="Convolution of Q7 sequences. " alt="" coords="170,107,295,133"/>
+<area shape="rect" id="node5" href="$group___partial_conv.html#ga3de9c4ddcc7886de25b70d875099a8d9" title="Partial convolution of Q15 sequences (fast version) for Cortex&#45;M3 and Cortex&#45;M4. " alt="" coords="157,182,308,223"/>
+<area shape="rect" id="node6" href="$group___partial_conv.html#ga834b23b4ade8682beeb55778399101f8" title="Partial convolution of Q15 sequences. " alt="" coords="145,272,320,299"/>
+<area shape="rect" id="node7" href="$group___partial_conv.html#ga3707e16af1435b215840006a7ab0c98f" title="Partial convolution of Q7 sequences. " alt="" coords="149,347,316,373"/>
+<area shape="rect" id="node8" href="$group___corr.html#ga40a0236b17220e8e22a22b5bc1c53c6b" title="Correlation of Q15 sequences (fast version) for Cortex&#45;M3 and Cortex&#45;M4. " alt="" coords="167,398,298,439"/>
+<area shape="rect" id="node9" href="$group___corr.html#gad71c0ec70ec69edbc48563d9a5f68451" title="Correlation of Q15 sequences. " alt="" coords="155,464,310,491"/>
+<area shape="rect" id="node10" href="$group___corr.html#ga746e8857cafe33ec5d6780729c18c311" title="Correlation of Q7 sequences. " alt="" coords="159,515,306,541"/>
+</map>

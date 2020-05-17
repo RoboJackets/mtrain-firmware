@@ -1,0 +1,26 @@
+var group___r_c_c_ex___periph___clock___selection =
+[
+    [ "RCC_PERIPHCLK_CEC", "group___r_c_c_ex___periph___clock___selection.html#gae7b08ed2b8df3517d5de1013e2f4ac8e", null ],
+    [ "RCC_PERIPHCLK_CLK48", "group___r_c_c_ex___periph___clock___selection.html#gab023056d0d10d8d3bd1013a88e0bebce", null ],
+    [ "RCC_PERIPHCLK_I2C1", "group___r_c_c_ex___periph___clock___selection.html#gafe21bb1cd8d7004373b236a8dd90fd92", null ],
+    [ "RCC_PERIPHCLK_I2C2", "group___r_c_c_ex___periph___clock___selection.html#gad3ca02c3ca6c548484cd1302c8adbb53", null ],
+    [ "RCC_PERIPHCLK_I2C3", "group___r_c_c_ex___periph___clock___selection.html#ga9fa8ac7959aeb5b76fdd780fbc1754f3", null ],
+    [ "RCC_PERIPHCLK_I2C4", "group___r_c_c_ex___periph___clock___selection.html#ga43446cae0c5716620fd3bb0ab129715b", null ],
+    [ "RCC_PERIPHCLK_I2S", "group___r_c_c_ex___periph___clock___selection.html#ga9434a99ec49907a6d2ce7ee7e29deb75", null ],
+    [ "RCC_PERIPHCLK_LPTIM1", "group___r_c_c_ex___periph___clock___selection.html#ga56ca7e8b3726ee68934795277eb0cbce", null ],
+    [ "RCC_PERIPHCLK_PLLI2S", "group___r_c_c_ex___periph___clock___selection.html#ga31b35acf124831881c39c31f4bed5de2", null ],
+    [ "RCC_PERIPHCLK_RTC", "group___r_c_c_ex___periph___clock___selection.html#gaede03aaafb5319bb39767bf50182406f", null ],
+    [ "RCC_PERIPHCLK_SAI1", "group___r_c_c_ex___periph___clock___selection.html#ga9b5a57e48c326c3b477b8361f6f246b8", null ],
+    [ "RCC_PERIPHCLK_SAI2", "group___r_c_c_ex___periph___clock___selection.html#ga7030f1b97abf4c891da0506fbd5df96b", null ],
+    [ "RCC_PERIPHCLK_SDMMC1", "group___r_c_c_ex___periph___clock___selection.html#ga8fc99091c35bb2c4d6de5f59647deced", null ],
+    [ "RCC_PERIPHCLK_SPDIFRX", "group___r_c_c_ex___periph___clock___selection.html#gae696b64cfe8a0c2ba96030c427fa77d5", null ],
+    [ "RCC_PERIPHCLK_TIM", "group___r_c_c_ex___periph___clock___selection.html#ga6a377fb8665c389cb263cddbfa44bec6", null ],
+    [ "RCC_PERIPHCLK_UART4", "group___r_c_c_ex___periph___clock___selection.html#ga14d9516d88f0e5a4726ca8d38efd8902", null ],
+    [ "RCC_PERIPHCLK_UART5", "group___r_c_c_ex___periph___clock___selection.html#gad571f04faa1c97e8371741187c2275ed", null ],
+    [ "RCC_PERIPHCLK_UART7", "group___r_c_c_ex___periph___clock___selection.html#gaf4db7b92efb0cae82484c0ed97ee6766", null ],
+    [ "RCC_PERIPHCLK_UART8", "group___r_c_c_ex___periph___clock___selection.html#gaff1fa6d45f717fb7ce045eb08685766d", null ],
+    [ "RCC_PERIPHCLK_USART1", "group___r_c_c_ex___periph___clock___selection.html#ga45390869c206531ea6d98baefb2315ac", null ],
+    [ "RCC_PERIPHCLK_USART2", "group___r_c_c_ex___periph___clock___selection.html#ga5d259e3e1607db6e547d525043246387", null ],
+    [ "RCC_PERIPHCLK_USART3", "group___r_c_c_ex___periph___clock___selection.html#ga8640cec93bf5d59d0f1beddd3bd7ec21", null ],
+    [ "RCC_PERIPHCLK_USART6", "group___r_c_c_ex___periph___clock___selection.html#ga4f1256bcdac1f0b12fa934dfc989ec4a", null ]
+];

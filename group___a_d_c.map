@@ -1,0 +1,10 @@
+<map id="ADC" name="ADC">
+<area shape="rect" id="node1" href="$group___a_d_c___private___functions.html" title="ADC Private Functions" alt="" coords="329,5,486,32"/>
+<area shape="rect" id="node2" href="$group___a_d_c___private___macros.html" title="ADC Private Macros" alt="" coords="336,56,479,83"/>
+<area shape="rect" id="node3" href="$group___a_d_c___exported___functions.html" title="ADC_Exported_Functions" alt="" coords="320,107,495,133"/>
+<area shape="rect" id="node4" href="$group___a_d_c___exported___types.html" title="ADC Exported Types" alt="" coords="334,157,481,184"/>
+<area shape="rect" id="node5" href="$group___a_d_c___exported___macros.html" title="ADC Exported Macros" alt="" coords="330,208,485,235"/>
+<area shape="rect" id="node6" href="$group___s_t_m32_f7xx___h_a_l___driver.html" title="STM32F7xx_HAL_Driver" alt="" coords="5,157,173,184"/>
+<area shape="rect" id="node8" href="$group___a_d_c___private___constants.html" title="ADC Private Constants" alt="" coords="327,259,487,285"/>
+<area shape="rect" id="node9" href="$group___a_d_c___exported___constants.html" title="ADC Exported Constants" alt="" coords="322,309,493,336"/>
+</map>

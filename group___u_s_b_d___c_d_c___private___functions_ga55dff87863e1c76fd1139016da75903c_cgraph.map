@@ -1,0 +1,4 @@
+<map id="USBD_CDC_ReceivePacket" name="USBD_CDC_ReceivePacket">
+<area shape="rect" id="node2" href="$group___u_s_b_d___c_o_r_e___exported___functions_prototype.html#ga259b00707b333065b66be515dd019428" title="Prepares an endpoint for reception. " alt="" coords="247,5,428,32"/>
+<area shape="rect" id="node3" href="$group___p_c_d___exported___functions___group3.html#ga0029fe7a8d3db91b13637e2507fba60c" title="HAL_PCD_EP_Receive" alt="" coords="476,5,640,32"/>
+</map>

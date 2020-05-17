@@ -1,0 +1,4 @@
+<map id="MPU_xPortGetFreeHeapSize" name="MPU_xPortGetFreeHeapSize">
+<area shape="rect" id="node2" href="$mpu__wrappers_8c.html#ac42aa31652a6e8158f8ea8a88aad8275" title="xPortRaisePrivilege" alt="" coords="258,5,395,32"/>
+<area shape="rect" id="node3" href="$portable_8h.html#a8f72fbee5c25c956bda528299ce6dd02" title="xPortGetFreeHeapSize" alt="" coords="248,56,405,83"/>
+</map>
