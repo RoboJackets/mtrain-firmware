@@ -53,7 +53,7 @@ void bsp_config(void)
   if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_10)) {
 
     /* USB MSC Init */
-    USBD_Init(&USBD_Device, &VCP_Desc, 0);
+    USBD_Init(&USBD_Device, &MSC_Desc, 0);
     USBD_RegisterClass(&USBD_Device, USBD_MSC_CLASS);
     USBD_MSC_RegisterStorage(&USBD_Device, &USBD_MSC_fops);
     USBD_Start(&USBD_Device);

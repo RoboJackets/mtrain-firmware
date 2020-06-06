@@ -61,6 +61,7 @@
 /* Exported functions ------------------------------------------------------- */
 extern USBD_DescriptorsTypeDef VCP_Desc;
 extern USBD_DescriptorsTypeDef DFU_Desc;
+extern USBD_DescriptorsTypeDef MSC_Desc;
 
 #endif /* __USBD_DESC_H */
 
