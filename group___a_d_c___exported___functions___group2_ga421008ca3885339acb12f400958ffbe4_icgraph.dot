@@ -1,0 +1,27 @@
+digraph "HAL_ADC_GetValue"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node7 [label="HAL_ADC_GetValue",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="analogin_read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$analog__in_8c.html#a85deea45044850e72754d6216a0c646f"];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$adc_8c.html#a840291bc02cba5474a4cb46a9b9566fe"];
+  Node7 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="analogin_read_u16",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$analog__in_8c.html#a74fbfa015e14684f70d4f371c1adca7f"];
+  Node7 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="analogin_voltage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$analog__in_8c.html#a35d23b713bfb93d955594b3ddc9a4e71"];
+  Node7 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="analogin_percent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$analog__in_8c.html#abac153ed57b096652a95c4de7bfd23f7"];
+  Node7 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="AnalogIn::read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_analog_in.html#a5ee39b39226627eebeb7866eb85e0b24"];
+  Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$adc_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe"];
+  Node7 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="AnalogIn::read_u16",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_analog_in.html#adf6e25dbc248a4352e509a95f29623b2"];
+  Node7 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="AnalogIn::getVoltage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_analog_in.html#a3f5ed807a7b4ad94432708dc6b9e703f"];
+  Node7 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="AnalogIn::getPercent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_analog_in.html#a190fccb33b5be33f5d608bda34f15149"];
+}

@@ -1,6 +1,7 @@
 var searchData=
 [
   ['abort',['ABORT',['../ff_8c.html#a41e4c46636679236568cf50b5535847f',1,'ff.c']]],
+  ['adc3',['adc3',['../pin__defs_8h.html#a3be8dc534c778b746d890f3cd714a989',1,'pin_defs.h']]],
   ['addr',['ADDR',['../flash_8c.html#ac9f31f726d2933782e2efda7136a25fd',1,'flash.c']]],
   ['align4',['ALIGN4',['../arm__math_8h.html#a280a402ab28c399fcc4168f2ed631acb',1,'arm_math.h']]],
   ['am_5farc',['AM_ARC',['../ff_8h.html#ae8174d00798e34e7c9e95898cb9e1a09',1,'ff.h']]],

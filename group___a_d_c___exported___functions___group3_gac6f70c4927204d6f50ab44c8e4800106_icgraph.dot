@@ -1,0 +1,13 @@
+digraph "HAL_ADC_ConfigChannel"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node3 [label="HAL_ADC_ConfigChannel",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="analogin_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$analog__in_8c.html#a81fad5fb18a0ea55e3ca0881966aff2a"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$adc_8c.html#a840291bc02cba5474a4cb46a9b9566fe"];
+  Node3 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AnalogIn::AnalogIn",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_analog_in.html#aa177bbdd7ec1e8eb67b7b2a5a2f580fd"];
+}

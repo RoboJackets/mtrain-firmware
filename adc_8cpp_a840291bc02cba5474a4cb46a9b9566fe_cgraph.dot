@@ -1,0 +1,19 @@
+digraph "main"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="AnalogIn::read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_analog_in.html#a5ee39b39226627eebeb7866eb85e0b24"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="HAL_ADC_GetValue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___a_d_c___exported___functions___group2.html#ga421008ca3885339acb12f400958ffbe4"];
+  Node0 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="HAL_Delay",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___h_a_l___exported___functions___group2.html#gaef87d3fec667bb34c418f5687e8204c1",tooltip="This function provides accurate delay (in milliseconds) based on variable incremented. "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="HAL_GetTick",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___h_a_l___exported___functions___group2.html#gac9b3a85a73735ac840d0dcb59bc0fdd6",tooltip="Provides a tick value in millisecond. "];
+  Node0 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="DigitalOut::toggle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_digital_out.html#a17393169f751e56e7998ef0d57ab6c05",tooltip="Toggle pin output. "];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="HAL_GPIO_TogglePin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___g_p_i_o___exported___functions___group2.html#gaf5e0c89f752de5cdedcc30db068133f6"];
+}
