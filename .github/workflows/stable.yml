@@ -1,30 +1,14 @@
+
+# This does not check that master builds and passes style checks that is handled by general.yml passing. This takes successful merges to master and builds docs for them and then pushes them to gh-pages as well as builds the conan and docker packages and pushes them.
 name: Stable
 # Controls when the action will run. Triggers the workflow on push or successful pr merge
 # events but only for the master branch
 on:
   push:
-    branches: [ master, collin/ci-and-doxygen ]
+    branches: [ master, ci-updates]
 
 # NOTE Much of what I do with run commands directly has other github action specific ways I just didnt care and did it with commands
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
-jobs:
-  test-firmware:
-    runs-on: ubuntu-latest
-    env:
-      DOCKER_NAME: testbuild
-    steps:
-      - name: setup-env
-        run: |
-          cd $GITHUB_WORKSPACE
-      - name: checkout
-        uses: actions/checkout@v2
-      - name: docker-build
-        run: |
-          docker build -t $DOCKER_NAME:latest ./
-      - name: test-build
-        run: |
-          docker run --name $DOCKER_NAME $DOCKER_NAME make
-
   gen-docs:
     runs-on: ubuntu-latest
     env:
@@ -55,3 +39,43 @@ jobs:
           git add --all -f &&
           git commit -m 'auto-updated documentation' &&
           git push https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/robojackets/mtrain gh-pages
+
+  # uses https://github.com/docker/build-push-action
+  push-docker-image:
+    runs-on: ubuntu-latest
+    env:
+      DOCKER_NAME: mtrain-firmware
+    steps:
+      - name: setup-env
+        run: |
+          cd $GITHUB_WORKSPACE
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: build-and-push
+        uses: docker/build-push-action@v1.1.0
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          repository: robojackets/mtrain-firmware
+          tags: latest
+
+
+  # uses https://github.com/docker/build-push-action
+  push-conan-package:
+    runs-on: ubuntu-latest
+    env:
+      DOCKER_NAME: mtrain-firmware
+    steps:
+      - name: setup-env
+        run: |
+          cd $GITHUB_WORKSPACE
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: docker-build
+        run: |
+          docker build -t $DOCKER_NAME:latest ./
+
+      - name: docker-build
+        run: |
+          conan create . robojackets/stable -pr armv7hf
+          conan upload mTrain/[1.0.0]@robojackets/stable -r robojackets --all

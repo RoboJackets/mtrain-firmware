@@ -1,0 +1,56 @@
+
+name: General
+# Controls when the action will run. Triggers the workflow on push or successful pr merge
+# events but only for the master branch
+on:
+  push:
+    branches:
+
+# NOTE Much of what I do with run commands directly has other github action specific ways I just didnt care and did it with commands
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    env:
+      DOCKER_NAME: testbuild
+    steps:
+      - name: setup-env
+        run: |
+          cd $GITHUB_WORKSPACE
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: docker-build
+        run: |
+          docker build -t $DOCKER_NAME:latest ./
+      - name: test-build
+        run: |
+          docker run --name $DOCKER_NAME $DOCKER_NAME make
+
+  style:
+    runs-on: ubuntu-latest
+    env:
+      DOCKER_NAME: testbuild
+    steps:
+      - name: setup-env
+        run: |
+          cd $GITHUB_WORKSPACE
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: docker-build
+        run: |
+          docker build -t $DOCKER_NAME:latest ./
+
+
+  clang-tidy:
+    runs-on: ubuntu-latest
+    env:
+      DOCKER_NAME: testbuild
+    steps:
+      - name: setup-env
+        run: |
+          cd $GITHUB_WORKSPACE
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: docker-build
+        run: |
+          docker build -t $DOCKER_NAME:latest ./
