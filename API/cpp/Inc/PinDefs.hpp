@@ -3,6 +3,8 @@
 #include "stm32f7xx_hal.h"
 #include "stm32f769xx.h"
 #include <stdint.h>
+#include <string>
+#include <iostream>
 
 // This file defines mappings of GPIO Pin Labels to pins of the border of the mtrain chip itself (pins 3 - 36)
 
@@ -10,15 +12,31 @@
 // pins formed with GPIO and pin correspond to pin label on the data sheet not their BGA name
 // PA8 is gpio bank A pin 8
 typedef struct PinName {
-  GPIO_TypeDef* port;
-  uint16_t pin;
+    GPIO_TypeDef* port;
+    uint16_t pin;
+
+    std::string toString() {
+        uint32_t offset_char = (uint32_t)( (uint8_t*)port - AHB1PERIPH_BASE ) / 0x0400U;
+        return static_cast<char>(offset_char + 'A') + std::to_string(pin);
+    }
+
 } PinName;
+
+
+typedef struct PWMParams {
+    PinName pin_name;
+    TIM_TypeDef * timer;
+    uint32_t channel;
+    float duty_cycle;
+} PWMParams;
+
 
 typedef struct ADCPinName {
   PinName pin_name;
   ADC_TypeDef* adc;
   uint32_t channel;
 } ADCPinName;
+
 
 constexpr PinName p3  = { GPIOA, GPIO_PIN_8  };
 constexpr PinName p4  = { GPIOB, GPIO_PIN_15 };
