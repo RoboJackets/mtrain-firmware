@@ -10,9 +10,13 @@ int main(void)
 
     PWMParams params = {p31, TIM5, TIM_CHANNEL_1, 0.5};
 
+    PWM pwm(params);
+
     while (true) {
         leds[0].toggle();
         HAL_Delay(100);
         leds[0].toggle();
+        HAL_Delay(100000);
+        pwm.set_duty_cycle(0.8);
     }
 }
