@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['list_5ft',['List_t',['../list_8h.html#afd590ef6400071b4d63d65ef90bea7f4',1,'list.h']]],
-  ['listitem_5ft',['ListItem_t',['../list_8h.html#a1a62d469392f9bfe2443e7efab9c8398',1,'list.h']]],
-  ['long',['LONG',['../integer_8h.html#a2a3e0cda5f1249bef6db47c5eb8e3813',1,'integer.h']]]
+  ['memoryregion_5ft',['MemoryRegion_t',['../task_8h.html#af609504de4d78ff6f71477ae47c66e51',1,'task.h']]],
+  ['minilistitem_5ft',['MiniListItem_t',['../list_8h.html#a542a8d55e98bc407593979e61f83cd02',1,'list.h']]]
 ];

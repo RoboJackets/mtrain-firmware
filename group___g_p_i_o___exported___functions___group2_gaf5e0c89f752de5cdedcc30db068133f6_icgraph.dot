@@ -7,7 +7,7 @@ digraph "HAL_GPIO_TogglePin"
   Node17 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node18 [label="digitalout_toggle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$digital__out_8c.html#a549af9eaff8500d0b994e5461ea0f2df",tooltip="Toggle pin output. "];
   Node18 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node19 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$adc_8c.html#a840291bc02cba5474a4cb46a9b9566fe"];
+  Node19 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$blink_8c.html#a840291bc02cba5474a4cb46a9b9566fe",tooltip="Blink LEDs back and forth. "];
   Node18 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node20 [label="blink",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$blink__interrupt_8c.html#a5664bd38fc668253a0152e6b319aafbb",tooltip="interruptin and digitalout test "];
   Node20 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
@@ -15,5 +15,5 @@ digraph "HAL_GPIO_TogglePin"
   Node17 -> Node22 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node22 [label="DigitalOut::toggle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_digital_out.html#a17393169f751e56e7998ef0d57ab6c05",tooltip="Toggle pin output. "];
   Node22 -> Node23 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node23 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$adc_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe"];
+  Node23 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$blink_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe",tooltip="Blink LEDs back and forth. "];
 }

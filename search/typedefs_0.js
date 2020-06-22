@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['adc_5fhandle',['adc_handle',['../analog__in_8h.html#afd84d853a1aeae6826274ffa25276dc8',1,'analog_in.h']]],
-  ['adc_5fpin_5fname',['adc_pin_name',['../pin__defs_8h.html#a8d7edc9ec6238af7b7f321c122c258af',1,'pin_defs.h']]],
-  ['adcpinname',['ADCPinName',['../_pin_defs_8hpp.html#abfe2f32ef0046ab6605952a223e8f451',1,'PinDefs.hpp']]]
+  ['basetype_5ft',['BaseType_t',['../_a_r_m___c_m0_2portmacro_8h.html#a46fb21e00ae0729d7515c0fbf2269796',1,'BaseType_t():&#160;portmacro.h'],['../_a_r_m___c_m3_2portmacro_8h.html#a46fb21e00ae0729d7515c0fbf2269796',1,'BaseType_t():&#160;portmacro.h'],['../_a_r_m___c_m3___m_p_u_2portmacro_8h.html#a46fb21e00ae0729d7515c0fbf2269796',1,'BaseType_t():&#160;portmacro.h'],['../_a_r_m___c_m4___m_p_u_2portmacro_8h.html#a46fb21e00ae0729d7515c0fbf2269796',1,'BaseType_t():&#160;portmacro.h'],['../_a_r_m___c_m4_f_2portmacro_8h.html#a46fb21e00ae0729d7515c0fbf2269796',1,'BaseType_t():&#160;portmacro.h'],['../_a_r_m___c_m7_2r0p1_2portmacro_8h.html#a46fb21e00ae0729d7515c0fbf2269796',1,'BaseType_t():&#160;portmacro.h']]],
+  ['blocklink_5ft',['BlockLink_t',['../heap__2_8c.html#ad9a44f586d03fc020ee6f5939defb314',1,'BlockLink_t():&#160;heap_2.c'],['../heap__4_8c.html#ad9a44f586d03fc020ee6f5939defb314',1,'BlockLink_t():&#160;heap_4.c'],['../heap__5_8c.html#ad9a44f586d03fc020ee6f5939defb314',1,'BlockLink_t():&#160;heap_5.c']]],
+  ['byte',['BYTE',['../integer_8h.html#a4ae1dab0fb4b072a66584546209e7d58',1,'integer.h']]]
 ];

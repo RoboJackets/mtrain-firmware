@@ -1,8 +1,6 @@
 var pin__defs_8h =
 [
     [ "pin_name", "structpin__name.html", "structpin__name" ],
-    [ "adc_pin_name", "structadc__pin__name.html", "structadc__pin__name" ],
-    [ "adc3", "pin__defs_8h.html#a3be8dc534c778b746d890f3cd714a989", null ],
     [ "LED1", "pin__defs_8h.html#a8aa85ae9867fabf70ec72cd3bf6fb6b9", null ],
     [ "LED2", "pin__defs_8h.html#ad09fe5bf321b9a2de26bd5e5b9af6424", null ],
     [ "LED3", "pin__defs_8h.html#a4b7ff8e253a7412f83deba3a447028a8", null ],
@@ -37,7 +35,6 @@ var pin__defs_8h =
     [ "PIN7", "pin__defs_8h.html#af4d3f80395907ab4999773479f1aecf1", null ],
     [ "PIN8", "pin__defs_8h.html#a7a07dac6b9e43e034a3962e9b527c5d3", null ],
     [ "PIN9", "pin__defs_8h.html#aa5ff146675609a313f316327dec3939d", null ],
-    [ "adc_pin_name", "pin__defs_8h.html#a8d7edc9ec6238af7b7f321c122c258af", null ],
     [ "pin_name", "pin__defs_8h.html#af9d29ea79d996b8f8473fcb4e2a80d50", null ],
     [ "pull_type", "pin__defs_8h.html#a46283d0e4a7f14cb375b1c1ba487065f", [
       [ "PULL_NONE", "pin__defs_8h.html#a46283d0e4a7f14cb375b1c1ba487065fa3bfdd5c777c7c3d985255ff826407633", null ],

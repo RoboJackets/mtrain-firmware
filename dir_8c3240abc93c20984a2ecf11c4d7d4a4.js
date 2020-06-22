@@ -1,6 +1,5 @@
 var dir_8c3240abc93c20984a2ecf11c4d7d4a4 =
 [
-    [ "adc.cpp", "adc_8cpp.html", "adc_8cpp" ],
     [ "blink.cpp", "blink_8cpp.html", "blink_8cpp" ],
     [ "gpio.cpp", "gpio_8cpp.html", "gpio_8cpp" ],
     [ "i2c.cpp", "tests_2cpp_2_i2_c_8cpp.html", "tests_2cpp_2_i2_c_8cpp" ],

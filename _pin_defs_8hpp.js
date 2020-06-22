@@ -1,8 +1,6 @@
 var _pin_defs_8hpp =
 [
     [ "PinName", "struct_pin_name.html", "struct_pin_name" ],
-    [ "ADCPinName", "struct_a_d_c_pin_name.html", "struct_a_d_c_pin_name" ],
-    [ "ADCPinName", "_pin_defs_8hpp.html#abfe2f32ef0046ab6605952a223e8f451", null ],
     [ "PinName", "_pin_defs_8hpp.html#a124a6309b7e118476c4d1181dddd9261", null ],
     [ "PullType", "_pin_defs_8hpp.html#a2ee823cf679459be3bfde29592eaf2fb", null ],
     [ "PullType", "_pin_defs_8hpp.html#aa42ccc87c38831226c44b80f0309a9ca", [
@@ -10,7 +8,6 @@ var _pin_defs_8hpp =
       [ "PullUp", "_pin_defs_8hpp.html#aa42ccc87c38831226c44b80f0309a9caa3be493d0479ea10ea2b1fdcd7b33ec3b", null ],
       [ "PullDown", "_pin_defs_8hpp.html#aa42ccc87c38831226c44b80f0309a9caac71cd2b9d40cca631e53f37874c53f5f", null ]
     ] ],
-    [ "adc3", "_pin_defs_8hpp.html#a70511f5bb77e801f83cff2e641614f25", null ],
     [ "LED1", "_pin_defs_8hpp.html#aa5c46d621e66134b59edd074694ab460", null ],
     [ "LED2", "_pin_defs_8hpp.html#afafb7db51214b58f66924da3b0aeeee9", null ],
     [ "LED3", "_pin_defs_8hpp.html#ac6e7a6932e14c2ce4e4c595bc130b03e", null ],

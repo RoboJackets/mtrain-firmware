@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['dma_5fhandletypedef',['DMA_HandleTypeDef',['../group___d_m_a___exported___types.html#ga41b754a906b86bce54dc79938970138b',1,'stm32f7xx_hal_dma.h']]],
-  ['dstatus',['DSTATUS',['../diskio_8h.html#adba6790898ce4029c20a34b898ce73c1',1,'diskio.h']]],
-  ['dword',['DWORD',['../integer_8h.html#ad342ac907eb044443153a22f964bf0af',1,'integer.h']]]
+  ['eventbits_5ft',['EventBits_t',['../event__groups_8h.html#ab2f21b93db0b2a0ab64d7a81ff32ac2e',1,'event_groups.h']]],
+  ['eventgroup_5ft',['EventGroup_t',['../event__groups_8c.html#a52ebd73f8020418f71e63c2f3934f999',1,'event_groups.c']]],
+  ['eventgrouphandle_5ft',['EventGroupHandle_t',['../event__groups_8h.html#a5119294106541c4eca46e8742fdb4e85',1,'event_groups.h']]]
 ];
