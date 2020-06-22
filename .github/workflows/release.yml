@@ -75,6 +75,7 @@ jobs:
           docker build -t $DOCKER_NAME:latest ./
       - name: conan-upload
         run: |
-          conan user -p ${{ secrets.BINTRAY_API_KEY }} -r robojackets ${{ secrets.BINTRAY_API_KEY }}
-          conan create . robojackets/stable -pr armv7hf
-          conan upload mTrain/[$VERSION]@robojackets/stable -r robojackets --all
+          docker run --name $DOCKER_NAME $DOCKER_NAME
+          " conan user -p ${{ secrets.BINTRAY_API_KEY }} -r robojackets ${{ secrets.BINTRAY_API_KEY }} &&
+          conan create . robojackets/stable -pr armv7hf &&
+          conan upload mTrain/[$VERSION]@robojackets/stable -r robojackets --all "
