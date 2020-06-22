@@ -5,18 +5,25 @@ name: Stable
 # events but only for the master branch
 on:
   push:
-    branches: [ master, ci-updates]
+    branches: [ release, ci-updates ]
+
+
+env:
+  DOCKER_NAME: mtrain-firmware
+
+defaults:
+  run:
+    shell: bash
+    working-directory: ${{ github.workspace }}
 
 # NOTE Much of what I do with run commands directly has other github action specific ways I just didnt care and did it with commands
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
   gen-docs:
     runs-on: ubuntu-latest
-    env:
-      DOCKER_NAME: docsbuild
+    # env:
+    #   DOCKER_NAME: docsbuild
     steps:
-      - name: setup-env
-        run: |
-          cd $GITHUB_WORKSPACE
       - name: checkout
         uses: actions/checkout@v2
       - name: docker-build
@@ -43,39 +50,37 @@ on:
   # uses https://github.com/docker/build-push-action
   push-docker-image:
     runs-on: ubuntu-latest
-    env:
-      DOCKER_NAME: mtrain-firmware
     steps:
-      - name: setup-env
-        run: |
-          cd $GITHUB_WORKSPACE
       - name: checkout
         uses: actions/checkout@v2
+      - name: get-version
+        id: get_version
+        run: echo "::set-env name=VERSION::${GITHUB_REF#refs/tags/}"
       - name: build-and-push
         uses: docker/build-push-action@v1.1.0
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
           repository: robojackets/mtrain-firmware
-          tags: latest
+          tags: ${{ env.VERSION }}
 
 
   # uses https://github.com/docker/build-push-action
   push-conan-package:
     runs-on: ubuntu-latest
-    env:
-      DOCKER_NAME: mtrain-firmware
+    # env:
+    #   DOCKER_NAME: mtrain-firmware
     steps:
-      - name: setup-env
-        run: |
-          cd $GITHUB_WORKSPACE
       - name: checkout
         uses: actions/checkout@v2
+      - name: get-version
+        id: get_version
+        run: echo "::set-env name=VERSION::${GITHUB_REF#refs/tags/}"
       - name: docker-build
         run: |
           docker build -t $DOCKER_NAME:latest ./
-
-      - name: docker-build
+      - name: conan-upload
         run: |
+          conan user -p ${{ secrets.BINTRAY_API_KEY }} -r robojackets ${{ secrets.BINTRAY_API_KEY }}
           conan create . robojackets/stable -pr armv7hf
-          conan upload mTrain/[1.0.0]@robojackets/stable -r robojackets --all
+          conan upload mTrain/[$VERSION]@robojackets/stable -r robojackets --all

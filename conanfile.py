@@ -1,8 +1,12 @@
 from conans import ConanFile, CMake
 
+def get_version():
+    # Version is set by release branch CI to be latest tag on a commit being merged unifies docker and conan versions 2nd arg is the default
+    return os.getenv('VERSION', "1.2.0")
+
 class MtrainConan(ConanFile):
     name = "mTrain"
-    version = "1.2.0"
+    version = get_version()
     url = "https://github.com/RoboJackets/mtrain-firmware"
     description = "mTrain description"
     license = "Apache"
@@ -27,6 +31,9 @@ class MtrainConan(ConanFile):
         self.copy(pattern='flash.py', dst='.', src='util')
 
     def package_info(self):
+        version =
+        self.version
+
         self.cpp_info.includedirs = ['API/c/Inc', 'API/cpp/Inc', 'BSP/config/hal', 'BSP/config/usb', 'BSP/Inc',
             'external/CMSIS/Device/STM32F7xx/Include', 'external/CMSIS/Include', 'external/middleware', 'external/STM32F7xx_HAL_Drivers/Inc',
             'external/middleware/FreeRTOS/src/include', 'external/middleware/FreeRTOS/src/CMSIS_RTOS', 'external/middleware/FreeRTOS/src/portable/GCC/ARM_CM7/r0p1',
