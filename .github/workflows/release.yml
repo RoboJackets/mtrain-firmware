@@ -1,20 +1,14 @@
-
 # This does not check that master builds and passes style checks that is handled by general.yml passing. This takes successful merges to master and builds docs for them and then pushes them to gh-pages as well as builds the conan and docker packages and pushes them.
-name: Stable
+name: Release
 # Controls when the action will run. Triggers the workflow on push or successful pr merge
 # events but only for the master branch
 on:
   push:
     branches: [ release, ci-updates ]
 
-
 env:
   DOCKER_NAME: mtrain-firmware
 
-defaults:
-  run:
-    shell: bash
-    working-directory: ${{ GITHUB_WORKSPACE }}
 
 # NOTE Much of what I do with run commands directly has other github action specific ways I just didnt care and did it with commands
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
