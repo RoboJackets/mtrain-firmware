@@ -47,7 +47,7 @@ jobs:
         uses: actions/checkout@v2
       - name: get-version
         id: get_version
-        run: echo "::set-env name=VERSION::${git describe --abbrev=0}"
+        run: echo "::set-env name=VERSION::$(git describe --abbrev=0)"
       - name: build-and-push
         uses: docker/build-push-action@v1.1.0
         with:
@@ -64,7 +64,7 @@ jobs:
         uses: actions/checkout@v2
       - name: get-version
         id: get_version
-        run: echo "::set-env name=VERSION::${git describe --abbrev=0}"
+        run: echo "::set-env name=VERSION::$(git describe --abbrev=0)"
       - name: docker-build
         run: |
           docker build -t $DOCKER_NAME:latest ./
