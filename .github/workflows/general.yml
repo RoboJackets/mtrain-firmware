@@ -6,17 +6,16 @@ on:
   push:
     branches:
 
+env:
+  DOCKER_NAME: mtrain-firmware
+
+
 # NOTE Much of what I do with run commands directly has other github action specific ways I just didnt care and did it with commands
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   run-tests:
     runs-on: ubuntu-latest
-    env:
-      DOCKER_NAME: testbuild
     steps:
-      - name: setup-env
-        run: |
-          cd $GITHUB_WORKSPACE
       - name: checkout
         uses: actions/checkout@v2
       - name: docker-build
@@ -28,12 +27,7 @@ jobs:
 
   style:
     runs-on: ubuntu-latest
-    env:
-      DOCKER_NAME: testbuild
     steps:
-      - name: setup-env
-        run: |
-          cd $GITHUB_WORKSPACE
       - name: checkout
         uses: actions/checkout@v2
       - name: docker-build
@@ -43,12 +37,7 @@ jobs:
 
   clang-tidy:
     runs-on: ubuntu-latest
-    env:
-      DOCKER_NAME: testbuild
     steps:
-      - name: setup-env
-        run: |
-          cd $GITHUB_WORKSPACE
       - name: checkout
         uses: actions/checkout@v2
       - name: docker-build
