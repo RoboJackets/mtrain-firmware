@@ -1,0 +1,3 @@
+[submodule "external/mJackets-api"]
+	path = external/mJackets-api
+	url = https://github.com/RoboJackets/mJackets-api
