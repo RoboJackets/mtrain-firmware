@@ -12,16 +12,14 @@ uint8_t BSP_SDRAM_Init(void) {
     sdramHandle.Instance = FMC_SDRAM_DEVICE;
 
     /* Set timing parameters for SDRAM in FMC_SDRAM_TimingTypeDef */
-    //TODO: Need to determine values, probably from datasheet for SDRAM, need to decide clock frequency first?
-    Timing.LoadToActiveDelay    = 0;
-    Timing.ExitSelfRefreshDelay = 0;
-    Timing.SelfRefreshTime      = 0;
-    Timing.RowCycleDelay        = 0;
-    Timing.WriteRecoveryTime    = 2;
-    Timing.RPDelay              = 0;
-    Timing.RCDDelay             = 0;
+    Timing.LoadToActiveDelay    = 2;
+    Timing.ExitSelfRefreshDelay = 9;
+    Timing.SelfRefreshTime      = 5;
+    Timing.RowCycleDelay        = 8;
+    Timing.WriteRecoveryTime    = 4;
+    Timing.RPDelay              = 2;
+    Timing.RCDDelay             = 2;
 
-    //TODO: Need to determine values that are uncertain
     sdramHandle.Init.SDBank             = FMC_SDRAM_BANK1;
     sdramHandle.Init.ColumnBitsNumber   = FMC_SDRAM_COLUMN_BITS_NUM_9;
     sdramHandle.Init.RowBitsNumber      = FMC_SDRAM_ROW_BITS_NUM_13;
