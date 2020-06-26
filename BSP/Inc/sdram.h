@@ -4,7 +4,7 @@
 
 #include "stm32f7xx_hal.h"
 #include "stm32f7xx_ll_fmc.h"
-#include "stm32f7xx_hal_sdram.h
+#include "stm32f7xx_hal_sdram.h"
 
 static FMC_SDRAM_CommandTypeDef Command;
 static SDRAM_HandleTypeDef sdramHandle;
@@ -19,7 +19,7 @@ static HAL_SDRAM_StateTypeDef sdramState;
 #define SDRAM_SDCLK_PIN         GPIO_PIN_8
 #define SDRAM_SDCLK_PORT        GPIOG
 #define SDRAM_SDCKE_PIN         GPIO_PIN_2
-#define SDRAM_SDCKE_PIN         GPIOH
+#define SDRAM_SDCKE_PORT         GPIOH
 #define SDRAM_SDNE_PIN          GPIO_PIN_3
 #define SDRAM_SDNE_PORT         GPIOH
 #define SDRAM_SDNCAS_PIN        GPIO_PIN_15
