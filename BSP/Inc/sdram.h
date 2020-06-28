@@ -96,8 +96,27 @@ static HAL_SDRAM_StateTypeDef sdramState;
 #define SDRAM_D15_PORT          GPIOD
 
 
+#define REFRESH_COUNT                    ((uint32_t)0x0672)   /* SDRAM refresh counter (108Mhz SD clock) */
+/**
+ * @brief  MT48LC16M16A2 Mode Register Defines
+ */
+#define SDRAM_MODEREG_BURST_LENGTH_1             ((uint16_t)0x0000)
+#define SDRAM_MODEREG_BURST_LENGTH_2             ((uint16_t)0x0001)
+#define SDRAM_MODEREG_BURST_LENGTH_4             ((uint16_t)0x0002)
+#define SDRAM_MODEREG_BURST_LENGTH_8             ((uint16_t)0x0004)
+#define SDRAM_MODEREG_BURST_TYPE_SEQUENTIAL      ((uint16_t)0x0000)
+#define SDRAM_MODEREG_BURST_TYPE_INTERLEAVED     ((uint16_t)0x0008)
+#define SDRAM_MODEREG_CAS_LATENCY_2              ((uint16_t)0x0020)
+#define SDRAM_MODEREG_CAS_LATENCY_3              ((uint16_t)0x0030)
+#define SDRAM_MODEREG_OPERATING_MODE_STANDARD    ((uint16_t)0x0000)
+#define SDRAM_MODEREG_WRITEBURST_MODE_PROGRAMMED ((uint16_t)0x0000)
+#define SDRAM_MODEREG_WRITEBURST_MODE_SINGLE     ((uint16_t)0x0200)
 
 
+uint8_t BSP_SDRAM_Init(void);
+void BSP_SDRAM_MspInit(void);
+void BSP_SDRAM_Init_Sequence(void);
+static void HAL_FMC_MspDeInit(void);
 
 
 #endif //MTRAIN_SDRAM_H

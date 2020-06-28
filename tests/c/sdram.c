@@ -25,7 +25,7 @@ int main(void)
 
     digitalout_toggle(leds[0]);
     for(int i = 0; i < test_length; i++) {
-        *cur = fill_function(i);
+        *cur = fill_function(i); // HARD FAULT
     }
     digitalout_toggle(leds[0]);
 

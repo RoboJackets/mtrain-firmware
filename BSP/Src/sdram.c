@@ -49,6 +49,47 @@ uint8_t BSP_SDRAM_Init(void) {
  * Initializes SDRAM MSP
  */
 void BSP_SDRAM_MspInit(void) {
+    /** FMC GPIO Configuration
+        PE1   ------> FMC_NBL1
+        PE0   ------> FMC_NBL0
+        PG15   ------> FMC_SDNCAS
+        PD0   ------> FMC_D2
+        PD1   ------> FMC_D3
+        PF0   ------> FMC_A0
+        PF1   ------> FMC_A1
+        PF2   ------> FMC_A2
+        PF3   ------> FMC_A3
+        PG8   ------> FMC_SDCLK
+        PF4   ------> FMC_A4
+        PH5   ------> FMC_SDNWE
+        PH3   ------> FMC_SDNE0
+        PF5   ------> FMC_A5
+        PH2   ------> FMC_SDCKE0
+        PD15   ------> FMC_D1
+        PD10   ------> FMC_D15
+        PD14   ------> FMC_D0
+        PD9   ------> FMC_D14
+        PD8   ------> FMC_D13
+        PF12   ------> FMC_A6
+        PG1   ------> FMC_A11
+        PF15   ------> FMC_A9
+        PG2   ------> FMC_A12
+        PF13   ------> FMC_A7
+        PG0   ------> FMC_A10
+        PE8   ------> FMC_D5
+        PG5   ------> FMC_BA1
+        PG4   ------> FMC_BA0
+        PF14   ------> FMC_A8
+        PF11   ------> FMC_SDNRAS
+        PE9   ------> FMC_D6
+        PE11   ------> FMC_D8
+        PE14   ------> FMC_D11
+        PE7   ------> FMC_D4
+        PE10   ------> FMC_D7
+        PE12   ------> FMC_D9
+        PE15   ------> FMC_D12
+        PE13   ------> FMC_D10
+    */
     GPIO_InitTypeDef gpio_init_structure;
 
     /* Enable FMC clock */
@@ -66,17 +107,17 @@ void BSP_SDRAM_MspInit(void) {
     gpio_init_structure.Mode = GPIO_MODE_AF_PP;
     gpio_init_structure.Pull = GPIO_PULLUP;
     gpio_init_structure.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
-    //TODO: FIGURE OUT ALTERNATE VARIABLE
-   // gpio_init_structure.Alternate =
+    gpio_init_structure.Alternate = GPIO_AF12_FMC;
 
-   /* GPIOG configuration */
-   gpio_init_structure.Pin = SDRAM_SDCLK_PIN | SDRAM_SDNCAS_PIN | SDRAM_BA0_PIN | SDRAM_BA1_PIN | SDRAM_A10_PIN |
-           SDRAM_A11_PIN | SDRAM_A12_PIN;
-   HAL_GPIO_Init(GPIOG, &gpio_init_structure);
 
-   /* GPIOH configuration */
-   gpio_init_structure.Pin = SDRAM_SDCKE_PIN | SDRAM_SDNE_PIN | SDRAM_SDNWE_PIN;
-   HAL_GPIO_Init(GPIOH, &gpio_init_structure);
+    /* GPIOG configuration */
+    gpio_init_structure.Pin = SDRAM_SDCLK_PIN | SDRAM_SDNCAS_PIN | SDRAM_BA0_PIN | SDRAM_BA1_PIN | SDRAM_A10_PIN |
+            SDRAM_A11_PIN | SDRAM_A12_PIN;
+    HAL_GPIO_Init(GPIOG, &gpio_init_structure);
+
+    /* GPIOH configuration */
+    gpio_init_structure.Pin = SDRAM_SDCKE_PIN | SDRAM_SDNE_PIN | SDRAM_SDNWE_PIN;
+    HAL_GPIO_Init(GPIOH, &gpio_init_structure);
 
     /* GPIOF configuration */
     gpio_init_structure.Pin = SDRAM_SDNRAS_PIN | SDRAM_A0_PIN | SDRAM_A1_PIN | SDRAM_A2_PIN | SDRAM_A3_PIN |
@@ -128,17 +169,87 @@ void BSP_SDRAM_Init_Sequence(void) {
     HAL_SDRAM_SendCommand(&sdramHandle, &Command, (uint32_t)0xFFFF);
 
     /* Issue an AUTO REFRESH command */
-    //TODO: See if necessary
 
+    __IO uint32_t tmpmrd = 0;
     /* SDRAM is now ready for mode register programming */
+    tmpmrd = (uint32_t)SDRAM_MODEREG_BURST_LENGTH_1           |\
+                        SDRAM_MODEREG_BURST_TYPE_SEQUENTIAL   |\
+                        SDRAM_MODEREG_CAS_LATENCY_2           |\
+                        SDRAM_MODEREG_OPERATING_MODE_STANDARD |\
+                        SDRAM_MODEREG_WRITEBURST_MODE_SINGLE;
+
     Command.CommandMode            = FMC_SDRAM_CMD_LOAD_MODE;
     Command.CommandTarget          = FMC_SDRAM_CMD_TARGET_BANK1;
     Command.AutoRefreshNumber      = 1;
-    Command.ModeRegisterDefinition = 0; //TODO: Figure out how to program the register
-    HAL_SDRAM_SendCommand(&sdramHandle, &Command, (uint32_t)0xFFFF);
+    Command.ModeRegisterDefinition = tmpmrd;
+
+    //13. Wait at least t MRD time, during which only NOP or DESELECT commands are allowed.
 
     //TODO: See if setting the refresh counter is appropriate here
+    /* Step 6: Set the refresh rate counter */
+    /* Set the device refresh rate */
+    HAL_SDRAM_ProgramRefreshRate(&sdramHandle, REFRESH_COUNT);
 
 }
 
 
+
+static void HAL_FMC_MspDeInit(void){
+    __HAL_RCC_FMC_CLK_DISABLE();
+
+    /** FMC GPIO Configuration
+    PE1   ------> FMC_NBL1
+    PE0   ------> FMC_NBL0
+    PG15   ------> FMC_SDNCAS
+    PD0   ------> FMC_D2
+    PD1   ------> FMC_D3
+    PF0   ------> FMC_A0
+    PF1   ------> FMC_A1
+    PF2   ------> FMC_A2
+    PF3   ------> FMC_A3
+    PG8   ------> FMC_SDCLK
+    PF4   ------> FMC_A4
+    PH5   ------> FMC_SDNWE
+    PH3   ------> FMC_SDNE0
+    PF5   ------> FMC_A5
+    PH2   ------> FMC_SDCKE0
+    PD15   ------> FMC_D1
+    PD10   ------> FMC_D15
+    PD14   ------> FMC_D0
+    PD9   ------> FMC_D14
+    PD8   ------> FMC_D13
+    PF12   ------> FMC_A6
+    PG1   ------> FMC_A11
+    PF15   ------> FMC_A9
+    PG2   ------> FMC_A12
+    PF13   ------> FMC_A7
+    PG0   ------> FMC_A10
+    PE8   ------> FMC_D5
+    PG5   ------> FMC_BA1
+    PG4   ------> FMC_BA0
+    PF14   ------> FMC_A8
+    PF11   ------> FMC_SDNRAS
+    PE9   ------> FMC_D6
+    PE11   ------> FMC_D8
+    PE14   ------> FMC_D11
+    PE7   ------> FMC_D4
+    PE10   ------> FMC_D7
+    PE12   ------> FMC_D9
+    PE15   ------> FMC_D12
+    PE13   ------> FMC_D10
+    */
+    HAL_GPIO_DeInit(GPIOG, SDRAM_SDCLK_PIN | SDRAM_SDNCAS_PIN | SDRAM_BA0_PIN | SDRAM_BA1_PIN | SDRAM_A10_PIN | SDRAM_A11_PIN | SDRAM_A12_PIN);
+
+    /* GPIOH configuration */
+    HAL_GPIO_DeInit(GPIOH, SDRAM_SDCKE_PIN | SDRAM_SDNE_PIN | SDRAM_SDNWE_PIN);
+
+    /* GPIOF configuration */
+    HAL_GPIO_DeInit(GPIOF, SDRAM_SDNRAS_PIN | SDRAM_A0_PIN | SDRAM_A1_PIN | SDRAM_A2_PIN | SDRAM_A3_PIN | SDRAM_A4_PIN | SDRAM_A5_PIN | SDRAM_A6_PIN | SDRAM_A7_PIN | SDRAM_A8_PIN | SDRAM_A9_PIN);
+
+    /* GPIOE configuration */
+    HAL_GPIO_DeInit(GPIOE, SDRAM_LDQM_PIN | SDRAM_UDQM_PIN | SDRAM_D4_PIN | SDRAM_D5_PIN | SDRAM_D6_PIN | SDRAM_D7_PIN | SDRAM_D8_PIN | SDRAM_D9_PIN | SDRAM_D10_PIN | SDRAM_D11_PIN | SDRAM_D12_PIN);
+
+    /* GPIOD configuration */
+    HAL_GPIO_DeInit(GPIOD, SDRAM_D0_PIN | SDRAM_D1_PIN | SDRAM_D2_PIN | SDRAM_D3_PIN | SDRAM_D13_PIN | SDRAM_D14_PIN | SDRAM_D15_PIN);
+
+}

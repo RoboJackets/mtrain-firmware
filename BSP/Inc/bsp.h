@@ -12,6 +12,7 @@
 #include "usbd_cdc.h"
 #include "usbd_cdc_interface.h"
 #include "qspi.h"
+#include "sdram.h"
 
 extern void bsp_config(void);
 
