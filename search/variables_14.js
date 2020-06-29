@@ -40,7 +40,7 @@ var searchData=
   ['tr',['TR',['../struct_r_t_c___type_def.html#a2e8783857f8644a4eb80ebc51e1cba42',1,'RTC_TypeDef']]],
   ['transferdir',['TransferDir',['../struct_s_d_m_m_c___data_init_type_def.html#a2063df8379a9d397d78178063bab6ec0',1,'SDMMC_DataInitTypeDef']]],
   ['transfermode',['TransferMode',['../struct_s_d_m_m_c___data_init_type_def.html#a8e8508ca753fbdf33e72f0c01b5d4136',1,'SDMMC_DataInitTypeDef']]],
-  ['trigger',['TRIGGER',['../struct_t_p_i___type.html#a4d4cd2357f72333a82a1313228287bbd',1,'TPI_Type::TRIGGER()'],['../struct_l_p_t_i_m___init_type_def.html#a3e49a32dde23c3dffefce201c767cbf5',1,'LPTIM_InitTypeDef::Trigger()'],['../struct_r_t_c___tamper_type_def.html#a0266f7aca365a9cf468cc2571d9f9395',1,'RTC_TamperTypeDef::Trigger()']]],
+  ['trigger',['Trigger',['../struct_l_p_t_i_m___init_type_def.html#a3e49a32dde23c3dffefce201c767cbf5',1,'LPTIM_InitTypeDef::Trigger()'],['../struct_r_t_c___tamper_type_def.html#a0266f7aca365a9cf468cc2571d9f9395',1,'RTC_TamperTypeDef::Trigger()'],['../struct_t_p_i___type.html#a4d4cd2357f72333a82a1313228287bbd',1,'TPI_Type::TRIGGER()']]],
   ['triggerfilter',['TriggerFilter',['../struct_t_i_m___slave_config_type_def.html#a07d28f704576a41e37bbb7412e0fba60',1,'TIM_SlaveConfigTypeDef']]],
   ['triggerpolarity',['TriggerPolarity',['../struct_t_i_m___slave_config_type_def.html#afa8fa1801ef5e13115732a495ef11165',1,'TIM_SlaveConfigTypeDef']]],
   ['triggerprescaler',['TriggerPrescaler',['../struct_t_i_m___slave_config_type_def.html#a57be6d41d77a968f1daeac7b65b1ab4c',1,'TIM_SlaveConfigTypeDef']]],

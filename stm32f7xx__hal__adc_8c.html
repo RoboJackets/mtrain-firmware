@@ -110,21 +110,21 @@ $(document).ready(function(){initNavTree('stm32f7xx__hal__adc_8c.html','');});
 <pre class="fragment">==============================================================================
                   ##### ADC Peripheral features #####
 ==============================================================================
-[..] 
+[..]
 (#) 12-bit, 10-bit, 8-bit or 6-bit configurable resolution.
-(#) Interrupt generation at the end of conversion, end of injected conversion,  
+(#) Interrupt generation at the end of conversion, end of injected conversion,
     and in case of analog watchdog or overrun events
 (#) Single and continuous conversion modes.
 (#) Scan mode for automatic conversion of channel 0 to channel x.
 (#) Data alignment with in-built data coherency.
 (#) Channel-wise programmable sampling time.
-(#) External trigger option with configurable polarity for both regular and 
+(#) External trigger option with configurable polarity for both regular and
     injected conversion.
 (#) Dual/Triple mode (on devices with 2 ADCs or more).
-(#) Configurable DMA data storage in Dual/Triple ADC mode. 
+(#) Configurable DMA data storage in Dual/Triple ADC mode.
 (#) Configurable delay between conversions in Dual/Triple interleaved mode.
 (#) ADC conversion type (refer to the datasheets).
-(#) ADC supply requirements: 2.4 V to 3.6 V at full speed and down to 1.8 V at 
+(#) ADC supply requirements: 2.4 V to 3.6 V at full speed and down to 1.8 V at
     slower speed.
 (#) ADC input range: VREF(minus) = VIN = VREF(plus).
 (#) DMA request generation during regular channel conversion.
@@ -137,8 +137,8 @@ $(document).ready(function(){initNavTree('stm32f7xx__hal__adc_8c.html','');});
      (##) Enable the ADC interface clock using __HAL_RCC_ADC_CLK_ENABLE()
      (##) ADC pins configuration
            (+++) Enable the clock for the ADC GPIOs using the following function:
-                 __HAL_RCC_GPIOx_CLK_ENABLE()  
-           (+++) Configure these ADC pins in analog mode using HAL_GPIO_Init() 
+                 __HAL_RCC_GPIOx_CLK_ENABLE()
+           (+++) Configure these ADC pins in analog mode using HAL_GPIO_Init()
      (##) In case of using interrupts (e.g. HAL_ADC_Start_IT())
            (+++) Configure the ADC interrupt priority using HAL_NVIC_SetPriority()
            (+++) Enable the ADC IRQ handler using HAL_NVIC_EnableIRQ()
@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('stm32f7xx__hal__adc_8c.html','');});
            (+++) Configure the priority and enable the NVIC for the transfer complete
                interrupt on the two DMA Streams. The output stream should have higher
                priority than the input stream.
-                     
+
   *** Configuration of ADC, groups regular/injected, channels parameters ***
 ==============================================================================
 [..]
@@ -160,64 +160,64 @@ $(document).ready(function(){initNavTree('stm32f7xx__hal__adc_8c.html','');});
     and regular group parameters (conversion trigger, sequencer, ...)
     using function HAL_ADC_Init().
 
-(#) Configure the channels for regular group parameters (channel number, 
+(#) Configure the channels for regular group parameters (channel number,
     channel rank into sequencer, ..., into regular group)
     using function HAL_ADC_ConfigChannel().
 
-(#) Optionally, configure the injected group parameters (conversion trigger, 
+(#) Optionally, configure the injected group parameters (conversion trigger,
     sequencer, ..., of injected group)
-    and the channels for injected group parameters (channel number, 
+    and the channels for injected group parameters (channel number,
     channel rank into sequencer, ..., into injected group)
     using function HAL_ADCEx_InjectedConfigChannel().
 
 (#) Optionally, configure the analog watchdog parameters (channels
     monitored, thresholds, ...) using function HAL_ADC_AnalogWDGConfig().
 
-(#) Optionally, for devices with several ADC instances: configure the 
+(#) Optionally, for devices with several ADC instances: configure the
     multimode parameters using function HAL_ADCEx_MultiModeConfigChannel().
 
                      *** Execution of ADC conversions ***
 ==============================================================================
-[..]  
+[..]
 (#) ADC driver can be used among three modes: polling, interruption,
-    transfer by DMA.    
+    transfer by DMA.
 
    *** Polling mode IO operation ***
    =================================
-   [..]    
-     (+) Start the ADC peripheral using HAL_ADC_Start() 
+   [..]
+     (+) Start the ADC peripheral using HAL_ADC_Start()
      (+) Wait for end of conversion using HAL_ADC_PollForConversion(), at this stage
-         user can specify the value of timeout according to his end application      
+         user can specify the value of timeout according to his end application
      (+) To read the ADC converted values, use the HAL_ADC_GetValue() function.
      (+) Stop the ADC peripheral using HAL_ADC_Stop()
-     
-   *** Interrupt mode IO operation ***    
-   ===================================
-   [..]    
-     (+) Start the ADC peripheral using HAL_ADC_Start_IT() 
-     (+) Use HAL_ADC_IRQHandler() called under ADC_IRQHandler() Interrupt subroutine
-     (+) At ADC end of conversion HAL_ADC_ConvCpltCallback() function is executed and user can 
-         add his own code by customization of function pointer HAL_ADC_ConvCpltCallback 
-     (+) In case of ADC Error, HAL_ADC_ErrorCallback() function is executed and user can 
-         add his own code by customization of function pointer HAL_ADC_ErrorCallback
-     (+) Stop the ADC peripheral using HAL_ADC_Stop_IT()     
 
-   *** DMA mode IO operation ***    
+   *** Interrupt mode IO operation ***
+   ===================================
+   [..]
+     (+) Start the ADC peripheral using HAL_ADC_Start_IT()
+     (+) Use HAL_ADC_IRQHandler() called under ADC_IRQHandler() Interrupt subroutine
+     (+) At ADC end of conversion HAL_ADC_ConvCpltCallback() function is executed and user can
+         add his own code by customization of function pointer HAL_ADC_ConvCpltCallback
+     (+) In case of ADC Error, HAL_ADC_ErrorCallback() function is executed and user can
+         add his own code by customization of function pointer HAL_ADC_ErrorCallback
+     (+) Stop the ADC peripheral using HAL_ADC_Stop_IT()
+
+   *** DMA mode IO operation ***
    ==============================
-   [..]    
-     (+) Start the ADC peripheral using HAL_ADC_Start_DMA(), at this stage the user specify the length 
-         of data to be transferred at each end of conversion 
-     (+) At The end of data transfer by HAL_ADC_ConvCpltCallback() function is executed and user can 
-         add his own code by customization of function pointer HAL_ADC_ConvCpltCallback 
-     (+) In case of transfer Error, HAL_ADC_ErrorCallback() function is executed and user can 
+   [..]
+     (+) Start the ADC peripheral using HAL_ADC_Start_DMA(), at this stage the user specify the length
+         of data to be transferred at each end of conversion
+     (+) At The end of data transfer by HAL_ADC_ConvCpltCallback() function is executed and user can
+         add his own code by customization of function pointer HAL_ADC_ConvCpltCallback
+     (+) In case of transfer Error, HAL_ADC_ErrorCallback() function is executed and user can
          add his own code by customization of function pointer HAL_ADC_ErrorCallback
      (+) Stop the ADC peripheral using HAL_ADC_Stop_DMA()
-                  
+
    *** ADC HAL driver macros list ***
-   ============================================= 
+   =============================================
    [..]
      Below the list of most used macros in ADC HAL driver.
-     
+
     (+) __HAL_ADC_ENABLE : Enable the ADC peripheral
     (+) __HAL_ADC_DISABLE : Disable the ADC peripheral
     (+) __HAL_ADC_ENABLE_IT: Enable the ADC end of conversion interrupt
@@ -225,10 +225,10 @@ $(document).ready(function(){initNavTree('stm32f7xx__hal__adc_8c.html','');});
     (+) __HAL_ADC_GET_IT_SOURCE: Check if the specified ADC interrupt source is enabled or disabled
     (+) __HAL_ADC_CLEAR_FLAG: Clear the ADC's pending flags
     (+) __HAL_ADC_GET_FLAG: Get the selected ADC's flag status
-    (+) ADC_GET_RESOLUTION: Return resolution bits in CR1 register 
-    
-   [..] 
-     (@) You can refer to the ADC HAL driver header file for more useful macros 
+    (+) ADC_GET_RESOLUTION: Return resolution bits in CR1 register
+
+   [..]
+     (@) You can refer to the ADC HAL driver header file for more useful macros
 
                     *** Deinitialization of ADC ***
 ==============================================================================
@@ -254,7 +254,7 @@ $(document).ready(function(){initNavTree('stm32f7xx__hal__adc_8c.html','');});
 
 (#) Optionally, in case of usage of DMA:
       (++) Deinitialize the DMA using function HAL_DMA_DeInit().
-      (++) Disable the NVIC for DMA using function HAL_NVIC_DisableIRQ(DMAx_Channelx_IRQn)   </pre><dl class="section attention"><dt>Attention</dt><dd></dd></dl>
+      (++) Disable the NVIC for DMA using function HAL_NVIC_DisableIRQ(DMAx_Channelx_IRQn)</pre><dl class="section attention"><dt>Attention</dt><dd></dd></dl>
 <h2><center>&copy; COPYRIGHT(c) 2016 STMicroelectronics</center></h2>
 <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p><ol type="1">
 <li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
@@ -268,7 +268,7 @@ $(document).ready(function(){initNavTree('stm32f7xx__hal__adc_8c.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_397d9aeee4af8edecac90968d93b57df.html">external</a></li><li class="navelem"><a class="el" href="dir_d44dc8085d5faa6a792c35ee8daf1893.html">STM32F7xx_HAL_Drivers</a></li><li class="navelem"><a class="el" href="dir_cc091850d3bc9e9ece6a451bf574e1b1.html">Src</a></li><li class="navelem"><a class="el" href="stm32f7xx__hal__adc_8c.html">stm32f7xx_hal_adc.c</a></li>
-    <li class="footer">Generated on Mon Jun 22 2020 03:37:57 for GT RoboCup SSL by
+    <li class="footer">Generated on Mon Jun 29 2020 21:01:45 for GT RoboCup SSL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

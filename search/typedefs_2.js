@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['dma_5fhandletypedef',['DMA_HandleTypeDef',['../group___d_m_a___exported___types.html#ga41b754a906b86bce54dc79938970138b',1,'stm32f7xx_hal_dma.h']]],
-  ['dstatus',['DSTATUS',['../diskio_8h.html#adba6790898ce4029c20a34b898ce73c1',1,'diskio.h']]],
-  ['dword',['DWORD',['../integer_8h.html#ad342ac907eb044443153a22f964bf0af',1,'integer.h']]]
+  ['coroutinehandle_5ft',['CoRoutineHandle_t',['../croutine_8h.html#a33b9d058688c92258155b5756d9936dd',1,'croutine.h']]],
+  ['crcb_5ft',['CRCB_t',['../croutine_8h.html#a4d7cfb67be3465d9caeadd21c19e4401',1,'croutine.h']]],
+  ['crcoroutine_5fcode',['crCOROUTINE_CODE',['../croutine_8h.html#a397a7505718dd366d8411ce324c49758',1,'croutine.h']]]
 ];
