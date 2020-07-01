@@ -161,6 +161,10 @@ void BSP_SDRAM_Init_Sequence(void) {
     Command.ModeRegisterDefinition = 0;
     HAL_SDRAM_SendCommand(&sdramHandle, &Command, (uint32_t)0xFFFF);
 
+    /* Wait tRP time */
+    // 66ns
+    /* HAL_Delay(1); //takes ms */
+
     /* Issue an AUTO REFRESH command */
     Command.CommandMode            = FMC_SDRAM_CMD_AUTOREFRESH_MODE;
     Command.CommandTarget          = FMC_SDRAM_CMD_TARGET_BANK1;
@@ -187,7 +191,7 @@ void BSP_SDRAM_Init_Sequence(void) {
 
     //TODO: See if setting the refresh counter is appropriate here
     /* Step 6: Set the refresh rate counter */
-    /* Set the device refresh rate */
+    /* (15.62 us x Freq) - 20 */
     HAL_SDRAM_ProgramRefreshRate(&sdramHandle, REFRESH_COUNT);
 
 }

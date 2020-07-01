@@ -18,7 +18,7 @@ int main(void)
 
     int test_length = 400;
 
-    int* ram_start = (int*) 0xCFFFFFFF;
+    int* ram_start = (int*) 0xC0000000;
     int* cur = ram_start;
 
     int test_success = 1;
@@ -26,9 +26,11 @@ int main(void)
     digitalout_toggle(leds[0]);
     for(int i = 0; i < test_length; i++) {
         *cur = fill_function(i); // HARD FAULT
+        cur++;
     }
     digitalout_toggle(leds[0]);
 
+    cur = ram_start;
     digitalout_toggle(leds[1]);
     for(int i = 0; i < test_length; i++) {
         if (fill_function(i) == *cur) {
@@ -37,6 +39,7 @@ int main(void)
             test_success = 0; // fail and break
             break;
         }
+        cur++;
     }
     digitalout_toggle(leds[1]);
 
