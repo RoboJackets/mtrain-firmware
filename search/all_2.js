@@ -13,7 +13,7 @@ var searchData=
   ['bdcr_5fbdrst_5fbb',['BDCR_BDRST_BB',['../group___h_a_l___r_c_c___aliased.html#ga892fdf297b85b85cbaf0723649b31818',1,'stm32_hal_legacy.h']]],
   ['bdcr_5fbyte0_5faddress',['BDCR_BYTE0_ADDRESS',['../group___h_a_l___r_c_c___aliased.html#ga991be15dda03061a29712e8206a32510',1,'stm32_hal_legacy.h']]],
   ['bdcr_5frtcen_5fbb',['BDCR_RTCEN_BB',['../group___h_a_l___r_c_c___aliased.html#gaf70aaf70b0752ccb3a60307b2fb46038',1,'stm32_hal_legacy.h']]],
-  ['bdrst_5fbitnumber',['BDRST_BITNUMBER',['../group___h_a_l___r_c_c___aliased.html#ga8a86677bfcc1259edf9b9a5f85e7e04a',1,'BDRST_BITNUMBER():&#160;stm32_hal_legacy.h'],['../group___h_a_l___r_c_c___aliased.html#gae6718158034388d8fde8caaa28ffe8b9',1,'BDRST_BitNumber():&#160;stm32_hal_legacy.h']]],
+  ['bdrst_5fbitnumber',['BDRST_BitNumber',['../group___h_a_l___r_c_c___aliased.html#gae6718158034388d8fde8caaa28ffe8b9',1,'BDRST_BitNumber():&#160;stm32_hal_legacy.h'],['../group___h_a_l___r_c_c___aliased.html#ga8a86677bfcc1259edf9b9a5f85e7e04a',1,'BDRST_BITNUMBER():&#160;stm32_hal_legacy.h']]],
   ['bdtr',['BDTR',['../struct_t_i_m___type_def.html#a137d3523b60951eca1e4130257b2b23d',1,'TIM_TypeDef']]],
   ['besl',['BESL',['../struct_p_c_d___handle_type_def.html#aae482c358b50a9437b4ac9462ba87a75',1,'PCD_HandleTypeDef']]],
   ['bfar',['BFAR',['../struct_s_c_b___type.html#a3f8e7e58be4e41c88dfa78f54589271c',1,'SCB_Type']]],

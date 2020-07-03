@@ -25,7 +25,7 @@ var searchData=
   ['winr',['WINR',['../struct_i_w_d_g___type_def.html#a88aff7f1de0043ecf1667bd40b8c99d1',1,'IWDG_TypeDef']]],
   ['winsect',['winsect',['../struct_f_a_t_f_s.html#ac60e69c00e6bf7c25febfbac4dc1476b',1,'FATFS']]],
   ['wisr',['WISR',['../struct_d_s_i___type_def.html#a9b64beaaf4c8e71f7299f4af0e212db1',1,'DSI_TypeDef']]],
-  ['wlength',['wLength',['../structusb__setup__req.html#ab287b73d688581778da556c9afeffb6b',1,'usb_setup_req::wLength()'],['../struct_u_s_b_d___d_f_u___handle_type_def.html#af45352a46b192807e0f230eed21ac220',1,'USBD_DFU_HandleTypeDef::wlength()']]],
+  ['wlength',['wlength',['../struct_u_s_b_d___d_f_u___handle_type_def.html#af45352a46b192807e0f230eed21ac220',1,'USBD_DFU_HandleTypeDef::wlength()'],['../structusb__setup__req.html#ab287b73d688581778da556c9afeffb6b',1,'usb_setup_req::wLength()']]],
   ['word',['WORD',['../integer_8h.html#a197942eefa7db30960ae396d68339b97',1,'integer.h']]],
   ['wordlength',['WordLength',['../struct_i_r_d_a___init_type_def.html#a0a9bfafe2a9b00be86cd7b75788391ed',1,'IRDA_InitTypeDef::WordLength()'],['../struct_s_m_a_r_t_c_a_r_d___init_type_def.html#a16a8ba82fbc742510824bb0d8e85fbbc',1,'SMARTCARD_InitTypeDef::WordLength()'],['../struct_u_a_r_t___init_type_def.html#a0f1cd85e62aa4fd4b36ee9e610e7789f',1,'UART_InitTypeDef::WordLength()'],['../struct_u_s_a_r_t___init_type_def.html#ac4012d27b28014f60a3ad987c62d4fc7',1,'USART_InitTypeDef::WordLength()']]],
   ['wpcr',['WPCR',['../struct_d_s_i___type_def.html#a467ac564f5f6275f01432cad36f32d85',1,'DSI_TypeDef']]],

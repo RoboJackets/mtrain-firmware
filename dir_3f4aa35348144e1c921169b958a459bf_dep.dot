@@ -10,8 +10,8 @@ digraph "/home/developer/mtrain-firmware/API/cpp/Src" {
   dir_8bf0517a65974fc3f71978060f544021 [shape=box label="Inc" URL="dir_8bf0517a65974fc3f71978060f544021.html"];
   dir_397d9aeee4af8edecac90968d93b57df [shape=box label="external" fillcolor="white" style="filled" color="red" URL="dir_397d9aeee4af8edecac90968d93b57df.html"];
   dir_3f4aa35348144e1c921169b958a459bf->dir_e2e077455bb86c34d5829af5e6a708cc [headlabel="1", labeldistance=1.5 headhref="dir_000006_000001.html"];
-  dir_3f4aa35348144e1c921169b958a459bf->dir_8bf0517a65974fc3f71978060f544021 [headlabel="5", labeldistance=1.5 headhref="dir_000006_000005.html"];
+  dir_3f4aa35348144e1c921169b958a459bf->dir_8bf0517a65974fc3f71978060f544021 [headlabel="4", labeldistance=1.5 headhref="dir_000006_000005.html"];
   dir_3f4aa35348144e1c921169b958a459bf->dir_397d9aeee4af8edecac90968d93b57df [headlabel="1", labeldistance=1.5 headhref="dir_000006_000015.html"];
   dir_e2e077455bb86c34d5829af5e6a708cc->dir_397d9aeee4af8edecac90968d93b57df [headlabel="2", labeldistance=1.5 headhref="dir_000001_000015.html"];
-  dir_8bf0517a65974fc3f71978060f544021->dir_397d9aeee4af8edecac90968d93b57df [headlabel="2", labeldistance=1.5 headhref="dir_000005_000015.html"];
+  dir_8bf0517a65974fc3f71978060f544021->dir_397d9aeee4af8edecac90968d93b57df [headlabel="1", labeldistance=1.5 headhref="dir_000005_000015.html"];
 }

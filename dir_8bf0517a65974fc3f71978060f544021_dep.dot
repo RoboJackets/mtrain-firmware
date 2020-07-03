@@ -7,5 +7,5 @@ digraph "/home/developer/mtrain-firmware/API/cpp/Inc" {
   dir_8bf0517a65974fc3f71978060f544021 [shape=box, label="Inc", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_8bf0517a65974fc3f71978060f544021.html"];
   }
   dir_397d9aeee4af8edecac90968d93b57df [shape=box label="external" fillcolor="white" style="filled" color="red" URL="dir_397d9aeee4af8edecac90968d93b57df.html"];
-  dir_8bf0517a65974fc3f71978060f544021->dir_397d9aeee4af8edecac90968d93b57df [headlabel="2", labeldistance=1.5 headhref="dir_000005_000015.html"];
+  dir_8bf0517a65974fc3f71978060f544021->dir_397d9aeee4af8edecac90968d93b57df [headlabel="1", labeldistance=1.5 headhref="dir_000005_000015.html"];
 }

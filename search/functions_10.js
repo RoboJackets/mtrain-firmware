@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['read',['read',['../class_analog_in.html#a5ee39b39226627eebeb7866eb85e0b24',1,'AnalogIn::read()'],['../class_digital_in.html#a52e41937a75402b19becb8159ee7792c',1,'DigitalIn::read()'],['../class_digital_out.html#a07733e2babe0cc5505425cc8d139eed2',1,'DigitalOut::read()']]],
-  ['read_5fu16',['read_u16',['../class_analog_in.html#adf6e25dbc248a4352e509a95f29623b2',1,'AnalogIn']]],
+  ['read',['read',['../class_digital_in.html#a52e41937a75402b19becb8159ee7792c',1,'DigitalIn::read()'],['../class_digital_out.html#a07733e2babe0cc5505425cc8d139eed2',1,'DigitalOut::read()']]],
   ['receive',['receive',['../class_i2_c.html#a687c0929c22d41e5b4428d24e1208f51',1,'I2C::receive(uint8_t address, uint8_t regAddr)'],['../class_i2_c.html#ad0d0520f4fb0d42b87246a63ad73a0d4',1,'I2C::receive(uint8_t address, uint8_t regAddr, size_t count)']]],
   ['recover_5fbus',['recover_bus',['../class_i2_c.html#a11722e4027650574e7d74ee9b5509097',1,'I2C']]],
   ['rtc_5falarm_5firqhandler',['RTC_Alarm_IRQHandler',['../group___h_a_l___time_base___r_t_c___alarm___template.html#ga4da4fb52ec579671d337938e78f9a207',1,'stm32f7xx_hal_timebase_rtc_alarm_template.c']]],
