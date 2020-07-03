@@ -20,7 +20,7 @@ jobs:
       - name: docker-setup
         run: |
           docker pull $DOCKER_NAME:testing &&
-          docker create --name $DOCKER_NAME $DOCKER_NAME make &&
+          docker create --name $DOCKER_NAME $DOCKER_NAME:testing make &&
           docker cp ../mtrain-firmware ../mtrain-firmware
       - name: test-build
         run: |
