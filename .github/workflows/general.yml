@@ -3,8 +3,7 @@ name: General
 # Controls when the action will run. Triggers the workflow on push or successful pr merge
 # events but only for the master branch
 on:
-  push:
-    branches:
+  push
 
 env:
   DOCKER_NAME: robojackets/mtrain-firmware
