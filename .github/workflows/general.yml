@@ -7,7 +7,7 @@ on:
     branches:
 
 env:
-  DOCKER_NAME: mtrain-firmware
+  DOCKER_NAME: robojackets/mtrain-firmware
 
 
 # NOTE Much of what I do with run commands directly has other github action specific ways I just didnt care and did it with commands
@@ -18,21 +18,23 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
-      - name: docker-build
+      - name: docker-setup
         run: |
-          docker build -t $DOCKER_NAME:latest ./
+          docker pull $DOCKER_NAME:testing &&
+          docker create --name $DOCKER_NAME $DOCKER_NAME make &&
+          docker cp ../mtrain-firmware ../mtrain-firmware
       - name: test-build
         run: |
-          docker run --name $DOCKER_NAME $DOCKER_NAME make
+          docker start $DOCKER_NAME
 
   style:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
         uses: actions/checkout@v2
-      - name: docker-build
+      - name: docker-pull
         run: |
-          docker build -t $DOCKER_NAME:latest ./
+          docker pull $DOCKER_NAME:testing
 
 
   clang-tidy:
@@ -40,6 +42,6 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
-      - name: docker-build
+      - name: docker-pull
         run: |
-          docker build -t $DOCKER_NAME:latest ./
+          docker pull $DOCKER_NAME:testing
