@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v2
       - name: docker-setup
         env:
-          TARGET: make docs
+          TARGET: "make docs"
         run: |
           docker pull $REPO_NAME/$BASE_NAME:$TAG &&
           docker create --name $BASE_NAME $REPO_NAME/$BASE_NAME:$TAG $TARGET &&
@@ -35,7 +35,7 @@ jobs:
           rm -rf generated-docs/ &&
           mkdir -p generated-docs/ &&
           git clone -b gh-pages git://github.com/robojackets/mtrain-firmware generated-docs/ &&
-          docker cp $BASE_NAME:./generated-docs .
+          docker cp $BASE_NAME:/home/developer/mtrain-firmware/generated-docs .
       - name: push
         run: |
           cd generated-docs/ &&
