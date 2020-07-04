@@ -35,7 +35,7 @@ jobs:
           rm -rf generated-docs/ &&
           mkdir -p generated-docs/ &&
           git clone -b gh-pages git://github.com/robojackets/mtrain-firmware generated-docs/ &&
-          docker cp $DOCKER_NAME:/home/developer/mtrain-firmware/generated-docs .
+          docker cp $BASE_NAME:./generated-docs .
       - name: push
         run: |
           cd generated-docs/ &&
