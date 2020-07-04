@@ -7,7 +7,9 @@ on:
     branches: [ release, ci-updates ]
 
 env:
-  DOCKER_NAME: mtrain-firmware
+  BASE_NAME: mtrain-firmware
+  REPO_NAME: robojackets
+  TAG: testing
 
 
 # NOTE Much of what I do with run commands directly has other github action specific ways I just didnt care and did it with commands
@@ -18,12 +20,16 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
-      - name: docker-build
+      - name: docker-setup
+        env:
+          TARGET: make docs
         run: |
-          docker build -t $DOCKER_NAME:latest ./
-      - name: document
+          docker pull $REPO_NAME/$BASE_NAME:$TAG &&
+          docker create --name $BASE_NAME $REPO_NAME/$BASE_NAME:$TAG $TARGET &&
+          docker cp ../mtrain-firmware $BASE_NAME:../mtrain-firmware
+      - name: make-docs
         run: |
-          docker run --name $DOCKER_NAME $DOCKER_NAME make docs
+          docker start $BASE_NAME
       - name: copy
         run: |
           rm -rf generated-docs/ &&
@@ -53,7 +59,7 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-          repository: robojackets/mtrain-firmware
+          repository: $REPO_NAME/$BASE_NAME
           tags: ${{ env.VERSION }}
 
 
@@ -65,12 +71,15 @@ jobs:
       - name: get-version
         id: get_version
         run: echo "::set-env name=VERSION::$(git describe --abbrev=0)"
-      - name: docker-build
-        run: |
-          docker build -t $DOCKER_NAME:latest ./
-      - name: conan-upload
-        run: |
-          docker run --name $DOCKER_NAME $DOCKER_NAME
-          " conan user -p ${{ secrets.BINTRAY_API_KEY }} -r robojackets ${{ secrets.BINTRAY_API_KEY }} &&
+      - name: docker-setup
+        env:
+          TARGET: " conan user -p ${{ secrets.BINTRAY_API_KEY }} -r robojackets ${{ secrets.BINTRAY_API_KEY }} &&
           conan create . robojackets/stable -pr armv7hf &&
           conan upload mTrain/$VERSION@robojackets/stable -r robojackets --all "
+        run: |
+          docker pull $REPO_NAME/$BASE_NAME:$TAG &&
+          docker create --name $BASE_NAME $REPO_NAME/$BASE_NAME:$TAG $TARGET &&
+          docker cp ../mtrain-firmware $BASE_NAME:../mtrain-firmware
+      - name: make-docs
+        run: |
+          docker start $BASE_NAME
