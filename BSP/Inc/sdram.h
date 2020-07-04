@@ -6,15 +6,17 @@
 #include "stm32f7xx_ll_fmc.h"
 #include "stm32f7xx_hal_sdram.h"
 
-static FMC_SDRAM_CommandTypeDef Command;
-static SDRAM_HandleTypeDef sdramHandle;
-static FMC_SDRAM_TimingTypeDef Timing;
-static HAL_SDRAM_StateTypeDef sdramState;
+static FMC_SDRAM_CommandTypeDef Command = {};
+static SDRAM_HandleTypeDef sdramHandle = {};
+static FMC_SDRAM_TimingTypeDef Timing = {};
+static HAL_SDRAM_StateTypeDef sdramState = {};
+
+
+// Will need to be isolated from this filed when we move to mjackets api
 /*
  * Declare instances of SDRAM pins
  *
  */
-
 /* Pin/Port Definitions */
 #define SDRAM_SDCLK_PIN         GPIO_PIN_8
 #define SDRAM_SDCLK_PORT        GPIOG
@@ -94,6 +96,47 @@ static HAL_SDRAM_StateTypeDef sdramState;
 #define SDRAM_D14_PORT          GPIOD
 #define SDRAM_D15_PIN           GPIO_PIN_10
 #define SDRAM_D15_PORT          GPIOD
+    /** FMC GPIO Configuration
+        PE1   ------> FMC_NBL1
+        PE0   ------> FMC_NBL0
+        PG15   ------> FMC_SDNCAS
+        PD0   ------> FMC_D2
+        PD1   ------> FMC_D3
+        PF0   ------> FMC_A0
+        PF1   ------> FMC_A1
+        PF2   ------> FMC_A2
+        PF3   ------> FMC_A3
+        PG8   ------> FMC_SDCLK
+        PF4   ------> FMC_A4
+        PH5   ------> FMC_SDNWE
+        PH3   ------> FMC_SDNE0
+        PF5   ------> FMC_A5
+        PH2   ------> FMC_SDCKE0
+        PD15   ------> FMC_D1
+        PD10   ------> FMC_D15
+        PD14   ------> FMC_D0
+        PD9   ------> FMC_D14
+        PD8   ------> FMC_D13
+        PF12   ------> FMC_A6
+        PG1   ------> FMC_A11
+        PF15   ------> FMC_A9
+        PG2   ------> FMC_A12
+        PF13   ------> FMC_A7
+        PG0   ------> FMC_A10
+        PE8   ------> FMC_D5
+        PG5   ------> FMC_BA1
+        PG4   ------> FMC_BA0
+        PF14   ------> FMC_A8
+        PF11   ------> FMC_SDNRAS
+        PE9   ------> FMC_D6
+        PE11   ------> FMC_D8
+        PE14   ------> FMC_D11
+        PE7   ------> FMC_D4
+        PE10   ------> FMC_D7
+        PE12   ------> FMC_D9
+        PE15   ------> FMC_D12
+        PE13   ------> FMC_D10
+    */
 
 
 #define REFRESH_COUNT                    ((uint32_t)0x0672)   /* SDRAM refresh counter (108Mhz SD clock) */
