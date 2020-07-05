@@ -9,7 +9,7 @@
 static FMC_SDRAM_CommandTypeDef Command = {};
 static SDRAM_HandleTypeDef sdramHandle = {};
 static FMC_SDRAM_TimingTypeDef Timing = {};
-static HAL_SDRAM_StateTypeDef sdramState = {};
+static HAL_SDRAM_StateTypeDef sdramState = {0};
 
 
 // Will need to be isolated from this filed when we move to mjackets api
