@@ -154,6 +154,32 @@ void BSP_SDRAM_Init_Sequence(void) {
     HAL_SDRAM_ProgramRefreshRate(&sdramHandle, REFRESH_COUNT);
 
 }
+/**
+ *
+ * @param startAddress: pointer to write start address
+ * @param pData: pointer to data to write
+ * @param dataSize: size of data to write to memory
+ */
+uint8_t BSP_SDRAM_WriteData(uint32_t startAddress, uint32_t pData, uint32_t dataSize) {
+    if(HAL_SDRAM_Write_32b(&sdramHandle, (uint32_t*)startAddress, pData, dataSize) != HAL_OK) {
+        return HAL_SDRAM_STATE_ERROR;
+    } else {
+        HAL_OK;
+    }
+}
+/**
+ *
+ * @param startAddress: pointer to read start address
+ * @param pData pointer to data to read
+ * @param dataSize: size of data to read from memory
+ */
+uint8_t BSP_SDRAM_ReadData(uint32_t startAddress, uint32_t pData, uint32_t dataSize) {
+    if(HAL_SDRAM_Read_32b(&sdramHandle, (uint32_t*)startAddress, pData, dataSize) != HAL_OK) {
+        return HAL_SDRAM_STATE_ERROR;
+    } else {
+        HAL_OK;
+    }
+}
 
 
 
@@ -175,3 +201,5 @@ static void HAL_FMC_MspDeInit(void){
     HAL_GPIO_DeInit(GPIOD, SDRAM_D0_PIN | SDRAM_D1_PIN | SDRAM_D2_PIN | SDRAM_D3_PIN | SDRAM_D13_PIN | SDRAM_D14_PIN | SDRAM_D15_PIN);
 
 }
+
+

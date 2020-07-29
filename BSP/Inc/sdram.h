@@ -160,6 +160,8 @@ uint8_t BSP_SDRAM_Init(void);
 void BSP_SDRAM_MspInit(void);
 void BSP_SDRAM_Init_Sequence(void);
 static void HAL_FMC_MspDeInit(void);
+uint8_t BSP_SDRAM_WriteData(uint32_t startAddress, uint32_t pData, uint32_t dataSize);
+uint8_t BSP_SDRAM_ReadData(uint32_t startAddress, uint32_t pData, uint32_t dataSize);
 
 
 #endif //MTRAIN_SDRAM_H
