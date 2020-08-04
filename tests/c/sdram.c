@@ -1,4 +1,5 @@
 #include "mtrain.h"
+#include "sdram.h"
 
 int fill_function (int i) {
     return (i * i) + i + 3;
@@ -25,7 +26,8 @@ int main(void)
 
     digitalout_toggle(leds[0]);
     for(int i = 0; i < test_length; i++) {
-        *cur = fill_function(i); // HARD FAULT
+        //*cur = fill_function(i); // HARD FAULT
+        *cur = BSP_SDRAM_WriteData(*cur, fill_function(i), sizeof(fill_function(i)));
         cur++;
     }
     digitalout_toggle(leds[0]);
@@ -33,7 +35,7 @@ int main(void)
     cur = ram_start;
     digitalout_toggle(leds[1]);
     for(int i = 0; i < test_length; i++) {
-        if (fill_function(i) == *cur) {
+        if (fill_function(i) == BSP_SDRAM_ReadData(*cur, *cur, 4)) {
             test_success = 1; // continuing success
         } else {
             test_success = 0; // fail and break
