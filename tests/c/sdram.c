@@ -27,7 +27,8 @@ int main(void)
     digitalout_toggle(leds[0]);
     for(int i = 0; i < test_length; i++) {
         //*cur = fill_function(i); // HARD FAULT
-        *cur = BSP_SDRAM_WriteData(*cur, fill_function(i), sizeof(fill_function(i)));
+        uint32_t temp = fill_function(i);
+        BSP_SDRAM_WriteData((uint32_t)cur, (uint32_t)&, 1));
         cur++;
     }
     digitalout_toggle(leds[0]);
@@ -35,7 +36,9 @@ int main(void)
     cur = ram_start;
     digitalout_toggle(leds[1]);
     for(int i = 0; i < test_length; i++) {
-        if (fill_function(i) == BSP_SDRAM_ReadData(*cur, *cur, 4)) {
+        int temp = 0;
+        BSP_SDRAM_ReadData((uint32_t)cur, (uint32_t)&temp, 1);
+        if (fill_function(i) == temp) {
             test_success = 1; // continuing success
         } else {
             test_success = 0; // fail and break
