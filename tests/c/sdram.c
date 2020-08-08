@@ -28,7 +28,7 @@ int main(void)
     for(int i = 0; i < test_length; i++) {
         //*cur = fill_function(i); // HARD FAULT
         uint32_t temp = fill_function(i);
-        BSP_SDRAM_WriteData((uint32_t)cur, (uint32_t)&, 1));
+        BSP_SDRAM_WriteData((uint32_t)cur, (uint32_t)&temp, 1);
         cur++;
     }
     digitalout_toggle(leds[0]);
