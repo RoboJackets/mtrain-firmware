@@ -51,6 +51,7 @@ void PWM::set_duty_cycle(float duty_cycle) {
     sConfigOC.OCMode = TIM_OCMODE_PWM1;
     sConfigOC.Pulse = static_cast<uint32_t>(duty_cycle * htim.Init.Period);
     sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
+    sConfigOC.TIM_OutputState = TIM_OutputState_Enable;
     sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
     if (HAL_TIM_PWM_ConfigChannel(&htim, &sConfigOC, params.channel) != HAL_OK)
     {
