@@ -11,12 +11,21 @@ int main(void)
     PWMParams params = {p31, TIM5, TIM_CHANNEL_1, 0.5};
 
     PWM pwm(params);
+    // pwm.set_duty_cycle(0.8);
+
+    int id = 0;
+    bool forward = true;
 
     while (true) {
-        leds[0].toggle();
+        leds[id].toggle();
         HAL_Delay(100);
-        leds[0].toggle();
-        HAL_Delay(100000);
-        pwm.set_duty_cycle(0.8);
+        leds[id].toggle();
+
+        if (id == 3) {
+            forward = false;
+        } else if (id == 0) {
+            forward = true;
+        }
+        id += forward ? 1 : -1;
     }
 }

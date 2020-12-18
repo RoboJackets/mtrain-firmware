@@ -6,19 +6,20 @@
   * @param None
   * @retval None
   */
-PWM::PWM(PWMParams arg_params) {
+PWM::PWM(PWMParams params) {
+    this->params = params;
 
-    params = arg_params;
     htim.Instance = params.timer;
     htim.Init.Prescaler = 1080;
     htim.Init.CounterMode = TIM_COUNTERMODE_UP;
-    htim.Init.Period = 2000-1; // difference between pulse width and this determines duty cycles. Means the maximum pulse is 2000 as well
+    htim.Init.Period = 2000; // difference between pulse width and this determines duty cycles. Means the maximum pulse is 2000 as well
     htim.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
-    htim.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
     if (HAL_TIM_PWM_Init(&htim) != HAL_OK) // Call to hal cals MspInit
     {
         Error_Handler();
     }
+
+    GPIO_Init(params.pin_name, &htim);
 
     sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
     sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
@@ -27,7 +28,9 @@ PWM::PWM(PWMParams arg_params) {
         Error_Handler();
     }
 
-    sConfigOC.OCMode = TIM_OCMODE_PWM1;
+
+    // TODO replace this section with a call to set duty cycle
+    sConfigOC.OCMode = TIM_OCMODE_PWM1; // TODO CHECK THIS LINE AS THIS MAY BE THE WRONG OUTPUT
     sConfigOC.Pulse = static_cast<uint32_t>(params.duty_cycle * htim.Init.Period);
     sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
     sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
@@ -36,7 +39,8 @@ PWM::PWM(PWMParams arg_params) {
         Error_Handler();
     }
 
-    GPIO_Init(params.pin_name, &htim);
+    // Do we want this to start on init?
+    HAL_TIM_PWM_Start(&htim, params.channel);
 
 }
 
@@ -48,19 +52,23 @@ PWM::~PWM() {
 }
 
 void PWM::set_duty_cycle(float duty_cycle) {
-    sConfigOC.OCMode = TIM_OCMODE_PWM1;
+    HAL_TIM_PWM_Stop(&htim, params.channel);
+
+    sConfigOC.OCMode = TIM_OCMODE_PWM1;// TODO CHECK THIS LINE AS THIS MAY BE THE WRONG OUTPUT
     sConfigOC.Pulse = static_cast<uint32_t>(duty_cycle * htim.Init.Period);
     sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
-    sConfigOC.TIM_OutputState = TIM_OutputState_Enable;
     sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
     if (HAL_TIM_PWM_ConfigChannel(&htim, &sConfigOC, params.channel) != HAL_OK)
     {
         Error_Handler();
     }
 
+    HAL_TIM_PWM_Start(&htim, params.channel);
+
 }
 
 void PWM::GPIO_Init(PinName pin, TIM_HandleTypeDef* htim) {
+    // Example code usually does gpio clock init here but the bsp file just does starts all of htem at once
     GPIO_InitTypeDef GPIO_InitStruct = {0};
     GPIO_InitStruct.Pin = pin.pin;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
