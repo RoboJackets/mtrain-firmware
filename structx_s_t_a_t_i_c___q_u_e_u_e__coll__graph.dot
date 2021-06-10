@@ -2,7 +2,7 @@ digraph "xSTATIC_QUEUE"
 {
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="{xSTATIC_QUEUE\n|+ pvDummy1\l+ pvDummy2\l+ uxDummy2\l+ u\l+ uxDummy4\l+ ucDummy5\l+ ucDummy6\l+ uxDummy8\l+ ucDummy9\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 [label="{xSTATIC_QUEUE\n|+ pvDummy1\l+ pvDummy2\l+ uxDummy2\l+ u\l+ uxDummy4\l+ ucDummy5\l+ uxDummy8\l+ ucDummy9\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
   Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +xDummy3" ,arrowhead="odiamond",fontname="Helvetica"];
   Node2 [label="{xSTATIC_LIST\n|+ uxDummy1\l+ pvDummy2\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structx_s_t_a_t_i_c___l_i_s_t.html"];
   Node3 -> Node2 [color="grey25",fontsize="10",style="solid",label=" +xDummy3" ,arrowhead="odiamond",fontname="Helvetica"];

@@ -7,7 +7,6 @@ var structx_s_t_a_t_i_c___t_c_b =
     [ "ulDummy18", "structx_s_t_a_t_i_c___t_c_b.html#ade6781276f913dcd592ee0f6cce76c7e", null ],
     [ "uxDummy10", "structx_s_t_a_t_i_c___t_c_b.html#ae5ff25c2fde1ad3c9a51bb45db81ac9f", null ],
     [ "uxDummy12", "structx_s_t_a_t_i_c___t_c_b.html#a4ebf548878e48d8b5232d1b8a1f789ab", null ],
-    [ "uxDummy20", "structx_s_t_a_t_i_c___t_c_b.html#afc7ca26b8fd9bdfdbf1c04c6bbc7eb3b", null ],
     [ "uxDummy5", "structx_s_t_a_t_i_c___t_c_b.html#ab950bb498901ef7291e49086e5a2efd0", null ],
     [ "xDummy3", "structx_s_t_a_t_i_c___t_c_b.html#a7f182aa8f5003494f63d975dabcb3ec1", null ]
 ];

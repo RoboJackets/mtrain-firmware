@@ -1,6 +1,6 @@
 var NAVTREEINDEX111 =
 {
-"group___peripheral___registers___bits___definition.html#ga47f4c6942bebdcb179b5092520842e91":[5,163,3,0,1937],
+"group___peripheral___registers___bits___definition.html#ga47f4c6942bebdcb179b5092520842e91":[7,0,2,0,0,0,0,0,1964],
 "group___peripheral___registers___bits___definition.html#ga47f4fcb4a5ec9a4e8d077a5edc82ebf8":[5,163,3,0,14461],
 "group___peripheral___registers___bits___definition.html#ga47f4fcb4a5ec9a4e8d077a5edc82ebf8":[7,0,2,0,0,0,0,0,14745],
 "group___peripheral___registers___bits___definition.html#ga47f5215de00574378a489f90eb11eff4":[7,0,2,0,0,0,0,0,1477],
@@ -27,8 +27,8 @@ var NAVTREEINDEX111 =
 "group___peripheral___registers___bits___definition.html#ga4809daa63dd36ade26ab96fe234c8da1":[5,163,3,0,6500],
 "group___peripheral___registers___bits___definition.html#ga481099e17a895e92cfbcfca617d52860":[5,163,3,0,3357],
 "group___peripheral___registers___bits___definition.html#ga481099e17a895e92cfbcfca617d52860":[7,0,2,0,0,0,0,0,3384],
-"group___peripheral___registers___bits___definition.html#ga481485aaa4f39fcdbc5e687452e08cab":[5,163,3,0,2348],
 "group___peripheral___registers___bits___definition.html#ga481485aaa4f39fcdbc5e687452e08cab":[7,0,2,0,0,0,0,0,2375],
+"group___peripheral___registers___bits___definition.html#ga481485aaa4f39fcdbc5e687452e08cab":[5,163,3,0,2348],
 "group___peripheral___registers___bits___definition.html#ga4816a3a95687abe89b0709776345c748":[7,0,2,0,0,0,0,0,6244],
 "group___peripheral___registers___bits___definition.html#ga4816a3a95687abe89b0709776345c748":[5,163,3,0,6141],
 "group___peripheral___registers___bits___definition.html#ga4818dc7bffc8dfc2acc48995a62e66c5":[5,163,3,0,15173],
@@ -235,8 +235,8 @@ var NAVTREEINDEX111 =
 "group___peripheral___registers___bits___definition.html#ga4963eabb3590df66006d78d711c67f31":[5,163,3,0,7907],
 "group___peripheral___registers___bits___definition.html#ga49680ee410a531a395cb831adb8a13ac":[7,0,2,0,0,0,0,0,6456],
 "group___peripheral___registers___bits___definition.html#ga49680ee410a531a395cb831adb8a13ac":[5,163,3,0,6353],
-"group___peripheral___registers___bits___definition.html#ga496aa97ec5c7995b3a6da8e9b33c660e":[7,0,2,0,0,0,0,0,2026],
 "group___peripheral___registers___bits___definition.html#ga496aa97ec5c7995b3a6da8e9b33c660e":[5,163,3,0,1999],
+"group___peripheral___registers___bits___definition.html#ga496aa97ec5c7995b3a6da8e9b33c660e":[7,0,2,0,0,0,0,0,2026],
 "group___peripheral___registers___bits___definition.html#ga496c09a9096346e6141acc2464742b4c":[5,163,3,0,16424],
 "group___peripheral___registers___bits___definition.html#ga496c09a9096346e6141acc2464742b4c":[7,0,2,0,0,0,0,0,16772],
 "group___peripheral___registers___bits___definition.html#ga49778592caef3a176ee82c9b83e25148":[5,163,3,0,15239],
