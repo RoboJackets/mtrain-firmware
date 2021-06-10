@@ -7,5 +7,8 @@ digraph "/home/developer/mtrain-firmware/BSP/Src" {
   dir_91f91d50cc50c27fb7aadbffb1a58868 [shape=box, label="Src", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_91f91d50cc50c27fb7aadbffb1a58868.html"];
   }
   dir_4192f726b9a16ed5f168a0b6fbcc51b6 [shape=box label="Inc" URL="dir_4192f726b9a16ed5f168a0b6fbcc51b6.html"];
+  dir_397d9aeee4af8edecac90968d93b57df [shape=box label="external" fillcolor="white" style="filled" color="red" URL="dir_397d9aeee4af8edecac90968d93b57df.html"];
+  dir_4192f726b9a16ed5f168a0b6fbcc51b6->dir_397d9aeee4af8edecac90968d93b57df [headlabel="5", labeldistance=1.5 headhref="dir_000013_000015.html"];
   dir_91f91d50cc50c27fb7aadbffb1a58868->dir_4192f726b9a16ed5f168a0b6fbcc51b6 [headlabel="5", labeldistance=1.5 headhref="dir_000014_000013.html"];
+  dir_91f91d50cc50c27fb7aadbffb1a58868->dir_397d9aeee4af8edecac90968d93b57df [headlabel="2", labeldistance=1.5 headhref="dir_000014_000015.html"];
 }

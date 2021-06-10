@@ -17,4 +17,5 @@ digraph "/home/developer/mtrain-firmware/external/middleware" {
   dir_da8cd739d3a8dc42ecb2bee48a61c696->dir_350c8a3315b9de76597c9530ef31a96a [headlabel="9", labeldistance=1.5 headhref="dir_000053_000009.html"];
   dir_7a5ec2e9869ac10f986bf4267c867bff->dir_651c4281f36ab60688d2b827c8ad2c3b [headlabel="1", labeldistance=1.5 headhref="dir_000038_000016.html"];
   dir_350c8a3315b9de76597c9530ef31a96a->dir_da8cd739d3a8dc42ecb2bee48a61c696 [headlabel="6", labeldistance=1.5 headhref="dir_000009_000053.html"];
+  dir_350c8a3315b9de76597c9530ef31a96a->dir_7a5ec2e9869ac10f986bf4267c867bff [headlabel="2", labeldistance=1.5 headhref="dir_000009_000038.html"];
 }
