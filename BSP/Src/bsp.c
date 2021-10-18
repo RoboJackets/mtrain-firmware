@@ -31,11 +31,10 @@ void bsp_config(void) {
 // TODO: find better spot for this
 int _write(int file, char *data, int len)
 {
-    extern void DWT_Delay(uint32_t);
     if (file == STDOUT_FILENO) {
         USBD_CDC_SetTxBuffer(&USBD_Device, (uint8_t*)data, len);
         USBD_CDC_TransmitPacket(&USBD_Device);
-        DWT_Delay(1000); // TODO: why not blocking?
+        HAL_Delay(1); // TODO: why not blocking?
     }
     return 0;
 }

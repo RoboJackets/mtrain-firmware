@@ -1,5 +1,5 @@
 #include "I2C.hpp"
-#include "delay.hpp"
+#include "Delay.hpp"
 
 #define I2C_TIMING 0x10A60D20
 
@@ -77,9 +77,9 @@ void I2C::recover_bus() {
     // todo select correct pins/port
     for (unsigned i = 0; i < 20; i++) {
         HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PinState::GPIO_PIN_RESET);
-        DWT_Delay(9); // Actually 9.54 us
+        Delay::DWT_Delay(9); // Actually 9.54 us
         HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PinState::GPIO_PIN_SET);
-        DWT_Delay(9);
+        Delay::DWT_Delay(9);
     }
 
     
