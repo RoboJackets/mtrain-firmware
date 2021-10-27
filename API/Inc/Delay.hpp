@@ -12,7 +12,7 @@ class Delay {
          *
          * @return
          */
-        uint64_t DWT_SysTick_To_us();
+        static uint64_t DWT_SysTick_To_us();
         /** Delay routine
          *
          * @param ticks Number of clock cycles to delay for
