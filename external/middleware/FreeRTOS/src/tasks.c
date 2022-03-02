@@ -573,6 +573,17 @@ static void prvInitialiseNewTask( 	TaskFunction_t pxTaskCode,
 									TCB_t *pxNewTCB,
 									const MemoryRegion_t * const xRegions ) PRIVILEGED_FUNCTION; /*lint !e971 Unqualified char types are allowed for strings and single characters only. */
 
+
+/*
+* Place the task represented by pxTCB which has been in a ready list before
+ * into the appropriate ready list for the task.
+ * It is inserted at the end of the list.
+ */
+#define prvReaddTaskToReadyList( pxTCB )															\
+	traceREADDED_TASK_TO_READY_STATE( pxTCB );														\
+	taskRECORD_READY_PRIORITY( ( pxTCB )->uxPriority );												\
+	vListInsertEnd( &( pxReadyTasksLists[ ( pxTCB )->uxPriority ] ), &( ( pxTCB )->xStateListItem ) ); \
+	tracePOST_MOVED_TASK_TO_READY_STATE( pxTCB )
 /*
  * Called after a new task has been created and initialised to place the task
  * under the control of the scheduler.
@@ -1534,7 +1545,7 @@ static void prvAddNewTaskToReadyList( TCB_t *pxNewTCB )
 					{
 						mtCOVERAGE_TEST_MARKER();
 					}
-					prvAddTaskToReadyList( pxTCB );
+					prvReaddTaskToReadyList( pxTCB );
 				}
 				else
 				{
@@ -1595,7 +1606,7 @@ static void prvAddNewTaskToReadyList( TCB_t *pxNewTCB )
 			{
 				mtCOVERAGE_TEST_MARKER();
 			}
-
+			traceMOVED_TASK_TO_SUSPENDED_LIST(pxTCB);
 			vListInsertEnd( &xSuspendedTaskList, &( pxTCB->xStateListItem ) );
 		}
 		taskEXIT_CRITICAL();
@@ -3576,6 +3587,20 @@ static void prvCheckTasksWaitingTermination( void )
 #endif /* INCLUDE_uxTaskGetStackHighWaterMark */
 /*-----------------------------------------------------------*/
 
+#if (INCLUDE_pxTaskGetStackStart == 1)
+	uint8_t* pxTaskGetStackStart( TaskHandle_t xTask)
+	{
+	    TCB_t *pxTCB;
+	    UBaseType_t uxReturn;
+        (void)uxReturn;
+
+		pxTCB = prvGetTCBFromHandle( xTask );
+		return ( uint8_t * ) pxTCB->pxStack;
+	}
+
+#endif /* INCLUDE_pxTaskGetStackStart */
+/*-----------------------------------------------------------*/
+
 #if ( INCLUDE_vTaskDelete == 1 )
 
 	static void prvDeleteTCB( TCB_t *pxTCB )
@@ -3743,7 +3768,7 @@ TCB_t *pxTCB;
 
 					/* Inherit the priority before being moved into the new list. */
 					pxTCB->uxPriority = pxCurrentTCB->uxPriority;
-					prvAddTaskToReadyList( pxTCB );
+					prvReaddTaskToReadyList( pxTCB );
 				}
 				else
 				{
@@ -3815,7 +3840,7 @@ TCB_t *pxTCB;
 					any other purpose if this task is running, and it must be
 					running to give back the mutex. */
 					listSET_LIST_ITEM_VALUE( &( pxTCB->xEventListItem ), ( TickType_t ) configMAX_PRIORITIES - ( TickType_t ) pxTCB->uxPriority ); /*lint !e961 MISRA exception as the casts are only redundant for some ports. */
-					prvAddTaskToReadyList( pxTCB );
+					prvReaddTaskToReadyList( pxTCB );
 
 					/* Return true to indicate that a context switch is required.
 					This is only actually required in the corner case whereby
@@ -4737,12 +4762,14 @@ const TickType_t xConstTickCount = xTickCount;
 
 			if( xTimeToWake < xConstTickCount )
 			{
+				traceMOVED_TASK_TO_OVERFLOW_DELAYED_LIST();
 				/* Wake time has overflowed.  Place this item in the overflow
 				list. */
 				vListInsert( pxOverflowDelayedTaskList, &( pxCurrentTCB->xStateListItem ) );
 			}
 			else
 			{
+				traceMOVED_TASK_TO_DELAYED_LIST();
 				/* The wake time has not overflowed, so the current block list
 				is used. */
 				vListInsert( pxDelayedTaskList, &( pxCurrentTCB->xStateListItem ) );
@@ -4772,12 +4799,14 @@ const TickType_t xConstTickCount = xTickCount;
 		listSET_LIST_ITEM_VALUE( &( pxCurrentTCB->xStateListItem ), xTimeToWake );
 
 		if( xTimeToWake < xConstTickCount )
-		{
+		{	
+			traceMOVED_TASK_TO_OVERFLOW_DELAYED_LIST();
 			/* Wake time has overflowed.  Place this item in the overflow list. */
 			vListInsert( pxOverflowDelayedTaskList, &( pxCurrentTCB->xStateListItem ) );
 		}
 		else
 		{
+			traceMOVED_TASK_TO_DELAYED_LIST();
 			/* The wake time has not overflowed, so the current block list is used. */
 			vListInsert( pxDelayedTaskList, &( pxCurrentTCB->xStateListItem ) );
 
